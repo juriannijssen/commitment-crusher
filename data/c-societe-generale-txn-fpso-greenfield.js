@@ -260,48 +260,11 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": false
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The test is whether a vessel is “associated” with a new field. The policy does not say what that means.\n\nThis line uses the everyday word and points to nothing.\n\nSo the rule reaches whatever a credit committee decides “associated” means, for an asset built to move. A floating production ship lasts about thirty years. It can be unhooked, refitted and moved to another field. The field it serves when the financing is raised may not be the field it works later.\n\nAnd the date does the rest. A vessel serving a field approved in 2021 is outside for as long as that field produces."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This rule catches a new vessel ordered for a named new field. There, the link is written in the contract, and no one needs to argue about it. That is a real category, and most financing for these vessels sits there today.\n\nIt lets through the reuse market. Converted tankers and refitted vessels moving to a second or third field are financed differently. Often that is against the owner's balance sheet or a lease, and the “associated” test bites less clearly.\n\nIt also lets through the owners. The companies that own and lease these vessels provide services; they are not producers. A lender can refuse the vessel deal and still lend to the company that owns the vessel."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "The honest reading of this line is that it was overtaken by its own second half, and a page that says so is more useful to a reader than one that argues about a clause the bank has already gone past.",
-          "text": "Read this rule together with the words that follow it: “and, after 2025, any FPSOs”. FPSOs are ships that produce and store oil at sea.\n\nThat second rule is wider, and has no conditions. From 2026, the bank will not finance any such vessel through a dedicated deal, whether its field is new or fifty years old. Whatever this rule misses, the next one catches.\n\nSo Société Générale wrote a conditional rule and replaced it, in the same sentence, with an unconditional one.\n\nWhat this half still shows is a drafting gap. The policy carefully defines “associated” for pipelines and terminals, and leaves it undefined for vessels one line later. That hardly matters now, because of what follows. It would matter a great deal if a future version narrowed the wider rule."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Define “associated”, as the glossary already does",
-          "content": "The glossary defines it for pipelines and terminals with a majority test. This line uses the same idea and points to nothing."
-        },
-        {
-          "title": "Say what happens when a vessel moves",
-          "content": "A vessel financed for one field can later produce from another. Nothing here follows the vessel after the deal."
-        },
-        {
-          "title": "Cover the vessel owners",
-          "content": "Owners of these vessels are service companies, and no client test here reaches them. The vessel can be refused and its owner financed."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this half of the sentence depends entirely on the half that follows it.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating.",
-      "strength_reason": "Vessels serving fields approved by 2021 — most of the installed fleet — plus a mobile asset whose field can change after financing.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "The vessel has to be linked to a field approved after 2021, and the link is never defined. A ship built to move can serve an older field and fall outside.",
       "how_it_compares": {
         "text": "Société Générale's rule on pipelines and terminals serving new fields defines “associated” with a majority test in its glossary. Its client tests reach producers, not the companies that own and lease these vessels.",
         "links": [
@@ -314,7 +277,32 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's 30% Threshold on Unconventional Oil & Gas"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing labelled for a floating production vessel it considers tied to a field whose latest investment approval came after 2021",
+      "gaps": [
+        {
+          "title": "Fields approved by the end of 2021",
+          "text": "A field counts as “Greenfield” only if its latest final investment decision came after 31 December 2021. A vessel serving an earlier field is outside the commitment for that field's whole life.",
+          "phrase_refs": [
+            "latest-fid-2"
+          ]
+        },
+        {
+          "title": "What “associated” means is left open",
+          "text": "The vessel must be associated with a new field, and this line does not say what that takes. A vessel can be moved to another field after the financing, or hired across several fields.",
+          "phrase_refs": [
+            "assoc-gf"
+          ]
+        },
+        {
+          "title": "Loans to the company as a whole",
+          "text": "The commitment covers financing raised for a named vessel. A general loan or bond to the vessel's owner, or to the oil company, is outside it.",
+          "phrase_refs": [
+            "scope-dedicated"
+          ]
+        }
+      ],
+      "in_practice": "A floating production vessel is a ship moored over an offshore field. It processes and stores what the wells produce, and loads it onto tankers. This commitment covers vessels linked to a new field.\n\nA new field has a date test. The policy calls a field “Greenfield” when its latest final investment decision came after 31 December 2021. That decision is the moment a company formally approves building the field.\n\nTake a vessel for a field approved in 2020. It is outside the commitment, and stays outside as long as the field produces. Adding wells or a new phase does not always need a fresh decision, so growth in that field stays outside too.\n\nNow take a vessel with a less clear link. These ships last for decades and can be moved. One may be hired to an oil company rather than to one field, or work several fields of different ages. The line does not say what “associated” requires, so the bank decides.\n\nThen there is the kind of financing. The commitment covers financing raised for a named vessel. The contractor that owns it can take a general loan to the company as a whole, which does not say what it pays for.\n\nWhat is left is a new vessel for one named new field, financed with a loan for that vessel."
     }
   },
   "evidence": {
@@ -328,7 +316,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

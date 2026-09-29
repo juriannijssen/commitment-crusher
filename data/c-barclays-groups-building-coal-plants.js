@@ -333,44 +333,36 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "An undertaking the borrower writes itself is the whole exception.",
-          "text": "The rule reaches groups building or expanding coal plants, and then lets them through on a promise.\n\nIf the borrower promises the financing will not reach its coal plant companies, the financing goes ahead. It also goes ahead if Barclays is “otherwise satisfied”. The statement does not define or check either.\n\nFunds move freely within a group. Financing that pays for the rest of the business frees the group's own funds for the plant. So a promise about where one loan goes changes little about what the group can build.\n\nWhat remains is financing for a group that will not make the promise."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who is turned away under this commitment?\n\nA group building coal plants that will not promise where the financing goes. That group is caught.\n\nAny group willing to sign such a promise is not caught. Nor is a group that satisfies Barclays in some other way, which the statement does not describe.\n\nSo the commitment binds only groups that refuse to make a promise. Most groups that want the financing will make it. The borrower writes the promise, and the statement names no check on whether it is kept. In practice, that may be very few groups. The rule then rests on trust."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the rule looks at the whole group. A group building or expanding coal plants anywhere in its structure is in scope. It does not matter what share of revenue coal brings in.\n\nThat is the right way to look at it. A rule that only tested the borrower could be avoided by borrowing through another company in the group.\n\nWhere it stops is the promise. The borrower writes it, and the statement does not say how it is checked.\n\nSo the rule starts in the right place, and ends with the borrower's word. That is a weak end."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Replace the promise",
-          "content": "Require checked, ringfenced use of the financing. Or refuse financing to groups building coal plants outright."
-        },
-        {
-          "title": "Report the exceptions",
-          "content": "Disclose how many loans go ahead on a promise."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a group building coal plants can borrow by promising the financing is for something else.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A promise nobody checks lets a group building coal plants borrow, because financing for the rest of the group frees its own funds for the plant."
+      "strength_reason": "A group building coal plants can still borrow for general purposes on a promise that the loan goes elsewhere. Inside a group, that promise changes little.",
+      "actual_reading": "it will not give general-purpose loans to groups building or expanding coal plants, unless the borrower promises the loan will not reach its coal-plant companies",
+      "gaps": [
+        {
+          "title": "A promise from the borrower",
+          "phrase_refs": [
+            "undertaking"
+          ],
+          "text": "The loan goes ahead if the borrower promises it will not reach the coal-plant companies, or if Barclays is satisfied of that some other way. The statement does not say how either is checked."
+        },
+        {
+          "title": "Below 5% of revenue",
+          "phrase_refs": [
+            "more-than-5pc-revenues"
+          ],
+          "text": "A company counts as “engaged in” coal power only above 5% of its revenue. A large diversified company can run big coal plants and stay under that line."
+        },
+        {
+          "title": "Expansion under 10%",
+          "phrase_refs": [
+            "by-more-than-10pc"
+          ],
+          "text": "Adding capacity only counts as “material expansion” above 10%. Rises just under the line, repeated, add capacity without ever crossing it."
+        }
+      ],
+      "in_practice": "General-purpose financing is a loan to a company as a whole. It does not say what it pays for. This commitment covers that kind of loan, to groups with a company building or expanding a coal plant.\n\nTake a power group with one subsidiary building a new coal plant. The group asks Barclays for a general loan. The loan can still go ahead. The borrower only has to promise that the proceeds will not reach the subsidiary building the plant.\n\nThat promise changes little. Inside a group, cash moves between companies. A loan that pays for the group's other business frees the group's own cash for the plant. The plant gets built either way.\n\nBarclays can also go ahead without a promise, if it is “otherwise satisfied”. The statement does not say what would satisfy it.\n\nThen there are the definitions. The coal plant has to belong to a company earning more than 5% of its revenue from coal. And adding 9% capacity to an existing plant is not “material expansion”.\n\nSo this commitment catches a group building coal plants that will not make the promise. Any group that wants the loan can make it."
     }
   },
   "evidence": {
@@ -384,7 +376,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

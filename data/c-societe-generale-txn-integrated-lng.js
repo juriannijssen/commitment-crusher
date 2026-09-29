@@ -261,48 +261,36 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": false
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The loophole is not in the promise but in the project structure the promise assumes, and that is invisible unless the page says it in the first line.",
-          "text": "Most large LNG projects are not “integrated”, and there is a financing reason for that. LNG is gas cooled into a liquid so it can be shipped.\n\nThe usual set-up splits the gas fields from the plant. Producers develop the fields. A separate company owns the plant, and is paid a fee to cool gas it never owns. Buyers book capacity. Each part is financed by different lenders. That split is the point: it makes the plant financeable when the fields are not.\n\nThis exclusion covers integrated projects. In the usual set-up, there is no integrated project to refuse. There is a plant, some gas fields, and contracts between them.\n\nThe second condition narrows it again. The plant must be fed by new fields. When gas arrives through a pipeline network, it comes from many fields of many ages. No one can say which field filled which cargo."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The projects this reaches are the ones a single company builds end to end. Field, pipeline and plant are developed, financed and owned together. Those exist, usually where one national oil company or major controls the whole chain, and they are large.\n\nThe projects it releases are built from separate parts. A plant that processes other companies' gas for a fee. A plant fed from a national grid. A joint venture where the gas producers and the plant owners are different companies with different lenders.\n\nThat split does not follow emissions or the age of the field. It follows company structure, and structure is something a company can choose. A project caught as one development escapes if the same assets sit in two companies with a supply contract between them.\n\nSo the test rewards a way of organising a project, not a kind of gas."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Bank rules on LNG come in two shapes. One targets the gas supply: no LNG made from shale gas or Arctic gas. The other targets new LNG plants outright, whatever feeds them.\n\nSociété Générale uses the supply shape twice: here, tied to new fields, and in the next line, tied to shale and Arctic gas. It does not use the plant shape at all.\n\nSupply tests are harder to apply than plant tests. Gas from different sources mixes, and plants draw from networks. Banks that use supply tests usually add a tracing rule saying how the source is decided. There is none here.\n\nWhat sets this line apart is the word “integrated”. No comparable policy we know of uses it as the gate. It narrows the rule by project structure, not by fuel."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Drop “integrated”",
-          "content": "Most large LNG is financed as separate gas and plant projects. Covering any LNG project fed by new fields would follow the gas, not the company structure."
-        },
-        {
-          "title": "Say how the gas source is traced",
-          "content": "Where a plant draws from a pipeline network, gas from old and new fields is mixed. Without a tracing rule, “fed with Greenfield gas fields” cannot be tested."
-        },
-        {
-          "title": "Say what happens to expansions",
-          "content": "Adding a unit to an existing plant to take new-field gas is neither a new project nor clearly an integrated one."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the structure that makes an LNG project financeable is also what puts it outside this rule.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating.",
-      "strength_reason": "Only integrated projects, and most large LNG is built unbundled. A tolling plant taking gas under supply contracts is not covered."
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "It only covers projects where the gas field and the export plant are built as one. Most large gas export plants are built and financed apart from the fields that feed them.",
+      "actual_reading": "it will not give financing labelled for a gas export project where a field approved after 2021 and the plant that liquefies its gas are developed and financed as one project",
+      "gaps": [
+        {
+          "title": "Plants built apart from the fields",
+          "text": "The project must be “integrated”, and the policy does not define it. A plant owned by one company, paid a fee to liquefy other producers' gas, is not integrated, however new the fields are.",
+          "phrase_refs": [
+            "integrated-lng"
+          ]
+        },
+        {
+          "title": "Plants fed from a pipeline network",
+          "text": "Where gas reaches the plant through a network, gas from many fields of many ages is mixed. No single field feeds the plant, so the commitment does not apply.",
+          "phrase_refs": [
+            "integrated-lng"
+          ]
+        },
+        {
+          "title": "Fields approved by the end of 2021",
+          "text": "A gas field counts as new only if its latest final investment decision came after 31 December 2021. A plant fed by older fields is outside the commitment.",
+          "phrase_refs": [
+            "latest-fid-2"
+          ]
+        }
+      ],
+      "in_practice": "LNG is natural gas cooled into a liquid so it can be shipped. A plant does the cooling, and gas fields feed it. This commitment covers the plant and the fields only when they are one project.\n\nMany projects are not built that way. Producers develop the fields. A separate company owns the plant and is paid a fee to liquefy gas it never owns. Buyers book space in the plant. Each part has its own lenders.\n\nTake a plant like that, fed by a field approved in 2025. The plant and the field are separate projects, so neither is “integrated”. Société Générale can finance the plant. The same lenders can finance the field in a separate deal.\n\nNow take a plant that draws gas from a pipeline network. Gas from new and old fields is mixed long before it arrives. No one field feeds the plant. The commitment does not apply.\n\nThen there is the date. A field approved on or before 31 December 2021 is not new, and a plant it feeds is not covered by this commitment.\n\nThe commitment also covers financing raised for a named project only. A company can take a general loan to the company as a whole, which does not say what it pays for.\n\nWhat is left is a field and plant built by one sponsor as one project, and financed that way."
     }
   },
   "evidence": {
@@ -316,7 +304,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

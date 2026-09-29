@@ -94,7 +94,7 @@ window.WATCHTOWER_CASE = {
               112,
               152
             ],
-            "means": "This explains who the restriction applies to: groups Santander does not already serve. Existing clients that own coal mines are covered only by the 2030 phase-out.",
+            "means": "This explains who the restriction applies to: groups Santander does not already serve. Groups Santander already serves are not covered by this commitment.",
             "lets_through": [
               "This wording lets through every group Santander already has a relationship with, however much thermal coal it mines, until 2030."
             ],
@@ -376,44 +376,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "New groups only, a transaction-level exception and a one-word gap in its safeguard; stated flatly the reach is clear.",
-          "text": "The commitment refuses new coal mining groups as clients, but lets them in through single deals.\n\nIt covers groups Santander has no relationship with. Existing clients that own coal mines are untouched until the 2030 phase-out.\n\nFor new groups, two kinds of deal stay open if they are “sustainable” or “finance the transition”. One is a non-recourse loan, repaid only from the project's own income. The other is a deal backed by a government export agency. Neither term is defined. A footnote also allows linked guarantees “where strictly necessary”.\n\nThe safeguard is that the group must not be “organically” developing more coal capacity. That one word does a lot. A group that buys coal capacity, rather than building it, is not adding any organically.\n\nFor large groups, the rule applies to the coal mining subsidiary only."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who is turned away under this commitment?\n\nA group new to Santander that owns thermal coal mines, and wants ordinary financing rather than a transition deal. That group is caught.\n\nA group that is already a client is not caught. A new group seeking a transition deal is not caught, as long as it is not developing new coal capacity itself. A group that grows by buying mines is not developing any. A large group's parent is not caught either.\n\nSo the commitment binds coal miners arriving for ordinary financing. It releases the ones Santander already serves, and the ones that grow by buying."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: there is no revenue threshold. A new group that owns thermal coal mines anywhere is caught, whatever share of its business the mines are. And the exception has a condition: the group must not be developing more coal capacity.\n\nWhere it stops is scope and wording. The rule reaches new clients only. The terms in the exception, “sustainable finance” and “finance the transition”, are undefined. And the safeguard says “organically”. That leaves coal capacity added by buying other mines outside it.\n\nThe test without a threshold is strict. But it applies only to the groups Santander has not yet met."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Count purchases as expansion",
-          "content": "Drop “organically”. A group that buys coal capacity adds as much as one that builds it."
-        },
-        {
-          "title": "Define what finances the transition",
-          "content": "Publish what makes one of these deals sustainable or transition finance for a coal miner."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a new coal mining group is refused as a client, but can still arrive through a single deal.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Existing groups are untouched, and non-recourse, export-credit and guarantee transactions go through whenever the bank judges them acceptable."
+      "strength_reason": "It applies only to coal-mining groups Santander does not already bank. Even for those, non-recourse and export-credit deals it calls transition finance stay open.",
+      "actual_reading": "it will not take on a coal-mining group it has never banked, except through non-recourse or export-credit deals it calls sustainable or transition finance, and only the mining company, not its parent",
+      "gaps": [
+        {
+          "title": "Groups it already banks",
+          "phrase_refs": [
+            "no-relationship"
+          ],
+          "text": "The commitment covers groups with which Santander has no relationship. Every coal-mining group it already serves is outside it, however much thermal coal it mines."
+        },
+        {
+          "title": "Two kinds of deal stay open",
+          "phrase_refs": [
+            "non-recourse-eca",
+            "strictly-necessary"
+          ],
+          "text": "A new group can still get non-recourse or export-credit financing, if Santander calls it sustainable or transition finance. Neither term is defined. Guarantees linked to these deals are allowed “where strictly necessary”."
+        },
+        {
+          "title": "Buying mines is not “organic” growth",
+          "phrase_refs": [
+            "organically"
+          ],
+          "text": "The exception is closed to a group developing more coal capacity “organically”. A group that buys mines instead of building them keeps it open."
+        }
+      ],
+      "in_practice": "This commitment is about taking on new clients. It applies only to coal-mining groups that Santander has no relationship with today.\n\nTake a mining group that Santander already banks, with thermal coal mines on several continents. This commitment does not apply to it at all. Santander can keep financing it.\n\nNow take a coal-mining group that is new to Santander. Most financing is closed to it. But two kinds of deal stay open. One is non-recourse financing: a loan repaid only from what one project earns, with no claim on the rest of the group. The other is export credit: financing backed by a government agency that supports its country's exports.\n\nEither is allowed if Santander counts it as sustainable finance or transition finance. The policy does not define either term. Guarantees linked to the non-recourse deals are also allowed “where strictly necessary”. The policy does not say necessary for what, or who decides.\n\nThe exception has one condition. The group must not be developing more thermal coal capacity “organically”. A group that grows by buying other companies' mines is not growing organically, so the exception stays open to it.\n\nFor a group with businesses in several industries, the test is applied to the coal-mining subsidiary. The parent and the other subsidiaries can still be financed, if the financing is “unrelated to the restricted entity”.\n\nWhat is left is ordinary financing to a coal-mining company from a group Santander has never banked."
     }
   },
   "evidence": {
@@ -427,7 +420,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-26",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

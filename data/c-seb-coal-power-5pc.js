@@ -37,8 +37,8 @@ window.WATCHTOWER_CASE = {
         "published_confidence": null,
         "verbatim_check": {
           "document": "25537-seb-fossil-fuels.md",
-          "passages": 3,
-          "found": 3,
+          "passages": 5,
+          "found": 5,
           "missing": []
         }
       }
@@ -49,7 +49,7 @@ window.WATCHTOWER_CASE = {
         "role": "rule",
         "source_id": "seb2026",
         "title": "The promise",
-        "intro": "This rule spells out its own scope, which is rare. It also has the only country-specific exception in this document.",
+        "intro": "This rule spells out its own scope: existing and new clients, new projects and expansions. It also has an exception for one country.",
         "location": {
           "distance": "same_passage",
           "signposting": "explicit",
@@ -135,8 +135,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains the threshold, measured on revenue from coal.",
             "lets_through": [
-              "This wording lets through diversified utilities below the line. A large European utility with a shrinking coal fleet and a large renewables and networks business can sit under 5% while still burning coal.",
-              "It also lets through German coal-fired generators, until 2030. Watchtower records a 15% threshold for Germany reducing to 5% from 2030, plus a further exception where authorities instruct a company to keep capacity running for energy security."
+              "This wording lets through diversified utilities below the line. A large European utility with a shrinking coal fleet and a large renewables and networks business can sit under 5% while still burning coal."
             ],
             "defined_in_clause": null,
             "bank_definition": null,
@@ -226,6 +225,87 @@ window.WATCHTOWER_CASE = {
         ],
         "watchtower_origin": null,
         "ordinary_direction": "narrower"
+      },
+      {
+        "index": 4,
+        "role": "exception",
+        "source_id": "seb2026",
+        "title": "When it may not apply",
+        "intro": "The policy sets a different line for Germany, and lets the rule give way when the German government asks.",
+        "location": {
+          "distance": "same_passage",
+          "signposting": "explicit",
+          "signposting_note": null
+        },
+        "verbatim": "For Companies with coal fired power generation activities in Germany, a 15% revenue threshold applies reducing to 5% from 2030, reflecting the national coal phase out ambition. … Unless the Company is instructed by German government authorities to maintain or operate coal-fired power generation capacity for energy security reasons.",
+        "plain_rendering": "For Companies with coal fired power generation activities in Germany, a 15% revenue threshold applies reducing to 5% from 2030, reflecting the national coal phase out ambition. … Unless the Company is instructed by German government authorities to maintain or operate coal-fired power generation capacity for energy security reasons.",
+        "phrases": [
+          {
+            "id": "see-company-4",
+            "label": "Companies",
+            "type": "narrowing_qualifier",
+            "source": "bank_green",
+            "watchtower_ref": null,
+            "not_in_synthesis": true,
+            "verbatim_range": [
+              4,
+              13
+            ],
+            "plain_range": [
+              4,
+              13
+            ],
+            "means": null,
+            "lets_through": [],
+            "defined_in_clause": 3,
+            "bank_definition": null
+          },
+          {
+            "id": "germany-15pc",
+            "label": "a 15% revenue threshold applies reducing to 5% from 2030",
+            "type": "escape_hatch",
+            "source": "bank_green",
+            "watchtower_ref": null,
+            "not_in_synthesis": true,
+            "verbatim_range": [
+              70,
+              126
+            ],
+            "plain_range": [
+              70,
+              126
+            ],
+            "means": "This explains the line for German generators: 15% of revenue until 2030, then 5%.",
+            "lets_through": [
+              "This wording lets through German coal-fired generators earning between 5% and 15% of their revenue from coal, until 2030."
+            ],
+            "defined_in_clause": null,
+            "bank_definition": null
+          },
+          {
+            "id": "germany-instructed",
+            "label": "Unless the Company is instructed by German government authorities",
+            "type": "escape_hatch",
+            "source": "bank_green",
+            "watchtower_ref": null,
+            "not_in_synthesis": true,
+            "verbatim_range": [
+              179,
+              244
+            ],
+            "plain_range": [
+              179,
+              244
+            ],
+            "means": "This explains when the rule gives way for a German generator: when the government tells it to keep coal plants running for energy security.",
+            "lets_through": [
+              "This wording lets through a German generator the government tells to keep coal plants running. The sentence sets no time limit and no revenue line for it."
+            ],
+            "defined_in_clause": null,
+            "bank_definition": null
+          }
+        ],
+        "watchtower_origin": null
       }
     ],
     "glossary_refs": [
@@ -372,7 +452,7 @@ window.WATCHTOWER_CASE = {
       }
     ],
     "assessment": {
-      "strength": "hollowed",
+      "strength": "holds",
       "strength_derivation": {
         "rule": "spec v3.29 §4.1 — the gap between the naive reading and what it catches",
         "inputs_source": "Watchtower record",
@@ -383,48 +463,42 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "The scope statement and the dated carve-out are both better practice than anything else in the project, and the page should say so before it criticises.",
-          "text": "This sentence states its own scope.\n\nIt names “Business Relationships, including existing and new Business Relationships, as well as New Projects and capacity expansions”. Four things in one line, leaving nothing to guesswork.\n\nThe German exception is also the right shape. It names the country, gives a reason and a number, and it ends. The threshold is 15% until 2030, then 5%.\n\nA bank that has to make an exception should make it like this."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Two things sit beneath the good drafting.\n\nThe first is the verb. The sentence covers existing clients, and says the bank “avoids” them. Avoiding a relationship you are already in is not the same as leaving it. And the policy sets no date for leaving.\n\nThe second is the energy security exception. If German authorities tell a company to keep coal plants running, the rule gives way. Nothing limits how long that lasts. Nothing requires it to be disclosed or reported. Germany did tell operators to keep coal plants available during 2022 and 2023, so this is not hypothetical.\n\nNeither point undoes the sentence. Both are the difference between a rule and a result."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "SEB uses 5% of revenue. It covers existing and new clients, new projects and expansions, with a dated German exception.\n\nOn coal power, SEB's rule is strict and clear. That is worth saying plainly. A company with 10% of its revenue from coal power is out at SEB."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Publish who uses the German threshold",
-          "content": "A named, dated exception for one country is far better than an open-ended one. Saying who relies on it would make it checkable."
-        },
-        {
-          "title": "Say what avoiding a client means",
-          "content": "The sentence covers existing clients but uses the word “avoids”. Leaving has a date; avoiding does not."
-        },
-        {
-          "title": "Limit the energy security exception",
-          "content": "An order from the authorities is a real situation. But nothing limits how long the exception lasts, or requires it to be disclosed."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a clear scope statement comes with a country exception.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Very little goes through on its own terms. It never says when an existing relationship ends, and German generators wait until 2030."
+      "strength_reason": "It mostly does what it sounds like: coal-heavy generators are kept out, new clients and existing ones. What gets through is a dated German exception, groups borrowing through a company with little coal, and no date to end existing ties.",
+      "actual_reading": "it does not do business with companies earning more than 5% of their revenue from coal-fired power, new clients or existing, except German generators, which have a 15% line until 2030",
+      "gaps": [
+        {
+          "title": "German generators until 2030",
+          "phrase_refs": [
+            "germany-15pc",
+            "germany-instructed"
+          ],
+          "text": "In Germany the line is 15% until 2030. Where German authorities tell a company to keep coal plants running for energy security, the rule gives way."
+        },
+        {
+          "title": "A company in the group below the line",
+          "phrase_refs": [
+            "company-legal-entity"
+          ],
+          "text": "SEB applies the 5% test to the one legal entity it deals with, not to its group. A subsidiary with little coal revenue can borrow, and the financing can move within the group."
+        },
+        {
+          "title": "No date to leave",
+          "phrase_refs": [
+            "including"
+          ],
+          "text": "The sentence covers existing clients, but says SEB “avoids” them. It does not say when an existing relationship has to end."
+        }
+      ],
+      "in_practice": "Take a power company that earns 10% of its revenue from coal plants. SEB avoids doing business with it. That covers clients SEB already has as well as new ones. It also covers financing for new plants and expansions, and the line is low.\n\nIf the same company generates power in Germany, the line is 15% until 2030, and 5% after that. A German generator earning 12% of its revenue from coal can stay a client until then. And if German authorities tell a company to keep coal plants running for energy security, the rule gives way.\n\nA large utility with a small coal fleet is also outside it. Take a group with big networks and renewables businesses and a few coal plants. If coal is under 5% of its revenue, SEB can bank it, however much coal it burns.\n\nThe policy defines a “Company” as one legal entity, not a group. So a coal-heavy group can borrow through a subsidiary with little coal. The financing can then move inside the group.\n\nFinally, the sentence covers existing clients but says SEB “avoids” them. It does not say when an existing relationship ends. A coal generator SEB already banks is given no date to leave.\n\nSo the commitment keeps coal-heavy generators out, new and existing, and the German exception is named, has a number and ends in 2030. What it leaves open is timing: when an existing relationship has to end."
+    },
+    "featured": {
+      "rank": 9,
+      "kind": "holds, with a named exception",
+      "because": "A client rule that mostly does what it says, with a German exception quoted from the policy."
     }
   },
   "evidence": {
@@ -438,7 +512,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

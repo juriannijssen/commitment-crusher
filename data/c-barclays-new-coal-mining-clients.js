@@ -316,44 +316,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "New clients only, judged group-wide, is the gap.",
-          "text": "The threshold is low, and the scope is narrow.\n\nMore than 5% of revenue from thermal coal is enough to count as “engaged in” it. But the rule applies to new clients only. And newness is judged across the group. If any company in a group already banks with Barclays, none of it is new.\n\nThe 5% is measured on the entity being financed, not its group. So a low-coal company inside a coal-heavy group passes.\n\nWhat remains is financing for a coal-engaged company, in a group with no existing link to Barclays."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who is turned away under this commitment?\n\nA company earning more than 5% of its revenue from thermal coal, in a group that has never banked with Barclays. That company is caught.\n\nAny group already inside is not caught. A company with little coal of its own, inside a coal-heavy group, is not caught either.\n\nSo the commitment binds strangers. It releases the coal miners Barclays already knows, and those that can borrow through a company with less coal. The low threshold only applies at the front door. Inside, the line is much higher."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the threshold is 5% of revenue. And the rule covers all financing, not just project loans.\n\nA low threshold matters. It catches large mining groups for which coal is only one business, not just companies that mine nothing else.\n\nWhere it stops is who it applies to: groups with no existing relationship with Barclays. And the 5% is measured on the company being financed, not its group.\n\nSo the number is strong. It is just pointed at the companies Barclays has not met. That is a narrow target."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Judge newness by company, not group",
-          "content": "Treat a new company as a new client, even when its group already banks with Barclays."
-        },
-        {
-          "title": "Test the group's coal revenue",
-          "content": "Apply the 5% threshold to the whole group's revenue, not only to the company being financed."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the 5% line keeps out coal miners Barclays has never met.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "New clients only, tested across the whole group, and then only above 5% of revenue.",
+      "strength_reason": "It covers only coal miners in groups that have never banked with Barclays. Any miner in a group Barclays already serves is outside it.",
       "how_it_compares": {
         "text": "Barclays' existing coal mining clients are left to its phase-out, in 2030 in the EU and OECD and 2035 elsewhere.",
         "links": [
@@ -362,7 +329,25 @@ window.WATCHTOWER_CASE = {
             "title": "Barclays' Phase-out of Coal Mining Clients"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not finance a company earning more than 5% of its revenue from thermal coal mining, if no company in its group already banks with Barclays",
+      "gaps": [
+        {
+          "title": "Every group Barclays already serves",
+          "phrase_refs": [
+            "no-member"
+          ],
+          "text": "A company is a “new client” only if no company in its group already banks with Barclays. A new coal-mining company in a group Barclays already serves is not new."
+        },
+        {
+          "title": "Coal measured on the borrower alone",
+          "phrase_refs": [
+            "more-than-5pc"
+          ],
+          "text": "The 5% is measured on the company being financed. A company with little coal revenue of its own can borrow, whatever its group earns from coal."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. This commitment reaches companies that earn more than 5% of their revenue from mining it, but only if they are new to Barclays.\n\nTake a mining group that has banked with Barclays for years. Coal is a big part of its business. It is not a new client, so this commitment does not apply. Barclays can keep lending to it.\n\nNow the same group sets up a new company to open a coal mine. Barclays has never served that company. It is still not a “new client”, because another company in its group already banks with Barclays.\n\nNext take a group that has never banked with Barclays. It asks for a loan through its trading or holding company, which earns little from coal itself. The 5% is measured on that company, not the group. So the loan can go ahead.\n\nA company is caught only when both lines hold. It earns more than 5% of its own revenue from thermal coal mining. And no company in its group has ever been a Barclays client.\n\nSo this commitment keeps new coal miners out. The coal miners already inside, and their new companies, are not touched."
     }
   },
   "evidence": {
@@ -376,7 +361,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

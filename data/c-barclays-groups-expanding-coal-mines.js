@@ -322,7 +322,7 @@ window.WATCHTOWER_CASE = {
       }
     ],
     "assessment": {
-      "strength": "hollowed",
+      "strength": "crushed",
       "strength_derivation": {
         "rule": "spec v3.29 §4.1 — the gap between the naive reading and what it catches",
         "inputs_source": "Watchtower record",
@@ -333,44 +333,36 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "An undertaking the borrower writes itself is the whole exception; stated flatly that is the gap.",
-          "text": "The rule reaches the right target: groups with companies opening or expanding coal mines. Then it lets them through on a promise.\n\nIf the borrower promises the financing will not reach its coal-expanding companies, the financing goes ahead. It also goes ahead if Barclays is “otherwise satisfied”. The statement does not say how either is checked.\n\nFunds move freely inside a group. Financing that pays for the rest of the business frees the group's own funds for the mines. So a promise about where one loan goes changes little about what the group can afford.\n\nWhat remains is financing for a group that will not make the promise."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who is turned away under this commitment?\n\nA group expanding coal mines that will not, or cannot, promise where the financing goes. That group is caught.\n\nAny group willing to sign such a promise is not caught. Nor is a group that satisfies Barclays in some other way, which the statement does not describe.\n\nSo the commitment binds only groups that refuse to make a promise. Most groups that want the financing will make it. The promise is written by the borrower, and the statement names no check on whether it is kept. The rule then rests entirely on trust."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the rule looks at the whole group, not only the borrower. A group opening or expanding coal mines anywhere in its structure is in scope. It does not matter what share of revenue coal brings in.\n\nThat is the right way to look at it. A rule that only tested the borrower could be avoided by borrowing through another company in the group.\n\nWhere it stops is the promise. The borrower writes it, and the statement does not say how it is checked.\n\nSo the rule starts in the right place, and ends with the borrower's word. That is a weak end."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Replace the promise",
-          "content": "Require checked, ringfenced use of the financing. Or refuse financing to groups expanding coal mines outright."
-        },
-        {
-          "title": "Report the exceptions",
-          "content": "Disclose how many loans go ahead on a promise, and how it is checked."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a group expanding coal mines can borrow from Barclays by promising the financing is for something else.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A promise about where the funds go is a real condition, but 5% of revenue and a 20% tonnage line leave most of it standing."
+      "strength_reason": "It turns groups expanding coal mines into borrowers who must sign a promise. Once they sign, they can borrow, and the revenue and tonnage lines leave more out.",
+      "actual_reading": "it will not give general-purpose loans to groups opening or expanding coal mines, unless the borrower promises the loan will not reach its mining companies",
+      "gaps": [
+        {
+          "title": "A promise from the borrower",
+          "phrase_refs": [
+            "undertaking"
+          ],
+          "text": "The loan goes ahead if the borrower promises it will not reach the coal-expanding companies, or if Barclays is satisfied some other way. The statement does not say how either is checked."
+        },
+        {
+          "title": "Below 5% of revenue",
+          "phrase_refs": [
+            "more-than-5pc-revenues"
+          ],
+          "text": "A company counts as “engaged in” coal mining only above 5% of its revenue. A large diversified miner can dig a lot of coal and stay under that line."
+        },
+        {
+          "title": "Growth under 20% a year",
+          "phrase_refs": [
+            "by-more-than-20pc"
+          ],
+          "text": "A mine only counts as a “material expansion” when its yearly output rises by more than 20%. A mine that grows 19% every year never crosses the line."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. General-purpose financing is a loan to a company as a whole, which does not say what it pays for. This commitment covers that kind of loan, to groups opening or expanding thermal coal mines.\n\nTake a mining group with one subsidiary opening a new thermal coal mine. The group asks Barclays for a general loan. The loan can go ahead if the borrower promises the proceeds will not reach that subsidiary. Barclays can also go ahead if it is “otherwise satisfied”, which the statement does not explain.\n\nInside a group, cash moves between companies. A loan that pays for the group's copper or iron business frees the group's own cash for the coal mine. So the promise limits one loan, not what the group can afford to build.\n\nThen there are the lines. The mining company has to earn more than 5% of its revenue from thermal coal. And an existing mine has to grow by more than 20% in a year. A mine growing 15% a year, year after year, is never caught.\n\nSo this commitment stops a group that will not sign the promise. A group willing to sign keeps borrowing."
     }
   },
   "evidence": {
@@ -384,7 +376,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

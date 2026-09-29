@@ -75,7 +75,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains the threshold: revenue from coal-fired generation above 30% of the entity's revenue. The revenue counted is defined below.",
             "lets_through": [
-              "This wording lets through clients between 5% and 30% until the 2030 and 2035 phase-out dates, and any entity with little coal revenue of its own, whatever its group earns."
+              "This wording lets through clients with 30% or less of their revenue from coal power, and any entity with little coal revenue of its own, whatever its group earns."
             ],
             "defined_in_clause": null,
             "bank_definition": null
@@ -257,44 +257,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "A 30% share of revenue lets integrated utilities through.",
-          "text": "The threshold is 30% of revenue, and the revenue counted is narrow.\n\nOnly revenue directly from making electricity with coal counts. Revenue from power lines, grids and selling to homes does not. And it is measured against the company's total revenue.\n\nSo a utility with large grid and retail businesses can burn a great deal of coal, and stay under 30%. The more it does besides burning coal, the easier the test is to pass.\n\nThe narrowing is in the number and its definition. The largest coal-burning utilities can keep their financing."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who loses financing today?\n\nPower companies earning more than 30% of their revenue from coal power. Those are caught, for all financing.\n\nLarge utilities with the same coal plants, and bigger other businesses, are not caught. Their coal revenue is a smaller share, because their grid and retail revenue is large.\n\nSo the rule binds power companies that mostly burn coal. It releases utilities that burn as much coal but do more besides. The size of the coal fleet does not decide who is caught. The shape of the business does. The size of the fleet plays no part."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the rule applies to all clients now, new and existing. It has a published threshold, and a defined measure of revenue.\n\nWhere it stops is the height of the line. 30% is high, and the narrow measure of revenue makes it easier to pass. A large utility can burn a lot of coal and stay under it.\n\nSo the rule acts now, but only against the most coal-dependent power companies."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Add a size test",
-          "content": "Count coal power capacity or output, not only revenue share."
-        },
-        {
-          "title": "Lower the threshold before 2030",
-          "content": "Publish a path from 30% down to the 5% phase-out threshold."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the largest coal-burning utilities pass on share.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "30% of revenue catches the coal-heavy, and a vertically integrated utility dilutes its way under with transmission and retail.",
+      "strength_reason": "It catches the power companies that live on coal. A utility that also runs grids and sells to homes can burn as much coal and stay under 30%.",
       "how_it_compares": {
         "text": "Barclays' coal power phase-out ends this financing in 2030 in the EU and OECD, and 2035 elsewhere.",
         "links": [
@@ -303,12 +270,31 @@ window.WATCHTOWER_CASE = {
             "title": "Barclays' Phase-out of Coal Power Clients"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not finance a company that earns more than 30% of its revenue from generating electricity with coal, counting only the generating itself",
+      "gaps": [
+        {
+          "title": "Grid and retail revenue dilutes the share",
+          "text": "Only revenue from generating the electricity counts as coal revenue. A utility that also carries and sells electricity has a larger total, so its coal share is smaller.",
+          "phrase_refs": [
+            "excludes-other"
+          ]
+        },
+        {
+          "title": "Companies at 30% or less",
+          "text": "A power company earning 25% of its revenue from coal power keeps its financing. So does a group company with little coal revenue of its own, whatever its group earns.",
+          "phrase_refs": [
+            "more-than-30pc"
+          ]
+        }
+      ],
+      "in_practice": "The test is a share of the company's revenue. Only revenue from making electricity with coal counts. Revenue from carrying that electricity on power lines, or selling it to homes and businesses, is left out.\n\nTake a power company that mostly runs coal plants and sells their output wholesale. Most of its revenue comes from generation, and much of that from coal. It is above 30%, and Barclays will not finance it in any form.\n\nNow take a utility with the same coal plants that also owns the grid and supplies millions of homes. Its coal plants burn just as much coal. But its revenue from grids and retail is large, so coal generation is a smaller share of the total. It can fall under 30% and keep all its financing.\n\nThe test is also run on the company that borrows, not its group. A group company with little coal revenue of its own can borrow, whatever the group earns from coal.\n\nSo what this commitment stops is financing to companies that mostly generate coal power. It leaves open the large integrated utilities, and every company at 30% or less.",
+      "gets_right": "It applies now, to every client, and to every kind of financing, not only loans for one project."
     },
     "featured": {
-      "rank": 2,
-      "kind": "a threshold nobody exceeds",
-      "because": "Thirty-two utilities, every one of them still burning coal, and not one above 30% of its revenue."
+      "rank": 5,
+      "kind": "a threshold few clients exceed",
+      "because": "The largest financing found against one commitment: $4B across 32 deals."
     }
   },
   "evidence": {
@@ -772,7 +758,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "utilities that still generate from coal"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

@@ -94,7 +94,7 @@ window.WATCHTOWER_CASE = {
               73,
               88
             ],
-            "means": "This explains what financing this commitment covers: financing for a project. The policy does not define “project-related”, and Watchtower records it as project financing.",
+            "means": "This explains what financing this commitment covers: financing for a project.",
             "lets_through": [
               "This wording lets through general corporate financing, bonds and other company-level financing to the producers that develop new oil fields. That financing is not project-related."
             ],
@@ -324,44 +324,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "One instrument, one fuel and one date do all the narrowing, and the gap is best stated flatly.",
-          "text": "The commitment takes a position on new fields, then narrows it three ways.\n\nIt covers project-related financing only: financing tied to one project. A producer developing a new field can raise loans or bonds for the whole company from Santander, and use them for the field.\n\nIt covers oil. The sentence says “Oil upstream greenfield projects”. New gas fields are not named anywhere in it.\n\nAnd it covers fields approved for development after May 2021. Every field approved earlier is outside it for good, with all its future wells and expansions. What remains is a project loan for a new oil field, approved after May 2021, that no committee has waived."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer that needs project financing from Santander for an oil field approved after May 2021 is caught. That is the whole group it catches.\n\nA producer that pays for the same field from its own balance sheet is not caught. Neither is one developing a new gas field. Nor one expanding a field approved before June 2021.\n\nLarge producers pay for most of their development with company-wide financing, which this commitment never reaches. Smaller developers and companies with a single field rely on project financing. They are the ones it binds."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the commitment takes a position on new oil fields at all. And it gives a date that makes it checkable.\n\nThe International Energy Agency's path to net zero has no new oil and gas fields approved for development. A bank that restricts financing for new fields is moving in line with that. One that publishes a cut-off date lets anyone check a field against it.\n\nThe limits are the kind of financing and the fuel. The rule covers financing tied to a project, so producers paying for new fields at company level are untouched. And it names oil, so new gas fields are outside it.\n\nThe position is right. The reach is one kind of loan, for one fuel."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover the company, not only the project",
-          "content": "Extend the rule to loans and bonds for the whole company, for producers developing new fields."
-        },
-        {
-          "title": "Name gas as well as oil",
-          "content": "New gas fields add to supply just as much as new oil fields."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a new oil field can be financed through the company, and a new gas field is not covered at all.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Dedicated financing of new oil fields is blocked; gas is not named, and every field approved by May 2021 is free for life."
+      "strength_reason": "It reaches one kind of financing for oil fields approved after May 2021. Company-level borrowing, new gas fields and every older field are all outside it.",
+      "actual_reading": "it will not give financing tied to a project for developing oil fields whose approval for development came after May 2021",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the field",
+          "phrase_refs": [
+            "project-related",
+            "directly"
+          ],
+          "text": "The commitment covers “project-related” financing only. A producer can get general corporate financing or bonds and spend them on a new field."
+        },
+        {
+          "title": "Fields approved by May 2021",
+          "phrase_refs": [
+            "after-may-2021"
+          ],
+          "text": "Santander defines “Greenfield” by a date. A field approved for development in or before May 2021 is outside the commitment for its whole life, including the drilling still ahead of it."
+        },
+        {
+          "title": "Gas is not named",
+          "phrase_refs": [
+            "after-may-2021"
+          ],
+          "text": "The sentence names oil only. A company opening a new gas field is not covered."
+        }
+      ],
+      "in_practice": "Upstream means finding oil and getting it out of the ground. Greenfield usually means a site where nothing has been built before. Santander defines “Greenfield” differently: a field whose approval for development came after May 2021.\n\nTake an oil field approved in 2020 and still being drilled today. It is not “Greenfield” in Santander's sense. Every new well and every new phase there is outside this commitment, for the life of the field.\n\nNow take a field approved in 2023. Its developer may ask Santander for project financing: a loan for that field, repaid from what the field earns. Santander says no. But the developer can also ask for general corporate financing. That is a loan to the company as a whole, which does not say what it pays for. This commitment does not apply to it, and the producer can spend it on the new field.\n\nThe same goes for a parent company. A general loan to the parent, which then pays for the field through a subsidiary, is not financing Santander gives “directly”.\n\nAnd the sentence names oil. A company opening a new gas field is not covered at all.\n\nSo this commitment stops a loan with a new oil field's name on it, for a field approved after May 2021. The rest of what Santander does for oil producers can carry on."
     }
   },
   "evidence": {
@@ -437,7 +430,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "companies opening new oil fields off Brazil"
   },
   "provenance": {
-    "built": "2026-09-26",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

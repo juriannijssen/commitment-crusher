@@ -276,44 +276,36 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The places named are the right ones; the gap is in which categories count and in an undefined test of harm.",
-          "text": "The list of places is familiar. The protection is narrower than it looks.\n\nRamsar wetlands and World Heritage Sites are named. Other protected areas count only if the IUCN, the global body that ranks them, puts them in categories I to IV. That leaves out categories V and VI: protected landscapes and areas managed for use. It also leaves out national reserves with no IUCN category.\n\nThe trigger is soft. A mine or power plant is caught when it puts one of these areas “at risk”. The policy does not say how risk is judged, at what distance, or by whom. A mine at a reserve's edge, or the rail line serving it, can be judged as no risk. The commitment names the right places, and leaves the question of harm to Santander."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Which coal projects does this commitment actually stop?\n\nA mine or power plant inside a Ramsar wetland, a World Heritage Site or an IUCN category I to IV area. Santander itself must judge that it puts the area at risk, and no exception must be approved. That project is caught.\n\nOne in a category V or VI area is not. Nor is one in a protected area with no IUCN category. Nor one next to a protected area that Santander judges is not at risk. Nor one that the bank's governing bodies approve as an exception.\n\nThe commitment binds the clear-cut case. Everything that needs judgement, such as category, distance and risk, is decided inside the bank."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: as written, this restriction is not limited to one kind of financing. It covers investment and all financial products and services, for any client. And it covers “projects or activities”, not only projects. Santander defines its products broadly: loans, insurance, asset management, derivatives, shares and advice.\n\nA protected-area rule that stopped at project financing would leave company loans untouched. As written, this one does not.\n\nThe limits are in which places are protected, and when. Only IUCN categories I to IV are named, so protected landscapes and areas managed for use fall outside. And the rule applies when a project puts an area “at risk”, which the policy does not define.\n\nIt covers every kind of financing, for a narrow set of places, with the bar for harm left to the bank."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover all protected areas",
-          "content": "Include IUCN categories V and VI, and national protected areas with no IUCN category, not only categories I to IV."
-        },
-        {
-          "title": "Define “at risk”",
-          "content": "Say what counts: inside the boundary, within a set distance, or upstream. And publish how the judgement is made."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the commitment protects the places everyone agrees on, as far as Santander decides a mine or plant threatens them.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Two of the six protected categories are outside it, and the bank's own assessment decides the rest."
+      "strength_reason": "Two of the six kinds of protected area are left out, and Santander's own judgement decides whether a mine or plant puts the rest at risk.",
+      "actual_reading": "it will not directly finance coal mines or power plants that it judges put a protected wetland, a World Heritage Site or a strictly protected nature area at risk",
+      "gaps": [
+        {
+          "title": "Protected areas left off the list",
+          "phrase_refs": [
+            "iucn-i-iv"
+          ],
+          "text": "Only nature areas in IUCN categories I to IV count. Protected landscapes, areas managed for sustainable use, and protected areas with no IUCN category are not covered."
+        },
+        {
+          "title": "Santander decides what is “at risk”",
+          "phrase_refs": [
+            "at-risk"
+          ],
+          "text": "A mine or plant is caught only if it puts the area “at risk”. The policy does not say how that is judged, at what distance, or by whom."
+        },
+        {
+          "title": "Financing that reaches the project through someone else",
+          "phrase_refs": [
+            "directly"
+          ],
+          "text": "The commitment covers direct financing only. A general loan to the parent company, which then pays for the mine or plant, is not covered."
+        }
+      ],
+      "in_practice": "The IUCN is the international body that sorts protected areas into six categories. Categories I to IV give the most protection: wilderness, national parks and nature reserves. Categories V and VI are protected landscapes and areas where people use the land and its resources. Ramsar Sites are protected wetlands.\n\nTake a coal mine planned inside a category V protected landscape. It is outside this commitment. So is a mine in a national reserve that has no IUCN category at all.\n\nNow take an open-pit mine or a coal power plant just outside a national park. Its dust, its water use or its waste may reach the park. Whether that puts the park at risk is Santander's call. The policy gives no distance, no buffer zone and no method. A site beside the boundary, or upstream of it, can be judged as no risk and financed.\n\nAnd a mining company working inside a protected area can still borrow for general purposes from Santander. The commitment covers what Santander finances “directly”. A loan to the parent company that ends up paying for the mine is not direct.\n\nSo what is left is the clear case. A coal mine or plant sits in a strictly protected area, a Ramsar Site or a World Heritage Site. Santander finances it directly, and itself finds it puts the area at risk."
     }
   },
   "evidence": {
@@ -327,7 +319,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-25",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

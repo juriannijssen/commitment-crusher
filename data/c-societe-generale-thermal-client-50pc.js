@@ -70,9 +70,9 @@ window.WATCHTOWER_CASE = {
               34,
               69
             ],
-            "means": "This explains what is withheld once a client crosses the line: new business. Watchtower records the transaction status as new.",
+            "means": "This explains what is withheld once a client crosses the line: new business.",
             "lets_through": [
-              "Adding the word “new” means every facility already agreed stays in place. A client above 50% keeps what it has, and the policy's only answer to existing exposure is the 2030 and 2040 phase-out dates.",
+              "Adding the word “new” means every facility already agreed stays in place. A client above 50% keeps what it has.",
               "It also lets through renewals framed as amendments. Nothing in the wording says whether extending an existing facility is new business."
             ],
             "defined_in_clause": null,
@@ -227,48 +227,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "how_it_compares",
-          "recommended": true,
-          "recommended_because": "The double standard is printed in the policy, in one list, and needs no argument to make it.",
-          "text": "Société Générale will not take on a new client above 25% of revenue from thermal coal. It will keep an existing client up to 50%.\n\nThe two rules sit next to each other in the same list. Only the words “Prospect” and “Existing client” separate them.\n\nSo the bar is twice as high for companies the bank already earns from. A coal-heavy utility at 40% would be refused as a newcomer and kept as a client. Nothing in the policy explains the difference or says when it ends.\n\nThe fair version is a transition allowance. You stay with a client to help it change, and take on no new coal meanwhile. If that is the aim, the higher bar needs a date to come down. As written, it is permanent."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Even above 50%, only new products and services stop.\n\nA client that crosses the line keeps every loan already agreed, and keeps drawing on it. So a company above 50% can keep borrowing on loans already signed.\n\nThe rule also does not say whether extending a loan counts as new business. Renewals, changes and increases sit between “new” and “existing”. That is where most company lending actually happens."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "How many existing clients of a large European bank earn more than half their revenue from thermal coal? Few.\n\nA utility at 50% coal revenue is usually a coal-only power producer or a coal miner. Most European banks dropped those companies years ago. The threshold sits where the bank's current clients have least to lose.\n\nThe interesting group sits between the two numbers: clients from 25% to 50%. They are refused as new clients and kept as existing ones. Nothing else in the policy covers them, except the transition plan rule, which asks for a document, and the 2040 date.\n\nThat group is where the policy's real position on coal lies. No sentence in it deals with that group directly."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Bring the client threshold down to 25%",
-          "content": "The policy gives no reason why an existing relationship justifies twice as much coal."
-        },
-        {
-          "title": "Put a date on the higher bar",
-          "content": "If 50% is a temporary allowance, not a permanent position, say when it comes down."
-        },
-        {
-          "title": "Say whether a renewal is new business",
-          "content": "The rule stops new products and services. It does not say whether extending an existing loan counts."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the policy accepts twice as much coal from a company it already banks.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "New financing to clients above 50% stops, which is real. Everything already agreed stays, and 25 to 50% is untouched.",
+      "strength_reason": "New business stops once coal is over half a client's revenue. Everything already agreed stays, and a client just under half keeps full access.",
       "how_it_compares": {
         "text": "Existing financing is left to Société Générale's coal phase-out dates, the later one in 2040. Its rule for coal miners is not limited to new business.",
         "links": [
@@ -281,7 +244,26 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's Group Test for Thermal Coal Miners"
           }
         ]
-      }
+      },
+      "actual_reading": "it will stop new financing and services to existing clients earning more than half their revenue from coal, while what they already have stays in place",
+      "gaps": [
+        {
+          "title": "Everything already agreed stays",
+          "phrase_refs": [
+            "new-fps6"
+          ],
+          "text": "A client above 50% keeps every loan and facility it already has. The policy does not say whether extending one of them counts as new business."
+        },
+        {
+          "title": "Up to half its revenue from coal",
+          "phrase_refs": [
+            "50pc"
+          ],
+          "text": "A client can earn up to half its revenue from coal and keep full access. A coal-heavy utility at 40% is not affected."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. This commitment covers companies that are already clients of Société Générale. It asks one question: is more than half of the client's revenue linked to coal?\n\nTake a client that earns 60% of its revenue from coal power. Société Générale will not give it any new financial product or service. No new loan, no new bond, no new advice.\n\nBut everything it already has stays. A five-year loan signed before the line was crossed runs its full five years. A credit line already agreed can still be drawn on. The policy also does not say whether extending an existing loan is new business.\n\nNow take a client that earns 40% of its revenue from coal. It is under the line. It can get new loans, new bonds and new advice as before. A utility can run a large coal fleet and still earn less than half its revenue from coal.\n\nSo the commitment stops new business with clients that are mostly coal. It leaves their existing financing in place, and it does not touch clients where coal is a large but smaller part of the business.",
+      "gets_right": "It applies to clients Société Générale already has, not only to newcomers. And above the line it stops every kind of new product and service, not only financing set aside for a named project."
     }
   },
   "evidence": {
@@ -295,7 +277,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 306, document 28051",
     "reading": "drafted"

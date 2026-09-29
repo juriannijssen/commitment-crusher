@@ -72,7 +72,7 @@ window.WATCHTOWER_CASE = {
             "means": "This explains what financing this commitment covers: dedicated financing only. A dedicated transaction is financing raised for a named activity, where it is clear what the financing is used for.",
             "lets_through": [
               "The word “dedicated” lets through general corporate financing. A revolving credit facility, a term loan or a bond issued at group level is not dedicated to anything, so this commitment never applies, however much of the borrower's business is Arctic oil.",
-              "It also lets through every company-level relationship that passes the policy's 30% revenue threshold. The two restrictions are the only checks, and a producer under 30% can bank here freely provided it does not ask for financing attached to a named barrel."
+              "It also lets through the companies themselves. A producer can bank here freely, provided it does not ask for financing tied to a named project."
             ],
             "defined_in_clause": null,
             "source": "bank_green",
@@ -94,7 +94,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains the furthest downstream activity named. Together with exploration and production it sets how far this commitment reaches.",
             "lets_through": [
-              "This wording lets through transport, storage, refining and processing of the same oil. Those are named separately in the passage below this one, and only where the infrastructure is exclusively dedicated to it."
+              "This wording lets through transport, storage, refining and processing of the same oil. The sentence names exploration, production and trading only."
             ],
             "defined_in_clause": null,
             "source": "bank_green",
@@ -254,48 +254,11 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": false
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The exclusion is absolute within its scope, so everything depends on the scope, and the word 'dedicated' is the whole of it.",
-          "text": "Read on its own, this sentence is absolute. No threshold, no percentage, no exception. The bank will not finance exploring, producing or trading Arctic oil, Amazon oil, oil sands or extra heavy oil.\n\nThen read the first words of the section. It applies to dedicated deals: financing raised for one named activity.\n\nMost oil and gas financing is not like that. It is a credit line, a loan or a bond for the whole company. None of it is tied to a barrel. So none of it triggers this exclusion, however much of the borrower's business is oil sands."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This exclusion catches a project, not a company.\n\nIf someone asks Société Générale to finance a named Arctic field, Amazon block or oil sands project, the answer is no. There is no argument about percentages. That is worth having.\n\nBut project financing is a shrinking part of how oil is funded, and the largest producers use it least. A major oil company does not need financing tied to one field. A small company developing one Arctic field does, and that is exactly who this stops.\n\nSo the deal ban binds the smallest operators."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This policy draws the Arctic line tightly.\n\nOn land, the Arctic starts at the Arctic Circle, at an exact latitude. At sea, the policy uses the Polar Code, an international shipping standard.\n\nThe cost of that precision is that a line on a map is not where the oil is. Some oil regions with an Arctic climate, Arctic wildlife and Arctic infrastructure lie south of the line. They fall outside a policy named after them. Definitions based on nature or infrastructure reach further.\n\nA precise definition is not always a strong one. This is a good example of the difference."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Cover all financing, not just dedicated deals",
-          "content": "Most oil and gas financing goes to whole companies. A rule that only reaches dedicated deals leaves the main route open."
-        },
-        {
-          "title": "Define the Arctic by more than a line",
-          "content": "The Arctic Circle is exact on a map but says little about nature. Oil regions with Arctic conditions sit south of it."
-        },
-        {
-          "title": "Cover the whole chain",
-          "content": "Exploring, producing and trading are covered. Transport, storage and processing of the same oil should be covered too."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this exclusion is absolute within its scope, so the scope is the whole argument.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating.",
-      "strength_reason": "Dedicated financing of that production is blocked; transport, storage and refining of the same oil are left out.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "A loan for a named Arctic, Amazon or oil sands project is refused. The producers can still borrow as companies, and moving and refining the same oil is not named.",
       "how_it_compares": {
         "text": "At company level, Société Générale has a 30% threshold on group revenue. A producer under 30% that borrows as a whole company falls outside both rules. A separate rule covers transport, storage and processing only where the asset serves these oils alone.",
         "links": [
@@ -308,7 +271,33 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's Restriction on Infrastructure for Unconventional Oil"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing labelled for finding, producing or trading Arctic oil, oil from the Ecuadorian Amazon, oil sands or other extra heavy oil",
+      "gaps": [
+        {
+          "title": "Loans to producers as companies",
+          "text": "The commitment covers “dedicated transactions” only: financing raised for a named activity. A producer can take a general loan or issue a bond and spend it on Arctic oil or oil sands.",
+          "phrase_refs": [
+            "dedicated"
+          ]
+        },
+        {
+          "title": "Moving, storing and refining the oil",
+          "text": "The sentence stops at trading. Transporting, storing, refining and processing the same oil are not named in it.",
+          "phrase_refs": [
+            "trading"
+          ]
+        },
+        {
+          "title": "Oil fields just south of the line",
+          "text": "On land, the Arctic starts at the Arctic Circle. Oil regions that are Arctic in climate but sit just south of it are outside the commitment.",
+          "phrase_refs": [
+            "north-of"
+          ]
+        }
+      ],
+      "in_practice": "The commitment names four kinds of oil. Arctic oil comes from the far north. Oil sands are sand soaked with thick bitumen, mined or heated out of the ground. Extra heavy oil is oil too thick to flow easily. The fourth is oil from the Amazon in Ecuador.\n\nTake a company that asks Société Générale for a loan to develop a named oil sands project. The answer is no. The same goes for exploring, producing or trading any of the four.\n\nNow take the same company asking for a general loan to the company as a whole, which does not say what it pays for. Or it issues a bond. Neither names the project, so the commitment does not apply. The company can spend the financing on oil sands.\n\nThen follow the oil. Once it is out of the ground and sold, the pipeline that carries it and the refinery that processes it are not named here.\n\nThe places are drawn narrowly too. On land, the Arctic begins at the Arctic Circle, so a field just south of it is not Arctic oil. And the Amazon named is Ecuador's alone. Amazon oil from other countries is not in the sentence.\n\nWhat is stopped is financing that names one of these activities. The companies behind them can still be financed as companies.",
+      "gets_right": "It covers trading as well as finding and producing, and it sets no threshold. Financing labelled for any of these oils is refused, however small the amount of oil."
     }
   },
   "evidence": {
@@ -322,7 +311,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

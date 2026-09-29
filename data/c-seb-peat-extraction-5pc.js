@@ -276,44 +276,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "The commitment is strong and the omission is the story; the page has to carry both.",
-          "text": "On the wording, this sentence leaves nothing open.\n\nIt uses 5% of revenue from digging peat to burn. It covers the client as a whole, new and existing, including arranging bonds. There is no exception of any kind. Under our rating, that scores zero.\n\nPeat matters more than its obscurity suggests. Burning it releases more CO2 per unit of energy than coal. And peatlands are among the densest stores of carbon on land."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This rule restricts peat extraction at the same threshold as coal mining.\n\nFor a Nordic and Baltic bank, peat is the right fuel to address. Finland and Estonia are the main users in the EU. The companies that burn it are exactly the kind of regional utility a bank like SEB might otherwise finance without a second thought.\n\nSo this is a rule aimed at the bank's own backyard."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The only criticism available is the one that applies to every rule in this policy: the verb.\n\nSEB “avoids” these clients. The policy never says what avoiding means. And Appendix B sends exceptions to “established SEB Group internal processes”, with no committee named. That is as true here as anywhere else.\n\nBeyond that, there is nothing in the sentence to hold against it. The threshold is low. There is no exception. It is not limited to new business or to dedicated financing.\n\nSo this is a clean rule with a soft verb. Fix the verb, and there would be little left to criticise."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options. This commitment has no synthesis record at all — scope, thresholds and rating inputs are all Bank.Green's reading of the policy text.",
-      "what_needs_to_change": [
-        {
-          "title": "Nothing, on the wording",
-          "content": "This sentence has no exception and no limit to new business."
-        },
-        {
-          "title": "Say whether existing clients are exited",
-          "content": "The rule says SEB avoids these relationships, not that it ends them. Say which, for clients it already has."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, clients SEB already has are not told whether they will be exited.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "No exception, no restriction to new business, no project-financing limit. A 5% line and nothing else.",
+      "strength_reason": "It does what it sounds like. What gets through is at the edges: large energy groups where peat is a small share, and groups that borrow through a company with little peat.",
       "how_it_compares": {
         "text": "SEB restricts peat extraction on the same terms as coal mining: 5% of revenue, for new and existing clients.",
         "links": [
@@ -322,7 +289,25 @@ window.WATCHTOWER_CASE = {
             "title": "SEB's 5% Threshold on Coal Mining"
           }
         ]
-      }
+      },
+      "actual_reading": "it does not do business with companies earning more than 5% of their revenue from digging peat to burn, whether they are new clients or existing ones",
+      "gaps": [
+        {
+          "title": "Large energy groups where peat is small",
+          "phrase_refs": [
+            "peat5"
+          ],
+          "text": "The test is a share of revenue. Where peat digging sits inside a large utility with power, heat and network businesses, it can stay under 5%."
+        },
+        {
+          "title": "A company in the group below the line",
+          "phrase_refs": [
+            "company-legal-entity"
+          ],
+          "text": "SEB applies the 5% test to the one legal entity it deals with, not to its group. A company in the group with little peat revenue can borrow, and the financing can move within the group."
+        }
+      ],
+      "in_practice": "Peat is partly rotted plant matter dug from bogs and burned for heat and power, mainly in Finland, Estonia and Ireland. For a company that earns a real share of its revenue from digging it up, SEB avoids doing business with it. That covers the whole relationship, and clients SEB already has as well as new ones. The sentence itself names no exception and no date. That is close to what a reader would expect.\n\nThe line is low. A company only has to earn more than 5% of its revenue from peat extraction to be caught.\n\nWhat gets through is at the edges. In the Nordic and Baltic countries, peat digging often sits inside a larger energy group with power, heating and network businesses. If peat is under 5% of that group's revenue, SEB can bank it.\n\nThe policy also defines a “Company” as one legal entity, not a group. So a group can borrow through a company with little peat revenue, and move the financing inside the group. Whether that works depends on how the group is organised.\n\nNone of this is hidden. The line and the definition are both written into the policy."
     }
   },
   "evidence": {
@@ -336,7 +321,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Policy text, document 25537 section 9 — NOT in synthesis run 181",
     "reading": "drafted"

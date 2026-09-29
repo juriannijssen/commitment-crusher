@@ -73,7 +73,7 @@ window.WATCHTOWER_CASE = {
             "means": "This explains what is being reduced. The policy applies the commitment to financing, asset management and investment portfolios, and then does not say how exposure across those three is counted.",
             "lets_through": [
               "This wording lets through any measure the bank prefers at the time. Drawn balances, committed limits, underwriting share and assets under management are different numbers, and a promise to reduce “exposure” to zero can be met on one of them while another is untouched.",
-              "It also lets through capital markets work in particular. Watchtower records capital markets as in scope for this commitment, but arranging a bond leaves no balance behind — so a bank can reach zero exposure while still bringing coal issuers to market."
+              "It also lets through capital markets work. Arranging a bond leaves no balance behind, so a bank can reach zero exposure while still bringing coal companies' bonds to market."
             ],
             "defined_in_clause": null,
             "bank_definition": null,
@@ -221,48 +221,30 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The later date covers the coal that matters and sits beyond any horizon the policy commits to keeping.",
-          "text": "Ten extra years, for the part of the world with most of the coal.\n\nMost working coal plants are outside the EU and the OECD. So are almost all the plants still being built. That is the half of the commitment that runs to 2040.\n\nAnd what is being reduced is never defined. The commitment covers financing, asset management and investments. Loans drawn, credit limits, bonds arranged and assets managed are four different numbers. A promise to reach zero “exposure” can be met on one while another is untouched. Arranging a bond, for example, leaves nothing on the bank's books. So a bank can reach zero and still help coal companies raise financing.\n\nThe policy also says it may change over time. 2040 is far enough away that this sentence need not survive."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Read the two dates together, and the schedule is sorted by place, not by emissions.\n\nA utility running coal plants in Poland is on the 2030 clock. The same utility running the same plants in Indonesia, Vietnam or India is on the 2040 clock. Nothing in the wording looks at how much coal is burned, how old the plants are, or what alternatives exist. It only asks which side of a membership line the plants are on.\n\nThere is a real argument for this, but the policy does not make it. Moving away from coal is harder and costlier in poorer countries. A bank that pulls out on a rich-country timetable can do harm. If that is the bank's reason, the policy should say so. As published, the split looks like convenience, not fairness."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The 2040 date is fourteen years away. It also covers the largest share of coal.\n\nCompare the rule on companies building new coal, which starts straight away. Or the one on coal miners above 20% of group revenue, straight away, for new and existing business. Both apply now. This one applies in fourteen years.\n\nThat matters because the dates are the policy's only answer to existing financing. Every client rule except the mining one covers new products and services only. So for an existing client, outside the OECD and under the thresholds, no other commitment applies. And this date is fourteen years away."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Bring 2040 forward, or explain it",
-          "content": "The later date covers most of the world's coal. A ten-year split needs a published reason."
-        },
-        {
-          "title": "Define exposure once, for both dates",
-          "content": "The commitment covers financing, asset management and investments. It never says how any of them is measured."
-        },
-        {
-          "title": "Say whether arranging bonds counts",
-          "content": "Arranging a bond leaves nothing on the bank's books. If helping coal companies raise financing still counts, the policy should say so."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the far date does the real work, and the near one gets the headline.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A real end date, set two policy revisions away, and ten more years for the coal that matters most."
+      "strength_reason": "The date is real, but it is far away and covers most of the world's coal. What counts as reaching zero is left open, so the bank could get there while still arranging bonds.",
+      "actual_reading": "it will bring its exposure to companies with coal mines or coal plants outside the EU and OECD to zero by 2040, counted in a way the policy does not set out",
+      "gaps": [
+        {
+          "title": "Ten more years for most of the coal",
+          "phrase_refs": [
+            "row"
+          ],
+          "text": "Most thermal coal capacity in use, and almost all that is still being built, is outside the EU and OECD. That coal has until 2040."
+        },
+        {
+          "title": "Zero, but counted how?",
+          "phrase_refs": [
+            "exposure"
+          ],
+          "text": "The policy does not say how exposure is counted. Loans drawn, credit limits, bonds arranged and funds managed are different numbers. Arranging a bond leaves nothing on the bank's books."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. This commitment covers companies with thermal coal mines or plants outside the EU and OECD. Société Générale says it will bring its exposure to them down to zero by 2040.\n\nTake a power company running coal plants in Indonesia. It is on the 2040 date. Nothing in the wording looks at how old its plants are or how much coal they burn. What matters is which side of the EU and OECD line they are on.\n\nThen there is the word exposure. The commitment covers the bank's financing, the funds it manages and its own investments. But it does not say how exposure across those three is counted. A loan the company has drawn is one number. A credit limit it has not used is another. The bank could reach zero on one measure while another is untouched.\n\nArranging a bond is the clearest case. The bank helps the company sell bonds to investors, and the bonds leave nothing on the bank's books. So Société Générale could report zero exposure in 2040 and still be helping coal companies raise financing.\n\nAnd 2040 is a long way off. There are no steps before it, so the years in between can pass without anything to check.",
+      "gets_right": "It sets an end point of zero, with a date, for coal anywhere in the world. And it reaches the funds Société Générale manages and its own investments, not only its lending."
     }
   },
   "evidence": {
@@ -276,7 +258,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 306, document 28051",
     "reading": "drafted"

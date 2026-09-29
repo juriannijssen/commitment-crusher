@@ -72,7 +72,7 @@ window.WATCHTOWER_CASE = {
             "means": "This explains what financing this commitment covers: dedicated financing only. Société Générale says no to a request raised for a named activity, where it is clear what the financing is used for. It does not say no to the company. The same borrower can come back for a general loan or a bond issue, and this commitment has nothing to say about it.",
             "lets_through": [
               "The word “dedicated” lets through general corporate financing. A miner borrowing at group level is not asking for a dedicated transaction, so this commitment never applies.",
-              "It also lets through everything the client-level rules let through. Only the 50% threshold decides whether the bank will deal with a company at all, and it applies to new clients only."
+              "It also lets through the company itself. A mining company can take general financing from the bank, and this sentence does not apply."
             ],
             "defined_in_clause": null,
             "bank_definition": null,
@@ -213,44 +213,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The sentence itself is unqualified; the money it covers is not. That gap is the whole finding.",
-          "text": "The ban on the activity is clean. The financing it reaches is narrow.\n\n“Metallurgical coal extraction activities”, the mining of coal for steel-making, has no threshold and no qualifier. There is nothing in the sentence to argue about.\n\nThe limit is in the words at the front. It applies to “dedicated financial transactions, products and services”. That means financing raised for one named activity, where everyone knows what it pays for.\n\nMost mining is not financed that way. A mining company that borrows as a whole company, draws on a credit line or issues a bond is not asking for a dedicated deal. So this exclusion never applies, however much coal that company mines. The activity is excluded, but the companies doing it are not."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Within its scope, this is the cleanest sentence in the mining policy.\n\nThere is no revenue test, no majority test and no vague word. The bank does not ask how much of a project is coal mining for steel. It does not ask whether coal is the main purpose, or how big a share of the client's business it is. If that is what the financing is for, the answer is no.\n\nCompare the sentence three lines further down. It turns on whether infrastructure is “primarily linked to” this coal, words the policy never defines. The bank could write without a qualifier here, and chose to add one there.\n\nThe criticism is about which kind of financing it reaches, not how it is written."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This commitment and the 50% client test are the bank's whole position on coal for steel-making. They should be read together.\n\nThis one covers any dedicated deal for mining this coal, for any client, new or existing. The client test covers any financing, but only for new clients earning more than half their revenue from it.\n\nNow take an existing client: a large mining group, earning 20% of its revenue from this coal and borrowing as a whole company. The client test misses it, because it is not new and is under the line. This exclusion misses it too, because the loan is not a dedicated deal.\n\nThat is not a rare case. It describes most of the world's production of this coal, and how it is financed."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so unlike the oil and gas pages there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover all financing, not just dedicated deals",
-          "content": "Most mining is financed at company level. An exclusion that only reaches financing for a named purpose leaves the main route open."
-        },
-        {
-          "title": "Add a client test for existing clients",
-          "content": "This rule covers dedicated deals only. A client test would reach the companies already mining this coal."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the activity is excluded, but the companies doing it are not.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Dedicated financing of met coal extraction is genuinely blocked; group-level borrowing by the same miner is not.",
+      "strength_reason": "It stops only financing set aside for mining this coal. A miner that borrows for the company as a whole can spend that loan on the same mines.",
       "how_it_compares": {
         "text": "Société Générale's client rule on this coal covers new clients above 50% of revenue.",
         "links": [
@@ -259,7 +226,19 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's 50% Threshold on Metallurgical Coal"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing set aside for mining coal for steel-making, such as a loan or service named for one mine",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the mine",
+          "phrase_refs": [
+            "dedicated"
+          ],
+          "text": "The commitment covers dedicated financing only: financing raised for a named activity. A miner that borrows for the company as a whole, or issues a bond, is not asking for dedicated financing."
+        }
+      ],
+      "in_practice": "Metallurgical coal is the coal used to make steel, rather than burned for power. This commitment says Société Générale will not provide dedicated financing for mining it.\n\nDedicated financing is financing raised for a named activity, where it is clear what it pays for. A loan to open one particular mine is an example. If a miner asks for that, Société Générale says no.\n\nNow take the same miner asking for a general loan to the company. General corporate financing is a loan to the company as a whole, which does not say what it pays for. The commitment does not apply to it. The miner can spend the loan on anything, including the mine it was refused financing for.\n\nThe same goes for a credit line the company draws on when it needs to, or a bond it sells to investors. Neither is dedicated to the mine, so neither is covered.\n\nLarge mining companies often pay for their mines out of general borrowing rather than a loan named for one mine. So this commitment stops the most visible kind of deal. It leaves open every other way Société Générale can lend to the company doing the mining.",
+      "gets_right": "The activity is named with no threshold and no qualifier. For financing set aside for mining coal for steel-making, the answer is no, whoever the client is."
     }
   },
   "evidence": {
@@ -273,7 +252,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 196, document 28052",
     "reading": "drafted"

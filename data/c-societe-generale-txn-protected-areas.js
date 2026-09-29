@@ -291,48 +291,38 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": false
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "Naming Alliance for Zero Extinction sites is genuinely ahead of the sector, and a page that opens by granting that is much harder to dismiss when it goes on to the categories the line leaves out.",
-          "text": "This is a better protected-areas rule than most, because of the fourth item on its list.\n\nAlmost every bank policy names UNESCO World Heritage Sites. Many add Ramsar wetlands. Very few name Alliance for Zero Extinction sites: places holding the last known population of a species facing extinction. Naming them protects places for what lives there, not for their official status.\n\nThe IUCN reference is also specific. IUCN is the global body that ranks protected areas. “Nationally protected area” can mean whatever a country says. Tying it to a published ranking makes the promise checkable.\n\nThen comes the cut. The rule covers IUCN categories I to IV and stops. Categories V and VI are left out, and those are where drilling is most often legal. There, the policy only asks for proof that the project is legally permitted. A country's own permit meets that test."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Three things fall outside this exclusion. Together, they are most of what happens to a protected area when oil and gas arrives.\n\nThe first is everything that is not drilling or production. The pipeline across the park, the road cut through it, the plant on its edge. A protected area can be crossed and serviced without the rule applying.\n\nThe second is the boundary. The test is whether the operation is inside it. Wells can be drilled sideways for kilometres, so a well outside the area can produce from beneath it. Water use, spills and flaring also cross the line.\n\nThe third is the category cut. IUCN categories V and VI are outside. In many countries, they are the only protected land where drilling is legal at all.\n\nThere, the only test is that the country allows it."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The list here is broad, and the boundary test is narrow.\n\nOn the list, Société Générale names four kinds of protected place. Alliance for Zero Extinction sites are among them. Their presence suggests someone asked conservation experts.\n\nOn the boundary, the test is “located within”. That leaves a problem with sideways drilling and harm that travels. A buffer zone around the boundary would reach cases this one does not. So would covering operations that seriously harm an area from outside.\n\nOn the categories, the rule covers I to IV, not all six."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Cover the infrastructure, not only the drilling",
-          "content": "Pipelines, roads and plants are not drilling. A protected area can be crossed and serviced without this rule applying."
-        },
-        {
-          "title": "Test the harm, not just the location",
-          "content": "A well outside a boundary can produce from beneath it. Water use, spills and flaring cross boundaries that operations do not."
-        },
-        {
-          "title": "Cover IUCN categories V and VI",
-          "content": "These categories hold a large share of protected land, and drilling is most often legal there. What applies instead is only a permit check."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the places most at risk from drilling are the ones this rule does not reach.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating.",
-      "strength_reason": "Dedicated upstream inside a protected area is blocked. Pipelines through it, and wells drilled underneath it, are not."
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "Drilling inside four kinds of protected place cannot get a loan for that project. Pipelines through them, wells reaching under them, and the less strict categories are left to a permit check.",
+      "actual_reading": "it will not give financing labelled for oil and gas production built or expanded inside a World Heritage Site, a Ramsar wetland, a protected area in IUCN categories I to IV, or an Alliance for Zero Extinction site",
+      "gaps": [
+        {
+          "title": "Pipelines, roads and plants",
+          "text": "The commitment covers upstream work: finding and producing oil and gas. Pipelines, roads, terminals and processing plants are not upstream, so they can cross a protected area.",
+          "phrase_refs": [
+            "upstream-within"
+          ]
+        },
+        {
+          "title": "Wells drilled from outside the boundary",
+          "text": "The operation must be located within the area. A rig just outside the boundary can drill sideways for kilometres and produce from underneath it.",
+          "phrase_refs": [
+            "upstream-within"
+          ]
+        },
+        {
+          "title": "Categories V and VI, and a permit",
+          "text": "Only IUCN categories I to IV count. In categories V and VI, and in areas with no category, the bank asks only for evidence the project is legally permitted.",
+          "phrase_refs": [
+            "iucn",
+            "legally-permitted"
+          ]
+        }
+      ],
+      "in_practice": "The commitment names four kinds of protected place. World Heritage Sites and Ramsar wetlands are on international lists. Alliance for Zero Extinction sites hold the last home of a threatened species. National protected areas count when they fall in categories I to IV of the IUCN, the international nature body that ranks them.\n\nTake a company that wants to drill a new field inside one of these places. It asks Société Générale for a loan for that field. The answer is no.\n\nNow take the pipeline that would carry oil from a field outside the area, straight across it. A pipeline is not upstream, so the commitment does not apply. Nor does it apply to a road or a processing plant inside the boundary.\n\nThen take a rig placed just outside the boundary. Wells can be drilled sideways for several kilometres, under the protected area. The operation is where the rig stands.\n\nProtected areas in IUCN categories V and VI are left out, and so are areas with no category. There the bank asks for evidence the project is legally permitted and fits any management plan. Where a government has opened an area to drilling, its permit meets that test.\n\nThe commitment also covers financing raised for a named project only. The company can still take a general loan to the company as a whole, which does not say what it pays for.",
+      "gets_right": "It names four recognised lists of protected places instead of leaving the choice to the bank. Inside them, new or expanded oil and gas production cannot get a loan that names it."
     }
   },
   "evidence": {
@@ -346,7 +336,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

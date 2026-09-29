@@ -269,44 +269,42 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "text": "This is the one number in Intesa Sanpaolo's coal rules, and two things blunt it.\n\nThe first is what is being tested. A company has to document a limit, not meet one. A utility that is almost entirely coal-fired today passes by publishing a 2030 figure.\n\nThe second is the figure itself. 35% of capacity may still be coal in 2030, and the test is capacity rather than output. A company can hold its coal capacity under the line and still run those plants hard.\n\nFailing the test caps general purpose lending rather than ending it. The document then promises progressive disengagement from what is already there, without saying by when.",
-          "recommended": true,
-          "recommended_because": "The number looks like the strict part of the policy, and both the thing it measures and the date it measures at are softer than they appear."
-        },
-        {
-          "angle": "who_it_catches",
-          "text": "Who does this commitment stop, and when?\n\nIt stops a power company that has not documented a 2030 coal capacity limit from increasing its general purpose lending. That has applied since July 2021.\n\nIt catches companies that publish nothing. Documenting the limit is enough to pass, whatever the company's coal share is today.\n\nIt does not stop lending to a company sitting at exactly 35% coal capacity in 2030.\n\nIt does not stop the lending a failing company already has, which is capped rather than withdrawn.\n\nAnd it does not reach lending with a stated purpose, which the document treats as a separate category.",
-          "recommended": false,
-          "recommended_because": null
-        },
-        {
-          "angle": "what_it_gets_right",
-          "text": "The rule puts a number in writing. A documented maximum of 35% of capacity from coal by 2030 can be checked against what a company publishes.\n\nIt is applied to the company as a whole, and to existing clients as well as new ones.\n\nIt also stacks with the other two tests in the same sentence: failing any one of them caps the borrowing.\n\nWhat weakens it is the test itself. Documentation is not performance, and capacity is not generation. 35% of capacity may still be coal at the end of the decade.",
-          "recommended": false,
-          "recommended_because": null
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "This rule puts a number on coal power, and two things blunt it.\n\nThe first is what is tested. A company has to document a limit, not meet one. A utility that is almost entirely coal-fired today passes by publishing a 2030 figure.\n\nThe second is the figure. 35% of capacity may still be coal in 2030, and the test is capacity rather than output. A company can hold its coal capacity under the line and still run those plants hard.\n\nFailing the test caps general purpose lending rather than ending it. The document then promises progressive disengagement from what is already there, without saying by when.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Test performance, not documentation",
-          "content": "A company passes by documenting a 2030 limit. What it should have to show is the coal share coming down."
-        },
-        {
-          "title": "Measure generation as well as capacity",
-          "content": "A capacity limit says nothing about how hard the remaining plants run. Output and emissions are what reach the atmosphere."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a company can be mostly coal today and still borrow, as long as the paperwork exists.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A company almost entirely coal-fired today passes by producing a plan, the test counts capacity rather than generation, and 35% may still be coal in 2030."
+      "strength_reason": "A company passes by writing down a 2030 limit, not by cutting coal. A company that fails keeps every loan it has, capped rather than withdrawn.",
+      "actual_reading": "it will not raise general purpose lending to coal power companies that have not written down a plan to bring coal below 35% of their capacity by 2030",
+      "gaps": [
+        {
+          "title": "A written limit is enough",
+          "phrase_refs": [
+            "do-not-document"
+          ],
+          "text": "The test is whether the company has documented a limit, not whether it meets one. A company that is almost all coal today passes by publishing a 2030 figure."
+        },
+        {
+          "title": "Failing costs little",
+          "phrase_refs": [
+            "not-increase",
+            "progressive-disengagement"
+          ],
+          "text": "A company that fails keeps all the lending it has. It can replace loans as they are repaid. The bank promises to step back over time, with no date."
+        },
+        {
+          "title": "Plant size, not coal burned",
+          "phrase_refs": [
+            "thirty-five"
+          ],
+          "text": "The limit counts how big the coal plants are, not how hard they run. A company can stay under 35% and run its coal plants flat out."
+        }
+      ],
+      "in_practice": "Installed capacity is how much electricity a company's plants can make at full power. The test asks whether a power company has documented a limit. That limit is no more than 35% of its capacity from coal by 2030.\n\nTake a utility that gets 90% of its capacity from coal today. If it publishes a plan to be under 35% by 2030, it passes. Nothing checks that it is on the way there. The bank can lend it more for general purposes. That means loans to the company as a whole, which do not say what they pay for.\n\nNow take a company that publishes no such limit. It fails the test. But failing only means its general purpose lending cannot go up. It keeps what it has, and can replace a loan when it is repaid. The bank promises to step back from that lending over time, with no date.\n\nThe figure itself leaves room. Capacity is not the same as the coal actually burned. A company can hold its coal plants under 35% of its capacity and still run them hard. And a company that meets the limit can still have 35% of its capacity in coal in 2030.\n\nLoans tied to a named project, such as one power plant, are outside this commitment altogether."
+    },
+    "featured": {
+      "rank": 4,
+      "kind": "a cap, not a stop",
+      "because": "A limit on coal power exposure that reads like an exit; five gaps made plain."
     }
   },
   "evidence": {
@@ -364,7 +362,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "utilities that are still mining and burning lignite"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 262, document 8201",
     "reading": "drafted"

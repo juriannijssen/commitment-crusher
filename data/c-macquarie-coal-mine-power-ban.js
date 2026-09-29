@@ -311,48 +311,38 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The rule was adopted to deliver the run-off, and half of it was withdrawn a month before the run-off's own deadline.",
-          "text": "The report sets out the rule and both changes in one passage. So this is the bank's own account.\n\nIn 2021, Macquarie said it would not fund buying, building or expanding a coal mine or coal power station. That meant its own loans and investments, known as its balance sheet. It covered coal for power and coal for steel. In April 2024, it allowed advice on steel-making coal mines. In November 2024, a month before its coal deadline, it allowed loans and investments for those mines too.\n\nThe November change goes further than the rule it cuts into. The 2021 rule covered buying, building and expanding. The reopening adds running a mine.\n\nMacquarie gives a reason: steel-making has few alternatives to coal. That can be argued. But it does not explain the extra word. And the rule meant to deliver the coal run-off no longer covers steel-making coal at all."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Macquarie disclosed both changes, gave the month of each, and said why. That is rare, and it deserves credit.\n\nMost weakening we find is hidden. A word is added between versions, or a threshold moves, and nothing says so. Here the bank printed the old rule and both changes side by side, in a public report.\n\nThe reason given is also a real position. Coal for steel-making has no large-scale replacement today. A bank that says so, and explains why it now treats the two kinds of coal differently, gives readers something to argue with.\n\nDisclosure does not make the effect smaller. But it means the bank changed its position in public. That is what makes it possible to hold it to anything."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "As it stands now, this rule covers one thing. It covers new financing from Macquarie's own loans and investments, for buying, building or expanding a thermal coal mine or coal power station. Thermal coal is the coal burned for power.\n\nIt does not cover general loans to a coal company, because the test is the purpose of the deal, not the client. It does not cover financing already agreed. It does not cover arranging or underwriting deals for others. And since November 2024, it does not cover steel-making coal at all.\n\nWhat is left is Macquarie's own financing for thermal coal mines and power stations. That restriction is real. So the rule is doing less than it seems."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so nothing sourced sits underneath these options — they are entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Restate the rule as it now stands",
-          "content": "The report prints the 2021 rule, then two decisions that undo half of it. One current sentence would replace three that must be read together."
-        },
-        {
-          "title": "Explain why running a mine was added",
-          "content": "The November 2024 change covers running a mine, which the old rule never mentioned. The report gives no reason for that."
-        },
-        {
-          "title": "Say who decides what Macquarie will finance",
-          "content": "Both changes were internal decisions, disclosed afterwards. The report should say who makes them, and whether they are announced at the time."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule is whatever Macquarie was willing to finance on the day of the deal.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Balance-sheet lending to new coal mines and plants stops. Advisory, arranging and an unearmarked revolver do not."
+      "strength_reason": "It stops Macquarie's own loans and investments earmarked for thermal coal mines and power stations. Unearmarked loans, advice, arranging deals, and now steel-making coal all go through.",
+      "actual_reading": "it will not make new loans or investments from its own balance sheet that are earmarked for buying, building or expanding a thermal coal mine or coal power station",
+      "gaps": [
+        {
+          "title": "Loans with no stated purpose",
+          "phrase_refs": [
+            "purpose"
+          ],
+          "text": "The test is what a deal is for, not who the borrower is. A general loan to a coal miner, such as a working capital facility, is not tied to a mine."
+        },
+        {
+          "title": "Advising and arranging",
+          "phrase_refs": [
+            "newbs"
+          ],
+          "text": "Only new lending and investing from Macquarie's own balance sheet counts. Advising on a coal deal, or arranging the debt for other lenders, is outside it. Loans already agreed stay."
+        },
+        {
+          "title": "Steel-making coal brought back",
+          "phrase_refs": [
+            "appetite1",
+            "operation"
+          ],
+          "text": "In 2024 Macquarie reopened metallurgical coal, the coal used to make steel. Advice came back in April, and its own loans and investments in November."
+        }
+      ],
+      "in_practice": "Thermal coal is burned in power stations. Metallurgical coal is used to make steel. When Macquarie first set this rule, it covered both.\n\nMacquarie's balance sheet holds its own loans and investments. This commitment is about those. Take a company that wants to build a new thermal coal mine. If it asks Macquarie for a loan earmarked for the mine, Macquarie will say no.\n\nNow take the same company asking for a working capital facility: a loan for day-to-day running costs, with no named purpose. The test is what the deal is for, and this deal is not for a mine. The commitment does not apply. The company can spend the facility on anything once it has it.\n\nMacquarie can also still earn fees from the same mine. It can advise the buyer, arrange the debt from other lenders, or take the company to the bond market. None of that is balance sheet activity.\n\nThen there is steel-making coal. In April 2024 Macquarie brought advice on metallurgical coal mines back into its appetite, its internal setting for what business it takes on. In November 2024 it allowed its own loans and investments again. That covers buying, running, developing or expanding such a mine.\n\nSo what is left is new loans and investments from Macquarie's own balance sheet, earmarked for a thermal coal mine or coal power station.",
+      "gets_right": "Macquarie published both 2024 changes, with the month of each, in the same report as the original rule. A reader can see what was reopened and when."
     }
   },
   "evidence": {
@@ -366,7 +356,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 204, document 34887",
     "reading": "drafted"

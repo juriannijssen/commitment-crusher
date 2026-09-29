@@ -234,48 +234,35 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "ING closed the corporate-lending gap on purpose and said so, which is unusual enough that conceding it first makes the rest of the page hard to dismiss.",
-          "text": "ING's commitment covers project financing: a loan for one named project. It also covers general corporate financing, meaning loans to the company as a whole, and bonds too. That is where most oil and gas financing goes.\n\nThe problem is not what kind of financing it covers. It is which companies.\n\nING only stops financing when two things are both true. The company must be “pure-play”: it does nothing but produce oil and gas. And it must keep developing new fields. Owning a single pipeline takes a company out of the first test. Drilling more wells in an existing field avoids the second.\n\nING covered every kind of financing, then aimed it at very few companies."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This commitment covers every kind of financing, not only project financing, a loan for one named project. ING also covers general corporate financing, meaning loans to the company as a whole, and bonds.\n\nBut it only applies to very few companies. Two things must both be true. The company must be “pure-play”, doing nothing but produce oil and gas. And it must keep developing new fields. If either is not true, ING can keep financing it.\n\nThe first test is about how a company is organised, not about oil. Owning a terminal or a pipeline is enough to fall outside it. The second test depends on a formal step: a new field needs its own licence. Drilling more wells in an existing field, or buying another company's production, adds oil without opening a new field.\n\nNeither test looks at how much oil a company produces."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this commitment actually stop?\n\nIt stops a company that does only one thing: find and produce oil and gas, and open new fields to do it. It has no terminal, no pipeline and no other business. That company is caught.\n\nIt does not stop a producer that also owns pipelines or terminals. The largest oil companies all do. It does not stop a company that grows by drilling more wells in fields it already has. It does not stop one that buys oil production instead of developing it.\n\nSo it catches small, focused companies and lets the large ones through. There is also an easy way out. A company can buy a share in a pipeline, and the commitment no longer applies to it. That changes nothing about the oil it produces."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower's stated weakness is carried as a phrase; the verdict prose around it is ours.",
-      "what_needs_to_change": [
-        {
-          "title": "Test the activity, not the company",
-          "content": "Stop financing oil and gas production for every producer, whatever else it owns. Remove the pure-play test rather than redefine it."
-        },
-        {
-          "title": "Count new production, not just new fields",
-          "content": "A new field is a formal step; new production is what adds emissions. Adding ten years of output to an existing field should count."
-        },
-        {
-          "title": "Say what happens to existing financing",
-          "content": "This commitment only covers new financing. It should say whether existing loans to these companies are renewed when they end."
-        }
-      ],
-      "what_needs_to_change_closing": "Until this changes, this commitment will keep catching the companies with the least to change and releasing those with the most.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "It catches only producers that do nothing but produce oil and gas. Anything with a pipeline interest, and every major, is not covered by this commitment."
+      "strength_reason": "It aims at very few companies. Owning a single pipeline, or drilling more wells in a field that already produces, is enough to fall outside it.",
+      "actual_reading": "it has stopped new financing to companies that do nothing but produce oil and gas and keep opening new fields",
+      "gaps": [
+        {
+          "title": "Any producer that owns more than wells",
+          "phrase_refs": [
+            "pure-play"
+          ],
+          "text": "“Pure-play” means the company works in one part of the oil and gas chain only. A producer that also owns a pipeline, a terminal or a refinery is not pure-play, however much it drills. Nor is any major oil company."
+        },
+        {
+          "title": "Growth inside existing fields",
+          "phrase_refs": [
+            "new-fields"
+          ],
+          "text": "The rule applies only to companies that keep developing new fields. New wells in a field that already produces, a second phase, or buying someone else's field add oil without opening a new one."
+        }
+      ],
+      "in_practice": "ING only stops financing when two things are both true. The company must be pure-play: it does nothing but find and produce oil and gas. And it must keep opening new fields. If either is not true, ING can keep financing it.\n\nThe first test is about how a company is organised, not about how much oil it produces. Take a producer that owns a share in a pipeline. It is no longer pure-play, and the commitment no longer applies to it. The largest oil companies all own pipelines, terminals or refineries, so none of them is caught.\n\nThe second test turns on a formal step. A new field needs its own licence. Drilling more wells in a field that already produces does not, however much oil it adds. Nor does buying another company's fields.\n\nSo the commitment catches a small, focused producer that opens new fields. It lets through the large producers, and the small ones that grow inside the fields they already have. A company can also step outside it by buying a share in a pipeline, which changes nothing about the oil it produces.\n\nAnd it covers new financing only. Loans and bonds agreed before 19 September 2024 run on.",
+      "gets_right": "It covers every kind of financing: loans for one named project, loans to the company as a whole, and bonds. For the companies it does reach, nothing is left open."
+    },
+    "featured": {
+      "rank": 6,
+      "kind": "a two-part test",
+      "because": "A promise to stop financing new fields, narrowed by 'pure-play' and 'new fields'; $789.3M found."
     }
   },
   "evidence": {
@@ -339,7 +326,7 @@ window.WATCHTOWER_CASE = {
     ]
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 105, document 4517",
     "reading": "drafted"

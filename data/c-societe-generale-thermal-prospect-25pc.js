@@ -96,7 +96,7 @@ window.WATCHTOWER_CASE = {
             "means": "This explains the threshold. More than 25% of the company's revenue has to be linked to thermal coal before the bank declines to take it on.",
             "lets_through": [
               "This wording lets through every diversified utility and trader below the line. A company can run a large coal fleet and stay under 25% if it also sells gas, renewables and network services.",
-              "It also lets through groups where the coal sits in a subsidiary. Watchtower records this test at counterparty level rather than group level."
+              "It also lets through a company whose group earns heavily from coal. The sentence measures the company's own revenue, and says nothing about its parent or its group."
             ],
             "defined_in_clause": null,
             "bank_definition": null,
@@ -269,48 +269,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "how_it_compares",
-          "recommended": true,
-          "recommended_because": "The comparison is four lines down the same list, and it needs no interpretation at all.",
-          "text": "Two numbers, in one list, four lines apart.\n\nA company that is not yet a client is refused above 25% of revenue from thermal coal. A company that is already a client is refused only above 50%.\n\nSo a utility earning 40% of its revenue from coal is refused if it walks in today. It is kept if it walked in last year. Same company, same coal. The only difference is whether the bank already earns from it.\n\nThere is a fair version of this. Staying with a client can give a bank influence over its transition. If that is the reason, the policy should say so, and set a date for the higher bar to come down. Neither is there."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "25% is easy to stay under.\n\nThe threshold is measured on revenue linked to thermal coal. For power companies, the glossary says this is “primarily” revenue from coal power. A large utility also sells gas, renewable power, grid services and energy to homes. So coal's share of its revenue falls well below 25%, long before its coal plants close.\n\nThe word “primarily” leaves the rest of the calculation open. What else counts, and how much, decides whether a company is above or below the line. The policy does not say.\n\nThe test also applies to the single company, not the group. Coal held in a subsidiary is measured against that subsidiary alone, not the group that owns it."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Which companies that are not yet clients earn more than 25% of revenue from thermal coal? Not many.\n\nMostly companies that only mine coal, power producers that burn only coal, and coal traders. Their business is coal and little else. Excluding them is real, and a bank that takes them on is making a choice.\n\nBut most of the world's coal power belongs to large utilities with many businesses. Those utilities are already banked. So they fall under the rule for existing clients, at twice the threshold, and the transition plan rule, which asks them for a document.\n\nThis rule catches the companies Société Générale was least likely to be asked to finance."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Use one number for new and existing clients",
-          "content": "25% to be refused, fifty to be dropped. The gap shows how much more coal the bank accepts from clients it already earns from."
-        },
-        {
-          "title": "Finish the revenue definition",
-          "content": "For power companies, the measure is “primarily” coal power revenue. Saying what else counts would settle cases near the line."
-        },
-        {
-          "title": "Apply the test to the whole group",
-          "content": "The policy's other client tests reach parent and holding companies. This one does not, so coal in a subsidiary is measured on its own."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the lower bar applies only to companies the bank does not yet serve.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A genuine bar on new coal-dependent clients at 25%, and nothing at all asked of the existing book.",
+      "strength_reason": "For a newcomer that lives on coal, the door is shut. But the line is easy for a mixed utility to stay under, and every company already banked is outside it.",
       "how_it_compares": {
         "text": "Some of Société Générale's other coal client rules measure the whole group, not the single company.",
         "links": [
@@ -323,7 +286,33 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's Exclusion of Thermal Coal Developers"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not take on a new client that earns more than 25% of its own revenue from thermal coal, with coal power revenue as the main measure for power companies",
+      "gaps": [
+        {
+          "title": "Companies it already banks",
+          "text": "This commitment is about companies that are not clients yet. A company Société Générale already banks is outside it, whatever share of its revenue comes from coal.",
+          "phrase_refs": [
+            "prospect"
+          ]
+        },
+        {
+          "title": "Utilities that sell more than coal",
+          "text": "The line is a share of revenue. A utility can run a large coal fleet and stay under 25% if it also sells gas, renewable power and grid services.",
+          "phrase_refs": [
+            "25pc"
+          ]
+        },
+        {
+          "title": "What counts as coal revenue",
+          "text": "For power companies, the bank looks “primarily” at revenue from coal-fired power. What else counts, and how much, is left to the bank. Near the line, that decides the answer.",
+          "phrase_refs": [
+            "primarily-evaluated"
+          ]
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned to make electricity. The commitment asks one question of a company that wants to become a client: does more than 25% of its revenue come from that coal?\n\nTake a company that only mines thermal coal, or a generator that only burns it. Its coal share is far above 25%. If it is not a client yet, Société Générale will not take it on. That covers every product and service, not only loans.\n\nNow take a large utility that owns many coal plants. It also sells gas, renewable power, grid services and energy to homes. Coal can be a big business for it and still be well under 25% of its revenue. The commitment lets it in.\n\nFor power companies, the bank measures coal revenue “primarily” on what coal-fired power earns. Revenue from moving, trading or storing coal is not what that points at. Anything else the bank adds is its own choice.\n\nThen there is timing. The test is for newcomers only. A coal-heavy company that became a client before this commitment is not asked anything by it. The commitment changes who can join, not who stays.",
+      "gets_right": "For a company that is not yet a client and earns more than 25% of its revenue from thermal coal, the answer is no. It covers every product and service, not only loans for a named project."
     }
   },
   "evidence": {
@@ -337,7 +326,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 306, document 28051",
     "reading": "drafted"

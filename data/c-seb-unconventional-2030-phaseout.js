@@ -72,7 +72,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains the deadline. What happens between now and then is not described — there is no baseline, no interim milestone and no reporting commitment.",
             "lets_through": [
-              "This wording lets through any path SEB chooses to 2030. This is the same shape as every phase-out we have reviewed: a date, an end state, and nothing in between.",
+              "This wording lets through any path SEB chooses to 2030. It sets a date and an end state, and nothing in between.",
               "What it does not leave open is scope. The sentence covers all business relationships, at 5%, for unconventional oil and gas together — wider than the restriction it replaces, which covers unconventional oil only."
             ],
             "defined_in_clause": null,
@@ -308,44 +308,29 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "Nothing else in the project combines a date, a low threshold, whole-book scope and an empty exception list.",
-          "text": "This commitment has a date, a threshold and no open exit.\n\nIt phases out all client relationships at 5% of revenue, for unconventional oil and gas together, by 2030. There is no open discretion, no transition plan route and no country exception. And this sentence explicitly closes the Baltic exception it replaces.\n\nIt is in 2030, covers every client, and has nothing hanging off it."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The usual criticism of a phase-out applies, and it is the only one available.\n\nThere is no starting figure, no steps along the way and no promise to report. No one outside the bank can tell in 2027 whether SEB is on track. Cutting steadily and doing nothing until 2029 both meet the wording.\n\nThe verb is also “phase out” in this sentence, and “avoid” everywhere else in the policy. The policy does not say whether phasing out means ending relationships, or just not renewing them. Those happen on different dates.\n\nSo a strong commitment cannot yet be checked."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This commitment grows wider on the way out, and that is worth noticing.\n\nThe client rule restricts clients above 5% of revenue from unconventional oil. This one phases out clients above 5% from unconventional oil and gas. The rule that replaces it covers more than the rule it replaces.\n\nAs the deadline gets closer, this one adds a fuel. Adding gas makes the 2030 date harder to meet, not easier. More clients must leave by 2030, not fewer. The deadline gets harder as it gets closer."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Publish a starting figure and yearly steps",
-          "content": "A 2030 exit with no starting figure cannot be checked until 2030."
-        },
-        {
-          "title": "Say what “phase out” means in practice",
-          "content": "Ending a relationship, refusing renewals and letting loans run out are different acts, with different dates."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a clear 2030 exit is one nobody can check yet.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "The scope is not left open: all business relationships, at 5%, for unconventional oil and gas, by a stated date."
+      "strength_reason": "It mostly does what it sounds like. What gets through is the time until 2030, with no steps set along the way, and groups that borrow through a company below the line.",
+      "actual_reading": "it will phase out all business with companies earning more than 5% of their revenue from unconventional oil and gas by 2030, with no steps set before then",
+      "gaps": [
+        {
+          "title": "Nothing required before 2030",
+          "phrase_refs": [
+            "by2030"
+          ],
+          "text": "The policy sets a date and nothing before it. There is no starting figure, no yearly step and no promise to report progress."
+        },
+        {
+          "title": "A company in the group below the line",
+          "phrase_refs": [
+            "company-legal-entity"
+          ],
+          "text": "SEB applies the 5% test to the one legal entity it deals with, not to its group. A subsidiary with little unconventional revenue can borrow, and the financing can move within the group."
+        }
+      ],
+      "in_practice": "By 2030, SEB will phase out every business relationship with a company earning more than 5% of its revenue from unconventional oil and gas. That means oil sands, oil shale, fracking and coalbed methane. It covers all business, not only new business, and all of those fuels together. It also ends the exception for the Baltic states. That is close to what a reader would expect.\n\nThe line is low. A company only has to earn more than 5% of its revenue from unconventional oil and gas to be caught.\n\nWhat gets through is time. The policy sets 2030 and nothing before it. There is no starting figure, no yearly step and no promise to report progress. Cutting a client's financing steadily and keeping it unchanged until late 2029 both fit the wording. No one outside SEB can tell before 2030 which is happening.\n\nA group can also borrow through a company with little unconventional revenue. The policy defines a “Company” as one legal entity, not a group. The financing can then move inside the group.\n\nNone of this is hidden. The date is written into the sentence."
     }
   },
   "evidence": {
@@ -359,7 +344,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

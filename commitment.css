@@ -1103,3 +1103,39 @@ body.cm {
 .cm-verdict-tabs { margin-bottom: 24px; flex-wrap: wrap; }
 .cm-verdict-body > p { margin: 0; }
 .cm-verdict-body > p + p { margin-top: 16px; }
+
+/* The assessment in fixed parts (§3.61). The answer on the left and the stamp on the
+   right — Jurian, 2026-09-29: "Reads more natural." The two readings sit side by side
+   on the dark ground, uncoloured: "Just the dark background is fine." */
+.cm-answer-row { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; margin-top: 32px; }
+.cm-answer-row .cm-stamp { margin-left: 0; }
+.cm-answer { margin: 0; color: var(--fg-accent); }
+.cm-reading-pair { margin-top: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.cm-reading { border-radius: 10px; padding: 24px; background: var(--sky-850); }
+.cm-reading-label { color: var(--sky-300); margin-bottom: 8px; }
+.cm-reading p { margin: 0; color: var(--fg-accent); }
+.cm-assess-h { margin: 64px 0 16px; color: var(--fg-accent); }
+.cm-assess-sub { margin: -8px 0 20px; color: var(--sky-200); }
+.cm-gaps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+.cm-gaps li { display: grid; grid-template-columns: 32px 1fr; gap: 12px; }
+.cm-gap-num { width: 28px; height: 28px; border-radius: 50%; background: var(--sky-600); color: var(--fg-accent);
+  display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; }
+.cm-gaps .t a { color: var(--fg-accent); text-decoration: underline; text-decoration-color: var(--sky-500);
+  text-underline-offset: 4px; }
+.cm-gaps .t a:hover { text-decoration-color: var(--fg-accent); }
+.cm-gaps p { margin: 4px 0 0; color: var(--sky-100); }
+.cm-assess-prose > p { margin: 0; color: var(--fg-accent); }
+.cm-assess-prose > p + p { margin-top: 16px; }
+.cm-assess-prose .cm-compare-link a { color: var(--fg-accent); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 720px) {
+  .cm-answer-row, .cm-reading-pair { grid-template-columns: 1fr; gap: 24px; }
+}
+
+/* Reviewer notes, hidden on the pages shared with users (.is-shared, set by
+   commitment.js on the landing-page picks and the general-clauses articles).
+   Jurian, 2026-09-29: "Just with css, because I want to make it visible later."
+   Delete this rule to show them again. */
+.is-shared .cm-not-in-synthesis,
+.is-shared .cm-page-not-in-synthesis,
+.is-shared .cm-deal-instruments.is-needed,
+.is-shared .cm-quote-missing { display: none; }

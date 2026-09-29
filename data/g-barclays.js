@@ -353,10 +353,41 @@ window.WATCHTOWER_CASE = {
     "disagreements": [],
     "assessment": {
       "strength": null,
-      "verdict_final": "None of these six provisions is a loophole in a commitment. They sit above the commitments, in the parts of the statement a reader is least likely to open: a definitions table, a page on applicability, a note on data and a line about the law.\n\nTwo of them decide what the words mean. “Financing” excludes the secondary market and excludes distressed companies, so two whole kinds of transaction are outside every restriction in the statement. “Client” fixes every coal revenue test to the company that signs, so a subsidiary can pass a test its group would fail.\n\nTwo more hand back cases the restrictions had taken. Financing agreed before a restriction started may run to its end. Sustainable or transition finance may reach a restricted upstream group whenever Barclays is satisfied it will not directly support oil and gas.\n\nThe last two qualify everything. The restrictions run on third-party data, and Barclays says missing or poor data may affect its ability to apply them. And the whole statement is subject to applicable law.\n\nRead alone, each is ordinary policy drafting. Read together, they are the reason a commitment can be worded tightly and still let financing through.",
-      "verdict_options": [],
-      "verdict_selected": null,
-      "what_needs_to_change": []
+      "strength_reason": "Each provision reads as ordinary fine print. Together they take whole kinds of financing out of every Barclays commitment, and leave the bank to decide more of it case by case.",
+      "naive_reading": "its commitments apply as they are written",
+      "actual_reading": "its commitments apply to new primary financing, tested on the company that signs, agreed after each rule began, where the data exists and the law allows, and not to financing Barclays calls transition finance",
+      "gaps": [
+        {
+          "title": "Trading, and companies in difficulty",
+          "phrase_refs": [
+            "secondary-market-activity",
+            "distressed-entities"
+          ],
+          "text": "“Financing” leaves out buying and selling a company's existing bonds and shares, and new financing for a company in difficulty. Neither is restricted anywhere in the statement."
+        },
+        {
+          "title": "The company that signs, not its group",
+          "phrase_refs": [
+            "entity-being-financed"
+          ],
+          "text": "Every coal revenue test is run on the company entering the deal. A subsidiary under the line can borrow, inside a group well over it."
+        },
+        {
+          "title": "Financing agreed before a rule began",
+          "phrase_refs": [
+            "may-remain-in-place"
+          ],
+          "text": "Oil and gas financing signed before a restriction took effect stays in place until it ends or is refinanced."
+        },
+        {
+          "title": "Transition finance, on Barclays' judgement",
+          "phrase_refs": [
+            "where-barclays-is-satisfied"
+          ],
+          "text": "Barclays can still finance a restricted oil and gas group where it is satisfied the financing will not directly support oil and gas."
+        }
+      ],
+      "in_practice": "Every Barclays commitment page ends by pointing here, because these six provisions reach all of them. None of them sits in the wording of a commitment. They sit in a definitions table, a page on who the statement applies to, a note on data and a line about the law.\n\nTake a coal company that a Barclays restriction names. Its existing bonds can still be bought, sold and placed with investors, because that is secondary market activity, not financing. If it falls into difficulty, Barclays can lend to it again.\n\nNow take a large group with one coal-heavy company and several clean ones. The coal revenue test is run on whichever company signs. A clean subsidiary can borrow, and the financing can move inside the group.\n\nThen there is timing. An oil and gas loan agreed before a restriction began runs to its end. And a restricted oil and gas group can still get financing Barclays calls sustainable or transition finance, where Barclays is satisfied it will not directly support oil and gas.\n\nThe last two provisions qualify everything. Barclays says missing or poor data may affect its ability to apply its restrictions. And the whole statement is subject to the law, which can change.\n\nRead alone, each is ordinary policy drafting. Read together, they are why a commitment can be worded tightly and still let financing through."
     }
   },
   "evidence": {
@@ -370,7 +401,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "3.13",
     "source": "editorial/general-clauses-4122.json"
   }

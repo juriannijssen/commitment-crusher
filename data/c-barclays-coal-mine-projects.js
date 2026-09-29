@@ -394,44 +394,31 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "One instrument and a 20% expansion threshold do most of the narrowing.",
-          "text": "The rule covers one kind of loan, and defines expansion with room to grow.\n\nProject finance is a loan repaid from the mine's own income. The statement's definition leaves out company-level asset financing. So a miner opening or expanding a mine can raise company loans or bonds instead.\n\nAn expansion only counts above 20% of the mine's recent peak output. So a mine can grow in steps that each stay below the line. Each step is measured against the last three years, so the baseline moves up too.\n\nAnd transition finance can be excepted case by case. What remains is a project loan for a new mine, or a large expansion."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer that needs project finance from Barclays to open a thermal coal mine. Or one that needs it to expand a mine by more than 20%. That developer is caught.\n\nA miner paying for the same work at company level is not caught. A mine growing by less than 20% is not caught either.\n\nSo the commitment binds developers with a single mine, which depend on project loans. It releases mining groups with many mines, which can pay from their own balance sheets. And it lets any mine grow in small steps."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the rule applies worldwide. It includes captive mines, which supply a company's own power plants or factories. And it defines a “material expansion” with a number and a baseline.\n\nThat is careful drafting. Growth of more than 20% counts, measured from a stated starting point.\n\nWhere it stops is the kind of financing. Project finance is defined here to leave out company-level asset financing.\n\nSo the definitions are careful, but the reach is one kind of loan. The largest miners rarely need it. That leaves most mining finance untouched."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover the miner",
-          "content": "Extend the rule to company loans and bonds for companies opening or expanding thermal coal mines."
-        },
-        {
-          "title": "Count expansion from a fixed starting point",
-          "content": "Measure expansion against a fixed baseline, so a mine cannot keep growing in steps below 20%."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the mine cannot get a project loan, and its owner can still borrow.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Stops project finance for new and expanding mines. Corporate financing to the same miner is free, and 20% growth is not expansion."
+      "strength_reason": "It stops project finance for a new or much bigger coal mine. Loans to the mining company, and growth of up to 20% at a time, get through.",
+      "actual_reading": "it will not arrange project finance, repaid from the mine's own income, for a new thermal coal mine or one growing by more than 20%",
+      "gaps": [
+        {
+          "title": "Loans to the miner, not the mine",
+          "text": "“Project finance” here is a loan repaid only from the mine's own income. A loan or a bond to the mining company, repaid from its other earnings, is not covered.",
+          "phrase_refs": [
+            "excludes-corporate-level",
+            "repayment-depends-on-project"
+          ]
+        },
+        {
+          "title": "Growth in steps of 20% or less",
+          "text": "Growth counts as “material expansion” only above 20% of the mine's recent peak. The peak is reset every three years, so a mine can keep growing below the line.",
+          "phrase_refs": [
+            "more-than-20pc"
+          ]
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. This commitment covers the mines that produce it, anywhere in the world.\n\nTake a mining company that wants to open a new thermal coal mine. If it asks Barclays for project finance, the rule applies. Project finance is a loan for one project, repaid only from what that project earns. If the company asks instead for a loan to the company as a whole, the rule does not apply. A bond is outside it too. The company can spend either on the new mine. A loan the parent guarantees also falls outside, because repayment no longer depends on the mine.\n\nNow take an existing mine that wants to dig more. Growth counts as “material expansion” only above 20% of the mine's highest yearly output in the last three years. A mine can grow by 15%, and a few years later by 15% again. Each step is measured against a new, higher starting point. None of them counts.\n\nSo what this commitment stops is a project loan for a new mine, or for a large jump in output. Mining groups that borrow as a company are not affected.",
+      "gets_right": "It applies anywhere in the world. And it puts a number and a starting point on expansion, so anyone can check whether a mine's growth counts."
     }
   },
   "evidence": {
@@ -445,7 +432,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

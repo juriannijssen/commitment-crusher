@@ -356,7 +356,7 @@ window.WATCHTOWER_CASE = {
       }
     ],
     "assessment": {
-      "strength": "crushed",
+      "strength": "hollowed",
       "strength_derivation": {
         "rule": "spec v3.29 §4.1 — the gap between the naive reading and what it catches",
         "inputs_source": "Watchtower record",
@@ -367,44 +367,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "A 5% threshold on all financing is genuinely strict; conceding it first makes the entity-level test land.",
-          "text": "Credit first: the threshold is low and the reach is wide. More than 5% of spending on Amazon oil and gas is enough to be caught. The rule covers all financing, not only projects. And the Amazon is defined by a published map boundary.\n\nWhere it stops is who is measured. The client is the entity signing the deal. So the test runs on the borrower, not its group. A parent or financing subsidiary whose own spending is not in the Amazon can borrow for a group that operates there.\n\nThe narrowing is in the definition of client."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The threshold is strict. The unit it is measured on is not.\n\nThe 5% test applies to the entity signing the deal. A group can route financing through an entity whose own spending is not in the Amazon: a parent, a treasury company or a sister company. Then the test is not met.\n\nAnd a large company with big Amazon operations can still pass, if they are a small share of an even larger budget.\n\nSo the rule catches specialist Amazon operators that borrow in their own name. It misses groups that choose which of their companies borrows. That choice is easy to make, and the rule does not look past it."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this rule reach?\n\nAn entity that borrows from Barclays and spends more than 5% of its budget on Amazon oil and gas. Specialist Amazon operators are caught.\n\nA large group borrowing through an entity with little Amazon spending is not caught. Nor is a large company whose Amazon work is a small part of its total spending.\n\nSo the commitment binds the entity. But the group chooses which entity borrows. A group that operates in the Amazon can keep its Amazon company off the loan papers, and borrow anyway. The rule never looks past the name on the loan."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Test the group",
-          "content": "Apply the 5% test to the borrower's whole group, so financing cannot be routed around the Amazon operator."
-        },
-        {
-          "title": "Add a size measure",
-          "content": "Count Amazon production or area, not only a share of spending, so large operators cannot pass on share alone."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule reaches the company that operates in the Amazon, and not necessarily the one that borrows for it.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Only clients with over 5% of total capex and opex in the Amazon. No major comes close, so it reaches pure-play Amazon operators and nobody else."
+      "strength_reason": "The test is a share of spending, run on the company that signs. A large group, or a group that borrows through another company, passes it.",
+      "actual_reading": "it will not finance a company that spends more than 5% of its own budget on oil and gas inside a mapped Amazon boundary",
+      "gaps": [
+        {
+          "title": "The company that signs, not its group",
+          "text": "Barclays applies the test to the company entering the deal. A parent or sister company of an Amazon operator can borrow if its own spending is mostly elsewhere.",
+          "phrase_refs": [
+            "entering-transaction"
+          ]
+        },
+        {
+          "title": "A share of spending, not a size",
+          "text": "A company is caught only if more than 5% of its spending goes on Amazon oil and gas. A large company with big Amazon operations can stay under that share.",
+          "phrase_refs": [
+            "more-than-5pc"
+          ]
+        },
+        {
+          "title": "Just outside the mapped line",
+          "text": "The Amazon here is an area drawn on a map by a research network. Drilling just outside the line, in the same forest, is not covered.",
+          "phrase_refs": [
+            "raisg-boundary"
+          ]
+        }
+      ],
+      "in_practice": "Take a company set up to drill in the Amazon, with most of its budget spent there. If it asks Barclays for financing, the answer is no.\n\nNow take the group that owns it. The parent company runs oil fields on several continents. Barclays measures the company that signs the loan, not the group. So if the parent borrows, only the parent's own spending counts. The Amazon share of that is small, and the loan can go ahead. The parent can then pass the financing on to its Amazon company.\n\nNext take a large producer with sizeable Amazon fields of its own. Its Amazon spending may be large in absolute terms. But if it is 5% or less of everything the company spends, the company is not “engaged in” Amazon oil and gas. The bigger the company, the easier the test is to pass.\n\nAnd the Amazon here is a mapped area with an edge. A well just outside the line, in the same forest and the same river basin, is outside this commitment.\n\nSo what is caught is a company whose business is mostly in the Amazon, borrowing in its own name. For that company, Barclays financing is closed. The groups above it, and the large producers beside it, are not caught.",
+      "gets_right": "It covers every kind of financing to a company above the line, not only loans for one project."
     }
   },
   "evidence": {
@@ -418,7 +411,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

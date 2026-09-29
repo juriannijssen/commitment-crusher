@@ -94,7 +94,7 @@ window.WATCHTOWER_CASE = {
               73,
               98
             ],
-            "means": "This explains what financing this commitment covers: financing tied to a mine project. The policy does not define “project-related”, and Watchtower records it as project financing.",
+            "means": "This explains what financing this commitment covers: financing tied to a mine project.",
             "lets_through": [
               "This wording lets through general corporate financing, bonds and other company-level financing to the companies that open or expand thermal coal mines. That financing is not project-related."
             ],
@@ -246,44 +246,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "Any expansion counts, with no size threshold — genuinely strict — and conceding it first makes the instrument limit land.",
-          "text": "Credit first: any expansion counts. The rule covers new thermal coal mines and expanding existing ones. There is no minimum increase in output before an expansion is caught.\n\nThat closes the ways coal production grows without a new mine: a bigger pit, a new seam, or faster mining at an existing site.\n\nThe limit is the kind of financing. The rule covers financing tied to the project. A company opening or expanding a mine can still get loans and bonds for the whole company from Santander.\n\nAnd it does not say “worldwide”."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The commitment reaches coal mines through one door: financing tied to the project.\n\nA mining company opening or expanding a thermal coal mine can borrow from Santander as a whole company. It can then spend that on the mine. Only financing tied to the project is restricted.\n\nThe policy's other coal mining rules close part of that gap. New groups that own coal mines are turned away as clients. And from 2030, companies that own mines lose access. But until 2030, an existing client can pay for a new mine from its balance sheet.\n\nThe item also leaves out the word “worldwide” that the items around it carry."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer that needs project financing from Santander to open or expand a thermal coal mine is caught.\n\nBut an existing client that pays for the same mine from its own balance sheet is not caught, until 2030. The largest miners pay for most development at company level. Developers with a single mine depend on project financing.\n\nSo the commitment binds the mine financed as a project. It releases the mine financed from a company's balance sheet, until the phase-out arrives. For the largest miners, that means very little changes before 2030."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover the miner",
-          "content": "Extend the rule to loans and bonds for the whole company, for companies opening or expanding thermal coal mines."
-        },
-        {
-          "title": "Say where it applies",
-          "content": "This rule does not say “worldwide”. It should say that it applies everywhere."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the mine cannot get a project loan, but the company opening it can still borrow.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Dedicated financing of new and expanding mines is blocked; company-level borrowing by the same miner is not.",
+      "strength_reason": "It stops loans tied to a new or bigger coal mine. The company opening the mine can still borrow from Santander as a whole and spend the loan on the mine.",
       "how_it_compares": {
         "text": "Santander covers company-level financing in two other rules. One covers new coal mining groups. The other phases out coal mine owners by 2030.",
         "links": [
@@ -296,7 +263,20 @@ window.WATCHTOWER_CASE = {
             "title": "Santander's 2030 Phase-out of Coal Mine Owners"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing tied to a project for opening a new thermal coal mine or expanding an existing one",
+      "gaps": [
+        {
+          "title": "Loans to the miner, not the mine",
+          "phrase_refs": [
+            "project-related",
+            "directly"
+          ],
+          "text": "The commitment covers “project-related” financing only. A mining company can get general corporate financing or bonds and spend them on a new or bigger mine."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. This commitment covers new thermal coal mines and the expansion of existing ones.\n\nTake a mining company that wants to open a new pit. It may ask Santander for project financing: a loan for that mine, repaid from what the mine earns. Santander says no. The same goes for a loan to expand a mine the company already runs.\n\nNow take the same company asking for general corporate financing. That is a loan to the company as a whole, which does not say what it pays for. The loan is not tied to the mine, so this commitment does not apply. The company can spend it on the new pit. The same goes for bonds and other financing at company level.\n\nLarge mining companies can pay for a new mine this way. A small developer with one mine depends more on project financing, and is the one this commitment reaches.\n\nA general loan to the parent company, which then pays for the mine through a subsidiary, is not covered either. The policy covers only what Santander finances “directly”.\n\nSo the commitment stops Santander being the named lender on a thermal coal mine. It does not stop Santander lending to the companies that open and expand them.",
+      "gets_right": "It covers expansion as well as new mines. A miner cannot step outside it by growing a pit it already has."
     }
   },
   "evidence": {
@@ -310,7 +290,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

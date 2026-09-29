@@ -245,7 +245,7 @@ window.WATCHTOWER_CASE = {
     "general_clauses_page": null,
     "disagreements": [],
     "assessment": {
-      "strength": "hollowed",
+      "strength": "crushed",
       "strength_derivation": {
         "rule": "spec v3.29 §4.1 — the gap between the naive reading and what it catches",
         "inputs_source": "Watchtower record",
@@ -256,49 +256,29 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The rule reads as a ban on fracking and tar sands, and the two words that cut it down, projects and sites, are easy to miss.",
-          "text": "Intesa Sanpaolo will not finance projects at unconventional extraction sites. That covers shale oil, shale gas, tar sands and coalbed methane.\n\nTwo words narrow it. The first is projects. The commitment reaches project financing, a loan raised for one named project. A fracking company borrowing for itself is untouched by this sentence.\n\nThe second is sites. The restriction stops at the place where the oil and gas comes out of the ground. Pipelines, processing plants and export terminals carrying the same production are not extraction sites.\n\nThe bank does set limits on unconventional companies elsewhere in these rules, at 15% of production revenues. This sentence is not that limit, and on its own it stops very little."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this commitment stop, and when?\n\nIt stops a project loan for a shale, tar sands or coalbed methane extraction site. That applies anywhere in the world, from the day the rules were published.\n\nIt does not stop the company that owns the site. Borrowing at group level falls outside this sentence.\n\nIt does not stop the infrastructure around the site. A pipeline or a processing plant serving the same field is not an extraction site.\n\nIt does not reach deepwater oil, extra-heavy oil or Arctic drilling. Those are not unconventional resources in this document's glossary.\n\nAnd it does not stop financing the bank has classified as environmentally sustainable."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The restriction is unusually clean for its kind. There is no threshold, no review step and no grandfathering. A project at an unconventional extraction site does not get financed.\n\nThe resources are defined in the document's own glossary. A reader can see what is covered: shale oil, shale gas, tar sands and coalbed methane.\n\nIt also applies to sites already producing, not only new ones. There is no cut-off date and no grandfathering of older sites.\n\nWhat it does not do is reach the company. Project financing is a small share of what a producer uses. The same fields can still be served by financing for pipelines and processing plants."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "Intesa Sanpaolo will not finance projects at unconventional extraction sites. That covers shale oil, shale gas, tar sands and coalbed methane, as the document's own glossary defines them.\n\nTwo words cut it down.\n\nThe first is projects. The commitment reaches project financing, so a fracking company borrowing for itself is untouched by this sentence.\n\nThe second is sites. The restriction stops where the oil and gas comes out of the ground. Pipelines, processing plants and export terminals carrying the same production are not extraction sites.\n\nThe bank does limit unconventional companies elsewhere in these rules, at 15% of production revenues. This sentence is not that limit, and on its own it stops very little.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover financing to the company, not just projects",
-          "content": "A company producing shale oil can still borrow at group level. Project financing is a small part of what it uses."
-        },
-        {
-          "title": "Reach the infrastructure serving these sites",
-          "content": "Pipelines, processing plants and export terminals move the same production. The restriction stops at the extraction site."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, unconventional oil and gas can still be financed everywhere except the wellhead.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Project financing at fracking, tar sands and coalbed methane sites is genuinely blocked. Corporate lending and the pipelines out are not."
-    },
-    "featured": {
-      "rank": 5,
-      "kind": "a boundary drawn too narrow",
-      "because": "The rule stops at the well. The terminals and pipelines carrying the same fracked gas sit outside it."
+      "strength_reason": "Project loans for shale, tar sands and coalbed methane sites are blocked. General loans to the companies that run them, and the pipelines and plants around them, are not.",
+      "actual_reading": "it will not give project loans for sites that extract shale oil, shale gas, tar sands or coalbed methane",
+      "gaps": [
+        {
+          "title": "Loans to the company go through",
+          "phrase_refs": [
+            "projects"
+          ],
+          "text": "The commitment covers project financing, a loan for one named project. A fracking company can take a general loan to the company and spend it on fracking."
+        },
+        {
+          "title": "Pipelines and plants around the site",
+          "phrase_refs": [
+            "extraction-sites"
+          ],
+          "text": "The restriction stops where the oil or gas leaves the ground. Pipelines, storage, processing plants and export terminals are not extraction sites."
+        }
+      ],
+      "in_practice": "The document's glossary says what unconventional means here: shale oil, shale gas, tar sands and coalbed methane. Fracking is how most shale oil and gas is extracted.\n\nTake a company that wants to drill a new fracking site. If it asks Intesa Sanpaolo for a project loan, a loan raised for that one site, the bank will say no. The same goes for a tar sands mine.\n\nNow take the same company asking for a general loan. A general loan goes to the company as a whole, and it can spend it on anything. This commitment does not apply. The company can use that loan to frack.\n\nThe commitment also stops at the site. Oil and gas has to be moved, stored and processed once it leaves the ground. Take a pipeline from a fracking field, a plant that processes tar sands, or an export terminal. None of them is an extraction site. The bank can give project loans for all of them.\n\nFinancing the bank classifies as environmentally sustainable is also always permitted, even at one of these sites.\n\nSo what is blocked is one kind of loan, at one point in the chain. The companies, and the pipelines and plants their sites depend on, can still be financed."
     }
   },
   "evidence": {
@@ -401,7 +381,7 @@ window.WATCHTOWER_CASE = {
     ]
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 261, document 8195",
     "reading": "drafted"

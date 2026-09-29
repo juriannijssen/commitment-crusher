@@ -343,44 +343,32 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "For fracking the exception undoes the rule; for the other two the instrument limit does most of the work.",
-          "text": "The commitment names three unconventional sources, and treats them differently.\n\nFor tar sands and coalbed methane, it is a plain rule on projects: exploring, developing, building or expanding. For fracking, a footnote opens an exception wherever fracking is legal. The reasons given are energy security, affordability and exceptional social and economic effects. The policy does not define them, and the bank judges them. Fracking only happens where it is legal, so the exception is open wherever it would be needed.\n\nFor all three, the commitment reaches projects only. A producer under the client threshold can raise loans and bonds for the whole company, and spend them on exactly these projects.\n\nWhat stays firm is a project loan for tar sands or coalbed methane."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer seeking project financing from Santander for tar sands or coalbed methane is caught. A developer seeking it for fracking is caught only where fracking is illegal, or where the bank decides not to consider an exception.\n\nA producer that raises the same financing as a whole company is not caught by this commitment at all. The separate client rule only catches it if its unconventional business passes 30%.\n\nSo the commitment binds project developers in tar sands and coalbed methane. For fracking, it binds developers only where fracking is already banned."
-        },
-        {
-          "angle": "how_it_changed",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The exception was added later, and the change log gives the date.\n\nRevision 2SA678-5, approved in December 2023, lists as its first change: “include potential exceptions over fracking under certain circumstances”. Before it, fracking projects were restricted just like tar sands and coalbed methane. After it, fracking alone can be excepted wherever it is legal. It needs extra checks and an approval the policy does not name.\n\nThe list of sources did not change, so the sentence still reads as it did. What changed is the footnote attached to one word in it.\n\nThat is easy to miss. A reader comparing the rule across versions would see the same words, and a different result."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Delete the fracking exception",
-          "content": "An exception available wherever fracking is legal is available wherever fracking happens."
-        },
-        {
-          "title": "Cover the company, not only the project",
-          "content": "Extend the rule to loans and bonds for the whole company, for producers developing these projects, whatever their share of unconventional work."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule holds for tar sands and coalbed methane, and bends for fracking wherever fracking is allowed.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "An energy-security exception the bank may consider for any fracking project, and nothing published about how it is decided."
+      "strength_reason": "For fracking, Santander may make an exception wherever fracking is legal, which is wherever it happens. For all three, a producer can borrow at company level and spend it on the project.",
+      "actual_reading": "it will not give financing tied to a project for tar sands or coalbed methane, or for fracking unless it decides an exception applies",
+      "gaps": [
+        {
+          "title": "A fracking exception wherever fracking is legal",
+          "phrase_refs": [
+            "permissible",
+            "may-be-considered",
+            "exceptional"
+          ],
+          "text": "For fracking, Santander “may” consider exceptions where it is legal locally. Fracking happens where it is legal, so the exception is there wherever it would be needed."
+        },
+        {
+          "title": "Loans to the company, not the project",
+          "phrase_refs": [
+            "projects-involved",
+            "directly"
+          ],
+          "text": "The commitment names projects. A producer can get general corporate financing from Santander and spend it on the same wells or mines."
+        }
+      ],
+      "in_practice": "Fracking, tar sands and coalbed methane get oil and gas out of rock, sand and coal seams that ordinary wells cannot reach. This commitment covers projects to explore, develop, build or expand any of the three.\n\nTake a company planning a new tar sands mine. It may ask Santander for project financing: a loan for that mine, repaid from what the mine earns. Santander says no. There is no exception for tar sands or coalbed methane.\n\nNow take a company planning new fracking wells in a country where fracking is legal. Santander “may” consider an exception, for energy security, affordability or local development. The sentence mentions developing countries and emerging economies, but does not limit the exception to them. The one firm condition is that fracking is legal there. That is true wherever fracking actually happens. Nothing is published about how often the exception is used, or on what grounds.\n\nThen take a producer that fracks alongside ordinary wells. It can ask Santander for general corporate financing. That is a loan to the company as a whole, which does not say what it pays for. The loan is not tied to a project, so this commitment does not apply. The producer can spend it on fracking.\n\nWhat is left is a project loan for tar sands or coalbed methane. For fracking, it is a project loan where Santander decides against an exception."
     }
   },
   "evidence": {
@@ -441,7 +429,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "the contractors that frack American wells"
   },
   "provenance": {
-    "built": "2026-09-26",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

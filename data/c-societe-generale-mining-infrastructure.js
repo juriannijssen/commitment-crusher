@@ -220,44 +220,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "One undefined adverb decides the whole exclusion, and the assets it is aimed at are the ones built to be shared.",
-          "text": "Everything in this exclusion turns on “primarily linked to”. The policy never says what that means.\n\nHow much of an asset's use must be this coal or asbestos? Measured by weight, revenue, capacity or contracts? Over what period, and judged by whom? None of it is stated. Yet the answer decides whether a rail line is inside the policy or outside it.\n\nThese assets are built to be shared. A rail line serving one mine rarely pays. A line carrying coal alongside iron ore does. So the lines that actually move this coal are the hardest to test against this sentence. Any owner can pick the measure that keeps it under the line.\n\n“Primarily linked to” is a threshold with no value, because there is no number."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Société Générale uses three different tests for the same problem, in two policies published the same month.\n\nIn the oil and gas policy, infrastructure is caught when it is “exclusively dedicated to” unconventional oil. Almost nothing fails that test. A few lines later, pipelines are caught when they depend “in majority” on new fields. That test has a threshold. Here, in the mining policy, the test is “primarily linked to”.\n\nThree tests, one kind of asset, one month. At most one of them is right."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "For this exclusion to apply, an asset must be “primarily linked to” mining coal for steel or asbestos, on a measure nobody has named.\n\nIn practice, that means a conveyor from one mine, or a terminal handling one product from one source. Financing for those usually comes with the mine behind it, which the previous exclusion already covers. Add a second user, product or customer, and the question becomes arguable. A test that can be argued in the client's favour is a test that does not get applied.\n\nTwo more gaps sit outside the sentence. Expansions: an existing rail line upgraded to carry more coal is not new infrastructure. And company-level financing: this only covers dedicated deals."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so unlike the oil and gas pages there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Put a number on “primarily”",
-          "content": "The policy gives this word no value. Publishing the intended share would make the test checkable."
-        },
-        {
-          "title": "Say what happens to expansions",
-          "content": "An existing shared rail line upgraded to carry more coal is not new infrastructure. Nothing here deals with it."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the assets that actually move this coal to market are the hardest to test against this rule.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Only infrastructure dedicated to one mine. Mining rail, conveyors and terminals are built to be shared, which is the point of them.",
+      "strength_reason": "It reaches only rail lines and terminals that mostly serve steel-making coal or asbestos. These assets are built to be shared, and the policy does not say how “primarily” is measured.",
       "how_it_compares": {
         "text": "Société Générale tests shared infrastructure differently in its oil and gas policy. There, only assets exclusively dedicated to the listed oils are covered.",
         "links": [
@@ -266,7 +233,25 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's Restriction on Infrastructure for Unconventional Oil"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing set aside for a rail line, conveyor or terminal that it judges mainly serves a steel-making coal or asbestos mine",
+      "gaps": [
+        {
+          "title": "Shared lines and terminals",
+          "phrase_refs": [
+            "primarily"
+          ],
+          "text": "Mining rail lines, conveyors and ports are built to carry several products, because that is what makes them pay. A line carrying coal alongside iron ore can be argued outside this commitment."
+        },
+        {
+          "title": "No measure for “primarily”",
+          "phrase_refs": [
+            "primarily"
+          ],
+          "text": "The policy does not say how much counts as most, measured against what, or by whom. The owner of an asset can present the figures in the way that keeps it under the line."
+        }
+      ],
+      "in_practice": "Metallurgical coal is the coal used to make steel, rather than burned for power. Mines for it, and for asbestos, need rail lines, conveyors and ports to move what they dig up.\n\nTake a rail line that carries only coal from one steel-making coal mine. Financing set aside for that line is refused. That is the case this commitment clearly covers.\n\nNow take a rail line that carries coal and iron ore from several mines. Is it “primarily linked to” coal extraction? The policy does not say whether that is judged by tonnes, by revenue or by contracts. So the owner can pick the measure that keeps coal under half. The line can then be financed.\n\nPort terminals work the same way. A terminal that loads coal alongside other cargo is arguable in a way a coal-only terminal is not. And shared assets are the normal case, because one mine rarely pays for a line on its own.\n\nThe commitment also covers only financing set aside for the asset. A general loan to the company that owns the rail line does not say what it pays for. It is outside these words, whatever the line carries.\n\nSo what is left is a narrow case. It is financing named for an asset that serves this coal or asbestos and little else."
     }
   },
   "evidence": {
@@ -280,7 +265,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 196, document 28052",
     "reading": "drafted"

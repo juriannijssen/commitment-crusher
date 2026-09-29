@@ -462,49 +462,42 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The UK/EU limit on fracking removes the largest unconventional source from the test; stated flatly that is the point.",
-          "text": "The test combines four kinds of unconventional production, and quietly drops the largest.\n\nFracking only counts in the UK and the EU. Shale in North America and Argentina, which is most of the world's unconventional oil and gas, does not count towards the 20% at all. A producer whose output is mostly American shale passes with none of it counted.\n\nWhat does count is oil sands, extra heavy oil, UK and EU fracking, and Arctic output as the statement defines the Arctic. Above 20% of total production, all financing stops.\n\nThe narrowing is in the list."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this rule reach?\n\nEnergy groups that mostly produce oil sands, extra heavy oil, or Arctic oil and gas as the statement defines it. Those are caught, for all financing.\n\nThe largest unconventional producers in the world, American shale companies, are not caught. Their fracking is outside the UK and EU, so it does not count.\n\nSo the commitment binds producers of the unconventional sources that are hardest to grow. It releases the one that grew fastest. A test built to catch unconventional producers misses the biggest group of them. That is most of the unconventional oil and gas produced today."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the commitment adds things up. A group cannot pass by keeping each unconventional source below its own threshold. The four are counted together, as a share of production. And all financing is covered, not just projects.\n\nThat is a good design. It closes the gap a producer could use by spreading its business across several kinds of unconventional oil.\n\nWhere it stops is fracking, which only counts in the UK and EU. That leaves out the largest source of unconventional oil and gas in the world.\n\nSo the combined test is well built. Its biggest ingredient is simply left out."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Count fracking everywhere",
-          "content": "Include shale production wherever it happens in the combined share."
-        },
-        {
-          "title": "Count the whole Arctic",
-          "content": "Define the Arctic as everything north of the Arctic Circle, on land and at sea."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the test misses the shale industry entirely.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Fracking counts only in the UK and the EU, so the largest source of unconventional oil and gas adds nothing to the 20%, and a shale producer passes with none of it counted."
+      "strength_reason": "Fracking counts only in the UK and the EU, so the largest source of unconventional oil and gas adds nothing to the 20%. A shale producer passes with none of it counted.",
+      "actual_reading": "it will not finance energy groups whose oil sands, extra heavy oil, Arctic and UK or EU fracking together make up over 20% of their oil and gas production",
+      "gaps": [
+        {
+          "title": "Fracking outside the UK and EU",
+          "phrase_refs": [
+            "fracking-uk-eu"
+          ],
+          "text": "Fracking only counts in the UK and the EU. Shale in North America and Argentina adds nothing to the 20%, however much of a group's production it is."
+        },
+        {
+          "title": "A share, not an amount",
+          "phrase_refs": [
+            "exceeds-20pc"
+          ],
+          "text": "The line is a share of the group's production. A very large producer can pump a lot of oil sands or Arctic oil and stay at 20% or below."
+        },
+        {
+          "title": "Only groups Barclays counts as “Energy Groups”",
+          "phrase_refs": [
+            "over-20pc-revenue",
+            "supermajor-or-major-integrated"
+          ],
+          "text": "Only groups with over 20% of revenue from producing oil and gas, or that Barclays considers majors, count. A diversified group with an oil arm is outside it."
+        }
+      ],
+      "in_practice": "Unconventional oil and gas is the kind that is harder and dirtier to get out. This commitment adds up four kinds: oil sands, extra heavy oil, Arctic oil and gas, and fracking in the UK and EU. If together they pass 20% of a group's production, Barclays will not finance it.\n\nTake a shale producer in Texas. Nearly all its oil comes from fracking. But fracking only counts in the UK and EU, so its share is zero. Barclays can finance it in any way it likes.\n\nFracking in North America and Argentina is the largest source of unconventional oil and gas in the world. Leaving it out means the test misses the producers it sounds most aimed at.\n\nNow take a large oil company with a big oil sands business. Its oil sands output is huge, but its conventional fields are bigger still. The oil sands are 15% of its production, so it passes too.\n\nWhat is caught is a group that mainly produces oil sands, extra heavy oil or Arctic oil and gas. Barclays will not finance those groups at all.\n\nSo this commitment binds producers of the hardest sources to grow. It does not reach the one that has grown most."
     },
     "featured": {
-      "rank": 1,
-      "kind": "a threshold that cannot be reached",
-      "because": "Fracking counts towards the 20% limit only in the UK and the EU, where almost none of it happens."
+      "rank": 2,
+      "kind": "a threshold built from definitions",
+      "because": "Four kinds of unconventional oil and gas, three definitions, one 20% test — and $1.6B of financing found."
     }
   },
   "evidence": {
@@ -534,7 +527,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "one of the largest shale producers in America"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

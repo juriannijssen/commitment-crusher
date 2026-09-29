@@ -275,44 +275,29 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "Three stacked conditions and a soft last one; stating the gap flatly is the strongest thing available.",
-          "text": "This commitment has three conditions that must all be true, and the last one is soft.\n\nAn international standard, IFC Performance Standard 7, must require the consent of Indigenous Peoples. The coal project must not meet that standard. And there must be no credible plan to meet it. The standard only requires consent in some cases. Many projects that affect Indigenous Peoples only require consultation, and this commitment does not reach them.\n\nFor the projects it does reach, a plan to comply later is enough. The policy does not say who judges the plan, what it must contain, or how long it may take. A mine can be financed on the plan, before the consent it is meant to secure."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Which coal project is refused under this commitment?\n\nOne where the standard requires consent, consent has not been given, and the developer cannot produce a plan the bank finds credible. That developer has, in effect, refused to try.\n\nA developer that produces a plan is not caught, whether or not consent follows. A project that the standard says needs only consultation is not caught. A mining or power company financed as a whole company, rather than through the project, is not caught either. The rule is written for projects.\n\nThe commitment binds the developer that will not engage at all. It releases the one that engages on paper."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the commitment is tied to a published, outside standard. IFC Performance Standard 7 sets out when consent is required and what it involves. So the test is not Santander's own, and anyone can check it against a public document.\n\nIt also asks for consent, not just consultation. That is the stronger requirement, and the one Indigenous Peoples' organisations ask for.\n\nWhere it stops is the action plan. A coal project that fails the standard can still be financed if there is a credible plan to comply. The policy does not say who decides what is credible, or when the project must comply.\n\nAn outside standard is the right anchor. The action plan lets the anchor drag."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Require consent before financing",
-          "content": "Where the standard requires consent, make it a condition of financing. A plan should not be able to promise it later."
-        },
-        {
-          "title": "Say what makes a plan credible",
-          "content": "Publish who judges the plan, what it must contain and the deadline for meeting the standard. And disclose how often this route is used."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a plan to seek consent does the work the consent was meant to do.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "The promise is consent, but a plan the bank finds credible can take its place, and many projects only need consultation."
+      "strength_reason": "The promise is consent, but a plan to get consent later is enough. And many impacts on Indigenous Peoples only need consultation, so those projects are outside it.",
+      "actual_reading": "it will not finance a coal project that needs Indigenous Peoples' consent under the World Bank Group's standard, does not have it, and has no plan to get it that Santander finds credible",
+      "gaps": [
+        {
+          "title": "A plan instead of consent",
+          "phrase_refs": [
+            "credible-action-plan"
+          ],
+          "text": "A project without consent can still be financed if it has a “credible action plan” to comply. The policy does not say who judges the plan, what it contains, or by when it must work."
+        },
+        {
+          "title": "Impacts that need only consultation",
+          "phrase_refs": [
+            "require-fpic"
+          ],
+          "text": "The standard requires consent in three cases only. For other impacts it asks for consultation. Those projects are outside this commitment, whether or not the community agrees."
+        }
+      ],
+      "in_practice": "IFC Performance Standard 7 is the World Bank Group's standard for projects that affect Indigenous Peoples. Free, Prior and Informed Consent means the community agrees freely, before the project starts, knowing what it involves.\n\nThe standard requires consent in three cases. The project uses land or resources the community traditionally owns or uses. It moves people off that land. Or it significantly affects their critical cultural heritage. For other impacts, the standard asks for consultation only.\n\nTake a coal power plant whose smoke and water use affect an Indigenous community nearby, but which is not built on land the community uses. If the standard handles that impact through consultation, this commitment does not apply. It makes no difference whether the community agrees.\n\nNow take a coal mine on land an Indigenous community has traditionally used. Here consent is required. But the developer may not have it. Santander can still finance the mine, as long as there is a “credible action plan” to comply. The financing goes ahead first, and the consent the plan promises comes later.\n\nThe policy does not say who decides that a plan is credible, what it must contain, or by when it must work.\n\nThe commitment also covers only what Santander finances “directly”. A general loan to the parent company, which then pays for the project, is outside it.\n\nWhat is left is a project that needs consent, does not have it, and has no plan Santander finds credible."
     }
   },
   "evidence": {
@@ -326,7 +311,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-25",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

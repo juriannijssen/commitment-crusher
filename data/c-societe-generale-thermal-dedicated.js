@@ -188,44 +188,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The activity list is the most complete in the document and it is attached to the least-used kind of financing.",
-          "text": "The list of activities is wide. It covers coal mining, transport, trading and processing, coal power plants and the grid links attached to them. There is no threshold and no qualifier.\n\nWhat limits it is the kind of financing it refuses. It applies to “dedicated financial transactions, products and services”: financing raised for one named activity.\n\nCoal power is mostly financed at company level. A utility that uses a credit line, borrows as a group or issues a bond is not asking for a dedicated deal. So this rule never applies, however much coal it burns.\n\nThe activities are excluded, but the companies doing them are not."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Within its scope, this is well written.\n\nThere is no revenue test, no majority test and no vague word. The bank does not ask how much of a project is coal, or whether coal is its main purpose. Nor does it ask how big a share of the client's business it is. If that is what the financing is for, the answer is no.\n\nThe list is also complete. It names mining and power, and adds transport, trading and processing, and the grid links attached to coal plants.\n\nThe criticism is about which financing it reaches, not how it is written."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This is the third time the same pattern appears in three Société Générale policies from the same month.\n\nOil and gas: eleven of fourteen commitments cover dedicated deals only. Mining: a clear ban on mining coal for steel-making, limited to dedicated deals. Thermal coal: the fullest list of activities, limited to dedicated deals.\n\nOnce is a drafting choice. Three times in one month is a pattern. The bank writes its activity bans without conditions. Then it ties them to the kind of financing these activities use least.\n\nIt is the most important finding we have on this bank. It is why these pages should be read together, not one at a time."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover all financing, not just dedicated deals",
-          "content": "Coal power is mostly financed at company level. A rule that only reaches financing for a named purpose leaves the main route open."
-        },
-        {
-          "title": "Cover general corporate financing",
-          "content": "Apply this rule to loans and bonds for the whole company, not only to dedicated transactions."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a full list of coal activities is tied to the least-used kind of financing.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Dedicated coal financing is blocked; a utility drawing on a group revolver is not.",
+      "strength_reason": "It stops only financing set aside for a named coal activity. A coal company that borrows for the company as a whole can spend the loan on the same coal.",
       "how_it_compares": {
         "text": "Only Société Générale's client rules reach coal companies. All of them except the rule for coal miners stop at new business. Société Générale's mining policy covers infrastructure only when it is “primarily linked to” mining.",
         "links": [
@@ -250,7 +217,19 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's Restriction on Coal and Asbestos Mining Infrastructure"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing set aside for coal mining, transport, trading or processing, or for coal power plants and the infrastructure attached to them",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the activity",
+          "phrase_refs": [
+            "dedicated9"
+          ],
+          "text": "The commitment covers dedicated financing only: financing raised for a named activity. A utility that borrows for the company as a whole, draws on a credit line or issues a bond is not covered."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. This commitment lists almost every step of the coal chain: mining, transport, trading, processing and power plants. But it only covers dedicated financing.\n\nDedicated financing is financing raised for a named activity, where it is clear what it pays for. A loan to build one coal plant is an example. If a power company asks Société Générale for that, the answer is no.\n\nNow take the same power company asking for a general loan to the company. General corporate financing is a loan to the company as a whole, which does not say what it pays for. The commitment does not apply. The company can spend the loan on anything, including coal.\n\nThe same goes for a revolving credit facility. That is a credit line the company can draw on and repay as it needs. And it goes for a bond the company sells to investors. Neither names a coal activity, so neither is covered.\n\nLarge utilities and mining companies often pay for their plants and mines out of general borrowing. So this commitment stops the loan with a coal plant's name on it. It does not stop Société Générale lending to the company that runs the plant, however much coal it burns.",
+      "gets_right": "The list of activities is wide: mining, transport, trading, processing, power plants and the infrastructure attached to them. There is no threshold and no qualifier on it."
     }
   },
   "evidence": {
@@ -264,7 +243,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 306, document 28051",
     "reading": "drafted"

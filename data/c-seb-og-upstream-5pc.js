@@ -70,7 +70,7 @@ window.WATCHTOWER_CASE = {
               11,
               37
             ],
-            "means": "This explains who this commitment applies to: companies that are not clients yet. Watchtower records the relationship status on this commitment as new.",
+            "means": "This explains who this commitment applies to: companies that are not clients yet.",
             "lets_through": [
               "Adding the word “New” means every oil and gas producer already banked keeps its financing."
             ],
@@ -304,44 +304,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "how_it_compares",
-          "recommended": true,
-          "recommended_because": "The inconsistency is internal, provable from the document, and needs no interpretation.",
-          "text": "The number is low. The reach is narrow.\n\nThis rule restricts oil and gas producers at 5%, and covers new clients only.\n\nAs published, the threshold only applies to companies SEB has not met yet."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "5% is a very low bar for oil and gas producers.\n\nAt that level, almost every company that explores for and produces oil and gas is caught. So are many large energy groups with a production arm.\n\nThere is also no exception on this commitment. There is no transition plan route, no country exception and no open discretion.\n\nThe weakness is the reach, not the number."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "New clients only means SEB's existing oil and gas clients are untouched by this sentence.\n\nNothing here asks a current client above 5% to do anything. For an ordinary producer SEB already banks, this rule has no consequence at all.\n\nThe number is strong. For existing clients, it does nothing."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover existing clients",
-          "content": "This rule covers new clients only. The producers SEB already banks are asked for nothing."
-        },
-        {
-          "title": "Explain why existing clients are left out",
-          "content": "If it reflects a view on how fast oil and gas can change, publish it."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the number is low, and reaches only new clients.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "5% is a genuinely low bar for a new client. The existing upstream book is asked for nothing.",
+      "strength_reason": "It turns away new oil and gas producers only. Every producer SEB already banks keeps its financing, with no date to leave.",
       "how_it_compares": {
         "text": "SEB's coal power rule uses the same 5%, two sections earlier, and covers existing and new clients alike. Nothing in the document explains the difference. Coal has large-scale replacements, and oil and gas do not yet, which may be the reason. SEB's 2030 phase-out reaches existing clients, but only for unconventional oil and gas.",
         "links": [
@@ -354,7 +321,26 @@ window.WATCHTOWER_CASE = {
             "title": "SEB's 2030 Unconventional Oil and Gas Phase-Out"
           }
         ]
-      }
+      },
+      "actual_reading": "it does not take on new clients earning more than 5% of their revenue from finding and producing oil and gas, but keeps the producers it already banks",
+      "gaps": [
+        {
+          "title": "Producers SEB already banks",
+          "phrase_refs": [
+            "new-br"
+          ],
+          "text": "The commitment covers new clients only. Every oil and gas producer SEB already banks keeps its financing, and nothing asks it to change."
+        },
+        {
+          "title": "A company in the group below the line",
+          "phrase_refs": [
+            "company-legal-entity"
+          ],
+          "text": "SEB applies the 5% test to the one legal entity it deals with, not to its group. A subsidiary with little production revenue can borrow, and the financing can move within the group."
+        }
+      ],
+      "in_practice": "Take an oil and gas producer that is not yet an SEB client. If more than 5% of its revenue comes from finding and producing oil and gas, SEB will not take it on. Even a group with a modest production arm crosses that line.\n\nNow take a producer SEB already banks. This commitment asks nothing of it. Its loans stay, and nothing in the sentence stops SEB renewing them or adding new ones. There is no date by which the relationship has to end. Whatever share of its revenue comes from oil and gas, it stays a client.\n\nSo the effect of the commitment depends on who SEB already banks. For the producers already on its books, nothing changes.\n\nThere is also a way in for a new producer. The policy defines a “Company” as one legal entity, not a group. A producer can borrow through a subsidiary with little production revenue of its own. That subsidiary passes the test, and the financing can move inside the group.\n\nSo what the commitment stops is a producer SEB has never banked, coming to it in its own name. The rest of SEB's oil and gas business carries on.",
+      "gets_right": "The line is low. At 5% of revenue, even a group with a modest production arm is turned away as a new client."
     }
   },
   "evidence": {
@@ -368,7 +354,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

@@ -95,7 +95,7 @@ window.WATCHTOWER_CASE = {
               0,
               7
             ],
-            "means": "This explains when this commitment takes effect: in 2030. Until then, the only coal-power limit in the policy is the 25% threshold for new clients.",
+            "means": "This explains when this commitment takes effect: in 2030. Until then, this sentence restricts nothing.",
             "lets_through": [
               "This wording lets through existing clients with any share of revenue from coal power until 2030. The sentence does not say whether the limit applies from the start of 2030 or by its end."
             ],
@@ -347,48 +347,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The date, the share-based test and an undefined transition carve-out each leave a clear gap, best stated flatly.",
-          "text": "The commitment sets a date and a threshold, and each leaves room.\n\nThe date is 2030. Until then, no coal power limit applies to existing clients at all. The policy's other coal power rule only covers new clients above 25%.\n\nThe threshold is 10% of group revenue that comes directly from coal power. A share test releases the largest companies: a utility with many coal plants and even bigger other businesses passes. And only power revenue counts, not coal mining or trading.\n\nAbove the line, “sustainable finance and products to finance the transition” stay available. The policy defines neither, or says who decides. And for large groups, the test runs one subsidiary at a time, so the parent can still be financed.\n\nWhat remains is financing, from 2030, for a client above 10%, that no one calls transition finance."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Which clients will this commitment actually cost Santander in 2030?\n\nA company that earns more than 10% of its group revenue from coal power. It must not be a subsidiary of a large group with other businesses. And it must ask for financing the bank does not call sustainable or transition finance. That company is caught.\n\nA large utility whose coal plants are a small part of a large business is not. A group's parent is not, if the financing is unrelated to its coal power subsidiary. A coal-heavy client seeking transition finance is not.\n\nSo the commitment binds the mid-sized generator that depends on coal. It releases the largest owners of coal plants."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: this is a dated phase-out that reaches company-level financing, with a published threshold of 10% of group revenue. Anyone can check it against a client's accounts.\n\nThat is stronger than a rule on new plants, which leaves an existing coal fleet free to borrow. Here, from 2030, a generator that depends on coal loses access to Santander's financial products and services, not only its project loans.\n\nWhere it stops is the exception and the measure. Sustainable finance and transition products stay open to any client, however much coal it burns, and the policy defines neither. And a share of revenue lets the largest coal owners through.\n\nA phase-out with a date and a number is the right shape. The exception decides how much of it is left."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Define the transition exception",
-          "content": "Publish what counts as sustainable or transition finance for a coal power client. And disclose how much is given under it."
-        },
-        {
-          "title": "Count coal plants, not only revenue share",
-          "content": "Add a size test, such as coal capacity or output. Then the largest coal owners cannot pass on share alone."
-        },
-        {
-          "title": "Test the group, not the subsidiary",
-          "content": "Apply the threshold to the whole group, so financing to a parent cannot reach a coal power subsidiary."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the 2030 date drops the clients that are mostly coal, and keeps the ones with other businesses.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A real 2030 end for coal power clients above 10%, counting only revenue from generating and not from mining or trading."
+      "strength_reason": "The 10% line is a share of revenue, so a utility with many coal plants and a bigger other business passes. Above the line, transition finance stays open, and a group's other companies can still borrow.",
+      "actual_reading": "it is ending, from 2030, most financing to companies that earn more than 10% of their revenue from generating power with coal, testing only the subsidiary in a mixed group",
+      "gaps": [
+        {
+          "title": "A share of revenue, not a size",
+          "phrase_refs": [
+            "threshold"
+          ],
+          "text": "The line is 10% of revenue, not a number of plants. A utility with a large coal fleet and larger other businesses stays below it. Only revenue from generating power counts, not coal mining or trading."
+        },
+        {
+          "title": "Sustainable and transition finance stay open",
+          "phrase_refs": [
+            "transition-finance"
+          ],
+          "text": "A company above 10% can still get financing that Santander calls sustainable or transition finance. The policy does not define either term, or say who decides."
+        },
+        {
+          "title": "The rest of the group",
+          "phrase_refs": [
+            "subsidiary-level"
+          ],
+          "text": "For a group across several industries, the test is applied to the coal power subsidiary. The parent and the other subsidiaries can still be financed."
+        }
+      ],
+      "in_practice": "Take a power company that earns 40% of its revenue from coal-fired plants, and which Santander already banks. Until 2030, this commitment does not touch it. From 2030, Santander stops giving it financial products and services. That is what the commitment sounds like.\n\nNow take a large utility with many coal plants. Its gas, wind and grid businesses are much bigger, so coal power is 8% of its revenue. It stays below the line, however much coal it burns. The test also counts only revenue from generating power with coal. What a company earns from mining or trading coal is left out.\n\nThen take a group with businesses in several industries, one of them a coal power subsidiary. The test is applied to the subsidiary, not the group. If the subsidiary is caught, the parent and the other subsidiaries can still be financed. The financing only has to be “unrelated to the restricted entity”. The policy does not say how that is shown.\n\nFinally, a company above 10% can still get sustainable finance and products to finance the transition. The policy does not define either term, or say who decides what qualifies.\n\nSo from 2030, the commitment stops ordinary financing to a generator that depends on coal and stands on its own. Large utilities and diversified groups carry on.",
+      "gets_right": "It has a date and a published number that anyone can check against a company's accounts. Above that number, it covers every product and service, not one kind of loan."
     }
   },
   "evidence": {
@@ -530,7 +519,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "utilities that still generate from coal"
   },
   "provenance": {
-    "built": "2026-09-25",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

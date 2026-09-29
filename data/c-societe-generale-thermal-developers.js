@@ -69,7 +69,7 @@ window.WATCHTOWER_CASE = {
               34,
               69
             ],
-            "means": "This explains what this commitment reaches: business the bank has not written yet. Watchtower records the transaction status on this commitment as new.",
+            "means": "This explains what this commitment reaches: business the bank has not written yet.",
             "lets_through": [
               "This wording lets through everything already on the books. A coal developer with existing facilities keeps them, and keeps drawing on them, for as long as their terms run."
             ],
@@ -290,48 +290,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "A rule about not building new coal that stops applying below 300 MW is the finding, and it is a published number.",
-          "text": "Société Générale will not do new business with companies building new coal. Then the glossary says how much new coal is allowed.\n\nA “Thermal Coal Developing Company” is one adding coal mining, coal transport, or new coal power “strictly above 300 MW”. So a new coal unit of 300 MW or less does not count. Nor does the wording add up several smaller units, on one site or across a company.\n\nThe definition also counts only majority owners. Big coal projects are often built by groups of companies, where no one holds a majority. A company with a 40% share in a new coal plant is not a developer here.\n\nBoth things that limit it sit twelve pages away, in the glossary."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Two features make this a well-built rule.\n\nIt reaches the parent. The exclusion names “any of its parent and holding companies”, so it applies at group level. A rule that stops at a subsidiary can be avoided through the group structure. This one cannot.\n\nIt also catches plans. The definition covers companies “developing, or planning to develop” new coal. A company does not have to have started building to be excluded.\n\nThat is the right shape for this kind of rule. The argument on this page is about the conditions attached to it, not how it is built."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Rules against coal developers are the most standard part of bank coal policies. That makes the 300 MW floor easy to judge.\n\nThe usual reference is the Global Coal Exit List. It counts any new coal capacity, of any size. Banks that follow it exclude a company for building one new unit. Société Générale uses the same structure, but adds a floor.\n\nIt is also worth noting where the number is kept. This policy prints its revenue thresholds in the rules themselves: 25%, 50% and 20%. The 300 MW figure is the only number kept in the glossary. And it decides whether new coal counts as new coal."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Drop the 300 MW floor",
-          "content": "A new coal unit of 300 MW or less does not make its builder a developer. The policy gives no reason for a size below which new coal stops counting."
-        },
-        {
-          "title": "Cover minority owners",
-          "content": "Only majority owners count. Big coal projects are often built by groups where no one holds a majority."
-        },
-        {
-          "title": "Say what happens to existing financing",
-          "content": "The exclusion covers new products and services only. It should say what happens to financing already given."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this client rule depends on two conditions in the glossary.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Reaches new financing to developers; everything on the books stays, and a new unit at exactly 300 MW is not a development.",
+      "strength_reason": "New business with coal developers stops, up to the parent group. But financing already agreed stays, and small new plants or minority stakes do not make a company a developer.",
       "how_it_compares": {
         "text": "Existing financing to coal developers is left to Société Générale's 2030 and 2040 coal phase-out dates. None of Société Générale's oil and gas or mining commitments extends to parent and holding companies.",
         "links": [
@@ -352,7 +315,33 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's 50% Threshold on Metallurgical Coal"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give new financing or services to companies, or their parent groups, adding coal mining, coal transport or power plants above 300 MW as majority owners",
+      "gaps": [
+        {
+          "title": "Existing financing stays",
+          "phrase_refs": [
+            "new-fps"
+          ],
+          "text": "Only new products and services are covered. A coal developer keeps its existing loans and facilities, and keeps drawing on them, for as long as their terms run."
+        },
+        {
+          "title": "New plants of 300 MW or less",
+          "phrase_refs": [
+            "300mw"
+          ],
+          "text": "New coal power counts only “strictly above 300 MW”. A unit of exactly 300 MW does not count, and nothing adds several smaller units together."
+        },
+        {
+          "title": "Minority owners",
+          "phrase_refs": [
+            "majority"
+          ],
+          "text": "Only majority owners of a new coal asset count. Large coal projects are often built by groups where no one holds a majority, so a 40% partner is not a developer."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. This commitment covers “Thermal Coal Developing Companies”. The policy defines them as companies building, or planning to build, new coal mining, new coal transport or new coal power.\n\nTake a company that plans to open a new thermal coal mine and will own it outright. Société Générale will not provide it, or its parent group, any new financial product or service.\n\nNow take a company building two new coal units of 300 MW each on one site. Neither is “strictly above 300 MW”. The wording does not add them together. So the company is not a developer, and Société Générale can finance it.\n\nThen take a large new coal plant built by three partners, with 40%, 30% and 30%. None holds a majority. So none of them counts as developing it.\n\nAnd take a company that is a developer and already has loans from Société Générale. Those loans are not new, so they stay. It can keep drawing on facilities already agreed.\n\nSo the commitment stops new business with majority owners of new mines, transport and large plants. It lets through the smaller plants, the partners and the financing already in place.",
+      "gets_right": "It reaches the parent and holding companies, so a group cannot step around it through a subsidiary. And it catches companies planning new coal, not only those already building."
     }
   },
   "evidence": {
@@ -366,7 +355,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 306, document 28051",
     "reading": "drafted"

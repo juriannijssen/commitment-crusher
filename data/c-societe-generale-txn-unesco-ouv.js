@@ -225,48 +225,11 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": false
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The sentence is the widest in the policy and the test inside it is the hardest to satisfy, and holding those two facts together is the whole finding.",
-          "text": "This line has a wide reach. It covers any oil and gas operation, not just drilling or projects. Then it adds a condition that is hard to meet before the financing is given.\n\nThe condition is “material adverse impacts on the Outstanding Universal Value” of a site. That is a UNESCO phrase. It means harm to the specific qualities a site was listed for, not harm to the site in general. A site listed for its landscape and one listed for a species are harmed by different things.\n\nWho decides is left open. Such findings usually come from UNESCO and its advisers, through a process that takes years. A bank deciding on a deal has none of that. It has the company's own impact study.\n\nSo the rule is written to catch everything, but depends on a finding that usually arrives after the operation exists."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Two features deserve credit before the criticism.\n\nThe first is reach. It covers any oil and gas operation, not one activity, resource or place. Pipelines, refineries and trading are all inside it.\n\nThe second is that it tests the harm, not the location. A rule on operations inside protected areas can be avoided by sideways drilling and nearby projects. This one asks what the operation does, not where it stands. That is the harder and better question.\n\nThe problem is the standard. “Outstanding Universal Value” is a narrow idea, and “material” is undefined. The body that usually decides works far slower than any financing decision. A good question is asked, and the answer is put out of reach."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "World Heritage rules come in two shapes.\n\nOne is about location: no financing for operations inside a World Heritage Site. It is easy to apply and easy to work around. Société Générale has that version too, in the line above.\n\nThe other is this one: no financing for operations that harm what the site was listed for, wherever they are. It reaches beyond the boundary. A rule like this needs someone named to judge the harm. That might be an IUCN assessment, a UNESCO mission, or the host country's official position.\n\nSociété Générale names no one. The test is ambitious, but no one is appointed to apply it."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Name who judges the harm",
-          "content": "UNESCO's advisers usually take years to judge harm to a site. The policy should say what evidence it accepts, and from whom."
-        },
-        {
-          "title": "Define “material”",
-          "content": "The word carries the whole rule, and the policy never says what it means."
-        },
-        {
-          "title": "Say what happens while the question is open",
-          "content": "Where a site's status is disputed, nothing here says whether the bank waits, refuses or goes ahead."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this rule is unlikely to apply before a decision is made.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating.",
-      "strength_reason": "It turns on a finding of damage to Outstanding Universal Value that nobody is required to make, and that the sponsor usually makes.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "It only applies once someone finds serious harm to what a World Heritage Site was listed for. Nobody has to make that finding before the financing is given.",
       "how_it_compares": {
         "text": "Société Générale's rule on protected areas covers only operations located inside them.",
         "links": [
@@ -275,7 +238,32 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's Restriction on Drilling in Protected Areas"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing labelled for an oil or gas operation when it is shown that the operation seriously harms the qualities a World Heritage Site was listed for",
+      "gaps": [
+        {
+          "title": "Other harm to the same site",
+          "text": "The harm has to fall on the site's “Outstanding Universal Value”: the qualities UNESCO listed it for. Other damage to the same site does not count.",
+          "phrase_refs": [
+            "ouv"
+          ]
+        },
+        {
+          "title": "Nobody has to find the harm first",
+          "text": "The policy does not say who decides the harm is material, on what evidence, or when. UNESCO usually judges it after development, and a sponsor's own study can call it minor.",
+          "phrase_refs": [
+            "ouv"
+          ]
+        },
+        {
+          "title": "Loans to the company as a whole",
+          "text": "The commitment covers financing raised for a named operation only. The operator can take a general loan or issue a bond instead.",
+          "phrase_refs": [
+            "scope-dedicated"
+          ]
+        }
+      ],
+      "in_practice": "This commitment reaches any oil and gas operation, anywhere, that harms a World Heritage Site. What narrows it is the kind of harm, and who has to find it.\n\nA World Heritage Site is listed by UNESCO for particular qualities. It calls them the site's “Outstanding Universal Value”. A site might be listed for its rock formations, its wildlife or its ancient buildings. The commitment covers material harm to those qualities, not to the site in general.\n\nTake a site listed for its geology. A pipeline cuts through its forest and destroys habitat. The habitat is not what the site was listed for, so the commitment may not apply.\n\nNow take a site listed for its wildlife, with a new field planned beside it. Harm to that wildlife would count. But someone has to find that the harm is material. The policy does not say who, on what evidence, or when. UNESCO and its advisers usually look after development has started, not before a loan is signed. The sponsor's own impact study can conclude the harm is minor.\n\nThe commitment also covers financing raised for a named operation only. The operator can still take a general loan to the company as a whole, which does not say what it pays for.\n\nWhat is left is a project where serious harm to a site's listed qualities is already clear before the financing."
     }
   },
   "evidence": {
@@ -289,7 +277,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

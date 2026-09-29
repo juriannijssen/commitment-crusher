@@ -287,48 +287,36 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": false
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The exclusion turns on tracing gas to its formation, and the reason that cannot be done is a fact about pipelines rather than an opinion about the bank.",
-          "text": "Gas mixes. Once it enters a pipeline network, it blends with gas from every other field. Nothing further down the line can say which gas came from shale.\n\nThis exclusion asks whether an LNG plant is fed by shale gas. For a plant with its own pipeline from a named field, that has an answer. For a plant connected to a national network, it does not. And outside a few integrated projects, that is how most export plants get their gas.\n\nThe policy sets no tracing rule and no threshold. It does not say how much shale gas puts a plant inside the rule, or how anyone would show it.\n\nThe size test has a smaller version of the same problem. Expansion is excluded only if it is “significant”, and no number is given.\n\nArctic gas is different. Arctic projects are few, named and easy to identify."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Two things here are done well.\n\nThe first is that the Arctic line is drawn, not just named. On land, the glossary gives an exact latitude. At sea, it points to the Polar Code, an international shipping standard. A policy that just says “Arctic” leaves the bank to decide where it starts when a deal arrives. This line can be checked on a map.\n\nThe second is that the exclusion covers export as well as production. A rule that stops at the plant misses the export terminals that make the plant worth building. This one names both.\n\nWhat undoes this is the missing tracing rule. A precise line is only useful with a way to tell whether a plant's gas came from inside it. There is none. The bank did the hard part and left out the easy one."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This rule excludes LNG made from certain gas, but publishes no rule for proving that a plant uses it.\n\nThe Arctic definition is precise: an exact latitude on land, plus the Polar Code at sea.\n\nThe other approach is to restrict new LNG plants outright, whatever gas they use. The reasoning is that plants built today lock in gas supply for decades. That test needs no tracing and no threshold. It only asks whether a plant is being built.\n\nSociété Générale uses the gas-source test here and in the line before, and the plant test nowhere. Two gas-source tests without tracing reach less than one plant test would."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Publish a tracing rule",
-          "content": "Say how much of a plant's gas must be shale or Arctic gas for the rule to apply, and how that is shown. Without that, no plant on a network can be tested."
-        },
-        {
-          "title": "Put a number on “significant”",
-          "content": "Expansion is excluded only if it is “significant”, and the policy never says what that means. A share of existing capacity would settle it."
-        },
-        {
-          "title": "Follow the gas south of the line",
-          "content": "The Arctic is defined by a line on the map. Gas produced just south of it and piped into Arctic export plants is outside the rule."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, no plant on a pipeline network can be tested against this rule.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating.",
-      "strength_reason": "Significant is undefined, and gas from shale is commingled in the pipeline network long before it reaches a plant."
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "The commitment depends on knowing where a plant's gas comes from, and gas is mixed long before it arrives. “Significant” has no number, so most growth can be called small.",
+      "actual_reading": "it will not give financing labelled for a new gas export plant, or an expansion it counts as significant, where the gas can be traced to shale or to the Arctic as the policy maps it",
+      "gaps": [
+        {
+          "title": "Gas mixed in a pipeline network",
+          "text": "The plant has to be “fed by” shale or Arctic gas, and the policy gives no way to trace it and no share. Gas in a network comes from many fields, so a plant can point to its conventional supply.",
+          "phrase_refs": [
+            "fed-by"
+          ]
+        },
+        {
+          "title": "Expansions called small",
+          "text": "Growth at an existing plant counts only if it is “significant”. The policy gives no number and does not say who decides. A series of small additions can add a great deal.",
+          "phrase_refs": [
+            "significant-expansion"
+          ]
+        },
+        {
+          "title": "Gas fields just south of the line",
+          "text": "On land, the Arctic starts at the Arctic Circle. Gas fields just south of it, in regions that are Arctic in climate, are outside the commitment.",
+          "phrase_refs": [
+            "arctic-circle"
+          ]
+        }
+      ],
+      "in_practice": "LNG is natural gas cooled into a liquid so it can be shipped. This commitment covers the plants that do that, when shale gas or Arctic gas feeds them.\n\nThe question is where the gas comes from. Shale gas and ordinary gas usually enter the same pipeline network, and they mix long before they reach a plant. The policy sets no method for tracing gas and no share that counts.\n\nTake a plant on a network fed mostly by shale fields. It can point to contracts with conventional producers. Or it can buy gas from a trader, who does not say where the gas came from. Either way, nothing shows the plant is “fed by” shale gas.\n\nNow take a plant that already exists. Its owner adds capacity step by step. Each step is small, and the policy never says what makes one “significant”. So each can be judged outside the commitment.\n\nArctic gas has a clear line: on land, the Arctic Circle. A field one kilometre south of it is not Arctic gas under this policy.\n\nThe commitment also covers financing raised for a named project only. The plant's owner can take a general loan to the company as a whole, which does not say what it pays for.\n\nWhat is left is a new plant clearly supplied by shale or Arctic fields, financed with a loan that names it."
     }
   },
   "evidence": {
@@ -342,7 +330,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

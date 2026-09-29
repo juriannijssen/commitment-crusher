@@ -93,7 +93,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains how far this commitment reaches. The item printed directly above it covers exploration, production or trading. This one stops at production.",
             "lets_through": [
-              "This wording lets through trading of shale oil and gas. The bank excluded trading for Arctic, Amazonian and heavy oil in the sentence above and did not repeat it here, so shale trading is outside this commitment.",
+              "This wording lets through trading of shale oil and gas. The sentence names exploration and production only.",
               "It also lets through everything downstream of the wellhead — gathering, processing, transport and export of shale production, none of which is named."
             ],
             "defined_in_clause": null,
@@ -273,48 +273,11 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": false
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The gap here is visible only by comparison with the sentence directly above it, which is the clearest way to show that the omission was a choice.",
-          "text": "This exclusion covers exploring and producing shale oil or gas. Trading is not covered.\n\nShale is widely traded. It moves through gathering pipes, processing plants, pipelines and export terminals. A bank can finance all of that without financing a single well.\n\nAnd it only covers dedicated deals. A shale producer that borrows as a whole company is outside it.\n\nSo the exclusion covers the drilling, through the narrowest route, for the resource with the longest chain behind it."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This exclusion catches a shale well drilled with financing raised for that well.\n\nThat is real, and the bank should be held to it. But shale is almost always financed at company level. It is a business of many small wells, drilled all the time, and paid for from credit lines and bonds. A dedicated deal is rare in shale, because each well is small and one of many.\n\nSo the exclusion does not fit the industry it names. It is written as if shale were financed like a single offshore platform.\n\nAt company level, the test is the 30% threshold, which a diversified producer passes easily. A large shale company with other businesses can bank here, and pay for its drilling with financing this policy never touches."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This shale exclusion is narrower than it first looks. The useful comparison is with banks that name the method, not the rock.\n\nSeveral European banks now restrict fracking itself, wherever it is used. Fracking means cracking rock with high-pressure fluid to release oil or gas. Société Générale restricts shale oil and gas instead. It mentions fracking only in a glossary note.\n\nThat difference matters. Fracking is also used outside shale, and a policy aimed at the rock does not follow the method. It also means the policy has no position on fracking itself.\n\nCompare it with a bank that excludes the method and covers trading. Against that, this sentence covers less on both counts."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Add trading",
-          "content": "Trading of shale is left out, and shale is widely traded. The exclusion should cover trading too."
-        },
-        {
-          "title": "Name fracking, not just shale",
-          "content": "Fracking appears once in this policy, in a glossary note. A restriction on the method would follow it wherever it is used."
-        },
-        {
-          "title": "Cover all financing, not just dedicated deals",
-          "content": "Shale is paid for from company credit lines, well by well. A rule that only covers dedicated deals targets a way of financing shale that is rare."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, shale is the resource whose financing looks least like the rule written for it.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating.",
-      "strength_reason": "Dedicated shale financing is blocked; group borrowing, trading and everything downstream of the wellhead are not.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "A loan for a shale well is refused. But shale producers can borrow as companies, and trading, processing and moving shale oil and gas are not named.",
       "how_it_compares": {
         "text": "Société Générale's rule on unconventional oil also covers trading Arctic oil, Amazon oil, oil sands and extra heavy oil. At company level, shale is only caught by the 30% threshold on group revenue.",
         "links": [
@@ -327,7 +290,26 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's 30% Threshold on Unconventional Oil & Gas"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing labelled for exploring for or producing shale oil or gas, while shale producers can still borrow as companies and their output can be traded and moved",
+      "gaps": [
+        {
+          "title": "Loans to shale producers as companies",
+          "text": "The commitment covers “dedicated transactions” only: financing raised for a named activity. A shale producer can take a general loan or issue a bond and spend it on drilling.",
+          "phrase_refs": [
+            "dedicated"
+          ]
+        },
+        {
+          "title": "Trading, processing and transport",
+          "text": "The sentence names exploration and production only. Trading shale oil and gas is not named, and nor is anything after the well: gathering, processing, pipelines and export.",
+          "phrase_refs": [
+            "eandp"
+          ]
+        }
+      ],
+      "in_practice": "Shale oil and gas are trapped in dense rock called shale. Getting them out usually means fracking: pumping water, sand and chemicals into the rock at high pressure to crack it open. Much of it happens in North America.\n\nTake a shale producer that asks Société Générale for a loan to drill a named group of wells. The answer is no. That covers exploring for shale and producing it.\n\nNow take the same producer asking for a general loan to the company as a whole, which does not say what it pays for. Or it issues a bond. Neither names the wells, so the commitment does not apply. The producer can spend the financing on drilling.\n\nThen follow the oil and gas out of the ground. A trader that buys shale oil can get financing for that trade. So can the company that gathers the gas, processes it, pipes it or exports it. None of that is exploration or production.\n\nThe commitment is also about the rock, not the technique. The policy's own definition says shale extraction frequently involves fracking. It does not refuse fracking as such. Fracking outside shale rock is not covered.\n\nWhat is stopped is financing that names a shale well or field. The companies that drill them, and the chain that sells what they produce, can still be financed.",
+      "gets_right": "The sentence sets no threshold and no size test. Financing labelled for finding or producing shale oil or gas is refused, wherever the shale is."
     }
   },
   "evidence": {
@@ -341,7 +323,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

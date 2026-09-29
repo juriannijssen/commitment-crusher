@@ -95,8 +95,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains where the 2030 date applies. Not to all of the bank's thermal coal exposure — only to the part attached to assets inside the EU or the OECD.",
             "lets_through": [
-              "This wording lets through everything else, for another ten years. The rest of the world has until 2040, and that is where most thermal coal capacity is, and where most of what is still being built is being built.",
-              "Watchtower records the geographic scope of this commitment as not global, which is the record agreeing that the headline date is a regional one."
+              "This wording lets through everything else, for another ten years. The rest of the world has until 2040, and that is where most thermal coal capacity is, and where most of what is still being built is being built."
             ],
             "defined_in_clause": null,
             "bank_definition": null,
@@ -221,48 +220,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The headline date is a regional date, and the word carrying the schedule carries nothing.",
-          "text": "This is the sentence Société Générale will be quoted on. Two things in it decide what it is worth.\n\nThe first is “progressively”. The end point is zero, and the end date is 2030. But the policy sets no starting figure and no steps along the way. A bank cutting steadily and a bank doing nothing until 2029 both meet this wording. No one outside can tell them apart before the deadline.\n\nThe second is the map. The 2030 date covers companies whose coal assets are in the EU or the OECD. Everywhere else has until 2040.\n\nNeither point makes the commitment worthless. Both make it impossible to check until the year it is due."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "A dated phase-out counts for something.\n\nThis commitment is a phase-out with a date: 2030. A restriction is a rule about what the bank will not do. A phase-out is a promise about where it will end up.\n\nIt also covers more than lending. It applies to financing, asset management and investments together.\n\nThe criticism is about how it is measured and where it applies. It is not about having the target."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "2030 for the OECD and 2040 for everywhere else is close to standard among European banks. That cuts both ways.\n\nIn its favour, Société Générale is not an outlier. A bank moving alone on its own timetable would be easy to dismiss. Against it, a standard everyone adopts is not proof that anyone examined it. And the split follows where banks lend, not where coal is burned.\n\nThe better comparison is inside the bank's own policy, which excludes coal miners above 20% of group revenue or 10 million tonnes a year. It applies straight away, and to existing business too. That is a harder rule than either phase-out date, and it sits further down the same policy."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Publish the starting figure and yearly steps",
-          "content": "A 2030 zero with no starting figure and no steps cannot be checked until 2030. One figure now and one each year would fix that."
-        },
-        {
-          "title": "Say what exposure means",
-          "content": "The commitment covers financing, asset management and investments. It does not say whether it counts loans drawn, credit limits, bonds arranged, or all three."
-        },
-        {
-          "title": "Close the gap with 2040",
-          "content": "Splitting the deadline gives ten extra years to the region that burns the most coal. If there is a fairness reason for that, publish it."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the bank's headline coal date covers the part of the world that was leaving coal anyway.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A real end date for rich countries, with no interim milestone and nothing in the wording to stop a flat line then a cliff.",
+      "strength_reason": "The 2030 end date is real, but nothing can be checked against it until 2030 arrives. And it covers only coal assets in the EU and OECD.",
       "how_it_compares": {
         "text": "Société Générale's coal client rules start straight away, but cover less than this target, which also reaches asset management and investments.",
         "links": [
@@ -275,7 +237,26 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's 50% Threshold for Existing Clients"
           }
         ]
-      }
+      },
+      "actual_reading": "it will bring its financing, fund and investment exposure to companies with coal mines or coal plants in the EU or OECD to zero by 2030, on a path it chooses",
+      "gaps": [
+        {
+          "title": "No steps before the deadline",
+          "phrase_refs": [
+            "progressively"
+          ],
+          "text": "The policy sets an end point and an end date, but no starting figure and no milestones. A bank cutting steadily and one doing nothing until 2029 both meet this wording."
+        },
+        {
+          "title": "Coal elsewhere has ten more years",
+          "phrase_refs": [
+            "euoecd"
+          ],
+          "text": "The 2030 date applies only to companies with coal assets in the EU or OECD. Most thermal coal capacity, and most of what is still being built, is outside them."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. This commitment covers companies with thermal coal mines or plants in the EU or OECD. Société Générale will bring its exposure to them down to zero by 2030. Exposure here means the bank's financing, the funds it manages and its own investments.\n\nTake a power company with coal plants in Germany. By 2030 at the latest, Société Générale is to hold no exposure to it. That is a real end date.\n\nBut the policy does not say how much exposure there is today, or how fast it will fall. There are no steps in between. So until 2030 nobody outside the bank can tell whether it is on track. The bank could keep its exposure flat for years and cut it in one go at the end, and still meet the wording.\n\nNow take the same power company with its plants in Indonesia or India instead. They are outside the EU and OECD, so the 2030 date does not apply to them. Most of the world's thermal coal capacity is in countries like these, and so is most of the new capacity being built.\n\nSo what the commitment delivers is zero exposure by 2030 to coal in the EU and OECD. The path there cannot be checked, and much of the world's coal is not on this date.",
+      "gets_right": "It has an end point of zero and a fixed date. And it covers the funds Société Générale manages and its own investments, not only its lending."
     }
   },
   "evidence": {
@@ -289,7 +270,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 306, document 28051",
     "reading": "drafted"

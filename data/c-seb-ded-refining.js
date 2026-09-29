@@ -309,44 +309,30 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The word is undefined, the case it governs is the common one, and the same failure appears at another bank — which makes it a pattern rather than a quibble.",
-          "text": "One undefined word decides which refineries this bank will help build.\n\nNew refineries for transport fuel get no dedicated financing “unless it is primarily aimed for biofuel production”. How much of a project has to aim at biofuel? Measured by feedstock, capacity, cost or expected revenue? Over what period? None of it is stated, and each measure can give a different answer for the same project.\n\nThe case this will actually be used for is co-processing: an ordinary refinery adding plant-based feedstock alongside crude oil. Whether that counts as “primarily aimed” at biofuel is exactly what the wording leaves open."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "What is left after the exception is a new refinery built to make petrol and diesel, and nothing else.\n\nThose are still being built, mostly outside Europe. Refusing to finance them counts for something.\n\nBut new refining capacity in the markets SEB lends in is mostly conversions and co-processing. It is rarely a brand-new refinery for crude oil.\n\nSo the rule catches the kind of project least likely to reach the bank. And the exception covers the kind most likely to. How the bank reads “primarily” will decide most real cases. The bank should say how it will decide those cases."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The exception points in the right direction, which is more than an open exception clause does.\n\nAn exception for biofuel production is an exception for something the policy wants more of. It is not a gap for the company's convenience. It depends on what the project is for.\n\nWhat is missing is any sustainability test on the biofuel itself. The feedstock, the land it uses and its emissions over its life all decide whether a biofuel refinery is an improvement. The sentence asks about none of them.\n\nSo the direction is right, but the gate still has no lock on it."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Put a number on “primarily”",
-          "content": "A share of feedstock, capacity or output would each make the test checkable."
-        },
-        {
-          "title": "Deal with co-processing directly",
-          "content": "An oil refinery adding plant-based feedstock is the case this sentence will actually be used for."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the sentence turns on a word with no measurement behind it.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "New dedicated refinery financing is blocked; co-processing retrofits and a calculation with no stated basis are not."
+      "strength_reason": "It covers only financing labelled for a new fuel refinery. A refiner can borrow for general purposes, and a project with some biofuel in it can claim to be mainly for biofuel.",
+      "actual_reading": "it will not give financing set aside for a new or expanding transport-fuel refinery, unless the project is mainly aimed at making biofuel",
+      "gaps": [
+        {
+          "title": "Projects that are partly biofuel",
+          "phrase_refs": [
+            "primarily18"
+          ],
+          "text": "A project is exempt if it is “primarily” aimed at biofuel. The policy does not say how much counts as most, or how it is measured."
+        },
+        {
+          "title": "Loans to the company, not the refinery",
+          "phrase_refs": [
+            "see-dedicated-finance"
+          ],
+          "text": "“Dedicated Finance” is financing for a named use. A refiner can take a general loan and spend it on new refining capacity."
+        }
+      ],
+      "in_practice": "Take a company that wants to build a new refinery to make petrol and diesel. If it asks SEB for a loan labelled for that refinery, SEB says no.\n\nNow take an existing oil refinery that wants to process plant oils or waste fats alongside crude oil. This is called co-processing, and many refiners now do it. Is that project “primarily aimed” at biofuel? The policy does not say how much counts as most. It does not say whether SEB measures by volume, capacity, cost or revenue. Each measure can give a different answer for the same project. A refiner can present the figure that clears the line.\n\nThen there is the route around the label. “Dedicated Finance” is financing for a named use. A refiner can take a general loan from SEB and spend it on new refining capacity. That loan names no purpose, so this commitment does not apply.\n\nSEB's definition of “New Project” counts expansions and material changes at existing refineries too. A smaller change is not caught, and the policy gives no measure of what counts as material.\n\nSo what the commitment stops is a loan labelled for a new or growing refinery that is plainly for fossil fuel. Mixed projects, and general loans to refiners, stay open.",
+      "gets_right": "SEB's definition of “New Project” counts expansions and big changes at existing refineries. So the commitment reaches more than brand-new refineries."
     }
   },
   "evidence": {
@@ -360,7 +346,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

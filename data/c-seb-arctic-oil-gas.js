@@ -451,44 +451,42 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "how_it_compares",
-          "recommended": true,
-          "recommended_because": "The sentence itself is clean; its meaning comes entirely from the one beside it, and the page should point there.",
-          "text": "This is the strict half of a rule that changes at a sea border.\n\nOutside Norway's economic zone, the test is 5% of revenue from Arctic oil and gas. Inside it, the policy uses 15% of global revenue. Same ocean, same activity, three times the threshold, and measured against a different total.\n\nSEB is a Nordic bank, and the softer number covers the waters its home region drills in. That may be defensible. Norway's rules are strict, the infrastructure exists, and one Nordic bank leaving changes little. But none of that is in the document.\n\nWithin its own area we could not find a way through it. The argument is about the softer rule that covers Norwegian waters."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "On its own terms, this is a strong commitment.\n\nIt uses 5%. It covers the client as a whole, not single deals. It covers new and existing clients, and arranging bonds too. And there is no exception of any kind. Under our rating, that scores zero and reads “holds”.\n\nIn the Arctic, refusing financing might change whether production happens at all. Arctic projects are costly and marginal, and financing is scarce.\n\nSo a strict rule here is well placed, and it matters."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "What the sentence does not reach is the area that matters most to this bank.\n\nThe Norwegian Continental Shelf is the largest Arctic oil and gas region with active development. And it is exactly the area this commitment leaves out. A Norwegian producer is measured against 15% of global revenue, not 5% of Arctic revenue.\n\nSo the strict rule covers Arctic activity in Russia, Alaska, Canada and Greenland. A Swedish bank was unlikely to be lending there anyway. In practice, little changes on the ground.\n\nThe rule is strong where it costs SEB little. Where SEB actually does business, the softer rule applies."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "One rule, two numbers, and the border between them is a sea boundary.\n\nOutside Norway's economic zone, a company earning more than 5% of its revenue from Arctic oil and gas loses every business relationship with SEB. That is a low bar and it covers all business, not only new business and not only dedicated financing. Most of the world's Arctic oil and gas — the Russian Arctic, Alaska, the Canadian Beaufort — sits on that side of the line.\n\nInside the zone, the test becomes 15% of a producer's global revenue from Arctic activity. That is three times the threshold, measured against a much larger total. A company can be one of the largest operators on the Norwegian shelf and sit far below it.\n\nSEB is a Nordic bank, and the softer number covers the waters its home region drills in. That may be defensible — Norway's rules are strict and one bank leaving changes little. None of that reasoning is in the document.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Use one Arctic threshold",
-          "content": "5% outside Norwegian waters, 15% inside them. The Arctic does not change at the border."
-        },
-        {
-          "title": "Publish the reason for the split",
-          "content": "There may be a fair argument about Norway's rules and infrastructure. It is not in the document."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this is the strict half of a rule that is softer where the bank does most of its business.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Outside Norwegian waters a 5% line on all business, which is strict. Inside them the test is 15% of a producer's global revenue, which every large operator on the Norwegian shelf sits far below."
+      "strength_reason": "It changes at a sea border. In Norwegian waters the line is 15% of a producer's worldwide revenue, and a producer with fields across the world can drill there and stay below it.",
+      "actual_reading": "it does not do business with companies earning more than 5% of their revenue from Arctic oil and gas, except in Norwegian waters, where the line is 15% of worldwide revenue",
+      "gaps": [
+        {
+          "title": "Norwegian waters have a higher line",
+          "phrase_refs": [
+            "15pc"
+          ],
+          "text": "In the Norwegian part of the Arctic, SEB measures Arctic oil and gas against the company's worldwide revenue, and the line is 15%. A producer with operations across the world can stay below it."
+        },
+        {
+          "title": "A company in the group below the line",
+          "phrase_refs": [
+            "company-legal-entity"
+          ],
+          "text": "SEB applies the test to the one legal entity it deals with, not to its group. A subsidiary with little Arctic revenue can borrow, and the financing can move within the group."
+        },
+        {
+          "title": "Just south of the Arctic Circle",
+          "phrase_refs": [
+            "arctic-circle-line"
+          ],
+          "text": "The “Arctic Area” starts at the Arctic Circle. A field just south of that line is outside it, however cold and remote it is."
+        }
+      ],
+      "in_practice": "Take a company that drills for oil and gas in the Russian or Alaskan Arctic. If more than 5% of its revenue comes from that drilling, SEB avoids doing business with it. The sentence is not limited to new clients or to financing for a named project.\n\nNow move the same company to the Norwegian part of the Arctic. The test changes. SEB now looks at the share of the company's worldwide revenue that comes from Arctic oil and gas. And the line is 15%, not 5%. A producer with fields across the world can run large Arctic operations off Norway and stay under that line.\n\nThen there is who SEB measures. The policy defines a “Company” as one legal entity, not the whole group. A group can borrow through a subsidiary whose own Arctic revenue is small. The subsidiary passes the test, and the financing can move inside the group.\n\nFinally, in this policy the Arctic starts at the Arctic Circle. A field just south of that line is not in the “Arctic Area”. Other common ways of drawing the Arctic reach further south.\n\nSo what the commitment stops is business with companies that earn a real share of their revenue from Arctic drilling outside Norway. In Norwegian waters the line is much easier to stay under.",
+      "gets_right": "Outside Norwegian waters the line is low, at 5% of revenue. And it covers the whole relationship with the company, not only new clients or financing for a named project."
+    },
+    "featured": {
+      "rank": 7,
+      "kind": "a definition and a national exception",
+      "because": "Four passages: where the Arctic starts is a choice, and Norwegian waters get their own 15% line."
     }
   },
   "evidence": {
@@ -502,7 +500,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

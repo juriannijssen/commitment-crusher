@@ -36,8 +36,8 @@ window.WATCHTOWER_CASE = {
         "published_confidence": null,
         "verbatim_check": {
           "document": "25537-seb-fossil-fuels.md",
-          "passages": 2,
-          "found": 2,
+          "passages": 3,
+          "found": 3,
           "missing": []
         }
       }
@@ -82,9 +82,69 @@ window.WATCHTOWER_CASE = {
             "source": "bank_green",
             "watchtower_ref": null,
             "not_in_synthesis": true
+          },
+          {
+            "id": "see-ultradeep",
+            "label": "Ultra Deep",
+            "type": "narrowing_qualifier",
+            "source": "bank_green",
+            "watchtower_ref": null,
+            "not_in_synthesis": true,
+            "verbatim_range": [
+              94,
+              104
+            ],
+            "plain_range": [
+              94,
+              104
+            ],
+            "means": null,
+            "lets_through": [],
+            "defined_in_clause": 2,
+            "bank_definition": null
           }
         ],
         "watchtower_origin": null
+      },
+      {
+        "index": 2,
+        "role": "definition",
+        "source_id": "seb2026",
+        "title": "The definition of “Ultradeep”",
+        "intro": "How SEB's policy defines it in its list of definitions.",
+        "location": {
+          "distance": "end_of_document",
+          "signposting": "weak",
+          "signposting_note": "The wording above says “Ultra Deep”, and the list of definitions at the front of the policy spells it “Ultradeep”."
+        },
+        "verbatim": "Ultradeep — Oil and Gas production more than 1500m deep under the sea surface.",
+        "plain_rendering": "Ultradeep means oil and gas production more than 1500m deep under the sea surface.",
+        "phrases": [
+          {
+            "id": "ultradeep-1500m",
+            "label": "more than 1500m deep under the sea surface",
+            "type": "narrowing_qualifier",
+            "source": "bank_green",
+            "watchtower_ref": null,
+            "not_in_synthesis": true,
+            "verbatim_range": [
+              35,
+              77
+            ],
+            "plain_range": [
+              39,
+              81
+            ],
+            "means": "This definition of “Ultradeep” matches what the term usually means. Ultra-deep water starts at 1,500 metres, which is the line the industry draws. SEB measures from the sea surface, and does not say whether it means the depth of the water or the depth of the well.",
+            "lets_through": [
+              "This wording lets through a field in 1,400 metres of water, which is deepwater drilling by any ordinary use of the words."
+            ],
+            "defined_in_clause": null,
+            "bank_definition": null
+          }
+        ],
+        "watchtower_origin": null,
+        "ordinary_direction": "mixed"
       }
     ],
     "glossary_refs": [
@@ -219,44 +279,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "how_it_compares",
-          "recommended": true,
-          "recommended_because": "The better wording exists in the same section of the same document, which makes the recommendation concrete rather than aspirational.",
-          "text": "This rule covers expansion as well as new projects.\n\nIt reaches “any Projects or Capacity Expansion related to Ultra Deep Oil & Gas exploration and production”.\n\nThat wording is right. Expanding an existing field is how a lot of new supply arrives. A rule that only covers new fields leaves that alone."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "“Ultra-deep” is also a term the policy never defines.\n\nThe industry uses several limits. 1,500 metres of water is common, and 2,000 is not unusual. Some companies use pressure and temperature instead of depth. A rule that turns on a term with no fixed meaning has an edge that can be negotiated.\n\nThe document defines a great deal else, including thermal coal, offshore services, dedicated financing and business relationships. Ultra-deep is left open.\n\nSo the best-worded scope in the policy sits on top of an undefined word. A project just outside whatever line the bank chooses is simply not covered by it."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Within its scope, the sentence has no conditions.\n\nThere is no threshold, no exception, no condition and no transition plan route.\n\nUltra-deep projects are also very costly, and unusually dependent on project financing. So the limit to dedicated financing matters less here than it does for drilling on land. The rule reaches the way these projects are actually paid for.\n\nHere, the tool fits the activity. That is good drafting, and it should be said plainly."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Say it covers company loans too",
-          "content": "The rule reaches financing for a named project. A producer can pay for ultra-deep work from its own balance sheet."
-        },
-        {
-          "title": "Define ultra-deep",
-          "content": "The glossary does not fix a water depth, and the industry uses several."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule reaches expansion, but not company loans, and not a fixed depth.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Ultra-deep development is capital-intensive and usually project-financed, so a dedicated-financing bar reaches much of it.",
+      "strength_reason": "It reaches ultra-deep drilling through one route only: financing set aside for the project. A producer can borrow for general purposes and drill anyway.",
       "how_it_compares": {
         "text": "SEB's rule on new oil and gas extraction, earlier in the same section, reaches only “New Projects relating to Oil and Gas extraction”. The fix there is a few words, and this rule shows what they should be.",
         "links": [
@@ -265,7 +292,19 @@ window.WATCHTOWER_CASE = {
             "title": "SEB's Restriction on Financing New Oil and Gas Projects"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing set aside for new ultra-deep oil and gas projects, or for expanding existing ones",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the project",
+          "phrase_refs": [
+            "ded14"
+          ],
+          "text": "“Dedicated Finance” is financing for a named project. An oil and gas producer that borrows for general purposes is not asking for dedicated finance, so the rule does not apply."
+        }
+      ],
+      "in_practice": "Ultra-deep drilling is some of the costliest oil and gas work there is. A single field can take years and billions to develop. Projects like that are often paid for with financing set aside for the project.\n\nBut the largest producers do not need to. They can pay for an ultra-deep field out of their general borrowing, or out of their own revenue. Take a producer that asks SEB for a general loan to the company. The loan names no project, so this rule does not apply. The producer can spend it on an ultra-deep well.\n\nSo the rule stops SEB from being the named lender on an ultra-deep project. It does not stop SEB lending to the companies that develop them.\n\nThe line for ultra-deep is 1,500 metres, the depth the industry uses. A field just short of it is deepwater drilling by any ordinary use of the words, and this rule does not cover it.",
+      "gets_right": "There is no threshold, no exception and no condition. And the rule covers expanding an existing ultra-deep field as well as opening a new one, which is how much new supply arrives."
     }
   },
   "evidence": {
@@ -279,7 +318,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

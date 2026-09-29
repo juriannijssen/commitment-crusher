@@ -37,8 +37,8 @@ window.WATCHTOWER_CASE = {
         "published_confidence": null,
         "verbatim_check": {
           "document": "25537-seb-fossil-fuels.md",
-          "passages": 2,
-          "found": 2,
+          "passages": 3,
+          "found": 3,
           "missing": []
         }
       }
@@ -70,10 +70,10 @@ window.WATCHTOWER_CASE = {
               27,
               49
             ],
-            "means": "This explains what is withheld: services not yet provided. Watchtower records the transaction status on this commitment as new.",
+            "means": "This explains what is withheld: services not yet provided.",
             "lets_through": [
               "Adding the word “new” means everything already in place stays. An offshore contractor with existing facilities keeps them.",
-              "It also leaves the relationship itself in place. Watchtower records the relationship status here as new and existing, so SEB can remain the company's bank while declining new services — a distinction the policy does not explain."
+              "It also leaves the relationship itself in place. SEB can stay the company's bank and keep the services it already provides, while declining new ones."
             ],
             "defined_in_clause": null,
             "bank_definition": null,
@@ -115,8 +115,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains the threshold, on revenue from offshore services specifically.",
             "lets_through": [
-              "This wording lets through diversified marine and engineering groups below the line. A large offshore contractor with a big renewables installation business can fall under 5%.",
-              "It also lets through oil and gas exploration and production companies, explicitly. Watchtower records the exception: this commitment does not apply where the company is an E&P company subject to other restrictions — so an integrated producer running its own offshore fleet is handled by the upstream client rule, at the same 5% but only for new clients."
+              "This wording lets through diversified marine and engineering groups below the line. A large offshore contractor with a big renewables installation business can fall under 5%."
             ],
             "defined_in_clause": null,
             "bank_definition": null,
@@ -166,6 +165,45 @@ window.WATCHTOWER_CASE = {
         ],
         "watchtower_origin": null,
         "ordinary_direction": "narrower"
+      },
+      {
+        "index": 3,
+        "role": "exception",
+        "source_id": "seb2026",
+        "title": "When it may not apply",
+        "intro": "A footnote takes one kind of company out of this rule.",
+        "location": {
+          "distance": "same_passage",
+          "signposting": "explicit",
+          "signposting_note": null
+        },
+        "verbatim": "Unless the Company is an oil & gas exploration and production Company and therefore subject to the other oil & gas production restrictions in this chapter.",
+        "plain_rendering": "Unless the Company is an oil & gas exploration and production Company and therefore subject to the other oil & gas production restrictions in this chapter.",
+        "phrases": [
+          {
+            "id": "producer-exception",
+            "label": "Unless the Company is an oil & gas exploration and production Company",
+            "type": "escape_hatch",
+            "source": "bank_green",
+            "watchtower_ref": null,
+            "not_in_synthesis": true,
+            "verbatim_range": [
+              0,
+              69
+            ],
+            "plain_range": [
+              0,
+              69
+            ],
+            "means": "This explains who is left out: companies that produce oil and gas. The footnote sends them to the bank's restrictions on production instead.",
+            "lets_through": [
+              "This wording lets through an oil and gas producer that runs its own rigs and supply ships. Its offshore work is not tested against this 5% line."
+            ],
+            "defined_in_clause": null,
+            "bank_definition": null
+          }
+        ],
+        "watchtower_origin": null
       }
     ],
     "glossary_refs": [
@@ -314,44 +352,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The carve-out reroutes rather than exempts, and that is only visible once you read it against commitment 6.",
-          "text": "The rule covers offshore service companies above 5% of revenue from that work: rigs, supply ships and underwater contractors. Then comes the exception. It does not apply to oil and gas producers."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "What is left after the exception is the contractors.\n\nDrilling contractors, seismic ship operators, supply fleets and underwater engineering firms. These companies serve offshore production without owning the oil and gas. Above 5% of revenue from that work, SEB provides them no new financial services.\n\nThat is a real group and a real restriction. It is also the part of the offshore chain with the least power over prices, and the most exposed to a downturn. That is worth noting when judging what the rule costs the bank.\n\nThe producers they work for, which own the fields, face the softer upstream client test."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The scope here is precise.\n\nThe rule covers new and existing clients, but new services only. So SEB can stay an offshore contractor's bank, while refusing to provide anything further. That is narrower than ending a relationship, and easier to use."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Say why producers are excepted",
-          "content": "A producer above 5% of revenue from offshore services is left out of this rule. Say why, and say which test applies instead."
-        },
-        {
-          "title": "Cover the relationship, not just new services",
-          "content": "The rule covers existing clients but only new deals. SEB can remain the bank while refusing new business."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the contractors are held to a rule the producers are not.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "New business only, and oil and gas producers are explicitly excepted from it. The 5% line itself is a low bar.",
+      "strength_reason": "It stops new services only, so everything already in place stays. And a company that also produces oil and gas is left out, however large its offshore fleet.",
       "how_it_compares": {
         "text": "Excepted producers fall under SEB's 5% threshold for oil and gas producers, which covers new clients only. So a large producer running its own offshore fleet moves from a rule about all new services to a rule about new clients. The bigger the company, the softer the test it lands on.",
         "links": [
@@ -360,7 +365,33 @@ window.WATCHTOWER_CASE = {
             "title": "SEB's 5% Threshold on Oil and Gas Producers"
           }
         ]
-      }
+      },
+      "actual_reading": "it does not provide new financial services to companies earning more than 5% of their revenue from offshore oil and gas services, unless they produce oil and gas themselves",
+      "gaps": [
+        {
+          "title": "What is already in place stays",
+          "phrase_refs": [
+            "new-fs"
+          ],
+          "text": "The commitment covers new financial services only. A contractor keeps the loans and facilities it already has, and SEB can stay its bank."
+        },
+        {
+          "title": "Producers with their own fleets",
+          "phrase_refs": [
+            "producer-exception"
+          ],
+          "text": "A company that produces oil and gas is left out of this commitment. That holds however much of its revenue comes from running rigs and supply ships."
+        },
+        {
+          "title": "A company in the group below the line",
+          "phrase_refs": [
+            "company-legal-entity"
+          ],
+          "text": "SEB applies the 5% test to the one legal entity it deals with, not to its group. A subsidiary with little offshore revenue can borrow, and the financing can move within the group."
+        }
+      ],
+      "in_practice": "Offshore services are the rigs, supply ships, seismic vessels and underwater contractors that offshore oil and gas production depends on.\n\nTake a drilling contractor that earns most of its revenue from offshore oil fields. SEB will not provide it new financial services. But the loans and facilities it already has from SEB stay in place. The commitment is about what comes next, not what is already on the books. SEB can stay the contractor's bank while declining anything new.\n\nNow take an oil and gas producer that runs its own fleet of rigs and supply ships. Its offshore work may be far above 5% of its revenue. But because it produces oil and gas, this commitment does not apply to it.\n\nA large marine group with a big offshore wind business is also outside it. If its oil and gas services are under 5% of its revenue, SEB can bank it.\n\nThe policy defines a “Company” as one legal entity, not a group. A group can borrow through a subsidiary with little offshore oil and gas work. The financing can then move inside the group.\n\nSo what is left is a specialist offshore contractor, dealing with SEB in its own name, asking for something new. That company is turned down.",
+      "gets_right": "The line is low. A contractor only needs more than 5% of its revenue from offshore oil and gas services to be caught. And it covers new services to the company as a whole, not only financing for a named project."
     }
   },
   "evidence": {
@@ -374,7 +405,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

@@ -217,44 +217,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "It is the only commitment of its kind in the project and the page's job is to say so.",
-          "text": "This rule reaches back to the first step in the chain.\n\nSeismic surveys use sound waves to map rock underground. They are the step before anyone decides where to drill. Restricting them means refusing to fund the map, not just the well. And the rule has no threshold, no exception and no qualifier.\n\nThat deserves credit. A bank that stops the search, and not only the drilling, is aiming early in the chain. The question is whether the rule reaches the companies that do the surveys."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The rule is on the financing, not the client.\n\nA survey company that funds its ships and equipment from a general loan is not asking for dedicated financing. So this rule does not apply to it.\n\nWould the survey company be caught as a client instead? Only by the client rule for companies earning more than 5% from “exploration and production”. Surveying is arguably neither. And that rule only covers new clients.\n\nSo the activity is closed to financing for a named purpose. But the companies that do it may not be covered as clients at all. The first step in the chain is only half closed."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Within the oil and gas section, this is the one rule with no match anywhere else.\n\nThe rule on extraction has an equivalent in every bank policy we have read. Rules on ultra-deep, Arctic and unconventional oil and gas are common. Seismic surveys appear once, here.\n\nThat could be real thoroughness. Or it could be a line that costs nothing, because SEB does not finance seismic surveys anyway. The document does not let a reader tell which.\n\nThat is the right question to put to the bank. How much seismic survey work did it finance before this rule, and how much since?"
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover survey companies as clients",
-          "content": "The rule is on the financing, not the client. A survey company's own general loans are not covered."
-        },
-        {
-          "title": "Say whether current surveys are covered",
-          "content": "The rule reads as if it only looks forward, without saying so."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the earliest step in the chain is closed to one kind of financing.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Dedicated survey financing is blocked. The contractor's own revolver is free.",
+      "strength_reason": "It covers one way of paying for a seismic survey: financing labelled for it. A survey company can borrow for general purposes and run the same surveys.",
       "how_it_compares": {
         "text": "SEB's 5% rule for oil and gas producers reaches the producers that commission surveys. A survey company is only caught by it if its work counts as exploration and production.",
         "links": [
@@ -263,7 +230,19 @@ window.WATCHTOWER_CASE = {
             "title": "SEB's 5% Threshold on Oil and Gas Producers"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing set aside for seismic surveys that search for new oil and gas",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the survey",
+          "phrase_refs": [
+            "ded7"
+          ],
+          "text": "“Dedicated Finance” is financing for a named use. A survey company that borrows for general purposes is not asking for dedicated finance, so this commitment does not apply."
+        }
+      ],
+      "in_practice": "Seismic surveys come before drilling. A ship or a truck sends sound waves into the ground or the seabed, and the echoes show where oil and gas may lie. A company then decides where to drill.\n\nTake a survey company that wants to map a new offshore area. If it asks SEB for a loan labelled for that survey, SEB says no. If it asks for a general loan to the company, this commitment does not apply. That loan names no purpose, so it is not “Dedicated Finance”. The company can spend it on survey ships, equipment and the survey itself.\n\nSurvey companies work for many clients across many surveys. A loan to the business as a whole suits that work. A loan for one survey does not. So the loan this commitment refuses is not the one they need most.\n\nThe same goes for the oil and gas producers that order surveys. A producer can pay for a survey out of a general loan, and nothing here applies.\n\nSo what the commitment stops is SEB being the named lender on a seismic survey for oil and gas. It does not stop SEB lending to the companies that carry out surveys, or to those that order them.",
+      "gets_right": "It aims at the first step in the chain: finding the oil and gas, before anyone drills. And the sentence sets no threshold and no condition."
     }
   },
   "evidence": {
@@ -277,7 +256,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

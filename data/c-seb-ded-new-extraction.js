@@ -277,57 +277,39 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The capacity-expansion gap is provable from the same section of the same policy, which is the strongest form this finding can take.",
-          "text": "Two words limit this commitment: “New” and “Dedicated”.\n\n“New Projects” leaves out expanding fields that already produce. That is where a large share of new supply comes from.\n\n“Dedicated Finance” leaves out company loans. A producer can pay for a new field from its own balance sheet, and this rule never applies."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This is the commitment the International Energy Agency's net-zero path asks banks to make, and SEB has made it.\n\nNo dedicated financing for new oil and gas extraction projects. There is no threshold, no condition and no recorded exception. Among banks that have written this line at all, most have added conditions about transition plans or exceptions for certain countries. This one is a flat sentence.\n\nThat matters. A flat sentence is easy to check and hard to argue around.\n\nThe criticism on this page is about the two words that limit it. It is not about whether the commitment exists."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Put two sentences from the same policy side by side, and the drafting choice is clear.\n\nThe rule covers “Dedicated Finance to New Projects relating to Oil and Gas extraction”. The ultra-deep rule covers “Dedicated Finance to any Projects or Capacity Expansion related to Ultra Deep Oil & Gas exploration and production”.\n\nSame policy, same section, four hundred words apart. One covers expansions, and one does not.\n\nIf that is deliberate, the reason is not published. If it is not deliberate, it is a one-word fix. Either way, the ultra-deep sentence shows the bank knows how to write the wider rule."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover expansions",
-          "content": "This line says new projects only. Covering “Projects or Capacity Expansion” would reach fields that already produce."
-        },
-        {
-          "title": "Say when a project stops being new",
-          "content": "It could be the approval date, first production or the permit. The policy does not say."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule covers new fields and leaves expansions alone.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Dedicated financing of new extraction is blocked. Company loans are not covered, and new excludes existing fields.",
+      "strength_reason": "It covers one way of paying for new oil and gas extraction: financing labelled for it. A producer can borrow for general purposes and open the field anyway.",
       "how_it_compares": {
-        "text": "SEB's ultra-deep rule covers “Projects or Capacity Expansion”, so the wider phrase was to hand. SEB's 5% rule for oil and gas producers partly closes the company-loan gap, but for new clients only. Existing clients above 5% are where both gaps meet.",
+        "text": "SEB's 5% rule for oil and gas producers partly closes the company-loan gap, but for new clients only. An existing client above 5% can still borrow for general purposes.",
         "links": [
-          {
-            "slug": "seb-ded-ultra-deep",
-            "title": "SEB's Restriction on Financing Ultra-Deep Oil and Gas"
-          },
           {
             "slug": "seb-og-upstream-5pc",
             "title": "SEB's 5% Threshold on Oil and Gas Producers"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing set aside for new oil and gas extraction projects, or for expanding or materially changing existing ones",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the field",
+          "phrase_refs": [
+            "ded8"
+          ],
+          "text": "“Dedicated Finance” is financing for a named use. An oil and gas producer that borrows for general purposes is not asking for dedicated finance, so this commitment does not apply."
+        },
+        {
+          "title": "Changes SEB does not call “material”",
+          "phrase_refs": [
+            "new-project-material-change"
+          ],
+          "text": "An existing field counts as a new project when its output or function changes materially. The policy gives no measure, so SEB decides which changes count."
+        }
+      ],
+      "in_practice": "Take an oil and gas producer that wants to develop a new field. If it asks SEB for a loan labelled for that field, SEB says no. If it asks for a general loan to the company, this commitment does not apply. That loan names no purpose, so it is not “Dedicated Finance”. The producer can spend it on the new field.\n\nLarge producers can pay for new fields out of their general borrowing or their own revenue. They do not need a loan with the field's name on it. So the commitment reaches the kind of financing the biggest producers need least.\n\nExisting fields are covered in part. SEB's definition of “New Project” counts capacity expansions, and existing sites whose output or function changes materially. A loan labelled for that kind of change is refused. A smaller change is not caught, and the policy gives no measure of what counts as material.\n\nA field that keeps producing as it is was never part of this commitment. Neither is the producer's day-to-day banking.\n\nSo what the commitment stops is SEB being the named lender on new or growing oil and gas extraction. It does not stop SEB lending to the companies that do it.",
+      "gets_right": "The sentence sets no threshold and no condition. And SEB's definition of “New Project” counts expansions and big changes at existing fields, not only fields built from scratch."
     }
   },
   "evidence": {
@@ -341,7 +323,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

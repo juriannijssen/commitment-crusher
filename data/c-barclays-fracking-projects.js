@@ -285,44 +285,29 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The geography is the gap, and it is best stated flatly.",
-          "text": "The rule applies where fracking barely happens.\n\nIt covers fracking projects in the UK and Europe. England has a pause on fracking, and several European countries ban it. Most of the world's fracking takes place in North America and Argentina, which this commitment does not reach.\n\nWithin the UK and Europe, it covers direct financing only: financing whose use is known to be for the project. General-purpose financing for the same company is untouched.\n\nWhat remains is labelled financing for a fracking project, in a region where there are few to finance. The commitment is accurate about what it covers. It just covers very little.\n\nA shale driller in Texas is outside it entirely."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer asking Barclays for financing labelled for a fracking project in the UK or Europe. There are few such developers, and fewer such projects.\n\nA shale producer in the United States or Argentina is not caught, whatever the financing is for. Neither is a European developer borrowing for general purposes.\n\nSo the commitment binds the region that has largely decided against fracking already. It releases the regions where fracking actually happens. The rule follows the law, rather than going beyond it. In practice, very few deals will ever meet this test."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the statement defines fracking precisely. And it restricts direct financing, meaning any financing known to be for the project, not only project loans. That is wider than project finance alone.\n\nWhere it stops is the map. The UK and Europe account for a tiny share of the world's fracking. Most of it happens in North America and Argentina, which the rule does not mention.\n\nSo the commitment is accurate about what it covers, and covers very little. It has a clear definition and a wider kind of financing, but a region with almost no fracking to restrict.\n\nThe drafting is careful. The target is small."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Apply it everywhere",
-          "content": "Restrict financing for fracking projects wherever they are, not only in the UK and Europe."
-        },
-        {
-          "title": "Cover general-purpose financing",
-          "content": "Restrict financing to companies developing fracking projects, whatever its stated use."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule covers the fracking that was not going to happen anyway.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Same geography, and only where the use of proceeds is stated. Almost no fracking is reached."
+      "strength_reason": "Almost all fracking gets through. What is left is a rule for a region that has nearly stopped fracking on its own.",
+      "actual_reading": "it will not finance fracking projects in the UK or Europe, where the financing says it is for that project",
+      "gaps": [
+        {
+          "title": "Everywhere else",
+          "phrase_refs": [
+            "uk-europe"
+          ],
+          "text": "The rule covers the UK and Europe only. England has paused fracking, and several European countries ban it. Most fracking happens in North America and Argentina, and the rule does not cover it."
+        },
+        {
+          "title": "Loans that do not name their purpose",
+          "phrase_refs": [
+            "use-of-proceeds"
+          ],
+          "text": "Barclays only counts financing as “direct financing” when it knows the financing is for a particular project. A fracking company can borrow for general purposes and spend the loan on fracking."
+        }
+      ],
+      "in_practice": "Take a company that fracks shale wells in Texas. It is outside this rule entirely, whatever it borrows for and however much it fracks.\n\nNow take a company that wants to frack in the UK. If it asks Barclays for a loan for that project, the rule applies. If it asks for a general loan to the company, the rule does not apply, even if fracking is its whole business. The loan does not have to say what it is for, and Barclays does not have to ask.\n\nSo the rule binds very few borrowers. They have to be developing a fracking project in the UK or Europe. And they have to ask for financing tied to that project. England has paused fracking and several European countries ban it, so there are few such developers to begin with.\n\nThe companies that do most of the world's fracking work in North America and Argentina. None of them is affected by this commitment. Nor are the contractors and suppliers that fracking depends on, wherever they work: a loan to them is not financing for a project."
     }
   },
   "evidence": {
@@ -366,7 +351,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "the contractors that frack American wells"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

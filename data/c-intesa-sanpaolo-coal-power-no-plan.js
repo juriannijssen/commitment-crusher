@@ -224,44 +224,30 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "text": "Intesa Sanpaolo will not increase general purpose lending to a coal power company with no documented plan to cut its emissions.\n\nThe test is the document, not the cut. A company passes by having written something down. The rules set no target, no date and no pace, and nobody checks whether the plan is acted on.\n\nThe cost of failing is also small. The company's general purpose lending is capped, not withdrawn. It keeps what it has, and can replace a maturing loan with another.\n\nFor the lending already in place, the document promises progressive disengagement. No date is attached to that, and no consequence follows if the exposure stays where it is.",
-          "recommended": true,
-          "recommended_because": "The test is passed by producing a document, which is the difference between what the sentence sounds like and what it asks for."
-        },
-        {
-          "angle": "who_it_catches",
-          "text": "Who does this commitment stop, and when?\n\nIt stops a coal power company with no written emissions plan from increasing its general purpose lending. That has applied since July 2021, everywhere the group operates.\n\nIt catches only the companies that have written nothing. A short published plan is enough to pass, whatever it contains.\n\nIt does not stop the lending a failing company already has. That is capped, and the document says only that the bank will step back from it over time.\n\nAnd it does not reach lending with a stated purpose. This rule names general purpose financing alone, which is lending where the use is unknown.",
-          "recommended": false,
-          "recommended_because": null
-        },
-        {
-          "angle": "what_it_gets_right",
-          "text": "The test is applied to the company, not to a plant. That is the right level, because a power company borrows at group level and moves financing between its assets.\n\nIt also applies to companies the bank already lends to, not only to new clients, and it took effect immediately.\n\nThe document then commits the bank to step back from the exposure it has, rather than simply holding it.\n\nWhat is missing is any bar for the plan. A document satisfies the test, however thin. And the consequence is a cap rather than an exit, with no date on the disengagement that is supposed to follow.",
-          "recommended": false,
-          "recommended_because": null
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "Intesa Sanpaolo will not increase general purpose lending to a coal power company that has no documented plan to cut its emissions.\n\nThe test is the document, not the cut. A company passes by having written something down. The rules set no target, no date and no pace, and nobody checks whether the plan is acted on.\n\nThe cost of failing is also small. The company's general purpose lending is capped, not withdrawn. It keeps what it has and can replace a maturing loan with another of the same size.\n\nFor lending already in place, the document promises progressive disengagement. No date is attached to that, and nothing follows if the exposure simply stays.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Set a bar for the plan",
-          "content": "Any written plan passes this test. A target, a date and independent verification would make it mean something."
-        },
-        {
-          "title": "Say when disengagement finishes",
-          "content": "The bank promises to step back from existing lending over time. No date is given, so nothing can be missed."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, writing a plan down is enough to keep borrowing.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "It asks for a document, not a result — no target, no date, no check — and the lending already in place is untouched either way."
+      "strength_reason": "Any written plan is enough to pass, with no target or date. A company with no plan at all still keeps every loan it has.",
+      "actual_reading": "it will not raise general purpose lending to coal power companies that have no written plan to cut their emissions, and will step back from their loans with no set date",
+      "gaps": [
+        {
+          "title": "Any written plan passes",
+          "phrase_refs": [
+            "documented-plan"
+          ],
+          "text": "The company only has to have a plan on paper. The document sets no target, no date and no check that the plan is carried out."
+        },
+        {
+          "title": "Failing keeps the loans in place",
+          "phrase_refs": [
+            "not-increase-4",
+            "progressive-disengagement"
+          ],
+          "text": "A company with no plan keeps the lending it has and can replace loans as they are repaid. The bank promises to step back over time, with no date."
+        }
+      ],
+      "in_practice": "This commitment applies to companies that make electricity from coal. General purpose lending means loans to the company as a whole, which do not say what they pay for.\n\nTake a coal power company that publishes a short plan to cut its emissions “progressively”. It passes. The plan needs no target, no date and no pace. Nobody checks whether the company follows it. The bank can lend it more.\n\nNow take a company that has published nothing. It fails. Its general purpose lending cannot go up. But it keeps every loan it already has. When a loan is repaid, the bank can replace it with a new one of the same size.\n\nFor that lending, the bank says it will manage it “with a view to progressive disengagement”. That means stepping back over time. No date is set, and no step. Nothing happens if the lending simply stays.\n\nSo the commitment catches only coal power companies that have written nothing down. Even for them, it holds lending steady rather than ending it. A company that plans only a small cut can pass by writing that plan down."
     }
   },
   "evidence": {
@@ -319,7 +305,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "utilities that burn coal and publish a plan about it"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 262, document 8201",
     "reading": "drafted"

@@ -48,7 +48,7 @@ window.WATCHTOWER_CASE = {
         "role": "rule",
         "source_id": "seb2026",
         "title": "The promise",
-        "intro": "This is the only client rule in the document with no threshold. The words at the end do the work a percentage does elsewhere.",
+        "intro": "This client rule has no revenue threshold. The words at the end decide which companies it covers.",
         "location": {
           "distance": "same_passage",
           "signposting": "explicit",
@@ -69,7 +69,7 @@ window.WATCHTOWER_CASE = {
               17,
               43
             ],
-            "means": "This explains who this commitment applies to: companies that are not clients yet. Watchtower records the relationship status as new.",
+            "means": "This explains who this commitment applies to: companies that are not clients yet.",
             "lets_through": [
               "This wording lets through every refiner already banked. Nothing here asks an existing client to change."
             ],
@@ -225,7 +225,7 @@ window.WATCHTOWER_CASE = {
       }
     ],
     "assessment": {
-      "strength": "crushed",
+      "strength": "hollowed",
       "strength_derivation": {
         "rule": "spec v3.29 §4.1 — the gap between the naive reading and what it catches",
         "inputs_source": "Watchtower record",
@@ -236,44 +236,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "Removing the threshold looks stronger and is not, because the qualifier that replaces it is less checkable.",
-          "text": "This client rule has no percentage. A rule about what the products are used for narrows it instead.\n\nThe sentence covers refining, and making oil products “used for transportation and combustion”. That means products burned in engines and boilers, not all oil products. Oil for plastics, lubricants, asphalt, waxes and solvents is arguably outside it. And most large refineries make a mix.\n\nA revenue threshold would have settled how much fuel makes a company a refiner. A use test invites a debate about product mix instead, and that debate happens inside the bank.\n\nIt also covers new clients only."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "No threshold at all is, on its face, the strictest wording in the document.\n\nEvery other client rule lets a company be partly in the restricted business, at 5% or 15% of revenue. This one names an activity and stops. A company in the business of refining oil for transport fuel is refused as a new client, whatever share of its revenue that is.\n\nFor a company that only refines, that is a harder rule than 5% would be.\n\nThe criticism is about companies with mixed products, which is most refiners. It is not about the instinct behind the drafting, which is sound."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The comparison that matters is within SEB's own policy. Its coal power rule covers existing clients; this one covers new clients only. The coal power rule uses a number; this one uses a test about what products are used for.\n\nOn both counts, the refiner rule is the softer of the two."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Say what happens to existing refiner clients",
-          "content": "This covers new clients only. Every refiner SEB already banks stays."
-        },
-        {
-          "title": "Deal with oil used for chemicals",
-          "content": "Most refineries make both fuel and material for chemicals. The rule turns on use, and does not say how a mixed output is judged."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule catches refiners the bank has not met, for the products it can identify.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Every refiner already banked stays, and the petrochemical qualifier lets through the integrated refiners, which is most of them.",
+      "strength_reason": "It covers new clients only, so every refiner SEB already banks stays. And a new refiner that also makes products for plastics and chemicals can argue it is outside the sentence.",
       "how_it_compares": {
         "text": "SEB's coal power rule covers existing clients as well as new ones. Its unconventional oil and gas rule phases out existing clients by 2030.",
         "links": [
@@ -286,7 +253,26 @@ window.WATCHTOWER_CASE = {
             "title": "SEB's 2030 Unconventional Oil and Gas Phase-Out"
           }
         ]
-      }
+      },
+      "actual_reading": "it does not take on new clients whose business is refining oil into fuels that are burned, and says nothing about the refiners it already banks",
+      "gaps": [
+        {
+          "title": "Refiners SEB already banks",
+          "phrase_refs": [
+            "new-br17"
+          ],
+          "text": "The commitment covers new clients only. Every refiner SEB already banks keeps its financing, and nothing asks it to change."
+        },
+        {
+          "title": "Oil products that are not burned",
+          "phrase_refs": [
+            "used-for"
+          ],
+          "text": "Only products “used for transportation and combustion” count. Oil for plastics, lubricants, bitumen and solvents does not, and most large refineries make both kinds."
+        }
+      ],
+      "in_practice": "Take a refiner that SEB already banks. This commitment does not apply to it. Its loans stay, and nothing in the sentence stops SEB renewing them or adding new ones. There is no date by which the relationship ends.\n\nNow take a refiner that is not yet a client. The sentence covers refining oil into products “used for transportation and combustion”. That means petrol, diesel, jet fuel and heating oil: products burned in engines and boilers. It does not cover products that are not burned, such as naphtha for plastics, lubricants, bitumen for roads, waxes and solvents.\n\nMost large refineries make both kinds. Many sit beside a chemicals plant that takes part of their output. The policy gives no share of fuel output that makes a company a refiner for this purpose. So a new refiner with a large chemicals business can argue it is outside the sentence. SEB decides whether the argument holds.\n\nSo what is left is a new client that refines oil mainly into fuels. Most refineries make mainly fuels, so that still covers many new refiners. Every refiner already on SEB's books is outside it.",
+      "gets_right": "There is no revenue threshold. A company in the business of refining oil into fuels is refused as a new client, whatever share of its revenue that is."
     }
   },
   "evidence": {
@@ -300,7 +286,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

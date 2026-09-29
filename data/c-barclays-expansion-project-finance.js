@@ -192,7 +192,7 @@ window.WATCHTOWER_CASE = {
               80,
               102
             ],
-            "means": "This definition of “expansion” is narrower than what it usually means. By expansion we normally mean a company producing more oil and gas than before. Barclays makes it a date test instead: only projects signed off after 31 December 2021 are expansion, and the date does not move. A field approved in 2021 and drilled out through the 2030s is never expansion here, however much it adds — so the restriction blocks less with every year that passes.",
+            "means": "This definition of “expansion” is narrower than what it usually means. By expansion we normally mean a company producing more oil and gas than before. Barclays makes it a date test instead: only projects signed off after 31 December 2021 are expansion, and the date does not move. A field approved in 2021 and drilled out through the 2030s is never expansion here, however much it adds — so the restriction blocks less than the word suggests, for as long as those fields produce.",
             "lets_through": [
               "The date lets through every project sanctioned in or before 2021, for its whole life, including its later phases if they need no new investment decision."
             ],
@@ -342,49 +342,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "One instrument, narrowly defined, is the whole restriction; the gap is best stated flatly.",
-          "text": "The rule reaches expansion projects through one kind of loan. The statement's own definition narrows that loan further.\n\nProject finance means loans repaid from a project's own income. The definition says it “excludes corporate level asset financing”. So a producer developing a new field can raise company loans, bonds or loans backed by its reserves. It can then spend them on the field.\n\nInfrastructure is only caught if it is “primarily” for expansion projects, a word with no number. Projects approved before 2022 are not expansion at all.\n\nExisting financing can also stay in place. And an allowance for transition finance can reach restricted groups. What remains is a new project loan for a field approved after 2021."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer that needs Barclays to arrange a project loan for an oil or gas project approved after 2021. Or one that needs it for infrastructure mainly serving such a project. That developer is caught.\n\nA producer that pays for the same project from its own balance sheet is not caught. Nor is one using bonds or a loan backed by its reserves. Large producers pay for most development that way. Developers with a single field depend on project loans.\n\nSo the commitment binds the developers least able to finance projects any other way. The largest producers are barely touched."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the statement defines both of its key terms, with a date. Expansion means any oil and gas project approved after 31 December 2021. That matches the International Energy Agency's finding that no new long-lead oil and gas projects are needed on a path to net zero. And the definition says so.\n\nThat is the right date, and it is published, so anyone can check a project against it.\n\nWhere it stops is the kind of financing. Project finance is one kind of loan. Here it is defined to leave out company-level asset financing, and large producers rarely need it.\n\nThe line is drawn at the right date, around the narrowest kind of financing."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover the company, not only the project",
-          "content": "Extend the rule to company loans, bonds and reserve-backed loans for producers developing expansion projects."
-        },
-        {
-          "title": "Put a number on “primarily”",
-          "content": "Say how much of an infrastructure project's use must serve expansion before it is caught."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a new field can be financed by Barclays through its owner, just not through its own loan.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Project finance for new fields is genuinely blocked; the date test frees everything sanctioned by 2021 for life."
-    },
-    "featured": {
-      "rank": 6,
-      "kind": "an undefined word",
-      "because": "Infrastructure is caught only where it “primarily” serves expansion, and the policy never says how much counts as most."
+      "strength_reason": "It covers one kind of loan, and most new fields are paid for another way. A date fixed at 2021 also frees every older project for its whole life.",
+      "actual_reading": "it will not arrange project finance for oil and gas projects approved after 2021, or for infrastructure mainly serving them",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the project",
+          "phrase_refs": [
+            "excludes-corporate"
+          ],
+          "text": "Barclays' “Project Finance” is a loan repaid from one project's own income. Its definition leaves out company-level asset financing. A producer can borrow as a company, or issue bonds, and spend that on a new field."
+        },
+        {
+          "title": "Anything approved before 2022",
+          "phrase_refs": [
+            "fid-2021"
+          ],
+          "text": "“Expansion” means a project approved after 31 December 2021. A field approved earlier is never expansion here, however long it is drilled or however much it adds."
+        },
+        {
+          "title": "Pipelines that serve more than one field",
+          "phrase_refs": [
+            "primarily"
+          ],
+          "text": "Infrastructure is covered only when it mainly serves new projects. The statement does not say how much counts as mainly. A pipeline that also serves older fields can get through."
+        }
+      ],
+      "in_practice": "Project finance is one way to pay for an oil field. The lenders are repaid from what that one project earns, and the project's assets are their security. It suits smaller developers with a single field and little else to borrow against.\n\nTake a small developer with one new field, approved in 2023. It wants Barclays to arrange a project loan. This commitment applies, and Barclays will not arrange it.\n\nNow take a large producer developing the same kind of field. It does not need project finance. It can take a general loan to the company, issue a bond, or borrow against the reserves it already owns. None of those is project finance as Barclays defines it. The producer can spend all of them on the new field.\n\nThen there is the date. A field approved in 2021 is not expansion. It can be drilled and extended through the 2030s, and new project loans for it are not covered. Its later phases are not covered either, if they need no new approval.\n\nSo this commitment binds developers that depend on project loans for fields approved after 2021. Large producers, and older fields, carry on as before.",
+      "gets_right": "The date is fixed and published. Anyone can check whether a project was approved after 2021. And this commitment covers the pipelines and plants built mainly for new fields, not only the fields themselves."
     }
   },
   "evidence": {
@@ -582,7 +570,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "gas pipelines, processing plants and LNG terminals serving expanding production"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

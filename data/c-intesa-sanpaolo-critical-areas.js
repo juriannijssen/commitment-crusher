@@ -97,7 +97,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains when the restriction bites: only where the bank judges a project's activities to have negative environmental impacts. The document never says what counts as one.",
             "lets_through": [
-              "This wording lets through a project inside a protected area that the bank does not judge to have negative environmental impacts. Watchtower records the same gap: the test gives the bank discretion over what qualifies."
+              "This wording lets through a project inside a protected area that the bank does not judge to have negative environmental impacts. The bank decides what counts as a negative impact."
             ],
             "defined_in_clause": null,
             "bank_definition": null
@@ -313,48 +313,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 3
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "Two of the three gaps are the bank's own judgement calls, and naming them together is what shows why the list of protected places does less than it appears to.",
-          "text": "Intesa Sanpaolo names five kinds of protected place and says it will not finance projects there. Three things narrow that.\n\nThe restriction applies only to projects the bank judges to have negative environmental impacts. The document never says what counts as one.\n\nIt covers project financing only. A company drilling in the Arctic can still borrow from Intesa Sanpaolo as a company.\n\nAnd where a World Heritage site has no buffer zone, the bank decides case by case whether the restriction applies at all.\n\nA reader sees a list of the world's most protected places. The bank keeps the judgement about what happens in them."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this commitment stop, and when?\n\nIt stops a project loan inside a natural World Heritage site or a Ramsar wetland. The same goes for an IUCN protected area, the Arctic Region and the Amazon Sacred Headwaters.\n\nIt stops that loan only where the bank judges the project's activities to have negative environmental impacts.\n\nIt does not stop the company. A producer working in any of those places can still borrow at group level.\n\nNear a World Heritage site with no buffer zone, it stops nothing by itself. The bank decides each case.\n\nAnd it does not stop financing the bank has classified as environmentally sustainable, whatever the borrower produces.\n\nSo it catches one kind of loan, in listed places, when the bank agrees the harm is there."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The list is specific, and that is worth something. Intesa Sanpaolo names UNESCO natural World Heritage sites, Ramsar wetlands and IUCN category I to VI areas. It also names the Arctic Region and the Amazon Sacred Headwaters. Each has a public boundary a reader can look up.\n\nThe restriction is global and applies to existing sites as well as new ones.\n\nWhat weakens it is who decides. The restriction bites only where the bank judges a project to have negative environmental impacts. Near an unmarked World Heritage boundary, it decides case by case.\n\nIt also covers project financing alone, so lending to the company behind the project is untouched."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "Intesa Sanpaolo names five kinds of protected place and says it will not finance projects there. The list is specific, and every boundary is public.\n\nThree things narrow it.\n\nThe restriction applies only where the bank judges a project's activities to have negative environmental impacts. The document never says what counts as one.\n\nIt covers project financing only. A company drilling in the Arctic can still borrow at group level.\n\nAnd where a World Heritage site has no buffer zone, the bank decides case by case whether the restriction applies at all.\n\nA reader sees the world's most protected places. The bank keeps the judgement about what happens in them.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Say what a negative environmental impact is",
-          "content": "The restriction only applies where the bank sees negative environmental impacts. Without a published test, that judgement cannot be checked."
-        },
-        {
-          "title": "Apply the exclusion to unmarked boundaries",
-          "content": "Where a World Heritage site has no buffer zone, the bank decides case by case. A fixed distance would remove the discretion."
-        },
-        {
-          "title": "Cover lending to the company, not just projects",
-          "content": "A producer working in a protected area can still borrow at group level. Project financing is a small part of what it uses."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the list of protected places tells a reader less than it appears to.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Project financing only, in areas the bank itself judges, and a field just outside a listed boundary is outside the commitment."
+      "strength_reason": "It covers only loans for a named project, and only where the bank itself judges the harm. The company drilling there can still borrow for general purposes.",
+      "actual_reading": "it will not give project loans for oil and gas projects inside the protected areas it lists, where it judges the activities harm the environment",
+      "gaps": [
+        {
+          "title": "Loans to the company go through",
+          "phrase_refs": [
+            "not-finance-projects"
+          ],
+          "text": "The commitment covers project financing, a loan for one named project. A company drilling in the Arctic can still take a general loan and spend it there."
+        },
+        {
+          "title": "The bank judges the harm",
+          "phrase_refs": [
+            "negative-impacts"
+          ],
+          "text": "The restriction applies only where the bank judges the project has negative environmental impacts. The document does not say what counts."
+        },
+        {
+          "title": "Just outside the line",
+          "phrase_refs": [
+            "critical-areas",
+            "case-by-case"
+          ],
+          "text": "A field next to a protected area, or a pipeline carrying oil out of one, is not in a critical area. Near some World Heritage sites, the bank decides case by case."
+        }
+      ],
+      "in_practice": "The document lists five kinds of place. Among them are natural World Heritage sites, wetlands protected under the Ramsar Convention, the Arctic and the Amazon Sacred Headwaters.\n\nProject financing is a loan raised for one named project, such as one oil field. General corporate financing is a loan to the company as a whole, which it can spend on anything. Take a company drilling for oil in the Arctic. If it asks Intesa Sanpaolo for a loan for that field, the commitment applies. If it asks for a general loan, it does not. The company can then spend that loan on the Arctic field.\n\nNow take a project loan inside a listed wetland. Even then, the bank must first judge that the project has negative environmental impacts. The document does not say how it judges this. A project it finds harmless can go ahead.\n\nThe boundaries leave room too. A field just outside a listed area is not in it. Nor is the pipeline that carries oil out. Some World Heritage sites have no buffer zone, the protected strip around a site. There, a project less than 1 km away is decided case by case.\n\nFinancing the bank classifies as environmentally sustainable is also always permitted, even inside a listed area.\n\nSo what is left is a project loan, inside a listed area, for a project the bank itself finds harmful."
     }
   },
   "evidence": {
@@ -368,7 +357,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 261, document 8195",
     "reading": "drafted"

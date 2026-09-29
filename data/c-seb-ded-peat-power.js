@@ -271,44 +271,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "how_it_compares",
-          "recommended": true,
-          "recommended_because": "The internal contrast is the useful argument, and it makes the recommendation on the gas page concrete.",
-          "text": "New peat-fired power: no dedicated financing. No threshold, no condition, no exception.\n\nPeat puts out more carbon per unit of energy than gas. A flat rule fits it.\n\nThe rule covers financing for a named project only. A company building peat-fired plants can still borrow for general purposes."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This is a project rule with no conditions, and client rules on either side of it.\n\nTwo other peat commitments cover the companies. One stops new clients above 5% of revenue from peat power. The other extends that to all clients from 2030. This one covers the projects.\n\nTogether, the peat power rules deal with new clients, existing clients from 2030, and project financing. That is more complete than the policy's treatment of oil-fired power, which has no client rule at all.\n\nThree sentences, and they cover the ground. It is a small section, and a well-built one."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The usual point about dedicated financing applies here too.\n\nA utility paying for a new peat-fired unit with a general company loan is not asking for dedicated financing. So this sentence does not apply to it.\n\nThis rule covers the project, not the company. A general loan to the company is outside it."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options. This commitment has no synthesis record at all — scope, thresholds and rating inputs are all Bank.Green's reading of the policy text.",
-      "what_needs_to_change": [
-        {
-          "title": "Nothing, on the wording",
-          "content": "A flat rule with no condition leaves nothing to interpret."
-        },
-        {
-          "title": "Cover general-purpose financing",
-          "content": "Restrict financing to companies building peat-fired power plants, whatever its stated use."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, new peat-fired plants are closed to project financing, and open to company loans.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "No condition is left open. The corporate financing route is open on this commitment's own wording.",
+      "strength_reason": "It reaches only one way of paying for a new peat-fired plant, and not the most common one.",
       "how_it_compares": {
         "text": "SEB's rule on new gas-fired power allows financing with a transition plan and an EU emissions standard. It also has exceptions for plants that make heat and power, and plants that run at peak times. SEB's peat power client rule refuses new clients above 5% of revenue from peat power, and all such clients from 2030.",
         "links": [
@@ -321,7 +288,26 @@ window.WATCHTOWER_CASE = {
             "title": "SEB's Commitment on Peat-Fired Power"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing set aside for a new peat-fired power plant, or for a big change to an existing one",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the plant",
+          "phrase_refs": [
+            "ded23"
+          ],
+          "text": "“Dedicated Finance” is financing for a named project. A power company that borrows for general purposes is not asking for dedicated finance, so the rule does not apply."
+        },
+        {
+          "title": "Changes SEB does not call “material”",
+          "phrase_refs": [
+            "new-project-material-change"
+          ],
+          "text": "An existing plant counts as a new project when its output or function changes materially. The policy gives no measure, so SEB decides which changes count."
+        }
+      ],
+      "in_practice": "Imagine a power company that wants to build a new peat-fired plant. If it asks SEB for a loan for that plant, SEB says no. If it asks SEB for a general loan to the company, this rule is silent. The company can spend that loan on anything, including the plant.\n\nLarge power companies often pay for new plants out of their general borrowing, rather than a loan with the plant's name on it. So the rule stops the most visible kind of deal and leaves the most common one open.\n\nThe same goes for an existing peat-fired plant. A big rebuild or a conversion counts as a new project, so a loan set aside for it is refused. A smaller change is not, and how big is big is up to SEB. A plant that keeps running as it is was never part of this rule.\n\nSo what the rule stops is a loan with a new peat-fired plant's name on it. What it leaves open is every other way SEB lends to the company building it.",
+      "gets_right": "There are no conditions and no exceptions. And SEB's “New Project” reaches further than the usual meaning: a big change at an existing plant counts too."
     }
   },
   "evidence": {
@@ -335,7 +321,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Policy text, document 25537 section 9 — NOT in synthesis run 181",
     "reading": "drafted"

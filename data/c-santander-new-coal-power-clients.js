@@ -95,7 +95,7 @@ window.WATCHTOWER_CASE = {
               83,
               94
             ],
-            "means": "The words “New clients” limit this commitment to companies Santander does not yet serve. Existing clients are covered only by the 2030 phase-out.",
+            "means": "The words “New clients” limit this commitment to companies Santander does not yet serve. Existing clients are not covered by this commitment.",
             "lets_through": [
               "This wording lets through every existing client with more than 25% of revenue from coal power until 2030."
             ],
@@ -385,48 +385,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "New clients only, a share-based threshold and a transaction-level exception stack up; stating them flatly is clearest.",
-          "text": "The commitment keeps coal-heavy companies out as new clients, but lets them in through single deals.\n\nIt covers new clients only. Existing clients above 25% keep their financing until the 2030 phase-out.\n\nIt measures a share of group revenue from coal power. So a large generator whose coal is a small part of a bigger business passes.\n\nAbove the line, two kinds of deal stay possible if they are “sustainable” or “finance the transition”. One is a non-recourse loan, repaid only from the project's own income. The other is a deal backed by a government export agency. The policy defines neither term. A footnote also allows guarantees linked to these deals “where strictly necessary”.\n\nThe one real safeguard is that the client must not be building or expanding coal plants. And for large groups, the test runs one subsidiary at a time."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who is turned away under this commitment?\n\nA company Santander does not already serve, earning more than 25% of its group revenue from coal power. It must not be part of a large group with other businesses. And it must want ordinary financing, not a transition deal of the kinds the exception allows. That company is caught.\n\nAn existing client with the same profile is not. A new client seeking a transition deal is not, as long as it is not building coal plants. A large group's parent is not.\n\nSo the commitment binds coal-heavy companies arriving for ordinary financing. It releases the ones already inside."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the exception has a condition that bites. A new coal-heavy client can only get a transition deal from Santander if it is not building new coal plants or expanding old ones. Many transition exceptions ask nothing about a client's coal plans. This one does.\n\nThe threshold is published. It is measured on group revenue, which anyone can check against a company's accounts.\n\nWhere it stops is scope. The rule reaches new clients only. A share test releases the largest generators. And what counts as sustainable or transition finance is left undefined.\n\nThe safeguard on the exception is well drawn. The rule around it only covers clients Santander has not met yet."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Apply the threshold to existing clients",
-          "content": "A limit on new clients leaves existing coal power clients above 25% untouched until 2030."
-        },
-        {
-          "title": "Define what finances the transition",
-          "content": "Say what makes one of these deals sustainable or transition finance. And publish how many are approved."
-        },
-        {
-          "title": "Define “strictly necessary”",
-          "content": "Say when a guarantee linked to these deals is strictly necessary, and who decides."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a new client above 25% can still be financed through a deal the bank judges to finance the transition.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Existing clients wait until 2030, new ones pass under 25%, and non-recourse, export-credit and guarantee routes stay open above it."
+      "strength_reason": "It applies only to companies Santander does not already bank, and only above 25%. Even then, non-recourse and export-credit deals it calls transition finance stay open.",
+      "actual_reading": "it will not take on a new client earning more than 25% of its revenue from coal power, except through non-recourse or export-credit deals it calls sustainable or transition finance",
+      "gaps": [
+        {
+          "title": "Clients it already has",
+          "phrase_refs": [
+            "new-clients"
+          ],
+          "text": "The commitment covers new clients only. Every power company Santander already banks is outside it, whatever its share of coal power."
+        },
+        {
+          "title": "A share of revenue, not a size",
+          "phrase_refs": [
+            "threshold"
+          ],
+          "text": "The line is 25% of revenue. A large utility with many coal plants and bigger other businesses stays below it, and can become a client."
+        },
+        {
+          "title": "Two kinds of deal stay open",
+          "phrase_refs": [
+            "non-recourse-eca",
+            "strictly-necessary"
+          ],
+          "text": "A new client above 25% can still get non-recourse or export-credit financing, if Santander calls it sustainable or transition finance. Neither term is defined. Guarantees linked to these deals are allowed “where strictly necessary”."
+        }
+      ],
+      "in_practice": "This commitment is about taking on new clients. It applies only to power companies that Santander does not bank today.\n\nTake a power company Santander already banks, which earns half its revenue from coal plants. This commitment does not apply to it. Santander can keep financing it.\n\nNow take a large utility that is new to Santander. It owns many coal plants, but its gas, wind and grid businesses are bigger. Coal power is 15% of its revenue. It is below the line, so Santander can take it on.\n\nThen take a new client above 25%. Most financing is closed to it. But two kinds of deal stay open. One is non-recourse financing: a loan repaid only from what one project earns, with no claim on the rest of the company. The other is export credit: financing backed by a government agency that supports its country's exports.\n\nEither is allowed if Santander counts it as sustainable finance or transition finance, and the client is not building or expanding coal plants. The policy does not define either term. Guarantees linked to the non-recourse deals are allowed “where strictly necessary”, and the policy does not say who decides.\n\nFor a group with businesses in several industries, the test is applied to the coal power subsidiary. The parent and the other subsidiaries can still be financed.\n\nWhat is left is ordinary financing to a coal-heavy power company Santander has never banked."
     }
   },
   "evidence": {
@@ -440,7 +429,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-26",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

@@ -278,44 +278,29 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The region and the share together leave almost no one inside; stated flatly that is the point.",
-          "text": "The test is fracking in the UK and Europe, as a share of revenue, above 20%.\n\nFew companies earn 20% of their revenue from fracking in a region where it is mostly banned or paused. And fracking anywhere else does not count. A company that earns most of its revenue from shale in North America or Argentina is not “materially engaged” under this definition.\n\nThe limit is in the definition.\n\nSo the rule covers all financing, but only for companies that barely exist. It looks strong on paper and does little in practice."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this rule reach?\n\nA group earning more than 20% of its revenue from fracking in the UK and Europe. There may be no such group of any size. Fracking in England is paused, and several European countries ban it.\n\nEvery fracking company outside the region is released, however much of its business fracking is. A shale driller in Texas or Argentina is not counted at all.\n\nSo the commitment binds a group of companies that barely exists. The companies that frack at scale are outside it by definition. The rule is complete on paper and nearly empty in practice."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: this is a client rule that covers all financing. It has a clear threshold, and the definition is published. Anyone can check a company against it.\n\nThat is the right kind of tool. A client rule reaches the company loans that pay for most drilling, not just project loans.\n\nWhere it stops is the region. The test only counts fracking in the UK and Europe. So it cannot reach the companies that frack at scale, which are in North America and Argentina.\n\nThe tool is right, and the drafting is clear. The map is the problem, and it is a big one."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Count fracking everywhere",
-          "content": "Measure a group's fracking revenue wherever it fracks, not only in the UK and Europe."
-        },
-        {
-          "title": "Lower the threshold",
-          "content": "20% of revenue is a high bar for an activity the statement treats as unconventional."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule reaches fracking companies in the one region with almost none.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Counts fracking only in the UK and Europe. Almost all fracking in the world is somewhere else."
+      "strength_reason": "It counts fracking only in the UK and Europe, where there is little fracking left. Companies that frack at scale elsewhere are outside it, however much they frack.",
+      "actual_reading": "it will not finance companies earning more than 20% of their revenue from fracking in the UK and Europe, a region with very little fracking",
+      "gaps": [
+        {
+          "title": "Fracking everywhere else",
+          "phrase_refs": [
+            "uk-europe"
+          ],
+          "text": "Only fracking in the UK and Europe counts. A company fracking in North America or Argentina is outside this commitment, however much of its business fracking is."
+        },
+        {
+          "title": "A high revenue line",
+          "phrase_refs": [
+            "over-20pc"
+          ],
+          "text": "A group is only “materially engaged in” fracking above 20% of its revenue from UK and European fracking. A group with a smaller share passes, however much it fracks there."
+        }
+      ],
+      "in_practice": "Fracking pumps water, sand and chemicals into rock at high pressure to release oil and gas. Most of it happens in the United States, Canada and Argentina. England has paused it, and several European countries ban it.\n\nTake a shale company in Texas that earns nearly all its revenue from fracking. It is not “materially engaged in” fracking as Barclays defines it. Its fracking is not in the UK or Europe, so none of it counts. Barclays can finance it in any way it likes.\n\nNow take a European energy group with a small fracking business in the UK. That fracking brings in 5% of its revenue. The group is under 20%, so it passes too.\n\nTo be caught, a group has to earn more than 20% of its revenue from fracking in the UK and Europe. Where fracking is paused or banned, few companies of any size can do that.\n\nSo this commitment covers all financing, but only for a group of companies that may barely exist. The companies that frack at scale are outside it by definition."
     }
   },
   "evidence": {
@@ -415,7 +400,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "companies whose whole business is fracking"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

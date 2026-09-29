@@ -49,7 +49,7 @@ window.WATCHTOWER_CASE = {
         "role": "rule",
         "source_id": "rules2024",
         "title": "The promise",
-        "intro": "This is the rule for the group's fund managers. It sits one section above the rules for lending.",
+        "intro": "This is the rule for the group's fund managers.",
         "location": {
           "distance": "same_passage",
           "signposting": "explicit",
@@ -310,41 +310,34 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The headline threshold is the strictest number in the document, and the two footnotes under it are what a reader will never find on their own.",
-          "text": "On its face this is the strictest rule in the document. The group's fund managers will not support companies earning more than 10% of their revenues from unconventional oil and gas.\n\nTwo footnotes take most of it back.\n\nFor one group of managers, the exclusion covers oil sands only. Shale oil, shale gas and coalbed methane are not excluded in those funds.\n\nFor funds that track an index, the exclusion is not an exclusion. It is a cap set at whatever weight the company already has in the index.\n\nThe rule also never says what support means, and the real scope sits in three policies this document does not reproduce."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this commitment stop, and when?\n\nIt stops the group's fund managers supporting a company earning more than 10% of its revenues from unconventional oil and gas.\n\nIt bites hardest in funds that do not track an index. There the exclusion is total.\n\nIn index-tracking funds it stops very little. The company can be held at its index weight.\n\nIn one manager's funds it reaches oil sands companies only.\n\nAnd it does not reach the bank's lending at all. That sits under separate rules in the same document, with a threshold measured on production revenues instead of on all revenues."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The threshold is the lowest in the document, and it is measured on all revenues rather than production revenues alone. That is a wider net than the lending rules cast.\n\nIt covers the whole group of fund managers, and it applies to companies the funds already hold.\n\nOne manager goes further than the rule requires, applying the exclusion to all unconventional resources and to Arctic revenues as well.\n\nWhat undoes it is the footnotes. For index-tracking products the exclusion becomes a cap at index weight, and for one manager it narrows to oil sands. Neither limit appears in the rule itself."
-        }
-      ],
-      "what_needs_to_change": [
-        {
-          "title": "Apply one scope across all managers",
-          "content": "One manager excludes oil sands only. The same four resources should be excluded in every fund."
-        },
-        {
-          "title": "Exclude these companies from index funds too",
-          "content": "In benchmark-tracking products the exclusion becomes a cap at index weight. That is not an exclusion."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the strictest threshold in the document sits on top of the widest exemptions.",
-      "verdict_final": "On its face this is the strictest rule in the document. The group's fund managers will not support companies earning more than 10% of their revenues from unconventional oil and gas. It is measured on all revenues, not production revenues alone.\n\nTwo footnotes take most of it back.\n\nFor one group of managers, the exclusion covers oil sands only. Shale oil, shale gas and coalbed methane stay in those funds.\n\nFor funds that track an index, the exclusion is not an exclusion. The company can be held at the weight the index already gives it.\n\nThe rule never says what support means.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "strength_reason": "The act is never defined, each manager sets its own scope and works out the share itself, and most diversified producers sit below the line."
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "Two footnotes take most of it back. In index funds the exclusion becomes a cap, and one group of managers excludes oil sands only.",
+      "actual_reading": "its funds will not support companies earning more than 10% of their revenues from unconventional oil and gas, beyond their weight in an index, and in one manager's funds only oil sands companies",
+      "gaps": [
+        {
+          "title": "Index funds keep holding them",
+          "phrase_refs": [
+            "operational-limit"
+          ],
+          "text": "In funds that track an index, the exclusion becomes a cap. The fund can hold the company at the weight the index already gives it."
+        },
+        {
+          "title": "Oil sands only, for one group of managers",
+          "phrase_refs": [
+            "oil-sands-only"
+          ],
+          "text": "One group of fund managers excludes oil sands companies and nothing else. Shale oil, shale gas and coalbed methane stay in its funds."
+        },
+        {
+          "title": "“Support” is never defined",
+          "phrase_refs": [
+            "not-support"
+          ],
+          "text": "The rule says the managers will not “support” these companies, but never says what that covers. Holding shares, voting them and lending them are all left open."
+        }
+      ],
+      "in_practice": "This is the rule for the group's fund managers, not its bank. It is about which companies their funds hold.\n\nTake a company that earns 30% of its revenues from shale gas. A fund that does not track an index should not hold it. But a fund that tracks an index can hold it at the index's own weight. For a fund that follows an index, that is simply what it would have held anyway.\n\nNow take the same company in a fund run by the group of managers that excludes oil sands only. Shale gas is not oil sands, so the company is not excluded there at all.\n\nThe rule also leaves the counting with the managers. The document does not say who works out the 10% share, or how often. And it never says what “support” means, so it is not clear whether voting the shares or lending them counts.\n\nWhat is left is a fund that picks its own shares, run by a manager that applies the full list. There, a company above 10% is kept out."
     }
   },
   "evidence": {
@@ -358,7 +351,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Policy text, document 8195 section 3.2.1 — NOT in synthesis run 261",
     "reading": "drafted"

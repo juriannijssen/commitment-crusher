@@ -254,44 +254,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The threshold is lower than the lending rule's, which reads as the stricter promise, so the reader needs to see how much narrower the thing being restricted actually is.",
-          "text": "This rule is about what Intesa Sanpaolo owns, not what it lends. It stops the bank holding bonds and shares in companies above the line.\n\nThe line is more than 10% of production revenues from unconventional oil and gas. That is lower than the 15% used for lending. It still leaves diversified producers outside, and the share is one a reader cannot check.\n\nHolding is also a narrow act. The bank can arrange and underwrite the same bonds for other investors without holding them.\n\nIn the trading book, a footnote cuts the restriction back to the bank's own positions. Securities held for clients or to make a market are not covered."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this commitment stop, and when?\n\nIt stops the bank buying or keeping bonds and shares in certain companies. Those are companies earning more than 10% of their production revenues from unconventional oil and gas.\n\nIt covers the banking book in full. In the trading book it covers only the bank's own positions.\n\nIt does not stop the bank arranging those securities for other investors.\n\nIt does not reach companies below the threshold, which is where most large producers sit.\n\nAnd it does not stop lending."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The bank set a lower bar for its own investments than for its lending. More than 10% of production revenues, against more than 15% for loans. That order makes sense: it is easier to sell a bond than to end a lending relationship.\n\nThe rule covers both debt and equity, and it names both the banking book and the trading book.\n\nIts limits are in the verbs. Holding is not arranging, so the bank can still bring these securities to market. And in the trading book only the bank's own positions count, which a footnote establishes rather than the rule itself."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "This rule is about what Intesa Sanpaolo owns, not what it lends. It stops the bank holding bonds and shares in companies above the line.\n\nThe line is more than 10% of production revenues from unconventional oil and gas. That is stricter than the 15% used for lending, and the order makes sense. Selling a bond is easier than ending a lending relationship.\n\nHolding is a narrow act, though. The bank can still arrange and underwrite the same bonds for other investors.\n\nAnd in the trading book, a footnote cuts the rule back to the bank's own positions. Securities held for clients, or to make a market, are not covered.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover securities the bank arranges for others",
-          "content": "The restriction stops the bank holding these bonds and shares. It does not stop the bank selling them to other investors."
-        },
-        {
-          "title": "Bring the trading book fully into scope",
-          "content": "A footnote limits the trading book to the bank's own positions. Client and market-making holdings sit outside the rule."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the bank can keep bringing these companies' securities to market without holding any itself.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "It covers the bank's own book only: the same securities arranged for others, or held to make a market, are outside.",
+      "strength_reason": "It covers only bonds and shares the bank keeps for itself, in companies above a 10% threshold most large producers stay under. Selling the same bonds to others is untouched.",
       "how_it_compares": {
         "text": "Lending falls under a separate rule with a higher threshold: 15% of production revenues.",
         "links": [
@@ -300,7 +267,32 @@ window.WATCHTOWER_CASE = {
             "title": "Intesa Sanpaolo's 15% Unconventional Revenue Threshold"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not keep, as its own investment, bonds or shares of companies earning more than 10% of their production revenues from unconventional oil and gas",
+      "gaps": [
+        {
+          "title": "Selling bonds on is not holding",
+          "phrase_refs": [
+            "hold-securities"
+          ],
+          "text": "The commitment stops the bank holding the bonds and shares. It can still underwrite them: buy a company's new bonds and sell them on to investors."
+        },
+        {
+          "title": "Large producers stay under 10%",
+          "phrase_refs": [
+            "ten-percent"
+          ],
+          "text": "A large producer with a small shale business usually earns less than 10% of its production revenues from it. The share is rarely published, and the document does not say who works it out."
+        },
+        {
+          "title": "Holdings for clients",
+          "phrase_refs": [
+            "proprietary-only"
+          ],
+          "text": "In the trading book, only the bank's own investments count. Bonds and shares it holds for clients, or to make a market, are not covered."
+        }
+      ],
+      "in_practice": "A bank holds bonds and shares in two places. The banking book holds investments it plans to keep. The trading book holds securities it buys and sells, often for clients.\n\nTake a company that earns most of its production revenues from tar sands. Intesa Sanpaolo will not keep its bonds or shares as its own investment. That applies in both books.\n\nBut the bank can still help the company raise the same financing. It can underwrite the company's new bonds: buy them when they are issued and sell them on to investors. Once they are sold, the bank no longer holds them. This commitment does not cover that.\n\nIn the trading book, the bank can also hold the bonds for a client, or to make a market. Making a market means standing ready to buy and sell a security so others can trade it. Only the bank's own investments count there.\n\nNow take a large oil company with a small shale business. Its unconventional share is likely below 10% of production revenues. It is not caught at all. Few companies publish that share, and the document does not say who calculates it.\n\nSo the commitment keeps specialist producers out of the bank's own investments. It does not stop the bank bringing their bonds to market."
     }
   },
   "evidence": {
@@ -314,7 +306,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 261, document 8195",
     "reading": "drafted"

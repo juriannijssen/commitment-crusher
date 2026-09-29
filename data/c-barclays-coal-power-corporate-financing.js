@@ -261,44 +261,22 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "General corporate financing limited by a stated use covers little.",
-          "text": "The commitment reaches general company loans, but only when they are stated to be for a new or expanding coal plant.\n\nGeneral company financing rarely states a use. So a utility can borrow for general purposes, and build.\n\nThe definition of expansion is broad. It counts life extensions and capacity added above 10%. But that only matters for loans that name a coal plant.\n\nThe narrowing is in the words “specified as being for”. So the rule looks like it reaches company loans. In practice, it only reaches the few that say they are for coal."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA utility that asks for a general company loan, and states that it is for a new or expanding coal plant. That utility is caught.\n\nThe same utility, asking for the same loan without stating a use, is not caught. It can spend the loan on the same plant.\n\nSo the commitment binds the borrower that is open about its plans. It releases the one that says nothing. Avoiding the rule does not require changing the plant, the loan or the amount. Only the words on the request. Nothing else changes."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the commitment reaches into general company loans. That is where most coal power is financed. A rule that stopped at project loans would leave it open.\n\nAnd the definition of expansion includes extending a plant's life. That is how most coal fleets grow now.\n\nWhere it stops is the condition that the use must be stated. Most company loans do not say what they will pay for.\n\nSo the reach and the definition are right. The condition on stated use means the rule rarely applies. Few loans will ever meet it."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Drop “specified as being for”",
-          "content": "Restrict company loans to utilities building, expanding or extending coal plants, whatever the stated use."
-        },
-        {
-          "title": "Count capacity from a fixed starting point",
-          "content": "Measure capacity additions against a fixed baseline."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule applies to company loans that say they are for coal.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Bites only where the financing is specified as being for coal power. General corporate financing never is."
+      "strength_reason": "It covers general loans only when they are stated to be for a coal plant. General loans almost never state a use, so almost nothing is caught.",
+      "actual_reading": "it will not give a general loan to a utility when the loan is stated to be for a new, bigger or longer-running coal plant",
+      "gaps": [
+        {
+          "title": "Loans that do not state a use",
+          "text": "The rule applies only where the loan is “specified as being for” a new or expanding coal plant. A general loan with no stated use is not covered, whatever the utility builds with it.",
+          "phrase_refs": [
+            "specified-as-being-for"
+          ]
+        }
+      ],
+      "in_practice": "General corporate financing is a loan to a company as a whole. It usually does not say what it will pay for. The company can spend it on anything.\n\nThis commitment covers that kind of loan, but only when it is “specified as being for” a new or expanding coal plant. Take a utility planning a new coal plant. If it asks Barclays for a general loan and writes that it is for the plant, the rule applies. If it asks for the same loan and leaves the purpose blank, the rule does not. It can then spend the loan on the same plant.\n\nNothing about the plant, the loan or the amount has to change. Only the words on the request do. A utility that knows the rule has no reason to name its plans.\n\n“Material expansion” covers a lot here. Keeping an old plant running longer without cutting its emissions counts. So does adding more than 10% to its capacity. But none of that matters unless the loan names the plant.\n\nSo what is left is a general loan that a utility has chosen to label for a coal plant."
     }
   },
   "evidence": {
@@ -312,7 +290,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

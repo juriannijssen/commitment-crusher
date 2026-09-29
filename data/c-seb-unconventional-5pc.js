@@ -114,7 +114,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains the carve-out, named in the sentence that creates the restriction: Estonia, Latvia and Lithuania — where oil shale is a domestic energy source.",
             "lets_through": [
-              "This wording lets through companies above 5% unconventional oil revenue operating in the Baltic states, until 2030. Watchtower records the exception as temporary and dated.",
+              "This wording lets through companies above 5% unconventional oil revenue operating in the Baltic states, until 2030.",
               "What it does not do is hide. The reason is stated (energy security), the region is named, the intention is stated (transition to low carbon and renewable alternatives), and the policy ends it in 2030."
             ],
             "defined_in_clause": null,
@@ -318,44 +318,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "The comparison with an open-ended discretionary clause is the most useful thing this page can give a reader.",
-          "text": "This is what an exception should look like.\n\nIt names its region: the Baltic states. It names its reason: energy security. It names its aim: helping companies move to low-carbon and renewable alternatives. And it ends, in 2030."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The exception is well made, but no one can hold it to account while it runs.\n\nNothing requires SEB to say which companies use it, how much financing it covers, or what progress they have made. Yet helping companies change is the stated purpose. An exception justified by a purpose should report against that purpose.\n\nThe fuel at issue in the Baltics is oil shale. It is among the most carbon-heavy liquid fuels there is. Five years of continued relationships means a real amount of emissions, left unreported.\n\nThe date makes the exception end. Reporting would make it count for something."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Energy security exceptions appear twice in this document.\n\nGermany gets one for coal power, at a higher threshold until 2030. The Baltic states get one for unconventional oil, until 2030. Both have a date, both are regional, and both name the reason.\n\nThat is a bank with a consistent answer to a real problem: Europe's energy security after 2022.\n\nWhether 2030 is soon enough is a fair question. That the exceptions can be read and understood at all is not in doubt."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Report on the Baltic exception while it runs",
-          "content": "The stated purpose is helping companies change. Publishing which companies and what progress would make the exception accountable, not just dated."
-        },
-        {
-          "title": "Say what happens on 1 January 2030",
-          "content": "The Baltic exception ends then. The policy does not say whether that means leaving, or only stopping new business."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this is what an exception looks like when a bank is willing to sign its name to it.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A 5% line across all business, with a Baltic exception to 2030 that is named, reasoned and time-limited in the open.",
+      "strength_reason": "It stops at the Baltic border. Companies there above 5% keep their business with SEB until 2030, and a group can borrow through a company below the line.",
       "how_it_compares": {
         "text": "SEB's 2030 phase-out, in the next sentence, ends the Baltic exception and phases out all client relationships above 5%.",
         "links": [
@@ -364,7 +331,26 @@ window.WATCHTOWER_CASE = {
             "title": "SEB's 2030 Unconventional Oil and Gas Phase-Out"
           }
         ]
-      }
+      },
+      "actual_reading": "it does not do business with companies earning more than 5% of their revenue from unconventional oil, except in the Baltic states, where it keeps working with them until 2030",
+      "gaps": [
+        {
+          "title": "The Baltic states, until 2030",
+          "phrase_refs": [
+            "baltic"
+          ],
+          "text": "Companies above 5% in Estonia, Latvia and Lithuania are exempt until 2030. SEB says it works with them to move to low-carbon alternatives, and sets no steps along the way."
+        },
+        {
+          "title": "A company in the group below the line",
+          "phrase_refs": [
+            "company-legal-entity"
+          ],
+          "text": "SEB applies the 5% test to the one legal entity it deals with, not to its group. A subsidiary with little unconventional revenue can borrow, and the financing can move within the group."
+        }
+      ],
+      "in_practice": "Unconventional oil includes oil from oil sands and oil shale, and oil produced by fracking. Take a Canadian oil sands producer. If more than 5% of its revenue comes from unconventional oil, SEB avoids doing business with it. That covers the whole relationship, not only new business.\n\nNow take an oil shale company in Estonia. Oil shale is a rock that is burned for power or processed into oil, and Estonia relies on it for energy. The Baltic states are exempt until 2030. There, SEB says it works with these companies to move them to low-carbon and renewable alternatives. The sentence sets no steps along the way and asks for no report on progress. SEB has a large banking business in the Baltic states, so the exception covers a market where it is active.\n\nA group can also borrow through a company with little unconventional oil revenue. The policy defines a “Company” as one legal entity, not a group. That company passes the test, and the financing can move inside the group.\n\nSo what the commitment stops is business with unconventional oil companies outside the Baltic states. Inside them, it waits until 2030.",
+      "gets_right": "The Baltic exception is named, gives its reason and ends in 2030. And outside it, the sentence covers the whole relationship at 5% of revenue."
     }
   },
   "evidence": {
@@ -378,7 +364,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

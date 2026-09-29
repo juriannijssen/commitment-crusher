@@ -789,8 +789,8 @@
 
     /* Bank.Green's picks, in the rank the editorial layer gives them, and only
        those. The commitments that are not picked are still on the site — every
-       one of them is in the table behind "See all commitments" below, with the
-       financing found against it — but the strip is a choice, not an index.
+       one of them is in the table on all-commitments.html, with the financing
+       found against it — but the strip is a choice, not an index.
        Ordering used to be whichever commitment carried the highest number. */
     var list = CASES.filter(function (e) { return e.featured; })
       .sort(function (a, b) { return a.featured.rank - b.featured.rank; });
@@ -834,10 +834,9 @@
        are what say they are a different kind of thing. */
     GENERAL.forEach(function (g) { grid.appendChild(clausesCard(g)); });
     container.appendChild(grid);
-    /* The rest of the repository — the filter rail and every commitment in a
-       table — is a page of its own. */
-    container.appendChild(el('<a class="ov-all ts-body-md" href="all-commitments.html">'
-      + "See all commitments</a>"));
+    /* No "See all commitments" link: Jurian, 2026-09-29 — the landing page is
+       the ten picks and the general-clauses articles, for sharing with potential
+       users. all-commitments.html still exists. */
     host.appendChild(container);
 
     host.appendChild(footer());

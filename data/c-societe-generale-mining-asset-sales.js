@@ -213,44 +213,19 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "who_it_catches",
-          "recommended": true,
-          "recommended_because": "The honest reading of this one is that its effect is two-sided, and saying so is more useful than forcing it into the loophole shape.",
-          "text": "This exclusion stops a mine changing hands. It does not stop a mine.\n\nThe rule blocks financing “aiming at the sale or acquisition” of mines for steel-making coal or asbestos. A company that keeps its mine and works it is not affected. The rule is about who owns a mine, not about mining.\n\nThe effect also cuts both ways, which is rare enough to say plainly. Blocking a sale keeps the mine with its current owner. A buyer who plans to close and restore the mine is refused on the same terms as one who plans to expand it. The policy looks at the deal, not at what the buyer will do next.\n\nWe are not saying the bank got this wrong. But the sentence does not tell the two buyers apart. A policy that wanted to encourage responsible closure would have to."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Two things here are better than the rest of the policy.\n\nFirst, buying and selling get their own section. Most of Société Générale's exclusions deal either with who it will bank, or with what it will fund. Advice on a change of owner falls between the two. The oil and gas policy does not deal with it separately. This one does.\n\nSecond, asbestos. It appears in no other Société Générale sector policy we have read. Naming it next to coal for steel-making closes a route that a coal-only policy would leave open.\n\nNeither point is a weakness. They are here because readers judging this bank should know where its drafting is stronger than usual."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "What does this section let through? The mining itself.\n\nNothing in this rule stops a company mining coal for steel-making for as long as it likes. Nothing stops Société Générale lending to it. That question is answered by the 50% client test, which covers new clients only. Nothing stops the mine growing, as long as no one tries to sell it.\n\nThe exclusion applies at one moment in a mine's life: when it is put up for sale. An owner who never sells never meets it.\n\nThat is a narrow point of contact for a rule in a mining policy. It is why this commitment cannot carry the bank's position on this coal on its own."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so unlike the oil and gas pages there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Say what happens to mines that stay",
-          "content": "The exclusion stops a change of owner. Nothing in this section deals with a mine that keeps operating."
-        },
-        {
-          "title": "Deal with responsible closure",
-          "content": "A buyer who plans to close and restore a mine is refused like one who plans to expand. If that is intended, say so; if not, make an exception."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this is a rule about who owns a mine, not about whether it is mined.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "It promises no financing or services for buying or selling these mines, and that is what it delivers."
+      "strength_reason": "It does what it says. It is a rule about who owns a mine, not about whether the mine keeps working.",
+      "actual_reading": "it will not provide any financing, product or service aimed at buying or selling a mine for steel-making coal or asbestos",
+      "gaps": [],
+      "in_practice": "Metallurgical coal is the coal used to make steel, rather than burned for power. The rule covers mines for that coal and for asbestos. It covers every kind of service aimed at buying or selling one: loans, advice and anything else.\n\nTake a company that wants to buy a metallurgical coal mine. Société Générale will not finance the purchase or advise on it. The same goes for the owner that wants to sell. That is what the sentence promises, and it has no exception.\n\nWhat the rule does not touch is the mine itself. A company that keeps its mine and works it is not affected. Nothing in this sentence stops it expanding, or stops Société Générale lending to it for other purposes.\n\nThe rule also cuts both ways. Blocking a sale keeps the mine with its current owner. A buyer who plans to close and restore the mine is refused on the same terms as one who plans to expand it. The sentence does not tell the two apart."
+    },
+    "featured": {
+      "rank": 10,
+      "kind": "holds, and cuts both ways",
+      "because": "Does exactly what it promises — and shows why that can still leave the mine running."
     }
   },
   "evidence": {
@@ -264,7 +239,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 196, document 28052",
     "reading": "drafted"

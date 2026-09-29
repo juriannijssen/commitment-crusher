@@ -300,48 +300,37 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": true
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The threshold is real and checkable, so the useful thing to say is precisely what it does and does not reach, rather than anything cleverer.",
-          "text": "This is a real threshold, and that deserves saying first. Four resources are named, counted together, and given a number.\n\nThe problem is what the number measures. 30% of revenue is a share, measured against the whole company. A producer can run one of the world's largest oil sands operations and stay far below the line. It also refines, trades and sells power. The test grows with the size of the business, not the drilling.\n\nOnly exploration and production count. Revenue from moving, storing, processing or trading these resources does not.\n\nAnd the share is measured on group accounts. So a subsidiary that does nothing but this is diluted by everything else its parent owns."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "To be caught, a company has to be small, focused, a producer, and independent.\n\nSmall and focused, because the 30% is measured against everything else it does. A producer, because only exploration and production count. Independent, because the share is measured on group accounts, so a subsidiary counts as part of its parent.\n\nWhat is left is a producer that mostly drills in the Arctic, the Amazon, oil sands or shale. It does little else. Those companies exist. They are not the ones financing most of the growth.\n\nThe oil majors pass because they are diversified. Traders pass because they do not drill. Subsidiaries pass because of group accounts. The policy binds the companies with the least capital and releases those with the most."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Two things here are done well, and they should not be lost in the criticism.\n\nThe first is the number. 30% is published, applied to named resources, and anyone with a company's accounts can check it. Campaigners can test a producer against this one.\n\nThe second is that the four resources are counted together. Arctic, Amazon, oil sands and shale are added up, not judged one by one. That stops a producer slipping under the line by spreading its business across them. A footnote says so plainly.\n\nWhat neither fixes is what the share is measured against. A published threshold measured against total group revenue is a precise tool pointed at the wrong thing."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Measure the resource, not the share",
-          "content": "A share of group revenue shrinks as a company grows. Production, reserves or spending on these four resources would measure what the rule is named after."
-        },
-        {
-          "title": "Count the whole chain",
-          "content": "Only exploration and production count now. Transport, storage, processing and trading of the same resources should count too."
-        },
-        {
-          "title": "Measure the company that drills",
-          "content": "Measuring on group accounts means a subsidiary that only does this is diluted by its parent's other businesses."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a clear number is measured against the wrong thing.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating. The rating moved from hollowed to holds.",
-      "strength_reason": "Catches pure-play unconventional producers; a ratio measured against everything a group does lets the diversified through."
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "It catches producers that do little besides drill for these four resources. A large group with other businesses stays under 30%, however much it drills.",
+      "actual_reading": "it will not finance companies whose whole group earns more than 30% of its revenue from exploring for and producing Arctic, Ecuadorian Amazon, oil sands or shale oil and gas",
+      "gaps": [
+        {
+          "title": "Big groups stay under the line",
+          "phrase_refs": [
+            "threshold"
+          ],
+          "text": "The 30% is a share of everything the company earns. A group that also refines, trades and sells power can run a very large oil sands business and stay below it."
+        },
+        {
+          "title": "Subsidiaries are measured with their parent",
+          "phrase_refs": [
+            "consolidated"
+          ],
+          "text": "Société Générale measures the whole group, from its consolidated accounts. A subsidiary that does nothing but oil sands is counted together with everything its parent does."
+        },
+        {
+          "title": "Only drilling counts",
+          "phrase_refs": [
+            "eandp"
+          ],
+          "text": "Revenue from moving, storing, refining or trading these resources does not count towards the 30%. A company can build its business on Arctic oil without any of it counting."
+        }
+      ],
+      "in_practice": "Take a company that earns most of its revenue from producing shale oil and gas. It is above 30%, so Société Générale will not provide it any financial product or service. That means no loans, no bonds and no advice.\n\nNow take a large oil group that runs a big oil sands operation. It also refines oil, trades it and sells power. Measured against all of that, its oil sands production can be a small share of its revenue. The group stays under 30%. Société Générale can keep financing it, however much oil sands crude it produces.\n\nThe same happens to a subsidiary. Take a company that does nothing but produce Arctic gas. It is measured together with its parent group. If the parent does many other things, the subsidiary is not caught either.\n\nThe count also leaves out much of the chain. A company that ships, stores or trades oil sands crude earns revenue that does not count at all.\n\nAnd a company just under the line can stay there. The threshold does not fall over time. A producer at 29% passes today and would still pass in ten years.\n\nSo what this commitment stops is financing to focused, independent producers of these four resources. The large groups, which can run some of the biggest operations, are measured in a way that keeps them outside it.",
+      "gets_right": "It publishes a number that anyone with a company's accounts can check. And above that number, Société Générale withholds every financial product and service, not only loans for a named project."
     }
   },
   "evidence": {
@@ -355,7 +344,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

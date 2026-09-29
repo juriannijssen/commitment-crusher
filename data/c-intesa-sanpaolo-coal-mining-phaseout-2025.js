@@ -248,44 +248,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "text": "Intesa Sanpaolo undertook to end its exposure to coal mining companies by 2025. Three things sit on that date.\n\nThe footnote is the largest. Financing already agreed runs to its natural expiry, so a long facility signed before the rules could still be outstanding after the date.\n\nThe scope is the second. Coal mining is covered. The companies that burn coal are not, and they face a cap with no end date.\n\nThe third is silence. No step was published between 2021 and 2025, and nothing says what happens now the date has passed.",
-          "recommended": true,
-          "recommended_because": "The date has now passed, and the footnote and the missing report are what decide whether it meant anything."
-        },
-        {
-          "angle": "who_it_catches",
-          "text": "Who does this commitment affect, and when?\n\nIt affects coal mining companies that Intesa Sanpaolo already lends to. Their financing was to end by 2025.\n\nIt covers the sector as the document defines it, which includes exploration, development, processing and waste.\n\nIt does not affect coal power companies. They sit under a cap on general purpose lending, with disengagement promised and no date set.\n\nIt does not touch financing agreed before the rules came in, which runs to its natural expiry however long that takes.\n\nAnd after the date, the document says nothing. No report was promised, and no consequence was set.",
-          "recommended": false,
-          "recommended_because": null
-        },
-        {
-          "angle": "what_it_gets_right",
-          "text": "The verb here is firm. Terminate, not manage, not reduce, not disengage from over time.\n\nThe date was also close when it was written. Four years, not a decade, and inside the bank's own planning horizon.\n\nIt covers the coal mining sector as the document defines it, which reaches exploration, development and processing as well as extraction.\n\nWhat undermines it is the footnote, which lets agreed financing run to its natural expiry, and the absence of any reporting. The date has now passed, and nothing in these rules tells a reader whether the exposure actually ended.",
-          "recommended": false,
-          "recommended_because": null
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "Intesa Sanpaolo undertook to end its exposure to coal mining companies by 2025. The verb is firm: terminate, not manage or reduce.\n\nThree things sit on that.\n\nThe footnote is the largest. Financing already agreed runs to its natural expiry, so a long facility signed before the rules could still be outstanding after the date.\n\nThe scope is the second. Coal mining is covered. The companies that burn the coal are not.\n\nThe third is silence. No step was published between 2021 and 2025, and nothing says what happens now the date has passed.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Report what was left after 2025",
-          "content": "The date has passed. The rules should say what coal mining exposure remained, and what happens to it."
-        },
-        {
-          "title": "Cover coal power companies as well",
-          "content": "The phase-out ends exposure to companies that mine coal. Companies that burn it in power plants should have an end date as well."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a reader cannot tell whether the phase-out happened.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A firm verb and a real date, with no published step between here and there and nothing that follows a miss.",
+      "strength_reason": "The date and the verb are firm. But financing agreed before the rules can run past 2025, and nothing says what happens if some lending remains.",
       "how_it_compares": {
         "text": "Intesa Sanpaolo's coal power companies face a different rule. Their general purpose lending is capped, with a promise of progressive disengagement and no end date.",
         "links": [
@@ -302,7 +269,27 @@ window.WATCHTOWER_CASE = {
             "title": "Intesa Sanpaolo's Coal Power Companies Without a Plan"
           }
         ]
-      }
+      },
+      "actual_reading": "it will end its lending to coal mining companies by 2025, except financing agreed before July 2021, which runs until its agreed end date",
+      "gaps": [
+        {
+          "title": "Old contracts run to their end",
+          "phrase_refs": [
+            "contracts-underway"
+          ],
+          "text": "Financing agreed before the rules keeps running until its agreed end date. A long facility signed before July 2021 can still be drawn on after 2025."
+        },
+        {
+          "title": "No steps and no check",
+          "phrase_refs": [
+            "by-2025",
+            "terminate"
+          ],
+          "text": "The document publishes no step between 2021 and 2025. It sets no report and no consequence. The date has passed, and these rules cannot show whether the lending ended."
+        }
+      ],
+      "in_practice": "Exposure is what the bank has lent to a company and could lose. Take a coal mining company that had a general loan from Intesa Sanpaolo in 2021. By 2025 that loan was to be gone. The bank's word is “terminate”, which means ending the lending, not just holding it steady.\n\nNow take a company that signed a ten-year facility before July 2021. A facility is an agreed amount a company can draw on when it needs it. The footnote says financing already agreed runs to its natural expiry. So that company can keep drawing on it until the facility ends, well after 2025.\n\nThe document also sets no steps on the way. It does not say how much lending had to go each year. The bank could hold its lending steady until late 2024 and still say it was on track.\n\nAnd the date has passed. The rules promise no report and no check. Nothing follows if some lending is still there in 2026. A reader of these rules cannot tell whether the phase-out happened.\n\nSo the commitment covers all the bank's lending to coal miners, except the old contracts. Whether it was kept is not something these rules show.",
+      "gets_right": "The verb is firm: the bank commits to end its lending to coal miners, not to hold it or trim it. And the date was close, about four years after the rules took effect."
     }
   },
   "evidence": {
@@ -316,7 +303,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 262, document 8201",
     "reading": "drafted"

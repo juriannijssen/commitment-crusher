@@ -240,44 +240,30 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "text": "Intesa Sanpaolo will not increase its general purpose lending to coal mining companies. Two words carry most of the weight.\n\nThe first is increase. The rule is a ceiling, not a cut. A loan that matures can be replaced by another of the same size. The level is held, not reduced.\n\nThe second is general purpose. The bank's own definitions limit that to lending where the use of the borrowing is unknown. Lending with a stated purpose sits outside this rule.\n\nWhat happens to the lending already there is left to a single word: manage. The schedule is elsewhere, in the phase-out sentence, and that has its own limits.\n\nSo from 2021 the door was held open at its existing width.",
-          "recommended": true,
-          "recommended_because": "A reader takes a coal mining rule as a stop, and the two words that make it a ceiling instead are the first thing to correct."
-        },
-        {
-          "angle": "who_it_catches",
-          "text": "Who does this commitment stop, and when?\n\nIt stops a coal mining company asking Intesa Sanpaolo for more general purpose lending than it already has. That applies from July 2021, everywhere the group operates.\n\nIt does not stop the same company refinancing what it has. A ceiling holds the level, and a replacement loan does not raise it.\n\nIt does not stop lending for a stated purpose. The bank puts project finance, project related corporate finance and acquisition finance in a different category.\n\nAnd it does not set a date for the existing lending to end. That is left to the phase-out rule further down the page.",
-          "recommended": false,
-          "recommended_because": null
-        },
-        {
-          "angle": "what_it_gets_right",
-          "text": "The rule reaches whole companies, not projects. That matters, because a coal mining company borrows mostly at group level.\n\nIt also applies to the sector as the document defines it, which includes exploration, development, processing and waste, not just the digging.\n\nAnd it starts immediately. There is no phase-in, no review step and no committee to clear before it applies.\n\nWhat it does not do is reduce anything. The bank holds its general purpose lending at the level it had reached and manages the rest towards a phase-out described elsewhere. Lending with a stated purpose is outside the sentence altogether.",
-          "recommended": false,
-          "recommended_because": null
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "Intesa Sanpaolo will not increase its general purpose lending to coal mining companies. Two words carry most of the weight.\n\nThe first is increase. This is a ceiling, not a cut. A loan that matures can be replaced by one of the same size.\n\nThe second is general purpose. The bank's own definitions limit that to lending where the use of the borrowing is unknown. Lending raised for a stated purpose sits outside this rule.\n\nWhat happens to the lending already on the books is left to one word: manage. The schedule lives in the phase-out sentence, which has its own carve-out.\n\nFrom July 2021, the door was held open at the width it had already reached.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Turn the ceiling into a reduction",
-          "content": "The rule holds general purpose lending at its existing level. A published annual cut would make it fall."
-        },
-        {
-          "title": "Cover lending with a stated purpose",
-          "content": "Only general purpose lending is capped. A coal mining company can still borrow for a named purpose outside the two project rules."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a coal mining company keeps the lending it already has.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A ceiling, not a cut: a maturing loan can be replaced at the same size, and lending with a stated purpose does not touch it."
+      "strength_reason": "It holds one kind of loan at the level it had reached, rather than cutting it. A coal miner can still borrow for a stated purpose without touching that level.",
+      "actual_reading": "it will not raise its general purpose lending to coal mining companies above the level it had reached when the rules took effect",
+      "gaps": [
+        {
+          "title": "A ceiling, not a cut",
+          "phrase_refs": [
+            "not-increase"
+          ],
+          "text": "The bank holds its lending at the level it had reached. When a loan is paid back, a new one of the same size can replace it."
+        },
+        {
+          "title": "Loans with a stated purpose",
+          "phrase_refs": [
+            "use-of-proceeds",
+            "general-purpose"
+          ],
+          "text": "The ceiling covers general purpose lending only. The bank's definitions put project finance and acquisition finance in a different category. None of it counts towards the ceiling."
+        }
+      ],
+      "in_practice": "General purpose lending is a loan to the company as a whole, where the bank does not know what it will be spent on. This commitment puts a ceiling on that kind of lending to coal mining companies. The ceiling is the level the bank had reached in July 2021.\n\nTake a coal miner with a five-year general loan from Intesa Sanpaolo. When the loan ends, the miner can ask for a new one of the same size. The bank's lending does not go up, so the commitment is kept. The miner keeps borrowing as before.\n\nNow take a miner that needs more. It can ask for a loan with a stated purpose instead. The bank's own definitions name project finance, which is a loan for one named project. They also name acquisition finance, a loan to buy a company, and project related corporate finance. None of them counts towards the ceiling.\n\nWhat happens to the lending already in place is left to one word: the bank will “manage” it. This sentence gives no pace of its own for bringing it down.\n\nSo what this commitment stops is growth in one kind of loan. It does not cut what coal miners already borrow. And it leaves the other kinds of loan open."
     }
   },
   "evidence": {
@@ -291,7 +277,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 262, document 8201",
     "reading": "drafted"

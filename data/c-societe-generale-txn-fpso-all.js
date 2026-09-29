@@ -69,7 +69,7 @@ window.WATCHTOWER_CASE = {
               34,
               56
             ],
-            "means": "This explains what financing this commitment covers: dedicated financing only, meaning financing raised for a named asset or activity, where it is clear what the financing is used for. Every commitment in this section has this limit, and it is the only limit on this one.",
+            "means": "This explains what financing this commitment covers: dedicated financing only, meaning financing raised for a named asset or activity, where it is clear what the financing is used for. It is the only limit on this commitment.",
             "lets_through": [
               "The word “dedicated” lets through general corporate financing to the companies that own and lease floating production vessels. Those companies are contractors rather than producers.",
               "It also lets through general corporate facilities and bond issues raised by an operator that happens to be commissioning a vessel."
@@ -209,48 +209,11 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "holds",
         "changed": true
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "This is the only exclusion in the document with no loophole inside the sentence, and a page that says so plainly is what makes every other page in the set credible.",
-          "text": "There is no threshold. There is no defined term to meet first. There is no exception for converted, reused or small vessels, or for deals already under way. The rule is a date and the word “any”.\n\nOne limit is real and belongs here. It covers dedicated deals only. These vessels are usually financed that way, so the rule fits how the activity is paid for. But the companies that own the vessels provide services, and no client test here reaches them. The vessel can be refused and its owner financed."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Everything this line misses sits outside the sentence, not inside it.\n\nThe first is the kind of financing. The rule covers dedicated deals for a named vessel. It does not cover a credit line or bond for a company that owns and leases these vessels.\n\nThe second is the exception clause. The policy says a senior group committee may allow exceptions to this policy in special cases. That applies to this line as to every other.\n\nThe third is the start. Another clause exempts “pre-existing business commitments or opportunities at an advanced stage of negotiation”. Neither term is defined.\n\nNone of these is a weakness in this sentence. All three are reasons it is not the whole answer."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This rule excludes a whole type of production asset outright. Restrictions that depend on place, type of resource or the age of the field each need a judgement about the field first.\n\nThis one needs no judgement. If it is an oil production ship and the year is 2026 or later, the answer is no.\n\nThe gap between this line and the ten before it matters. The policy can write an unconditional rule. On every other activity, it chose not to."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Say what happens to vessel owners",
-          "content": "Owners of these vessels are service companies, and no client test here reaches them. The vessel can be refused while its owner is financed as a whole company."
-        },
-        {
-          "title": "Explain how the Shipping policy fits",
-          "content": "The policy says these vessel deals also fall under the bank's Shipping policy. Neither document says how the two work together."
-        },
-        {
-          "title": "Limit the start-up exception",
-          "content": "The policy exempts earlier commitments and deals at an advanced stage of negotiation. It defines neither."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this rule still depends on the two general exceptions above it.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating. The rating moved from holds to hollowed.",
-      "strength_reason": "Within dedicated financing we could not construct a way through it. Corporate financing to the same owners is untouched.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "For any production ship after 2025, a loan for that ship is refused, with no conditions. The companies that own the ships can still borrow as companies.",
       "how_it_compares": {
         "text": "Société Générale's rule on vessels at new fields rests on an undefined word. This wider rule makes that condition irrelevant from 2026. Its client tests do not reach the companies that own and lease these vessels, because they do not produce oil.",
         "links": [
@@ -263,7 +226,19 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's 30% Threshold on Unconventional Oil & Gas"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not, from 2026, give financing labelled for any floating production vessel, whatever field it serves and however old the vessel is",
+      "gaps": [
+        {
+          "title": "Loans to the companies that own vessels",
+          "text": "The commitment covers financing raised for a named vessel. Many vessels are owned by contractors that lease them to oil companies. A general loan or bond to that contractor is outside the commitment.",
+          "phrase_refs": [
+            "dedicated-fpso"
+          ]
+        }
+      ],
+      "in_practice": "A floating production vessel is a ship moored over an offshore oil or gas field. It takes in what the wells produce, processes and stores it, and loads it onto tankers. The policy calls these FPSOs.\n\nFrom 2026 the commitment covers every one of them. Take a new vessel ordered for a new field, or an old tanker converted for an old field. Société Générale will not give financing raised for that vessel. The size of the vessel, the age of the field and where it works make no difference.\n\nWhat the commitment does not cover is the company behind the vessel. Vessels are often built and owned by contractors, which lease them to the oil companies that run the fields. A contractor can take a general loan to the company as a whole, which does not say what it pays for. It can then spend that loan on a new vessel. The oil company that hires the vessel can borrow the same way.\n\nSo the commitment stops financing that names a vessel. It does not stop the bank lending to the companies that build, own and hire them.",
+      "gets_right": "Inside financing for a named vessel, the sentence sets no conditions. There is no size limit, no test about the field's age, and no exception for converted or moved vessels. From 2026 a date and the word “any” decide it."
     }
   },
   "evidence": {
@@ -277,7 +252,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

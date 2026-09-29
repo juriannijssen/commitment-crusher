@@ -368,48 +368,39 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "A dated phase-out at 5%, covering all financing, is unusually strong — conceding it first makes the two gaps land.",
-          "text": "Credit where it is due. By 2030 an EU or OECD client loses its Barclays financing if more than 5% of its revenue comes from thermal coal mining. Not just project loans. All of it.\n\nThat is a low bar and a firm date.\n\nThen the same passage writes a second rule for everywhere else. Outside the EU and OECD the threshold doubles to 10%, and nothing reaches a client below it until 2035. So a miner with 8% of its revenue in coal is excluded in Warsaw. The same miner is financed in Jakarta, under the same sentence.\n\nMost thermal coal mining is outside the OECD. The strong half of this promise covers the smaller half of the problem, and the passage never says which half a client belongs to."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Read as one passage the shape is plain. A strict rule where little coal is mined, a loose one where most of it is.\n\nInside the EU and OECD the test is 5% of revenue. Outside, it is 10%, and it does not begin until 2030 either. A client at 9% is untouched anywhere in the world until 2035.\n\nNothing sets a pace. \"Phase out\" names an end point and no step before it, and the statement publishes no figure for what is financed today. A bank that changes nothing until 2029 has broken no part of this.\n\nAnd the 2035 backstop is ten years out, in a statement that says it may evolve in time. Two policy revisions stand between the promise and the date it falls due."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This catches a coal miner that is mostly a coal miner, registered in the EU or the OECD. It catches it properly: every kind of financing, from 2030.\n\nIt does not catch the diversified group. The threshold is measured on the entity being financed. A mining subsidiary can sit below 5% while the group above it earns a great deal from coal.\n\nIt does not catch the trader, the shipper or the port. Those move and sell thermal coal without mining it, and this passage reaches only the miner.\n\nAnd it does not say what makes a client an EU or OECD one. Registration, operations and the location of the mines can each point somewhere different, and the statement chooses none of them."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Use one threshold everywhere",
-          "content": "Apply 5% worldwide. The 10% rule outside the EU and OECD excludes most of the world's thermal coal mining from the strict half of this promise."
-        },
-        {
-          "title": "Define the geography",
-          "content": "Say whether a client's registration, its operations or the location of its mines decides which of the two rules applies to it."
-        },
-        {
-          "title": "Publish the starting point",
-          "content": "State what is financed today, so the phase-out can be measured before 2030 rather than only at it."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the firm half of this promise governs the smaller half of the problem.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A real end date, reached slowly: nothing before 2030, a 10% floor outside the EU and OECD, and 2035 for the rest."
+      "strength_reason": "The end date is real, but it is years away. Nothing is required before 2030, and outside the EU and OECD most coal miners keep their financing until 2035.",
+      "actual_reading": "it is ending financing to clients earning more than 5% of their revenue from thermal coal mining by 2030 in the EU and OECD, and by 2035 elsewhere",
+      "gaps": [
+        {
+          "title": "Nothing required until 2030",
+          "text": "“Phase out” sets an end date and no steps before it. Barclays can keep financing coal miners at today's level until the date arrives.",
+          "phrase_refs": [
+            "phase-out"
+          ]
+        },
+        {
+          "title": "The rest of the world waits until 2035",
+          "text": "Outside the EU and OECD, only clients above 10% lose their financing in 2030. A client between 5% and 10% keeps it until 2035.",
+          "phrase_refs": [
+            "more-than-10pc",
+            "by-2035",
+            "eu-oecd"
+          ]
+        },
+        {
+          "title": "Diversified companies at 5% or less",
+          "text": "The test is a share of the revenue of the company financed. A large group with a big coal business can sit under 5%, and so can a low-coal company within a coal-heavy group.",
+          "phrase_refs": [
+            "more-than-5pc"
+          ]
+        }
+      ],
+      "in_practice": "The commitment works on dates and revenue shares. A client is “engaged in” thermal coal mining if more than 5% of its revenue comes from it. The share is measured on the company Barclays finances.\n\nTake a mining company in Australia, an OECD country, earning 20% of its revenue from thermal coal. By 1 January 2030 Barclays has to have phased out all its financing to it. That covers every kind of financing. But “phase out” sets no pace. Barclays can keep lending at today's level until late 2029.\n\nNow take the same company in Indonesia, outside the EU and OECD. From 2030 it loses its financing, because 20% is above 10%. A company there earning 8% from coal keeps its financing until 2035. The statement does not say whether a client's location, its mines or its incorporation decides which rule applies.\n\nThen take a large diversified group that mines coal among many other things. If coal is 5% or less of its revenue, it is not “engaged in” coal mining. The phase-out never reaches it. The same goes for a group company with little coal revenue of its own, even when the group earns a great deal from coal.\n\nSo by 2035 the clients above 5% are gone everywhere. Until then, most of them can stay.",
+      "gets_right": "It sets fixed end dates and covers every kind of financing, not only loans for one project. Inside the EU and OECD, the line is a low 5% of revenue."
     }
   },
   "evidence": {
@@ -423,7 +414,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

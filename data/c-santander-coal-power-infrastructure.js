@@ -72,7 +72,7 @@ window.WATCHTOWER_CASE = {
               73,
               98
             ],
-            "means": "This explains what financing this commitment covers: financing tied to an infrastructure project. Watchtower records it as project financing.",
+            "means": "This explains what financing this commitment covers: financing tied to an infrastructure project.",
             "lets_through": [
               "This wording lets through general corporate financing to the owners and builders of the infrastructure."
             ],
@@ -298,44 +298,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "A forecast, a share and a five-year window each narrow the rule; stated together they show how little it reaches.",
-          "text": "The test is passed at the planning stage, and never taken again.\n\nA project is caught if its expected revenue from coal power will be more than 30% of its revenue in its first five years. Each part narrows it.\n\n“Expected” makes it a forecast, and the policy does not say whose. “More than 30%” lets through infrastructure that serves coal alongside other users. “The first five years” lets through a project whose coal share rises later.\n\nAnd the rule only reaches financing tied to the project. The infrastructure's owner can still borrow as a whole company.\n\nWhat remains is a project loan for infrastructure that is forecast, at the start, to depend mostly on coal power. That is a narrow target, and nothing checks the forecast afterwards."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer may seek project financing from Santander for infrastructure. If its own forecast shows more than 30% of revenue from coal power in the first five years, it is caught.\n\nA developer whose forecast shows less is not caught, whatever happens later. Neither is an owner that pays for the same infrastructure at company level.\n\nSo the commitment binds the dedicated coal project that says so in its own numbers. It releases everything that can be described as mixed use. And it releases any owner that can borrow as a company, rather than through the project."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the rule reaches past the plant to the infrastructure that serves it. And it publishes its test: a share, a threshold and a period. It gives numbers that anyone can check.\n\nWhere it stops is the kind of number it uses. It is a forecast, not an outcome. It is a share, not an amount. And it covers the first five years, not the life of the asset. Each of these makes the test easier to pass on paper than in practice.\n\nA published test for coal infrastructure is worth having. This one measures the plan, not the asset."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Measure over the asset's life",
-          "content": "Test coal revenue over the infrastructure's expected life, not its first five years. And check it again after it is built."
-        },
-        {
-          "title": "Cover the owner",
-          "content": "Extend the rule to loans for the whole company that owns the infrastructure."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the test is passed at the planning stage and never taken again.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A 30% forecast test on shared infrastructure, judged before it is built, with nothing if the coal share rises afterwards."
+      "strength_reason": "A project passes if its own forecast keeps coal power below 30% for five years. Nothing checks the forecast later, and the owner can borrow at company level anyway.",
+      "actual_reading": "it will not give financing tied to a project for new infrastructure forecast to earn more than 30% of its revenue from coal power in its first five years",
+      "gaps": [
+        {
+          "title": "A forecast, made once",
+          "phrase_refs": [
+            "expected-revenues",
+            "first-five-years"
+          ],
+          "text": "The test is a forecast, made before the project is built. The policy does not say whose forecast it is. If coal's share rises after year five, the project has already passed."
+        },
+        {
+          "title": "Infrastructure that serves other users too",
+          "phrase_refs": [
+            "threshold"
+          ],
+          "text": "A project that earns up to 30% of its revenue from coal power passes. A line, port or rail link that serves coal plants alongside other users is outside the commitment."
+        },
+        {
+          "title": "Loans to the owner, not the project",
+          "phrase_refs": [
+            "project-related"
+          ],
+          "text": "Only financing tied to the project counts. The owners and builders of the infrastructure can still get general corporate financing."
+        }
+      ],
+      "in_practice": "Coal power plants need infrastructure around them. A port lands imported coal, a rail link brings it in, and a line carries the power out. This commitment covers projects to build them, if coal power is expected to bring in more than 30% of their revenue.\n\nTake a new port terminal. Its developer forecasts that coal for a nearby power plant will be 25% of its revenue for the first five years. Other cargo makes up the rest. The project passes the test. Santander can give it project financing: a loan for the terminal, repaid from what the terminal earns.\n\nNow suppose that in year six, the plant's coal grows to 70% of the terminal's revenue. The test was taken at the start, and nothing in the policy takes it again. The terminal stays outside this commitment.\n\nThe forecast itself is open too. The policy does not say who makes it, on what assumptions, or whether anyone checks it once the terminal runs.\n\nFinally, take the company that owns the terminal. It can ask Santander for general corporate financing. That is a loan to the company as a whole, which does not say what it pays for. This commitment does not cover it at all.\n\nWhat is left is a project loan for infrastructure whose own forecast says coal power will bring in more than 30% of its revenue."
     }
   },
   "evidence": {
@@ -349,7 +342,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

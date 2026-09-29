@@ -476,48 +476,48 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "The 2030 date and the 5% threshold are real; the geography split is what hollows them, and it reads harder after the credit.",
-          "text": "Credit where it is due. By 2030 an EU or OECD client loses its Barclays financing if more than 5% of its revenue comes from coal-fired power. All financing, not only project loans.\n\nThat is a low bar and a firm date.\n\nThen the same passage writes a second rule for everywhere else. Outside the EU and OECD the threshold doubles to 10%, and until 2035 nothing reaches a utility below it. The generator with 8% of its revenue in coal is excluded in Madrid and financed in Manila, on the same day, under the same sentence.\n\nAlmost all the coal capacity still being built is outside the OECD. The firm half of this promise governs the shrinking half of the problem."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Read as one passage, this is a strict rule where coal power is closing and a loose one where it is being built.\n\nInside the EU and OECD the test is 5% of revenue. Outside, it is 10%, from the same date. A utility at 9% is untouched anywhere until 2035.\n\nThe threshold is a share, so it scales with the company. A generator can run one of the largest coal fleets in the world and still stay under 10%. It need only also sell gas, renewables and network services. The bigger the utility, the further it sits from the line.\n\nAnd \"phase out\" sets an end point with no step before it. Nothing here distinguishes a bank reducing steadily from one that does nothing until 2029."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This catches a utility that is mostly a coal utility, in the EU or the OECD. It catches it from 2030, across every kind of financing.\n\nIt does not catch the diversified generator. The test is measured on the entity financed, and a large utility's coal revenue is a small share of what it sells.\n\nIt does not catch the plant itself. A project company that owns one coal station is not a client above a revenue threshold; it is a borrower this passage never measures.\n\nAnd it does not say what places a client inside the EU or the OECD. Where it is registered, where it generates and where it sells can each answer differently."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Use one threshold everywhere",
-          "content": "Apply 5% worldwide. Almost all the coal capacity still being built sits outside the OECD, where the looser rule applies."
-        },
-        {
-          "title": "Test the group, not the entity",
-          "content": "Measure coal revenue across the group being financed. A share test on one subsidiary lets a coal-heavy parent through."
-        },
-        {
-          "title": "Publish the starting point",
-          "content": "State what is financed today, so the phase-out can be measured before 2030 rather than only at it."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the firm half of this promise governs the shrinking half of the problem.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A real end date, reached slowly, with an abatement exception the statement leaves open."
+      "strength_reason": "The end date is real, but it is years away. Nothing is required before 2030, the rest of the world waits until 2035, and three exceptions keep plants open.",
+      "actual_reading": "it is ending financing to clients earning more than 5% of their revenue from coal power by 2030 in the EU and OECD, and by 2035 elsewhere, unless their plants qualify for an exception",
+      "gaps": [
+        {
+          "title": "Nothing required until 2030",
+          "text": "“Phase out” sets an end date and no steps before it. Barclays can keep financing coal power clients at today's level until the date arrives.",
+          "phrase_refs": [
+            "phase-out"
+          ]
+        },
+        {
+          "title": "The rest of the world waits until 2035",
+          "text": "Outside the EU and OECD, only clients above 10% lose their financing in 2030. A client between 5% and 10% keeps it until 2035.",
+          "phrase_refs": [
+            "more-than-10pc",
+            "by-2035",
+            "eu-oecd"
+          ]
+        },
+        {
+          "title": "Plants kept open by exception",
+          "text": "The dates do not apply to plants cut to “near zero” emissions, kept as backup, or held open by law or contract. The contract can be one the client signed itself.",
+          "phrase_refs": [
+            "required-open",
+            "abated",
+            "backup"
+          ]
+        },
+        {
+          "title": "Diversified companies at 5% or less",
+          "text": "The test is a share of the revenue of the company financed. A large company with a big coal fleet can sit under 5% if it does enough else.",
+          "phrase_refs": [
+            "more-than-5pc-revenues"
+          ]
+        }
+      ],
+      "in_practice": "The commitment works on dates and revenue shares. A client is “engaged in” coal power if more than 5% of its revenue comes from it. The share is measured on the company Barclays finances.\n\nTake a utility in Poland, an EU country, earning 20% of its revenue from coal power. By 1 January 2030 Barclays has to have phased out all its financing to it. But “phase out” sets no pace. Barclays can keep lending at today's level until late 2029.\n\nNow take a utility in Indonesia, outside the EU and OECD. From 2030 it loses its financing only if coal power is more than 10% of its revenue. A utility there at 8% keeps its financing until 2035.\n\nEven after the dates, three exceptions apply. A client keeps its financing if its remaining coal plants are cut to near zero emissions, which the statement does not measure. Or if they are kept only as backup, however often the backup runs. Or if law, regulation or a contract keeps them open. A power-purchase agreement the client signed itself can be such a contract.\n\nThen take a large utility that also sells gas, renewables and network services. If coal is 5% or less of its revenue, it is not “engaged in” coal power, and the phase-out never reaches it.\n\nSo by 2035 clients above 5% lose their financing everywhere. The three exceptions decide how many stay.",
+      "gets_right": "It sets fixed end dates and covers every kind of financing, not only loans for one project. Inside the EU and OECD, the line is a low 5% of revenue."
     }
   },
   "evidence": {
@@ -531,7 +531,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

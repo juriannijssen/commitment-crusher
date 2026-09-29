@@ -229,44 +229,22 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "A precise legal definition of the activity is genuine credit; conceding it first makes the instrument limit land.",
-          "text": "Credit first: the activity is defined by law. Mountaintop removal is defined by reference to a US law on surface mining. So there is no argument about what counts.\n\nA rule tied to a legal definition cannot be stretched or shrunk by the bank.\n\nWhere it stops is the kind of financing. Only direct financing is restricted: financing whose use is known to be for the project. A company that mines this way can still borrow for general purposes.\n\nSo the activity is clearly defined. The rule only reaches financing that names it."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The rule reaches mountaintop removal through direct financing only. That means financing whose use is known to be for the project.\n\nGeneral-purpose financing for a company that mines this way is untouched. So is a credit line, or a bond with no stated use. The company can spend that financing on the same mine.\n\nThere is also no client rule. Barclays does not restrict companies that mine this way, whatever share of their business it is.\n\nSo the mining is clearly defined, and the rule is clear. But the company doing the mining can still borrow from Barclays, as long as it does not say what for."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA mining company asking Barclays for financing that it says is for a mountaintop removal project. That company is caught.\n\nThe same company borrowing for general purposes is not caught. It can spend a general loan on the same project.\n\nSo the commitment binds the borrower that names its project. It releases the one that does not. There is no test on the company itself, so a company that mines this way can stay a Barclays client, and keep borrowing. The rule never looks at the company itself, only at the label."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover the company",
-          "content": "Restrict all financing to companies that mine by mountaintop removal."
-        },
-        {
-          "title": "Set a threshold",
-          "content": "Set a share of output from mountaintop removal above which a company is restricted."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, mountaintop removal can be financed, just not by name.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Direct financing only, and a company never has to say the proceeds are for mountaintop removal. Nothing has to be refused."
+      "strength_reason": "It covers only financing Barclays knows is for a mountaintop removal project. A company that mines this way can borrow for general purposes and spend it on the same mine.",
+      "actual_reading": "it will not give financing that it knows is for a particular project using mountaintop removal mining",
+      "gaps": [
+        {
+          "title": "Loans that do not name their purpose",
+          "phrase_refs": [
+            "use-of-proceeds"
+          ],
+          "text": "Barclays only counts financing as “direct financing” when it knows the financing is for a particular project. A company can borrow without saying what for, and this commitment never applies."
+        }
+      ],
+      "in_practice": "Mountaintop removal is a way of mining coal. Miners blast away the top of a mountain to reach the seams below, and dump the rock into nearby valleys. It is used mainly in the Appalachian mountains of the United States.\n\nTake a coal company that mines this way. It asks Barclays for a loan to open a new mountaintop removal site, and says so. This commitment applies, and Barclays will not give that loan.\n\nNow the same company asks for a general loan to the company. The loan does not say what it pays for. Barclays does not know it is for a particular project, so it is not “direct financing”. The company can spend it on the same site.\n\nThe same goes for a revolving credit line, which a company can draw on for anything, or a bond with no stated use. None of them names the project, so none is covered.\n\nThis commitment also sets no test on the company. It does not matter how much of the company's coal comes from mountaintop removal. The company can stay a Barclays client and keep borrowing.\n\nSo what this commitment stops is one kind of loan request: the one that names the mountaintop removal project. A company that leaves that sentence out gets through."
     }
   },
   "evidence": {
@@ -280,7 +258,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

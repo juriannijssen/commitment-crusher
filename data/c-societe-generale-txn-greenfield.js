@@ -71,7 +71,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains what financing this commitment covers: dedicated financing only. That is financing raised for a named activity, where it is clear what the financing is used for.",
             "lets_through": [
-              "This wording blocks project financing, but it allows general corporate financing. A company opening new fields and borrowing at group level is not asking for a dedicated transaction, so this commitment does not apply. At company level the only tests are the policy's three client rules, and none of them asks whether a producer is opening new fields."
+              "This wording blocks project financing, but it allows general corporate financing. A company opening new fields and borrowing at group level is not asking for a dedicated transaction, so this commitment does not apply."
             ],
             "defined_in_clause": null,
             "source": "bank_green",
@@ -265,48 +265,37 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": false
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "This is the best-drafted exclusion in the document and the word 'latest' is a deliberate anti-avoidance choice most banks do not make; a page that opens by showing that is far harder to wave away.",
-          "text": "Two things about this rule deserve credit first.\n\nThe first is that it is defined. A new field is one whose latest final investment decision came after 31 December 2021. That decision is the moment a company commits to building. Anyone can check a field against the date.\n\nThe second is the word “latest”. A field first approved in 2015 that is approved again in 2027 counts as new. That closes an obvious way around a cut-off date: reviving an old approval. The bank did not have to write it.\n\nWhat remains is scope. It only covers dedicated deals. No test in the policy asks whether a company borrowing as a whole is opening new fields."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This exclusion stops financing tied to a new field. It does not stop financing for the company opening it.\n\nEverything in this section applies to dedicated deals: financing for one named activity. New fields are more and more often paid for with company-wide loans, credit lines and bonds. None of those is dedicated to anything.\n\nAt company level, the policy has three client tests. One is a 30% threshold on four kinds of oil and gas. One changes how that is measured. One excludes private companies that do almost nothing but produce. None asks whether a company is opening new fields.\n\nSo a conventional producer opening new fields anywhere, financed as a whole company, passes every test in this policy.\n\nThe cut-off adds to it. A field approved on 31 December 2021 is outside for its whole life."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This is a good new-fields rule. The reason is the definition, not the ban.\n\nA promise not to finance new fields means little without saying what “new” means. Without a definition, the promise cannot be tested. A field stays new until the bank decides it is an extension, and no one outside can check.\n\nSociété Générale published a date, then wrote “latest” to stop it being gamed. Unlike a policy that just says “new fields”, this one can actually be tested.\n\nWhere it falls short is scope. The rule covers dedicated deals, not the company loans that pay for most new fields. A clear rule with narrow scope and a vague rule with wide scope fail in different ways. It is not obvious which lets more through."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Apply it to the client",
-          "content": "The rule only covers dedicated deals. No test in this policy asks whether a company borrowing as a whole is opening new fields."
-        },
-        {
-          "title": "Rethink the 2021 cut-off",
-          "content": "A field approved on 31 December 2021 is outside this rule for its whole life. A test based on production, not approval date, would follow the oil."
-        },
-        {
-          "title": "Say what happens to expansions of existing fields",
-          "content": "New wells and new phases can add years of supply without a new investment decision. Nothing here deals with them."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a clear definition sits inside a narrow scope.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating.",
-      "strength_reason": "Project financing for new fields is genuinely blocked; the 2021 date frees every earlier field for its whole producing life."
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "A loan for a new field is refused. But a company opening new fields can still borrow as a whole, and every field approved by 2021 stays open for its whole life.",
+      "actual_reading": "it will not give financing labelled for exploring, developing or producing an oil or gas field whose latest final investment decision came after 2021",
+      "gaps": [
+        {
+          "title": "Loans to the company as a whole",
+          "text": "The commitment covers “dedicated transactions” only: financing raised for a named field. A company opening new fields can take a general loan or issue a bond, and spend it on those fields.",
+          "phrase_refs": [
+            "dedicated"
+          ]
+        },
+        {
+          "title": "Fields approved by the end of 2021",
+          "text": "A field approved on or before 31 December 2021 is never “Greenfield”. Financing labelled for it stays open for as long as it produces, which can be past 2060.",
+          "phrase_refs": [
+            "latest-fid"
+          ]
+        },
+        {
+          "title": "Growth inside existing fields",
+          "text": "New wells, new phases and redevelopment in an existing field do not always need a fresh investment decision. When they do not, they stay outside the commitment.",
+          "phrase_refs": [
+            "latest-fid"
+          ]
+        }
+      ],
+      "in_practice": "The commitment turns on a date. A field is “Greenfield”, meaning new, when its latest final investment decision came after 31 December 2021. That decision is the moment a company formally approves building the field.\n\nTake a company that approved a new offshore field in 2024. If it asks Société Générale for a loan for that field, the answer is no. That covers exploring, developing and producing it.\n\nBut the same company can ask for a general loan to the company as a whole, which does not say what it pays for. Or it can issue a bond. That financing does not name the field, so the commitment does not apply. The company can spend it on the new field.\n\nNow take a field approved in 2021. It is not new under this definition, and it never becomes new. A loan labelled for that field is allowed today, and for as long as the field produces.\n\nOld fields can also grow. A company can drill more wells or add a phase. If that does not need a fresh investment decision, the field keeps its old date.\n\nSo what is stopped is financing that names a field approved after 2021. The companies opening those fields can still borrow from the bank.",
+      "gets_right": "The bank says exactly what a new field is: one whose latest final investment decision came after 31 December 2021. Anyone can check a field against that date. The word “latest” means an old field approved again counts as new."
     }
   },
   "evidence": {
@@ -320,7 +309,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

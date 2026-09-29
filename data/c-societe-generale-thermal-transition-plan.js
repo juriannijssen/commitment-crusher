@@ -227,48 +227,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The test is that a plan was communicated. Not published, not verified, not met.",
-          "text": "The rule applies to a company that “has not communicated a transition plan aligned with” the bank's 2030 and 2040 goals. Each word does less than it seems.\n\nCommunicated, not published. The plan need not be public. A document shown only to the bank is enough, and no one outside can check the bank's judgement of it.\n\nCommunicated, not delivered. The test is met when the plan arrives. Nothing checks it again, stops financing if it slips, or sets any consequence for missing it.\n\nAligned, with no published test. There is no method, no outside benchmark, and no list of who passed. And the goals are the bank's own, the later of which is 2040. A plan can be aligned and still run coal for fourteen more years."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Which company fails this test? One that has written nothing down.\n\nA coal-heavy utility with a published net-zero plan passes. So does one that has only described its plan to the bank. So does one whose plan is behind schedule, as long as it was shared. What is left are companies that have made no claim to change at all. Among companies big enough to bank, that group is small and shrinking.\n\nThat does not make the rule pointless. Asking for a stated plan forces a conversation, and gives the bank a document to hold clients to. But it is a disclosure rule written as an exclusion, and should be read as disclosure."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This commitment asks a client to do something, not to be something.\n\nA status test asks what share of your revenue, which resource, which region, which kind of deal. Those can be checked, but they are fixed. A company passes or it does not, and nothing invites it to change.\n\nA transition plan rule is different. It creates a document and a stated intention that can be measured later. And it reaches every company with coal assets, not only those above a threshold.\n\nThe idea is right. What is missing is everything that would make it bind: publication, a clear test, and a consequence for not delivering."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Publish what “aligned” means",
-          "content": "The rule turns on a judgement the bank makes but does not explain. A stated method would let outsiders check it."
-        },
-        {
-          "title": "Require the plan to be public",
-          "content": "As written, sharing it with the bank is enough. A public plan can be checked by anyone; a private one cannot."
-        },
-        {
-          "title": "Tie continued financing to delivery",
-          "content": "The rule is met the moment a plan is shared. Nothing checks it again later."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a document is enough, and the bank is the only reader who needs convincing.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A gate with no methodology, no benchmark and no disclosure. Any plan the bank is willing to accept passes it.",
+      "strength_reason": "The test is met once a plan reaches the bank. Nothing says what makes a plan good enough, and nothing happens if it is never carried out.",
       "how_it_compares": {
         "text": "Société Générale's other rules are status tests: revenue share, resource, region or kind of deal.",
         "links": [
@@ -281,7 +244,25 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's 30% Threshold on Unconventional Oil & Gas"
           }
         ]
-      }
+      },
+      "actual_reading": "it will refuse new business only to a company with coal mines or coal power plants that has shown it no plan at all that it accepts as fitting its 2030 and 2040 coal dates",
+      "gaps": [
+        {
+          "title": "Sharing a plan is enough",
+          "text": "The company only has to communicate a plan. It does not have to publish it, carry it out or report on it. A plan shown to the bank alone passes.",
+          "phrase_refs": [
+            "communicated"
+          ]
+        },
+        {
+          "title": "“Aligned” is the bank's own call",
+          "text": "The policy publishes no test for what makes a plan aligned. The dates are the bank's own, and the later one is 2040. A plan can pass and keep coal running until then.",
+          "phrase_refs": [
+            "aligned"
+          ]
+        }
+      ],
+      "in_practice": "The commitment reaches every company with thermal coal mines or coal power plants, and their parent and holding companies. Each has to have communicated a transition plan: a statement of how it will get out of coal. The plan must be aligned with Société Générale's goals of leaving thermal coal by 2030 and 2040.\n\nTake a utility with coal plants that has published a net-zero plan. It passes. Take one that has only described its plan to the bank in a meeting. It passes too. The wording does not ask for the plan to be public. Nobody outside the bank can see it or check the bank's view of it.\n\nNow take a company whose plan slips. Its coal plants stay open past the dates it gave. Nothing in the sentence looks at the plan again. The test was met the day the plan arrived.\n\nThe word “aligned” carries the rest. The policy gives no method for judging it and names no outside benchmark. It does not list which clients passed. So the plans that pass are the plans the bank accepts.\n\nWhat is left is a company with coal assets that has shown the bank nothing at all. That company is refused new products and services. Every company willing to hand over a plan is not."
     }
   },
   "evidence": {
@@ -295,7 +276,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 306, document 28051",
     "reading": "drafted"

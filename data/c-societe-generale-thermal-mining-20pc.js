@@ -48,7 +48,7 @@ window.WATCHTOWER_CASE = {
         "role": "rule",
         "source_id": "tcp2026",
         "title": "The promise",
-        "intro": "This rule sits right after the list of client rules, and applies only to mining. It is the only client rule here that covers existing business too.",
+        "intro": "This rule applies only to mining companies, and it covers existing business as well as new.",
         "location": {
           "distance": "same_passage",
           "signposting": "explicit",
@@ -92,7 +92,7 @@ window.WATCHTOWER_CASE = {
               178,
               206
             ],
-            "means": "This explains the first of two thresholds, applied to the group the entity belongs to rather than to the entity itself. 20% is the lowest revenue threshold in any Société Générale sector policy we have read.",
+            "means": "This explains the first of two thresholds, applied to the group the entity belongs to rather than to the entity itself.",
             "lets_through": [
               "This wording lets through diversified miners below the line on revenue — but only if they are also below 10 million tonnes, because the second threshold stands on its own.",
               "It also lets through the rest of the coal chain. This threshold measures revenue linked to thermal coal mining specifically, not to the thermal coal sector as a whole."
@@ -233,44 +233,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "This is the strongest client rule in the document and the page should say so before it says anything else.",
-          "text": "The rule is in the present tense: the bank “does not provide financial products and services”. It has no limit to new business.\n\nIt has two tests, and either is enough. More than 20% of group revenue from coal mining, or more than 10 million tonnes a year.\n\nAnd it measures the whole group, not just the company. A mine held in a small subsidiary is tested against its parent's revenue."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "What limits this rule is which companies it covers, not how hard it hits them.\n\nIt applies to a company “of the Thermal Coal Mining sector”. The glossary defines that as a company that runs or owns coal mines. So the test is about running a mine.\n\nTraders are outside it. A trading house moving tens of millions of tonnes of coal a year owns no mines, and this sentence says nothing about it.\n\nShippers, port operators and buyers are outside it for the same reason. So is a holding company that finances mines without owning them. The rule points at one link in the chain."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Put this commitment beside the others in the same policy, and the difference is hard to miss.\n\nCoal mining is excluded at 20% of group revenue or 10 million tonnes, straight away, for new and existing business. Coal power falls under the client rules. Those use 25% for new clients and 50% for existing ones, cover new business only, and have no size test.\n\nBurning coal produces the emissions. Mining it supplies the coal. The policy is much harder on the supplier.\n\nThe bank's mining policy goes the other way. It sets coal for steel-making at more than 50% of revenue, two and a half times this threshold, in a policy published the same month."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover more than mine owners",
-          "content": "The rule covers companies that run or own mines. Traders and shippers of the same coal are outside it."
-        },
-        {
-          "title": "Lower the tonnes figure over time",
-          "content": "Ten million tonnes a year is a large mine or a small mining company. A figure that steps down each year would close the gap over time."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this client rule covers one part of the coal chain.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Catches the coal-heavy miners on two tests at once, and leaves traders, shippers and financing arms outside.",
+      "strength_reason": "It catches large and coal-heavy mining groups. Mining inside a smaller, diversified group gets through, and so does every company that trades, ships or finances coal without owning a mine.",
       "how_it_compares": {
         "text": "Société Générale's other coal client rules only stop new business. Existing financing is left to the 2030 and 2040 phase-out dates. Its rule on dedicated coal financing does name trading.",
         "links": [
@@ -299,7 +266,26 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's Restriction on Financing Thermal Coal Activities"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not finance a coal mining company whose group earns more than 20% of its revenue from coal mining or produces more than 10 million tonnes of coal a year",
+      "gaps": [
+        {
+          "title": "Small mines in diversified groups",
+          "phrase_refs": [
+            "20pc"
+          ],
+          "text": "A group under 20% of revenue from coal mining and under 10 million tonnes a year is not caught. Its mining company can still be financed."
+        },
+        {
+          "title": "Companies around the mine",
+          "phrase_refs": [
+            "corporate-entity"
+          ],
+          "text": "The commitment covers companies that operate or own coal mines. Traders, shippers and buyers are outside it, and so are financing arms and holding vehicles that do not own the mines themselves."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. This commitment covers companies that operate or own thermal coal mines. It then tests the group they belong to, in two ways, and either one is enough.\n\nTake a mining company whose group earns 30% of its revenue from coal mining. It is above 20%, so Société Générale does not provide it any financial product or service. The same goes for a mining company in a group that produces 15 million tonnes a year. That is true even if coal is a small part of the group's revenue.\n\nNow take a mining company in a diversified group. Coal mining is 10% of the group's revenue, and it produces 5 million tonnes a year. It is under both lines, so it can be financed.\n\nThen take a trading house that buys and sells large amounts of thermal coal. It does not operate or own a mine, so it is not a company of the coal mining sector. The commitment does not apply to it. Nor does it apply to a shipper, a buyer, or a financing arm that lends to the mines without owning them.\n\nSo the commitment stops financing to mine owners in large or coal-heavy groups. The smaller mines in diversified groups, and the companies that move, sell and finance the coal, all get through.",
+      "gets_right": "It is not limited to new business or new clients. And either test is enough: a very large miner is caught on tonnes, even where coal is a small share of its group's revenue."
     }
   },
   "evidence": {
@@ -313,7 +299,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 306, document 28051",
     "reading": "drafted"

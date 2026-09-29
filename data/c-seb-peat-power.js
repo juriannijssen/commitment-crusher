@@ -379,44 +379,29 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "The pairing is what makes a new-business rule acceptable, and it is stated rather than implied.",
-          "text": "A rule on new clients, paired with a dated exit, is a sound structure. This section states both.\n\nThis rule stops new clients above 5% of revenue from peat power. A later sentence extends the same test to every client from 2030. The gap runs to 2030, and the document says so in the next sentence. It does not leave readers to discover it.\n\nSo the structure is right, and it is stated openly."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Until 2030, this rule governs who the bank takes on, not who it already has.\n\nA utility SEB already banks, earning most of its revenue from burning peat, is outside this sentence entirely. That means existing relationships until 2030, and this rule says nothing about them.\n\nHere, the gap is closed in 2030, and no exception clause sits above it.\n\nSo the gap is real, but it is short and stated."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Compared with the upstream client rule in the same document, the peat section is better built than the oil and gas one.\n\nThe oil and gas rule for producers covers new clients only. No later commitment closes that gap for ordinary oil and gas.\n\nThe peat power rule also covers new clients only. But a later commitment closes the gap in 2030.\n\nSo the fuel with less than a hundredth of the financing got the more complete treatment. That says something about how the policy was written. The small fuel got the careful drafting. The big fuel got the gap. The order should be the other way round."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "A rule on new clients now, and a dated exit for the rest. The document states both, one sentence after the other.\n\nThe test is 5% of revenue from peat-fired power generation — a low bar. It covers all business relationships from 2030, not new ones only, and not dedicated financing only. There is no exception and nothing left to the bank's discretion.\n\nWhat it does leave is the years until 2030. An existing peat-fired generator keeps its financing until 2030, and the policy sets no baseline and no step along the way.\n\nIt is the most complete structure in the policy.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options. This commitment has no synthesis record at all — scope, thresholds and rating inputs are all Bank.Green's reading of the policy text.",
-      "what_needs_to_change": [
-        {
-          "title": "Set steps before 2030",
-          "content": "Say how existing peat-power clients will be reduced before 2030, and report progress each year."
-        },
-        {
-          "title": "Say what 2030 means for existing clients",
-          "content": "Say whether existing peat-power clients lose their financing in 2030, or only stop getting new financing."
-        }
-      ],
-      "what_needs_to_change_closing": "Until 2030, this rule governs who the bank takes on, not who it already has, and the policy says so.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "New business stops now and every relationship from 2030, on a 5% line with no exception, no project-financing limit and no carve-out."
+      "strength_reason": "It mostly does what it sounds like. What gets through is at the edges, and the biggest part of it, the years until 2030, is written into the policy.",
+      "actual_reading": "it does not take on new business of any kind with companies earning more than 5% of their revenue from peat-fired power, and from 2030 not with its existing clients either",
+      "gaps": [
+        {
+          "title": "Existing clients, until 2030",
+          "phrase_refs": [
+            "from2030"
+          ],
+          "text": "Until 2030 the rule covers new clients only. A peat-fired generator SEB already banks keeps its financing until then, with no steps in between."
+        },
+        {
+          "title": "A company in the group below the line",
+          "phrase_refs": [
+            "company-legal-entity"
+          ],
+          "text": "SEB applies the 5% test to the one company it deals with, not to its group. A company in the group with little peat revenue can borrow, and the financing can move within the group."
+        }
+      ],
+      "in_practice": "For a company that earns most of its revenue from burning peat, the door to new business with SEB is closed now. That means every kind of business, not only financing for a named project, and there is no exception. If SEB already banks the company, the door closes in 2030. That is roughly what a reader would expect the commitment to mean.\n\nThe line is low. A company only has to earn more than 5% of its revenue from peat-fired power to be caught.\n\nUntil 2030, existing clients carry on as before, and the policy sets no steps along the way. It also does not say whether existing clients lose their financing in 2030, or only stop getting new financing.\n\nA group can also borrow through one of its companies that earns little from peat. Whether that works depends on how the group is organised, and the policy does not deal with it.\n\nNone of this is hidden. The 2030 date is in the next sentence of the policy."
     }
   },
   "evidence": {
@@ -430,7 +415,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Policy text, document 25537 section 9 — NOT in synthesis run 181",
     "reading": "drafted"

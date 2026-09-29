@@ -118,7 +118,7 @@ window.WATCHTOWER_CASE = {
             "means": "This explains the condition that switches this commitment off. Any one of three parties having a transition plan is enough.",
             "lets_through": [
               "This wording lets through almost every sponsor. Three alternative holders of the plan means the test is satisfied if any of them has one, and large infrastructure projects have several parties attached.",
-              "It also lets through any plan at all. The policy does not say the plan must be public, credible, verified, aligned to a temperature pathway, or related to the asset being financed."
+              "It also lets through any plan at all. The policy does not say the plan must be public, checked by anyone outside the company, or related to the asset being financed."
             ],
             "defined_in_clause": null,
             "bank_definition": null,
@@ -310,48 +310,36 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "Three alternative satisfiers and no quality standard is as close to an open door as this document gets.",
-          "text": "This sentence restricts new gas infrastructure on a condition that is easy to meet.\n\nNew gas pipelines and storage can be financed “unless the Company, project or owner has a Transition Plan”. Any one of three parties can meet the condition. Large projects have a sponsor, a project company, an operator and often a state body. The chance that none has a transition plan is small.\n\nNo standard applies to the plan. It need not be public, checked, aligned with any climate path, time-bound, or about the asset being financed. The policy expects every fossil fuel company to have a transition plan anyway. So many will already have one.\n\nThe asset lasts forty years. The condition is met by a document."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The oil sentence one line above has no condition at all.\n\nThat is the comparison that matters, and it sits in the same part of the policy. Same kind of asset, same kind of financing, same lock-in problem. Oil gets a ban. Gas gets a permission with a condition.\n\nAnd the gas condition is met by a document existing, not by anything in it."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "For this rule to bite, a new gas pipeline or storage project needs three parties with no transition plan. The sponsor, the project company and the owner would all have to lack one.\n\nIn European gas infrastructure, that is close to hypothetical. The companies that run gas networks publish transition plans as a matter of course. So do the utilities and funds that own them.\n\nWhat the sentence realistically excludes is a project with an owner from outside that world. That may be the intent. But it is a much smaller restriction than the wording first suggests.\n\nFor most new gas infrastructure, the answer is yes."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Say whose plan counts",
-          "content": "Company, project or owner: any of the three will do. Naming one would make the condition mean something."
-        },
-        {
-          "title": "Set a standard for the plan",
-          "content": "Public, checked by an outside party, and aligned with a stated climate path. None of these is required."
-        },
-        {
-          "title": "Deal with the asset's life",
-          "content": "Gas infrastructure financed now will run past 2050. A transition plan held by its owner does not change that."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the condition is met by a document held by any one of three parties.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "The gate is a transition plan held by any one of three parties, with no requirement that it be public, verified or aligned to anything."
+      "strength_reason": "A new gas pipeline or storage site is refused only if none of three parties has a transition plan. Large projects have several parties, so one of them usually has one.",
+      "actual_reading": "it will not give financing set aside for new gas pipelines and storage sites where neither the company, the project nor its owner has a transition plan",
+      "gaps": [
+        {
+          "title": "Any one of three parties will do",
+          "phrase_refs": [
+            "unless16"
+          ],
+          "text": "The company, the project or the owner can hold the transition plan. Large gas projects have several parties behind them, so the condition is easy to meet."
+        },
+        {
+          "title": "No test of the plan itself",
+          "phrase_refs": [
+            "unless16"
+          ],
+          "text": "The policy does not say the plan must be public, checked by anyone outside the company, or about the asset being built. Having one is enough."
+        },
+        {
+          "title": "Loans to the company, not the project",
+          "phrase_refs": [
+            "see-dedicated-finance"
+          ],
+          "text": "“Dedicated Finance” is financing for a named use. A pipeline company can take a general loan and build the pipeline with it, and the condition never comes up."
+        }
+      ],
+      "in_practice": "Take a new gas pipeline. A project like this has several parties behind it: a company that builds it, a project company that holds it, and one or more owners. If any one of them has a transition plan, SEB can give financing labelled for the pipeline.\n\nA transition plan is a company's written strategy for moving towards a low-carbon economy. The policy does not say the plan must be public or checked by anyone outside the company. It does not say the plan must cover the pipeline being built. So a pipeline can be financed on the strength of its owner's plan for its other businesses.\n\nThen there is the route around the label. “Dedicated Finance” is financing for a named use. A pipeline company can take a general loan from SEB and spend it on a new pipeline or storage site. That loan names no purpose, so the condition never comes up at all.\n\nGas pipelines and storage sites are built to run for decades. Nothing in this commitment looks at how long the asset will run, or how much gas it will carry.\n\nSo what is left is a new gas project where no party has any plan at all, financed with a loan that names it. That is a small group."
     }
   },
   "evidence": {
@@ -365,7 +353,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

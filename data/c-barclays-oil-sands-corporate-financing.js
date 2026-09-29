@@ -367,44 +367,36 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "General corporate financing that must be specified for a use is a narrow category; stated flatly that is the gap.",
-          "text": "The commitment reaches general company loans, but only when they are stated to be mainly for new oil sands building.\n\nGeneral company financing is, by its nature, financing without a stated use. A company building a new oil sands project can borrow for general purposes, and spend the funds on it. The commitment does not apply.\n\nThe narrowing is in the words “specified as being”.\n\nSo the rule reaches company loans in name. In practice, it only catches a borrower that chooses to label its loan for oil sands. Few borrowers need to."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA company that asks Barclays for a general company loan, and states that most of it is for building a new oil sands asset. That company is caught.\n\nThe same company asking for a general company loan without stating a use is not caught. Nothing else about the loan or the company needs to change.\n\nSo the commitment binds the borrower that is open about its plans. It releases the one that says nothing. For a company that knows the rule, avoiding it takes one sentence left out of a loan request."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the commitment tries to close the gap that its project twin leaves open. It reaches into general company loans, which is where most oil sands financing sits.\n\nThat is the right target. Project rules alone leave company loans free, and Barclays saw that.\n\nBut it only does so for loans stated to be for oil sands building. That is the smallest part of general company financing, because such loans rarely state a use.\n\nSo the idea is right, and the reach is tiny. The gap the rule was meant to close is still open for any borrower that does not name its purpose."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Drop “specified as being”",
-          "content": "Restrict general company loans to companies building new oil sands assets, whatever the stated use."
-        },
-        {
-          "title": "Put a number on “primarily”",
-          "content": "Say what share of a loan's stated use makes it “primarily” for oil sands."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule applies to company loans that say what they are for, which company loans rarely do.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Bites only where the financing is specified as wholly or primarily for new oil sands assets. General corporate financing never is."
+      "strength_reason": "It covers general-purpose loans only when they are stated to be mainly for building new oil sands assets. General-purpose loans almost never state a use.",
+      "actual_reading": "it will not lend to companies for general purposes where the loan is stated to be mainly for building new oil sands sites or pipelines",
+      "gaps": [
+        {
+          "title": "Loans that do not state a use",
+          "phrase_refs": [
+            "specified-as-being"
+          ],
+          "text": "The loan has to be “specified as being” for oil sands building. A general loan usually states no use at all. The company can spend it on a new oil sands site anyway."
+        },
+        {
+          "title": "“Primarily” has no number",
+          "phrase_refs": [
+            "wholly-or-primarily"
+          ],
+          "text": "The stated use has to be mainly oil sands building. A loan that names oil sands as one use among several can get through."
+        },
+        {
+          "title": "Processing outside Canada or off site",
+          "phrase_refs": [
+            "canadian-in-situ-only"
+          ],
+          "text": "“Oil Sands processing” covers only Canadian clients upgrading bitumen where it is extracted. A plant that upgrades bitumen elsewhere, or outside Canada, is not covered."
+        }
+      ],
+      "in_practice": "General-purpose financing is a loan to a company as a whole. It usually does not say what it pays for. This commitment covers that kind of loan, but only when the loan states that it is mainly for building new oil sands assets.\n\nTake an oil sands producer planning a new mine. It asks Barclays for a general loan and says nothing about the mine. The loan is not specified as being for oil sands building, so this commitment does not apply. The producer can spend it on the mine.\n\nNow the producer asks for a loan and states that most of it will pay for the new mine. That loan is covered, and Barclays will not give it. The only difference between the two loans is one sentence in the request.\n\nThe same producer can also name the mine as one use among several. If oil sands building is not most of the stated use, the loan can go ahead.\n\nThe definitions narrow it further. Processing counts only for Canadian clients upgrading bitumen where it comes out of the ground. A pipeline counts only if oil sands crude is its main cargo.\n\nSo this commitment catches a borrower that chooses to label its loan for oil sands building. A borrower that leaves the label off is not caught."
     }
   },
   "evidence": {
@@ -418,7 +410,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

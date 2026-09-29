@@ -92,7 +92,7 @@ window.WATCHTOWER_CASE = {
               45,
               53
             ],
-            "means": "The word “projects” aims this commitment at particular oil and gas projects, not at the companies that develop them. Watchtower records it as project financing.",
+            "means": "The word “projects” aims this commitment at particular oil and gas projects, not at the companies that develop them.",
             "lets_through": [
               "This wording lets through general corporate financing. A revolving credit facility, a term loan or a bond goes to the company's balance sheet rather than to a named asset, so this commitment never applies, however much Arctic drilling that company does.",
               "It also lets through project financing arranged by someone else, where the bank's financing reaches the project through a general facility instead of a dedicated one."
@@ -317,7 +317,7 @@ window.WATCHTOWER_CASE = {
       }
     ],
     "assessment": {
-      "strength": "hollowed",
+      "strength": "crushed",
       "strength_derivation": {
         "rule": "spec v3.29 §4.1 — the gap between the naive reading and what it catches",
         "inputs_source": "Watchtower record",
@@ -328,44 +328,30 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "Two narrowings stack — one instrument, and a defined Arctic smaller than its name — and the gap is best stated flatly.",
-          "text": "This is Barclays' narrowest Arctic commitment, and it is narrow in two ways.\n\nIt only covers project financing: a loan for one named project. The words “directly” and “projects” set that limit. So a company building an Arctic project can still get loans or bonds for the company as a whole.\n\nThe Arctic it covers may also be smaller than the name suggests. The statement defines it as the area within the Arctic Circle that has sea ice, plus the Arctic National Wildlife Refuge and the Coastal Plains. Read as a limit, Arctic land outside those areas is not covered.\n\nBarclays has two other Arctic commitments that reach companies. On its own, this one stops a single kind of loan, in part of the Arctic."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer that wants Barclays to arrange project financing for an Arctic oil or gas project, inside the defined Arctic, is caught. That is the whole group.\n\nA developer that raises the same financing at company level is not caught. A credit line or a bond goes to the company, not to a named project. Large operators can pay for projects from their own balance sheets. Smaller developers with a single field depend on project financing, so they are the ones it binds.\n\nAnd anyone building on Arctic land outside the definition is outside it, whatever the financing.\n\nSo the commitment binds the developers least able to borrow as a company."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: Barclays says what it means by the Arctic.\n\nA rule on Arctic financing that never says where the Arctic is leaves the bank to draw the line case by case. Barclays publishes a definition in the same statement. So a reader can take a project's location and check it.\n\nWhat the definition says is where the limit shows. It covers the area within the Arctic Circle that has sea ice, plus the Arctic National Wildlife Refuge and the Coastal Plains. Read as a limit, other Arctic land is not covered.\n\nAnd the commitment reaches that area only through project financing. Loans and bonds for the company as a whole are untouched.\n\nA published boundary is worth having. This one is drawn tight."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover the company, not just the project",
-          "content": "Company loans and bonds pay for Arctic projects just as a project loan does. The rule should reach them."
-        },
-        {
-          "title": "Use the whole Arctic",
-          "content": "Cover everything north of the Arctic Circle, on land and at sea, not only the parts with sea ice and two named areas."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this commitment stops one kind of loan, in part of the Arctic.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Catches dedicated Arctic project finance and nothing else; a bond or a revolver to the same driller is untouched."
+      "strength_reason": "It stops financing Barclays knows is for an Arctic project. A general loan or a bond to the same driller is not covered, and the Arctic is drawn tight.",
+      "actual_reading": "it will not give financing it knows is for a particular oil or gas project inside the Arctic Circle's sea-ice area or two named areas in Alaska",
+      "gaps": [
+        {
+          "title": "Loans that do not name their purpose",
+          "text": "Barclays only counts financing as “direct financing” when it knows the financing is for a particular project. A driller can borrow for general purposes and spend the loan on an Arctic field.",
+          "phrase_refs": [
+            "use-of-proceeds",
+            "projects"
+          ]
+        },
+        {
+          "title": "Only part of the Arctic",
+          "text": "Read as a limit, the Arctic here is the area within the Arctic Circle that has sea ice, plus two named areas in Alaska. Arctic land outside those areas is not covered.",
+          "phrase_refs": [
+            "subject-to-sea-ice"
+          ]
+        }
+      ],
+      "in_practice": "Take an oil company developing a field inside the Arctic Circle. If it asks Barclays for a loan for that field, Barclays knows what the loan is for. That is “direct financing”, and the answer is no.\n\nNow the same company asks for a general loan, a revolving credit facility or a bond. General-purpose financing like this goes to the company as a whole and does not say what it pays for. Barclays does not know it is for the Arctic field, so the rule does not apply. The company can spend it on the field anyway.\n\nLarge producers can pay for new fields this way, out of their general borrowing. So the rule mostly binds smaller developers with a single field, which depend on financing for that one project.\n\nThen there is where the Arctic is. The statement takes the area within the Arctic Circle that is subject to sea ice, plus the Arctic National Wildlife Refuge and the Coastal Plains. Read as a limit, Arctic land outside those areas is not covered. The statement also does not say which coastal plains are meant.\n\nSo what is left is financing labelled for one project, inside the defined Arctic. Everything else Barclays does for an Arctic driller is open."
     }
   },
   "evidence": {
@@ -398,7 +384,7 @@ window.WATCHTOWER_CASE = {
     ]
   },
   "provenance": {
-    "built": "2026-09-26",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

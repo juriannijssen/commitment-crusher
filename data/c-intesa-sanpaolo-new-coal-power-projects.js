@@ -265,44 +265,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "text": "Intesa Sanpaolo will not finance a new coal plant, and it will not finance buying or enlarging one that is already running.\n\nThe document also reaches the firms around the plant. Contractors that build it, and contractors that run and maintain it, are inside the scope where they are directly involved.\n\nIt applies globally and took effect immediately, with no threshold to argue about.\n\nTwo limits remain. The rule covers financing raised for the plant, while the company that owns it borrows under a ceiling rather than a ban. And a footnote lets financing agreed before the rules run to its natural expiry.",
-          "recommended": true,
-          "recommended_because": "Almost every route into a coal plant is closed here, and saying so first is what makes the two remaining limits land."
-        },
-        {
-          "angle": "fails_to_block",
-          "text": "Intesa Sanpaolo will not finance projects to build, buy or expand coal power plants. The wording is wide, and the gaps are elsewhere.\n\nThe first is the borrower. This rule covers financing raised for a named plant. It does not reach the company that owns the plant.\n\nThe second is the footnote. Financing the bank had already agreed runs to its natural expiry, whatever it is funding.\n\nThe third is the edge of the contractor definition. A firm is inside the rule where it is directly involved in the work, which leaves the wider supply chain outside.",
-          "recommended": false,
-          "recommended_because": null
-        },
-        {
-          "angle": "who_it_catches",
-          "text": "Who does this commitment stop, and when?\n\nIt stops financing raised to build a new coal plant, and financing raised to buy or enlarge one already in operation. That has applied since July 2021, everywhere the group operates.\n\nIt also stops financing the contractors that build, run or maintain those plants, where they are directly involved in the work.\n\nIt does not stop the owner borrowing at company level.\n\nAnd it does not reach financing the bank agreed before the rules came in, which runs to its natural expiry.",
-          "recommended": false,
-          "recommended_because": null
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "Intesa Sanpaolo will not finance a new coal plant, and it will not finance buying or enlarging one that is already running.\n\nThe document also reaches the firms around the plant. Contractors that build it, and contractors that run and maintain it, are inside the scope where they are directly involved in the work.\n\nIt applies globally, took effect immediately, and has no threshold to argue about.\n\nTwo limits remain. The rule covers financing raised for the plant, not general lending to the company that owns it. And a footnote lets financing agreed before the rules run to its natural expiry.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Put an end date on existing contracts",
-          "content": "Agreed financing runs to its natural expiry. Without a backstop date, long contracts outlive the rule."
-        },
-        {
-          "title": "Cover lending to the owner",
-          "content": "Refuse general purpose lending to companies building, buying or expanding coal plants, not only financing for the plant."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the plants are closed off and the companies behind them are not.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "It stops financing for coal plants themselves, contractors included, but not general lending to the company that owns them, and old contracts run on.",
+      "strength_reason": "Financing for a coal plant itself is blocked, contractors included. General lending to the company that owns the plant is not, and older contracts run on.",
       "how_it_compares": {
         "text": "Companies building or expanding coal plants face a separate rule. It caps their general purpose lending rather than banning it.",
         "links": [
@@ -311,7 +278,26 @@ window.WATCHTOWER_CASE = {
             "title": "Intesa Sanpaolo's Restriction on Coal Power Expansion"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not provide financing tied to building, buying or enlarging a coal power plant, including to the contractors who build and run it",
+      "gaps": [
+        {
+          "title": "General loans to the owner",
+          "phrase_refs": [
+            "to-projects"
+          ],
+          "text": "The commitment covers financing raised for a named plant. The company that owns the plant can take a general loan and spend it on the plant."
+        },
+        {
+          "title": "Deals agreed before the rules",
+          "phrase_refs": [
+            "contracts-underway"
+          ],
+          "text": "Financing agreed before the rules took effect runs until its agreed end date. A facility signed then can still be drawn on for plant work."
+        }
+      ],
+      "in_practice": "Take a utility that wants to build a new coal plant. If it asks Intesa Sanpaolo for a loan for that plant, the bank will say no. The same goes for a loan to buy or enlarge a coal plant that is already running.\n\nThe commitment also covers the firms around the plant. EPC contractors are the engineering firms that design a plant, buy its equipment and build it. O&M contractors operate and maintain it. Where they are directly involved in the work, the bank will not finance them either.\n\nNow take the same utility, asking for a general loan instead. A general loan goes to the company as a whole and does not say what it pays for. This commitment does not apply. The utility can then spend that loan on the new plant.\n\nThe footnote leaves one more route. Financing agreed before the rules took effect in July 2021 runs until its agreed end date. A facility, an amount a company can draw on when it needs it, signed before then can still be used for plant work.\n\nKeeping an old plant running is outside too. Maintenance or refurbishment that adds no capacity is not building, buying or enlarging.\n\nSo what is blocked is financing that names a coal plant as its purpose. A company that owns coal plants can still borrow for itself.",
+      "gets_right": "It covers buying and enlarging plants already running, not only new ones. It also covers the contractors who build, run and maintain coal plants, where they are directly involved in the work."
     }
   },
   "evidence": {
@@ -325,7 +311,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 262, document 8201",
     "reading": "drafted"

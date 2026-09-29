@@ -239,44 +239,29 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "A strict test on a class of asset that is almost never strictly dedicated is the standard failure mode, and it is what this sentence does.",
-          "text": "Everything turns on “dedicated to”, and mining infrastructure is built to be shared.\n\nA rail line, road or port serving one mine and nothing else is rare. Dedicated infrastructure is expensive. Shared infrastructure is what makes a mining region pay. And an asset that carries coal alongside iron ore is not dedicated to coal mining, on any ordinary reading.\n\nSo the test catches the assets that barely exist. It releases the ones that actually move the coal.\n\nThe rule also covers new projects only. So an existing shared rail line, upgraded to carry more coal, sits outside it.\n\nThe rule is in the right place in the chain. But one word decides how much of the chain it reaches."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "SEB uses one test for shared infrastructure: “dedicated to”.\n\nIt says it once. That is good drafting. But it is a narrow test. Only assets used for coal mining alone are caught.\n\nConsistency deserves credit. It does not make the test wide."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "What asset does this sentence stop? A conveyor from a single mine, or a rail spur with one customer.\n\nThose exist. But a bank asked to finance one is usually being asked to finance the mine behind it. The policy's coal client rules already deal with that.\n\nAdd a second product, a second shipper or a second customer, and the question becomes arguable. Most real rail lines and ports have all three.\n\nSo the rule mostly catches assets that the other coal rules already cover. It adds little on its own. The shared infrastructure that moves most coal to market is outside it."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Use a majority test",
-          "content": "“Dedicated to” catches assets that serve coal and nothing else. A majority test would reach the shared infrastructure that actually moves coal."
-        },
-        {
-          "title": "Cover expansions of existing assets",
-          "content": "An existing shared rail line upgraded to carry more coal is not a new dedicated project."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the assets that actually move coal to market are the hardest to test against this rule.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Only infrastructure dedicated to coal. Mining rail, roads and port terminals are built shared, which is why they get built."
+      "strength_reason": "Only infrastructure that serves coal mining and nothing else is covered. Rail lines, roads and ports that carry coal alongside other goods get through, and that is how most are built.",
+      "actual_reading": "it will not give financing set aside for a rail line, road or port project that serves coal mining and nothing else",
+      "gaps": [
+        {
+          "title": "Anything that also carries other goods",
+          "phrase_refs": [
+            "dedicated-to"
+          ],
+          "text": "The asset has to be “dedicated to” coal mining. A rail line or port that also carries iron ore, grain or containers is not, so this commitment does not apply."
+        },
+        {
+          "title": "Loans to the company, not the project",
+          "phrase_refs": [
+            "see-dedicated-finance"
+          ],
+          "text": "“Dedicated Finance” is financing for a named use. A coal mining company can take a general loan and spend it on a rail spur or a loading terminal."
+        }
+      ],
+      "in_practice": "Coal has to get from the mine to a buyer. That takes rail lines, roads, conveyor belts and port terminals. This commitment is about financing for them.\n\nTake a new rail line from a coal mining region to the coast. If it carries coal and nothing else, SEB refuses a loan labelled for it. But lines like this are usually built to carry other freight too, such as iron ore, grain or containers. Sharing the line is what makes it pay. Once it carries anything else, it is no longer “dedicated to” coal mining. SEB can finance it.\n\nThe same goes for a port terminal that loads coal alongside other bulk goods. It is not dedicated to coal mining either.\n\nThen there is the route around the label. “Dedicated Finance” is financing for a named use. A coal mining company can take a general loan from SEB and spend it on a rail spur or a loading terminal. The loan names no purpose, so this commitment does not apply.\n\nSo what is left is a narrow case. It is a piece of infrastructure that serves coal mining alone, paid for with a loan that names it. Everything else that moves coal to market can still be financed."
     }
   },
   "evidence": {
@@ -290,7 +275,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

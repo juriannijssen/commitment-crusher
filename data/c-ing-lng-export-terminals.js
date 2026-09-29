@@ -166,49 +166,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "A narrow instrument and a delayed start do most of the work here, and the gap is best stated flatly.",
-          "text": "Read closely, this commitment restricts one kind of deal only: new financing, for a new terminal that exports LNG, agreed after 2025.\n\nEverything else is outside it. Terminals that already exist keep their financing. ING never says whether expanding an existing terminal counts as new. Terminals that import LNG are not export terminals. And financing agreed during 2025 was still allowed.\n\nIt covers project financing: a loan for one named project. So the companies that build and run export terminals can still borrow from ING. They can get general corporate financing, meaning loans to the company as a whole, and bonds. They can spend that financing on new terminals.\n\nThe commitment picks the right target, but through the narrowest route, with fifteen months' notice."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA company that needs project financing from ING for a new LNG export terminal is caught. Project financing is a loan for one named project. The company is only caught if the financing was not agreed by the end of 2025. That is the whole group.\n\nA company that raises the same financing for the company as a whole is not caught. Neither is one that agreed its financing in 2025. Nor one expanding a terminal that already exports. Nor one building the terminals that receive the gas at the other end.\n\nSo the large companies, which can pay for terminals with ordinary company loans, go free. The small company that depends on project financing is the one it binds."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: ING named a clear target, set a date and said why.\n\nLNG export terminals are built to last for decades, and to ship gas abroad. A bank that stops financing new ones is taking a stand on gas, not only on oil. ING links its decision to a public report, the International Energy Agency's 2023 World Energy Outlook. Anyone can check that report.\n\nThe limit is in how the commitment reaches the terminals. It covers only new financing for new terminals, from 2026. It covers project financing, a loan for one named project; Loans to the company as a whole, and bonds, are left alone. It also says nothing about expansions, import terminals, or financing already in place.\n\nThe target is well chosen. The route to it is the narrowest one."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover the company, not only the terminal",
-          "content": "Also restrict loans to the company as a whole, and bonds, for companies whose main business is building new LNG export terminals."
-        },
-        {
-          "title": "Say what counts as new",
-          "content": "Say whether expanding an existing terminal counts as a new LNG export terminal."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, ING can still finance new LNG export terminals, just not with a project loan agreed after 2025.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "New export terminals after 2025 are genuinely off; existing terminals, import and regas, and corporate financing are not."
-    },
-    "featured": {
-      "rank": 3,
-      "kind": "a date",
-      "because": "The restriction begins after 2025. All ten of these terminals were financed during it."
+      "strength_reason": "It stops new financing for new export terminals from 2026. Existing terminals, import terminals, deals agreed in 2025 and general loans to the companies that own terminals all go through.",
+      "actual_reading": "it has decided that, from 2026, it will not provide new financing for new terminals that export liquefied gas",
+      "gaps": [
+        {
+          "title": "Existing terminals and import terminals",
+          "phrase_refs": [
+            "new-lng-export-after-2025"
+          ],
+          "text": "Terminals already exporting are not new. Import terminals, which turn the liquid back into gas, are not export terminals. The wording does not say whether adding a unit to an existing terminal counts."
+        },
+        {
+          "title": "Anything agreed before 2026",
+          "phrase_refs": [
+            "new-lng-export-after-2025"
+          ],
+          "text": "Financing agreed up to the end of 2025 is outside it, however long the terminal then runs."
+        },
+        {
+          "title": "General loans to the owner",
+          "phrase_refs": [
+            "new-lng-export-after-2025"
+          ],
+          "text": "The commitment covers financing for a terminal, not for its owner. A company can take a general loan and spend it on a new terminal."
+        }
+      ],
+      "in_practice": "LNG is liquefied natural gas: gas cooled until it turns liquid, so it can be shipped. An export terminal cools the gas and loads it onto ships. An import terminal, at the other end, turns it back into gas.\n\nTake a company planning a new export terminal. It asks ING for a loan for that terminal in 2026. ING will say no. That is what the commitment does.\n\nNow take the same company, but it signed its loan with ING in 2025. The commitment does not apply. The terminal can run for as long as it lasts on financing agreed before the date.\n\nTake a company that owns an export terminal already running, and wants to add a new unit to it. The industry calls these units trains. The wording does not say whether a new train counts as a new terminal.\n\nNow take a large energy company that owns terminals. It asks ING for a general loan to the company as a whole, which does not say what it pays for. The commitment covers financing for a terminal, not financing for its owner. The company can spend the loan on a new terminal.\n\nImport terminals are outside altogether. They are not export terminals.\n\nSo what is left is new financing, from 2026, tied to a new export terminal.",
+      "gets_right": "ING names a clear target and a date, and gives its reason. It points to the International Energy Agency's 2023 World Energy Outlook, a public report anyone can check."
     }
   },
   "evidence": {
@@ -364,7 +352,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "LNG export terminals and the companies that run them"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 105, document 4517",
     "reading": "drafted"

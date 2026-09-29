@@ -231,7 +231,7 @@ window.WATCHTOWER_CASE = {
               82,
               104
             ],
-            "means": "This definition of “expansion” is narrower than what it usually means. By expansion we normally mean a company producing more oil and gas than before. Barclays makes it a date test instead: only projects signed off after 31 December 2021 are expansion, and the date does not move. A field approved in 2021 and drilled out through the 2030s is never expansion here, however much it adds — so the restriction blocks less with every year that passes.",
+            "means": "This definition of “expansion” is narrower than what it usually means. By expansion we normally mean a company producing more oil and gas than before. Barclays makes it a date test instead: only projects signed off after 31 December 2021 are expansion, and the date does not move. A field approved in 2021 and drilled out through the 2030s is never expansion here, however much it adds — so the restriction blocks less than the word suggests, for as long as those fields produce.",
             "lets_through": [
               "A project approved before 2022 and being built now, which this wording does not call expansion.",
               "Drilling and production at a field sanctioned years ago, however much it adds."
@@ -381,44 +381,36 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The rule closes the project-finance gap on its face and reopens it through the definition; stated flatly that is the point.",
-          "text": "This commitment seems to close the gap its neighbour leaves open. It reaches “other direct financing”, not only project finance.\n\nThe definition decides how far. Direct financing is financing “where the use of proceeds is known to be for a particular project”. A general company loan, a credit line or a bond with no stated use is not direct financing. So it is not restricted, whatever the energy group spends it on.\n\nAnd only energy groups are covered. Those are groups with over 20% of revenue from oil and gas production, and the oil majors. Expansion only counts for projects approved after 2021.\n\nWhat remains is financing labelled for a new project. A producer with a choice need not ask for it."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nAn energy group that asks Barclays for financing, and tells the bank it is for an expansion project. That group is caught.\n\nThe same group borrowing for general company purposes is not caught. A group below the energy group threshold is not caught either, however much it spends on new fields.\n\nSo the commitment binds the borrower that is open about what the financing is for. It releases the one that borrows for general purposes. The rule rewards saying less.\n\nFor a large producer with many ways to borrow, avoiding this rule takes no effort at all."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the commitment reaches beyond project finance. It covers any financing whose use is known to be for an expansion project.\n\nThat is a real step. It means a company loan labelled for a new field is refused too, not only a project loan.\n\nWhere it stops is the word “known”. The test is what the bank is told, not what the financing pays for. And general-purpose financing is never known to be for a project.\n\nSo the reach is wider than project finance. But the test that sets the reach is the bank's own knowledge, and borrowers control that."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Test the group, not the paperwork",
-          "content": "Restrict company loans to energy groups with a large share of spending on expansion, whatever the stated use."
-        },
-        {
-          "title": "Cover groups below the threshold",
-          "content": "Apply the rule to any group developing expansion projects, not only those above 20% or named as majors."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule applies to financing labelled for a new field, and not to the same financing without the label.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Three definitions narrow it to financing the bank is told is for the project, to groups over 20% upstream, and to fields sanctioned after 2021 — general-purpose financing to the same companies is untouched."
+      "strength_reason": "Three definitions shrink it to financing labelled for one project, given to large producers, for fields approved after 2021. General loans to the same groups get through.",
+      "actual_reading": "it will not give financing it knows is for a particular oil and gas project approved after 2021 to groups earning over 20% from oil and gas production, or to the majors",
+      "gaps": [
+        {
+          "title": "Loans that do not name their purpose",
+          "text": "Barclays only counts financing as “direct financing” when it knows the financing is for a particular project. A group can borrow for general purposes and spend the loan on a new field.",
+          "phrase_refs": [
+            "use-of-proceeds"
+          ]
+        },
+        {
+          "title": "Only the groups Barclays counts as “Energy Groups”",
+          "text": "The rule applies to groups earning over 20% of their revenue from producing oil and gas, and to the majors. A utility or a diversified company with a drilling arm is not covered.",
+          "phrase_refs": [
+            "over-20pc"
+          ]
+        },
+        {
+          "title": "Fields approved before 2022",
+          "text": "“Expansion” means a project approved after 31 December 2021. A field approved earlier and drilled out through the 2030s is never expansion here.",
+          "phrase_refs": [
+            "after-31-december-2021"
+          ]
+        }
+      ],
+      "in_practice": "Take an oil producer that earns most of its revenue from oil and gas. It is one of the “Energy Groups”. If it asks Barclays for a loan for a new field, Barclays knows what the loan is for. That is “direct financing”, and the answer is no.\n\nNow the same producer asks for a general loan, a revolving credit facility or a bond. General-purpose financing like this goes to the company as a whole and does not say what it pays for. It is not “direct financing”, so the rule does not apply. The producer can spend it on the new field.\n\nNext take a diversified company with a drilling arm, where oil and gas production is under 20% of its revenue. It is not an “Energy Group”, unless Barclays counts it as a major. So it can get financing labelled for the same new field.\n\nThen there is timing. “Expansion” means a project approved after 31 December 2021. A field approved in 2021 can be drilled for years to come, and it never counts.\n\nSo what is left is financing labelled for a project approved after 2021, given to a large producer. A producer with a choice need not ask for it."
     }
   },
   "evidence": {
@@ -432,7 +424,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

@@ -70,7 +70,7 @@ window.WATCHTOWER_CASE = {
               26,
               55
             ],
-            "means": "This explains who this commitment applies to: companies that are not already clients. Watchtower records the relationship status on this commitment as new.",
+            "means": "This explains who this commitment applies to: companies that are not already clients.",
             "lets_through": [
               "Adding the word “new” means every company already banked keeps its financing. A producer earning 90% of its revenue from metallurgical coal that is already a client is outside this commitment entirely, and can keep drawing on existing arrangements.",
               "This commitment is about the bank's client list rather than about coal. Nothing in it asks an existing client to change anything."
@@ -244,44 +244,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "Two narrowings sit on top of each other — a bar most miners clear from below, and a rule that only applies to strangers.",
-          "text": "This rule sets a number, and two things limit it.\n\nFirst, the bar. More than half of a company's revenue must come from mining coal for steel. A company can be one of the world's largest producers of that coal and still be far below half. It also mines iron ore, copper and more. The biggest producers are the ones most likely to be under the line.\n\nSecond, the reach. The rule only decides whether Société Générale will start a new client relationship. A producer that earns 90% of its revenue from this coal and is already a client is not affected at all.\n\nSo the threshold applies to new clients, not to the business the bank already does."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Société Générale published two sector policies in April 2026. Each has a client revenue threshold.\n\nThe oil and gas policy excludes companies earning more than 30% of their revenue from Arctic oil and gas, Amazon oil, oil sands or shale. The mining policy sets the line for coal used in steel-making at more than 50%.\n\nSame bank, same month. Coal for steel gets a bar nearly twice as high as Arctic oil, and neither policy says why.\n\nThere may be a good reason. Steel has no ready replacement for coal at scale, and the bank may think that deserves a softer line. If so, the policy should say it. As published, a reader cannot tell whether the two numbers reflect a choice or a drafting accident."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Which companies earn more than half their revenue from coal for steel? A short list of companies that mine only that coal, mostly in Australia and the United States.\n\nThey are real companies, and excluding them counts for something. But most of this coal comes from large mining groups, for whom it is one product among many. A company's revenue share falls as it adds other products, even if its coal output grows.\n\nSo a revenue test rewards how a business is organised, not how much it mines. Measuring the coal mined would test what the rule is named after. And it would not move when the copper price does."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so unlike the oil and gas pages there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Apply it to existing clients",
-          "content": "The rule decides who the bank takes on, not who it already has. A producer above the line that is already a client is not affected."
-        },
-        {
-          "title": "Measure the coal, not the revenue share",
-          "content": "A revenue share falls as a company adds other businesses. The amount of coal mined would measure what the rule is named after."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this number applies to new clients, not to the business the bank already does.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "New clients only, and only above 50% of revenue. One of the world's largest met coal producers can sit under that line.",
+      "strength_reason": "It only turns away new clients, and only those earning more than half their revenue from this coal. Existing clients, and large mining groups with other products, are not touched.",
       "how_it_compares": {
         "text": "Société Générale's oil and gas policy sets its client threshold at 30% of revenue. For coal used to make steel the bar is 50%, and the bank does not say why.",
         "links": [
@@ -290,7 +257,25 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's 30% Threshold on Unconventional Oil & Gas"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not open a new client relationship with a company that earns more than half of its revenue from mining coal for steel-making",
+      "gaps": [
+        {
+          "title": "Existing clients stay",
+          "phrase_refs": [
+            "new-relationship"
+          ],
+          "text": "The commitment only decides who Société Générale takes on. A producer that is already a client keeps its financing, even if steel-making coal is 90% of its business."
+        },
+        {
+          "title": "Large mining groups stay under half",
+          "phrase_refs": [
+            "fifty"
+          ],
+          "text": "A mining group can be one of the largest producers of this coal. It can still earn most of its revenue from iron ore, copper and other products. It is then below the line."
+        }
+      ],
+      "in_practice": "Metallurgical coal is the coal used to make steel, rather than burned for power. This commitment is about which companies Société Générale accepts as new clients. It asks nothing of the clients it already has.\n\nTake a company that mines only this coal and has never banked with Société Générale. It asks to become a client. The answer is no, because more than half its revenue comes from this coal.\n\nNow take the same company, but it was already a client before the policy. The commitment does not apply to it. It keeps its existing arrangements and can keep drawing on them. Nothing in the wording asks it to change anything.\n\nThen take a large mining group. It produces a great deal of this coal, but it also mines iron ore and copper. Coal for steel-making may be 20% of its revenue. It is far below half, so even as a new client it can be taken on.\n\nSo two tests have to be passed before this commitment applies. The company has to be new to the bank. And steel-making coal has to be more than half of its business. What is left is a new client that does little else but mine this coal."
     }
   },
   "evidence": {
@@ -304,7 +289,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 196, document 28052",
     "reading": "drafted"

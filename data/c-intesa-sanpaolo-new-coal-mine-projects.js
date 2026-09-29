@@ -227,44 +227,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "text": "Intesa Sanpaolo will not finance projects to build or expand new coal mines. The bank gives the restriction its own name: greenfield projects.\n\nThat name is also the limit. A greenfield project is one on a site not mined before. Reopening a mine, deepening it or extending its life is brownfield work, and this sentence does not reach it.\n\nMost coal tonnage now comes from mines that already exist. The restriction points at the smallest part of the pipeline.\n\nA footnote takes more back. Financing already agreed runs to its natural expiry, so a facility signed before July 2021 can keep funding work under it.",
-          "recommended": true,
-          "recommended_because": "The bank's own word, greenfield, is doing the narrowing, and a reader has no reason to know that it excludes the expansion of existing mines."
-        },
-        {
-          "angle": "who_it_catches",
-          "text": "Who does this commitment stop, and when?\n\nIt stops financing raised for building a coal mine on a new site. That applies anywhere in the world, from July 2021 onwards.\n\nIt does not stop financing to enlarge a mine that is already producing. That is not a new mine.\n\nIt does not stop general lending to the company behind the mine.\n\nAnd it does not reach financing the bank agreed before the rules came in. Those contracts run to their natural expiry, however long that takes.",
-          "recommended": false,
-          "recommended_because": null
-        },
-        {
-          "angle": "what_it_gets_right",
-          "text": "This is a clean project-level restriction. There is no threshold, no scoring and no committee to clear. A greenfield coal mine does not get financed, wherever it is.\n\nThe bank also names the category itself, using its own term for it, so there is no argument about what was meant.\n\nIt covers the sector as the document defines it, which reaches exploration, feasibility studies and final design as well as construction.\n\nWhat it leaves out is the expansion of mines already in production, which is where most new coal tonnage now comes from. And financing agreed before the rules keeps running until it expires.",
-          "recommended": false,
-          "recommended_because": null
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "Intesa Sanpaolo will not finance projects to build or expand new coal mines. The bank names the category itself: greenfield projects.\n\nThat name is also the limit. A greenfield project is one on a site not mined before. Reopening a mine, deepening it, or extending its life is brownfield work, and this sentence does not reach it.\n\nMost coal tonnage now comes from mines that already exist, so the restriction points at the smallest part of the pipeline.\n\nA footnote takes more back. Financing the bank had already agreed runs to its natural expiry, which means a facility signed before July 2021 can still be funding work under it.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover expansion of existing coal mines",
-          "content": "The restriction stops greenfield mines. Enlarging a working mine adds the same coal and is not covered."
-        },
-        {
-          "title": "Put an end date on existing contracts",
-          "content": "Agreed financing runs to its natural expiry. Without a backstop date, long contracts outlive the rule."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the coal that comes from enlarging today's mines is financed as before.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "New mines are genuinely blocked; reopening, deepening or extending one already producing is not new.",
+      "strength_reason": "A coal mine on a new site is blocked. Growing a mine that already produces is not new, and financing agreed before July 2021 runs on.",
       "how_it_compares": {
         "text": "General lending to the company behind the mine falls under a separate rule, which caps it rather than stopping it.",
         "links": [
@@ -273,7 +240,27 @@ window.WATCHTOWER_CASE = {
             "title": "Intesa Sanpaolo's Freeze on Coal Mining Financing"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not finance building a coal mine on a site never mined before, but it can finance enlarging, deepening or reopening mines that already exist",
+      "gaps": [
+        {
+          "title": "Growing an existing mine",
+          "phrase_refs": [
+            "greenfield",
+            "construction-expansion"
+          ],
+          "text": "The bank calls what it excludes “Greenfield Projects”: mines on sites not mined before. Extending, deepening or reopening a mine that exists is not covered, however much coal it adds."
+        },
+        {
+          "title": "Deals agreed before the rules",
+          "phrase_refs": [
+            "contracts-underway"
+          ],
+          "text": "Financing agreed before the rules took effect runs until its agreed end date. A facility signed then can still pay for mine work years later."
+        }
+      ],
+      "in_practice": "Take a company planning a coal mine on land that has never been mined. It asks Intesa Sanpaolo for a loan for that mine. The bank will not provide it, nor any other financial product or service for it.\n\nNow take a company that runs a mine and wants to double its output. It plans to extend the mine into the next stretch of the same coal seam. That is an expansion of an existing mine, not a new mine. The bank calls new mines “Greenfield Projects”, and this is not one. So the commitment does not apply, even though the extra coal is the same.\n\nReopening a closed mine works the same way. So does extending a mine's life by digging deeper. The site has been mined before.\n\nThe footnote leaves one more route. Financing agreed before the rules took effect in July 2021 runs until its agreed end date. Take a facility, an amount a company can draw on when it needs it. If it was signed before then, it can still pay for mine work.\n\nThe commitment is also about financing raised for a mine, not loans to the company. A general loan to the company as a whole is not financing for a project, so this commitment does not reach it.",
+      "gets_right": "A coal mine on a new site gets no financing from the bank. There is no size test or revenue test to argue over."
     }
   },
   "evidence": {
@@ -287,7 +274,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 262, document 8201",
     "reading": "drafted"

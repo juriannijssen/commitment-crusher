@@ -220,44 +220,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "This is the only commitment in the document with a deadline, and the deadline has now passed, which is the first thing a reader should be told.",
-          "text": "This commitment has a date on it. It says the business already on the books has to go.\n\nIt is short and it carries no exception. Nothing in the sentence allows a contract to run to expiry.\n\nTwo things limit it. It covers only unconventional oil and gas. Conventional oil and gas exposure is not being phased out.\n\nAnd the date has now passed. The abstract sets no interim step, no report and no consequence. Whether the exposure actually went is not something this document can tell a reader."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The sentence commits Intesa Sanpaolo to phase out its unconventional exposures by 2025. It is a deadline with nothing behind it.\n\nNo yearly step is published. Before the end date, there is nothing a reader could check.\n\nNothing says what happens if exposure remains afterwards. The abstract sets no report and no consequence.\n\nWhat has to go is also narrow. Only the exposures caught by the three unconventional rules are covered, and those rules leave diversified producers outside their thresholds.\n\nSo the phase-out inherits the gaps of the rules it points at, and closes on a date that passes quietly."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this commitment affect, and when?\n\nIt affects companies the bank already finances that are caught by the three unconventional rules. Their financing was due to end by 2025.\n\nThat means specialists above the revenue thresholds, and projects at unconventional extraction sites.\n\nIt does not affect producers below those thresholds. They were never in scope, so there is nothing to phase out.\n\nIt does not affect conventional oil and gas exposure of any size, however new the field.\n\nAnd after the date, it says nothing at all. The rules set no report and no check on whether the exposure went."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "This commitment says the business already on the books has to go, by 2025.\n\nIt carries no exception. Nothing here allows a contract to run to its natural expiry.\n\nTwo things limit it. It covers unconventional exposure only, so conventional oil and gas exposure is not being phased out. And it sets no interim step, so there was nothing to check while it ran.\n\nThe date has now passed. The rules set no report and no consequence, so this document cannot tell a reader whether the exposure actually went.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Report what was left after the deadline",
-          "content": "The date has passed. The rules should say what unconventional exposure remained, and what happens to it."
-        },
-        {
-          "title": "Publish the steps, not just the end date",
-          "content": "A phase-out with no yearly figure cannot be checked while it runs. Annual exposure would show whether it was happening."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a reader cannot tell whether the phase-out happened.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A real end date for unconventional exposure, with exposure free to sit at today's level until it arrives and nothing that follows a miss.",
+      "strength_reason": "It sets a real end date, but only for business the bank had already barred. Other oil and gas financing stays, and nothing follows if the date is missed.",
       "how_it_compares": {
         "text": "Three other Intesa Sanpaolo rules stop new unconventional business: for extraction sites, for companies above 15% of production revenues, and for holding their securities above 10%. This one covers the business already on the books.",
         "links": [
@@ -274,7 +241,27 @@ window.WATCHTOWER_CASE = {
             "title": "Intesa Sanpaolo's 10% Threshold on Holding Securities"
           }
         ]
-      }
+      },
+      "actual_reading": "it will end by 2025 its existing project loans at unconventional sites, its lending to companies above 15% of production revenues from them, and its holdings above 10%",
+      "gaps": [
+        {
+          "title": "Only what was already barred",
+          "phrase_refs": [
+            "exclusions-322"
+          ],
+          "text": "The phase-out covers only financing caught by the three restrictions quoted with it. Large producers under the revenue thresholds, and conventional oil and gas, are not being phased out."
+        },
+        {
+          "title": "No steps and no check",
+          "phrase_refs": [
+            "phase-out",
+            "by-2025"
+          ],
+          "text": "No yearly step is published, so there is nothing to miss until the last day. The document sets no report and no consequence if exposure remains after 2025."
+        }
+      ],
+      "in_practice": "Exposure is what the bank has lent to a company, or holds in it, and could lose. This commitment says some of that exposure has to be gone by 2025.\n\nWhich exposure? Only what the paragraph it points to already rules out. That paragraph lists three things. Project loans at sites that extract shale, tar sands or coalbed methane. Lending to companies earning more than 15% of their production revenues from those sources. And holding bonds or shares in companies above 10%.\n\nTake a company that fracks and nothing else. The bank had lent to it before the rules were published in June 2024. Under this commitment, that loan had to be gone by 2025.\n\nNow take a large oil company with a small shale business, below 10%. None of its financing is phased out. Nor is any conventional oil and gas lending, or lending for pipelines and refineries.\n\nThe path is also open. The sentence sets an end date and nothing in between. The bank could keep the loans at their full level until late 2025.\n\nAnd the date has passed. The document sets no report and no consequence. It cannot tell a reader whether the exposure actually went.",
+      "gets_right": "It deals with business the bank already has, not only new business. And it sets a close date for ending it, about eighteen months after the rules were published."
     }
   },
   "evidence": {
@@ -288,7 +275,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 261, document 8195",
     "reading": "drafted"

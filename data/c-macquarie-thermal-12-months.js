@@ -324,52 +324,42 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "A maturity limit constrains the finance that builds mines and leaves untouched the finance that moves coal.",
-          "text": "This sentence refuses two things for thermal coal, the coal burned for power: financing from Macquarie's own balance sheet for more than a year, and advice on deals.\n\nThat rules out something real. Financing for new mines and power stations runs for years, so the one-year cap keeps it off Macquarie's own book.\n\nIt rules out little else. Trade financing, letters of credit and working capital loans almost always last less than a year, and nothing stops a short loan being renewed. Arranging a ten-year loan for other lenders, or selling a coal company's bonds, is not covered either.\n\nAnd the whole sentence is an appetite, not a restriction. Macquarie changed its coal appetite twice in 2024 and disclosed it afterwards. It could change this one the same way."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "A number is rare in a commitment, and this one has a number.\n\nMost restrictions turn on words a bank defines for itself, such as “significant” or “dedicated”. A twelve-month limit is different. It is written in the loan papers, and it is either passed or not.\n\nIt also aims at the right thing. Long-term financing is what gets a new mine or power station built. A bank that will not lend for more than a year cannot be the one that builds it. That is narrower than a ban on thermal coal. But it could, in principle, be checked against a list of loans.\n\nThe gap is what falls under the limit, not the limit itself. The fix for that is disclosure, not a different number."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This commitment is written as a time limit on loans.\n\nMacquarie restricts by product, not by client. Any company is in, as long as the financing is short. The test asks how you bank, not who.\n\nA time limit with no client test catches every long loan and no short one. But it uses a unit that can be checked.\n\nThe question for Macquarie is why it does not add a client test. The two are not alternatives."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so nothing sourced sits underneath these options — they are entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Say whether renewals count",
-          "content": "An eleven-month loan renewed every year is long-term financing. The report does not say whether a renewal counts as new financing."
-        },
-        {
-          "title": "Extend the limit beyond its own loans",
-          "content": "Arranging and underwriting are not balance sheet financing. A bank that arranges a ten-year loan for others has not stepped back from the financing."
-        },
-        {
-          "title": "Draw the line between the two coals",
-          "content": "Since 2024, Macquarie's coal position rests on this line. The report does not say where it falls, or what happens at a mine that produces both."
-        },
-        {
-          "title": "Replace appetite with a restriction",
-          "content": "Appetite changed twice in 2024 and was disclosed afterwards. A clear restriction, with a named process for exceptions, would carry more weight."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the refusal reaches long loans from Macquarie's own book, for as long as its appetite lasts.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "It refuses long-term balance-sheet financing and advice on thermal coal, but short-term and arranged financing get through, and the refusal is an appetite that can change."
+      "strength_reason": "It stops long-term loans from Macquarie's own book. Short loans, loans it arranges for others, and a change of mind all get through.",
+      "actual_reading": "it will not finance thermal coal from its own balance sheet for more than a year, or advise on thermal coal deals, for as long as that stays its appetite",
+      "gaps": [
+        {
+          "title": "Anything shorter than a year",
+          "phrase_refs": [
+            "twelve"
+          ],
+          "text": "Trade finance, letters of credit and working capital loans almost always run for less than a year. They are the loans that move coal, and they are not covered. Nothing stops a short loan being renewed."
+        },
+        {
+          "title": "Arranging for others",
+          "phrase_refs": [
+            "client-facilitation"
+          ],
+          "text": "Only lending from Macquarie's own balance sheet counts as financing. Arranging a loan for other lenders, or selling a coal company's bonds or shares to investors, does not."
+        },
+        {
+          "title": "An appetite, not a rule",
+          "phrase_refs": [
+            "appetite"
+          ],
+          "text": "“No appetite” describes what Macquarie wants to do today. It changed its coal appetite twice in 2024 and said so afterwards."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. Coal for steel-making is treated separately, and Macquarie brought it back into its appetite in 2024.\n\nTake a coal miner that wants a ten-year loan to open a new mine. Macquarie will not lend that from its own balance sheet. But it can arrange the same ten-year loan for other lenders, and earn a fee for doing so. It can also help the miner sell bonds to investors. Neither is financing in the way Macquarie's report defines it.\n\nNow take a coal trader that needs a six-month facility to pay for shipments. That is under a year, so it is not covered. When it ends, it can be renewed. A facility renewed year after year works like long-term financing, and the report does not say whether a renewal counts as new.\n\nAnd all of it rests on an appetite. Macquarie decides what that appetite is, and the report names no process for changing it. In 2024 it changed twice, and was disclosed afterwards.\n\nSo what the commitment stops is Macquarie holding a long loan for thermal coal on its own book, and advising on thermal coal deals. The rest of what a bank does for a coal company is still open.",
+      "gets_right": "The twelve-month line is a number, written in the loan papers, so it can be checked. And it aims at the loans that get a new mine or power station built: those run for years."
+    },
+    "featured": {
+      "rank": 8,
+      "kind": "a time limit and an appetite",
+      "because": "Twelve months, balance sheet only, and an appetite rather than a rule — complex wording made plain."
     }
   },
   "evidence": {
@@ -383,7 +373,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 204, document 34887",
     "reading": "drafted"

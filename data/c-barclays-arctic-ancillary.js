@@ -287,44 +287,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The knowledge condition means the restriction almost never has to be applied, and that is best said flatly.",
-          "text": "This commitment reaches past the producers to the businesses that serve them. A rule on producers alone would miss those. But two conditions stand in the way.\n\nThe first is “ancillary”. The statement defines “materially engaged” for the commitment next to it, but leaves this word undefined. So which clients count is decided case by case, and never published.\n\nThe second is knowledge. The rule only applies “where proceeds are known to be” for new Arctic drilling or pipelines. A general company loan, credit line or bond has no stated use. So the condition is never met.\n\nAnd only new work counts. Financing that keeps existing Arctic operations running is outside it.\n\nThe commitment names the right businesses, then asks a question the bank will rarely have to answer yes to."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this commitment stop?\n\nA client with an “ancillary” Arctic business, a word the statement does not define. It must ask Barclays for financing, and tell the bank it is for new Arctic drilling, production or pipelines. That client is caught.\n\nEveryone else is released. That includes a service company that borrows through a general loan. It includes one whose financing supports existing Arctic work, not new work. And it includes one working on Arctic land outside the statement's definition.\n\nSo the commitment binds clients open enough to label their financing for new Arctic work. It releases the ones who borrow for general purposes. The condition rewards saying less."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: this commitment looks beyond the producers.\n\nArctic oil and gas depends on drilling contractors, supply ships, pipeline builders and other service businesses. A rule on producers alone leaves that supply chain free to borrow. This commitment is written to reach it.\n\nThe reach is where it stops. “Ancillary” is not defined. And the rule only applies where the financing is known to be for new Arctic work. General company loans, with no stated use, never are.\n\nThe instinct is right: follow the activity into the supply chain. The drafting then limits it to labelled financing for new work."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Define ancillary",
-          "content": "Say which businesses count, and how much of a client's work must serve the Arctic. The statement already does this for “materially engaged”."
-        },
-        {
-          "title": "Drop the knowledge condition",
-          "content": "Apply the rule to these clients whatever the stated use of the financing. Or require the use to be stated and checked."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a service company that borrows for general purposes can keep supporting new Arctic work with Barclays' financing.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Ancillary is undefined and the bank decides it, but dedicated financing of new Arctic service projects is genuinely caught.",
+      "strength_reason": "It reaches the service businesses behind Arctic drilling, but only when Barclays knows a loan is for new Arctic work. General loans never say that.",
       "how_it_compares": {
         "text": "Barclays' rule on Arctic oil and gas companies defines “materially engaged” with a number, while “ancillary” here has no definition.",
         "links": [
@@ -333,7 +300,26 @@ window.WATCHTOWER_CASE = {
             "title": "Barclays' Commitment on Arctic Oil & Gas Companies"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not finance a service business in the defined Arctic when it knows the financing is for new Arctic drilling, production or pipelines",
+      "gaps": [
+        {
+          "title": "Loans that do not state their use",
+          "text": "The rule applies only “where proceeds are known to be” for new Arctic projects. A general loan, a credit line or a bond states no use, so the condition is never met.",
+          "phrase_refs": [
+            "proceeds"
+          ]
+        },
+        {
+          "title": "Barclays decides what “ancillary” covers",
+          "text": "“Ancillary” means supporting, rather than doing. The statement does not define it, so Barclays decides case by case which clients count.",
+          "phrase_refs": [
+            "ancillary"
+          ]
+        }
+      ],
+      "in_practice": "Arctic oil and gas depends on other businesses. Drilling contractors, supply ships and pipeline builders do much of the work. This commitment is aimed at them.\n\nTake a drilling contractor with rigs in the Arctic. It asks Barclays for a loan and says the loan will pay for rigs on a new Arctic field. Barclays knows what the financing is for, so the rule applies, and the answer is no.\n\nNow the same contractor asks for a general loan to the company, or issues a bond. Neither says what it will pay for. Barclays does not know the proceeds are for new Arctic work, so the rule does not apply. The contractor can spend the financing on the same rigs.\n\nTake a supply-ship company serving a field that has produced for years. Its work supports existing production, not a new project. It is outside the rule whatever its loan says.\n\nAnd there is the question of who counts. The statement does not define “ancillary”. Barclays decides which service businesses fall under the rule, and never has to explain the call.\n\nSo what is left is a loan to a service business, labelled for new Arctic work. A company that borrows without a label is not affected.",
+      "gets_right": "It looks past the oil producers to the businesses that make Arctic drilling possible: contractors, supply ships and pipeline builders. A rule on producers alone would leave that supply chain free to borrow."
     }
   },
   "evidence": {
@@ -409,7 +395,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "the services companies that drill Arctic wells"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

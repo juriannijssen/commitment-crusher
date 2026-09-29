@@ -286,44 +286,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "A missing client rule is a larger gap than a carve-out, and it is the thing this page can show that the sentence alone does not.",
-          "text": "The gap here is not the exception. It is that oil-fired power has no client rule at all.\n\nOil power gets one rule on project financing, and nothing else. There is no client test anywhere in the document.\n\nSo a utility running oil-fired plants is only caught if it crosses another line. Its power business itself is not addressed.\n\nThat is a gap in a document that is otherwise thorough."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The exception for the poorest countries is a fair one, and should be treated that way.\n\nFinancing may be possible in the world's Least Developed Countries, where no other workable option exists. Access to energy in the poorest countries is a real problem. Oil-fired power is sometimes the only option that can run on demand. A European bank refusing it outright would be making a choice whose costs it does not bear.\n\nThis document limits the exception to a defined group of countries, with a test of need. That is better than pretending the question does not come up."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The exception has two conditions, and neither is measured.\n\n“No other feasible technical or commercial alternatives” raises questions. Feasible to whom, over what time, at what cost of financing? Whether something is commercially feasible changes with the price of the alternative, and with who is asked.\n\nCompare the gas power section of the same policy. It points to an outside standard, the EU's best available techniques, and uses a number: 100 grams of CO2 per kilowatt-hour. The drafters knew how to attach a measure. Here they did not.\n\nSo a fair exception rests on an open judgement, made inside the bank."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Publish any use of the exception",
-          "content": "An exception for development is defensible. One that is never reported cannot be judged."
-        },
-        {
-          "title": "Add a client rule for oil-fired power",
-          "content": "Oil-fired power gets a rule on project financing and nothing else. A 5% client test would reach the companies that run the plants."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, oil-fired power is restricted at the project and ignored at the company.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "New dedicated oil-fired plants are blocked; corporate financing to the utility is not, and Least Developed Countries are excepted.",
+      "strength_reason": "It covers one way of paying for a new oil-fired plant: financing labelled for it. A power company can borrow for general purposes and build the plant anyway.",
       "how_it_compares": {
         "text": "SEB's coal power rule sets a 5% client threshold, for existing and new clients. Gas power gets a set of project conditions. An oil-fired utility is only caught as a client by another rule, such as the oil and gas producer threshold or the refiner rule.",
         "links": [
@@ -344,7 +311,19 @@ window.WATCHTOWER_CASE = {
             "title": "SEB's Restriction on Oil Refiners"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing set aside for a new oil-fired power plant, or for expanding one, except in the least developed countries where there is no alternative",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the plant",
+          "phrase_refs": [
+            "ded19"
+          ],
+          "text": "“Dedicated Finance” is financing for a named use. A power company that borrows for general purposes is not asking for dedicated finance, so this commitment does not apply."
+        }
+      ],
+      "in_practice": "Take a power company that plans a new oil-fired plant. If it asks SEB for a loan labelled for that plant, SEB says no. If it asks for a general loan to the company, this commitment does not apply. That loan names no purpose, so it is not “Dedicated Finance”. The company can spend it on the plant.\n\nPower companies can build plants out of their general borrowing, rather than a loan with the plant's name on it. So the commitment stops the most visible kind of deal and leaves the other open.\n\nThe same goes for an existing oil-fired plant. SEB's definition of “New Project” counts capacity expansions and material changes. A loan labelled for a big rebuild is refused. A smaller change is not caught, and how big is big is up to SEB. A plant that keeps running as it is was never part of this commitment.\n\nThere is one more opening. In the world's least developed countries, SEB may finance a new oil-fired plant if an assessment shows no other workable option exists.\n\nSo what the commitment stops is a loan labelled for a new or growing oil-fired plant, outside the poorest countries. It leaves open every other way SEB lends to the company that runs it.",
+      "gets_right": "The sentence sets no threshold and no condition on the plant. Outside the poorest countries, a new oil-fired plant cannot get financing labelled for it."
     }
   },
   "evidence": {
@@ -358,7 +337,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

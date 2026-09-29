@@ -427,44 +427,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "New construction only, with undefined shares, is the whole restriction.",
-          "text": "The rule reaches new oil sands building, financed directly, and mostly for that purpose.\n\nExisting operations are outside it. Financing to run, upgrade or extend the life of an existing oil sands mine or pipeline is not building new assets. Financing only partly for oil sands is outside it too, because “wholly or primarily” has no number.\n\nThe definitions narrow it again. Processing means upgrading on site by Canadian clients only. Pipelines only count if their main use is oil sands crude.\n\nWhat remains is labelled financing to build a new oil sands asset. There are few new builds. Most oil sands output comes from sites that already exist."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer asking Barclays for financing mainly to build a new oil sands mine, processing site or dedicated pipeline. That developer is caught.\n\nAn operator financing its existing oil sands business is not caught. A pipeline company building a line that carries oil sands crude among other oil is not caught either.\n\nSo the commitment binds new builds, of which there are few. It releases the industry that is already operating. That is where oil sands output comes from today, and it can keep growing through upgrades at existing sites. Few new builds are planned."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the rule covers the whole chain of new oil sands building. That means exploration, production, processing and pipelines. And the statement defines oil sands and its pipelines.\n\nA rule that covered only mines, or only pipelines, would leave the other half open. This one does not.\n\nWhere it stops is the word “new”, and the shares with no number. Existing operations are untouched, and that is where oil sands output comes from. Upgrades and life extensions at existing sites are not new building.\n\nSo the rule closes the door to new projects. The industry already inside can keep running and growing."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover existing operations",
-          "content": "Restrict financing for expanding or extending existing oil sands sites, not only for building new ones."
-        },
-        {
-          "title": "Put numbers on the shares",
-          "content": "Say what share counts as “primarily” and as “primary use”."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the oil sands industry that exists can be financed; only its next new build cannot.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "It stops financing for building new oil sands assets, and there are few new builds: most output comes from sites that already exist, which this leaves untouched."
+      "strength_reason": "It covers only financing known to be for building new oil sands assets. There are few new builds, and a general loan to the same company is not covered.",
+      "actual_reading": "it will not give financing it knows is mainly for building new oil sands sites, Canadian on-site processing plants or pipelines mainly carrying oil sands crude",
+      "gaps": [
+        {
+          "title": "Loans that do not name their purpose",
+          "phrase_refs": [
+            "use-of-proceeds"
+          ],
+          "text": "Barclays only counts financing as “direct financing” when it knows it is for a particular project. A general loan to the same company can be spent on the same project."
+        },
+        {
+          "title": "Existing sites keep running and growing",
+          "phrase_refs": [
+            "construction-of-new"
+          ],
+          "text": "Only building new assets is covered. Financing to run, maintain, enlarge or extend the life of existing oil sands sites and pipelines is not. Most oil sands output comes from sites that already exist."
+        },
+        {
+          "title": "Mixed uses and mixed pipelines",
+          "phrase_refs": [
+            "wholly-or-primarily",
+            "primary-use"
+          ],
+          "text": "The financing has to be mainly for oil sands building, and a pipeline has to carry mainly oil sands crude. The statement does not say how much counts as mainly."
+        }
+      ],
+      "in_practice": "Oil sands are sand soaked in bitumen, a thick, tar-like oil. Most production is in Canada, from mines and steam wells that have run for decades.\n\nTake a producer with a large oil sands mine that opened years ago. It wants financing to expand the mine and keep it running for another twenty years. That is not building a new asset, so this commitment does not apply.\n\nNow take a company building a new oil sands mine. If it asks Barclays for a loan for that mine, and Barclays knows what it is for, this commitment applies. If it asks for a general loan to the company, Barclays does not know what it pays for. It is not “direct financing”, and the company can spend it on the mine.\n\nPipelines work the same way. A new line carrying mainly oil sands crude is covered. A new line carrying oil sands crude alongside enough other oil is not. Nor is a plant outside Canada that upgrades bitumen into oil a refinery can use.\n\nSo this commitment covers labelled financing for the few new oil sands builds. The sites already producing, and general loans to the companies that run them, are outside it."
     }
   },
   "evidence": {
@@ -522,7 +515,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "the pipelines that carry oil sands crude"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

@@ -275,7 +275,7 @@ window.WATCHTOWER_CASE = {
               82,
               104
             ],
-            "means": "This definition of “expansion” is narrower than what it usually means. By expansion we normally mean a company producing more oil and gas than before. Barclays makes it a date test instead: only projects signed off after 31 December 2021 are expansion, and the date does not move. A field approved in 2021 and drilled out through the 2030s is never expansion here, however much it adds — so the restriction blocks less with every year that passes.",
+            "means": "This definition of “expansion” is narrower than what it usually means. By expansion we normally mean a company producing more oil and gas than before. Barclays makes it a date test instead: only projects signed off after 31 December 2021 are expansion, and the date does not move. A field approved in 2021 and drilled out through the 2030s is never expansion here, however much it adds — so the restriction blocks less than the word suggests, for as long as those fields produce.",
             "lets_through": [
               "A project approved before 2022 and being built now, which this wording does not call expansion.",
               "Drilling and production at a field sanctioned years ago, however much it adds."
@@ -462,44 +462,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "New clients only, a share threshold and a transition carve-out each leave a clear gap.",
-          "text": "The commitment reaches energy groups Barclays does not yet serve, and only those.\n\nAn existing client with the same expansion plans is reviewed, not restricted. And newness is judged across the group. If any company in the group already banks with Barclays, none of it is new.\n\nThe threshold is a share of planned investment. So a large producer whose expansion is 10% or less of a large budget passes, however much it spends.\n\nA restricted group can still get sustainable or transition finance, where Barclays is satisfied it will not be used directly for oil and gas. What remains is ordinary financing for an unconnected new group with a high share of expansion spending."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who is turned away under this commitment?\n\nAn energy group that has never banked with Barclays, in any part. It must put more than 10% of its planned oil and gas investment into expansion. And it must want ordinary financing. That group is caught.\n\nAny group already inside is not caught. A group that expands less, as a share, is not caught. A group seeking transition finance may not be caught either.\n\nSo the commitment binds the stranger. It releases the existing clients, who make up most of Barclays' oil and gas lending today. Those clients face a yearly review instead."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: this is a client rule with a published threshold. It covers all financing to a new energy group, not just project loans. And the test is a number anyone can check against a group's investment plans.\n\nThat is the right kind of tool. Client rules reach the company loans that pay for most oil and gas growth.\n\nWhere it stops is who it applies to. It covers new clients only, with newness judged across the whole group. And a transition finance exception turns on Barclays' own satisfaction.\n\nThe tool is the right one. It is just pointed at the groups the bank has not met."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Apply it to existing clients",
-          "content": "Restrict financing to existing clients above the threshold too, rather than only reviewing them."
-        },
-        {
-          "title": "Close the transition route",
-          "content": "Require transition finance for a restricted group to be ringfenced and checked. And disclose how much is given."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule keeps new expanding groups out, and leaves the existing ones where they are.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "New clients only, tested across the whole group. A bank this size already serves nearly every group that matters."
+      "strength_reason": "It covers only groups that have never banked with Barclays in any part. The expanding groups Barclays already serves are outside it.",
+      "actual_reading": "it will not finance energy groups where no company already banks with Barclays, if over 10% of their planned oil and gas investment goes into expansion",
+      "gaps": [
+        {
+          "title": "Every group Barclays already serves",
+          "phrase_refs": [
+            "no-member"
+          ],
+          "text": "A company is a “new client” only if no company in its group already banks with Barclays. One existing relationship anywhere in a group takes all of it outside this commitment."
+        },
+        {
+          "title": "A share, not an amount",
+          "phrase_refs": [
+            "more-than-10pc"
+          ],
+          "text": "The line is expansion as a share of planned investment. A very large group can spend a lot on new fields and still stay at 10% or below."
+        },
+        {
+          "title": "Only groups Barclays counts as “Energy Groups”",
+          "phrase_refs": [
+            "over-20pc-revenue",
+            "supermajor-or-major-integrated"
+          ],
+          "text": "Only groups with over 20% of revenue from producing oil and gas, or that Barclays considers majors, count. A utility or a diversified miner with an oil arm is outside it."
+        }
+      ],
+      "in_practice": "Take a large oil and gas group that has banked with Barclays for years. It plans to put 30% of its investment into new fields. It is not a new client, so this commitment does not apply. Barclays can keep lending to it.\n\nNow take a new subsidiary of that group, set up to develop one of those fields. Barclays has never served that subsidiary. It is still not a “new client”, because another company in its group already banks with Barclays.\n\nA group is caught only if no part of it has ever been a Barclays client. It must also be an “Energy Group”. And more than 10% of its planned oil and gas investment must go into projects approved after 2021.\n\nEven then, size helps. A group with a very large budget can spend heavily on new fields and keep expansion at 10% or less. A group earning under 20% of its revenue from oil and gas production is not an Energy Group, unless Barclays considers it a major.\n\nSo this commitment binds groups that are strangers to Barclays and expanding fast. A bank this size already serves many of the groups that matter, and those can go on borrowing."
     }
   },
   "evidence": {
@@ -513,7 +506,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

@@ -108,10 +108,26 @@ window.WATCHTOWER_CASE = {
     "disagreements": [],
     "assessment": {
       "strength": null,
-      "verdict_final": "Every coal commitment in Macquarie's report sits under one allowance. Macquarie can still finance a coal company's projects if they cut its emissions, or if they help it move away from coal under a credible transition plan.\n\nBoth halves turn on words the report does not define. It does not say how much of a cut counts as significant, which scenarios the cut is measured against, or what makes a transition plan credible. It does not say who decides, and it does not say the decisions will be published.\n\nSo each restriction on the list has the same way out. A project Macquarie judges to be transition finance is not caught, whichever restriction it would otherwise fall under.",
-      "verdict_options": [],
-      "verdict_selected": null,
-      "what_needs_to_change": []
+      "strength_reason": "Every coal restriction in Macquarie's report has the same way out: a project Macquarie judges to be transition finance.",
+      "naive_reading": "its coal restrictions hold for every coal company",
+      "actual_reading": "its coal restrictions hold, except for any coal company project that Macquarie judges will cut its emissions, or help it move away from coal under a plan Macquarie finds credible",
+      "gaps": [
+        {
+          "title": "Projects Macquarie says will cut emissions",
+          "phrase_refs": [
+            "significant-reduction"
+          ],
+          "text": "Macquarie can finance a coal company's project if it will significantly cut emissions in line with science-based scenarios. The report does not say how big a cut counts, or which scenarios."
+        },
+        {
+          "title": "Plans Macquarie finds credible",
+          "phrase_refs": [
+            "credible-plan"
+          ],
+          "text": "Macquarie can also finance a coal company moving away from coal under a credible transition plan. The report does not say what makes a plan credible, or who decides."
+        }
+      ],
+      "in_practice": "Macquarie sets out its coal position as a list of points. The last point is not a restriction. It says what Macquarie can still do for coal companies, and it reaches every other point on the list.\n\nTake a company that runs coal power stations. A Macquarie restriction would normally keep it out. But the company asks for financing for efficiency work at one of its plants. If Macquarie judges that the work will significantly cut the company's emissions, the financing can go ahead. The plant keeps burning coal.\n\nNow take a coal miner with a plan to move into other minerals over the next twenty years. If Macquarie finds that plan credible, it can finance projects under it. The miner keeps mining coal while the plan runs.\n\nBoth routes turn on Macquarie's own judgement. The report does not say how much of a cut is significant, which scenarios it is measured against, or what makes a plan credible. It does not say who decides, or whether the decisions are published.\n\nSo every coal restriction in the report can be set aside for a project Macquarie calls transition finance."
     }
   },
   "evidence": {
@@ -125,7 +141,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "3.13",
     "source": "editorial/general-clauses-34887.json"
   }

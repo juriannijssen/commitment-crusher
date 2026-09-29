@@ -217,44 +217,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "The scope gap is real but largely closed by commitment 1, and saying so is more useful than repeating a criticism that does not bite.",
-          "text": "This rule has no threshold, no exception and no qualifier.\n\nThe usual criticism of a rule on dedicated financing is that it covers the least-used route. A company simply borrows as a whole instead. That holds here. Company loans are untouched by this sentence."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Taken alone, this sentence reaches one route to financing.\n\nDedicated financing is raised for one named purpose. A coal mining company that funds itself from a credit line, a loan or a bond is not asking for it. So this rule never applies, however much coal it mines.\n\nThat matters less at SEB than elsewhere, because the 5% client rule covers most of the gap. But it is not nothing. That rule has three exceptions of its own. They include supply chain finance for coal used in steel-making, and small retail loans under EUR 1 million. Where those apply, this sentence is the only line left.\n\nSo the rule is only as strong as the client test beside it."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "A rule on dedicated financing is worth what the client rules beside it are worth.\n\nThis one covers thermal coal mining companies only. But SEB's client rule on coal mining is strong. It covers new and existing clients above 5% of revenue.\n\nSo a coal miner that pays from general loans is still caught. At SEB, the client rule is worth a lot."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Say it covers company loans too",
-          "content": "The rule reaches financing for a named purpose. Most mining is funded at company level."
-        },
-        {
-          "title": "Extend it to companies mining coal for steel",
-          "content": "The rule covers thermal coal mining companies only. Companies mining coal for steel-making are left out."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this is a clean line drawn around one route to financing.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Dedicated financing for thermal coal miners is blocked; company loans are untouched by this sentence.",
+      "strength_reason": "It covers financing labelled for a named use and nothing else. A thermal coal miner can borrow for general purposes and spend the loan on its mines.",
       "how_it_compares": {
         "text": "SEB's coal mining rule refuses clients above 5% of revenue from coal mining, new and existing. So a thermal coal miner that gets past this rule still has to get past that one. SEB's rules on coal mining equipment and infrastructure cover both kinds of coal.",
         "links": [
@@ -271,7 +238,19 @@ window.WATCHTOWER_CASE = {
             "title": "SEB's Restriction on Financing Coal Mining Infrastructure"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give companies that mine coal for power stations financing set aside for a named use",
+      "gaps": [
+        {
+          "title": "Loans to the company as a whole",
+          "phrase_refs": [
+            "ded2"
+          ],
+          "text": "“Dedicated Finance” is financing for a named use. A thermal coal miner that borrows for general purposes is not asking for dedicated finance, so this commitment does not apply."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations to make electricity. Coal used to make steel is not part of this sentence.\n\nTake a company that mines thermal coal and wants to open a new pit. If it asks SEB for a loan labelled for that pit, SEB says no. If it asks for a general loan to the company, this commitment does not apply. That loan names no purpose, so it is not “Dedicated Finance”. The company can spend it on the new pit, or on anything else.\n\nMining companies can fund new pits out of general borrowing or their own revenue. They do not need a loan with the pit's name on it. So the loan this commitment refuses is one a miner can do without.\n\nThe sentence also sets no revenue test. It does not say how much of its business a company must get from thermal coal to count as a thermal coal mining company.\n\nSo what the commitment stops is a loan labelled for a named use to a thermal coal miner. General loans to the same miner are outside it.",
+      "gets_right": "The sentence sets no condition. A company SEB counts as a thermal coal miner cannot get financing labelled for any use."
     }
   },
   "evidence": {
@@ -285,7 +264,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

@@ -80,7 +80,7 @@ window.WATCHTOWER_TABLE = [
     "result": "Hollowed",
     "result_key": "hollowed",
     "featured": {
-      "rank": 2
+      "rank": 5
     },
     "deals": 32,
     "deal_amount": "$4B",
@@ -189,8 +189,8 @@ window.WATCHTOWER_TABLE = [
     "fuel": "Coal",
     "fuel_source": "scope.industry.themes",
     "category": "coal",
-    "result": "Hollowed",
-    "result_key": "hollowed",
+    "result": "Crushed",
+    "result_key": "crushed",
     "featured": null,
     "deals": 0,
     "deal_amount": null,
@@ -431,8 +431,8 @@ window.WATCHTOWER_TABLE = [
     "fuel": "Oil & Gas",
     "fuel_source": "scope.industry.themes",
     "category": "fossil_fuels",
-    "result": "Crushed",
-    "result_key": "crushed",
+    "result": "Hollowed",
+    "result_key": "hollowed",
     "featured": null,
     "deals": 0,
     "deal_amount": null,
@@ -456,7 +456,7 @@ window.WATCHTOWER_TABLE = [
     "result": "Crushed",
     "result_key": "crushed",
     "featured": {
-      "rank": 1
+      "rank": 2
     },
     "deals": 1,
     "deal_amount": "$1.6B",
@@ -521,8 +521,8 @@ window.WATCHTOWER_TABLE = [
     "fuel": "Oil & Gas",
     "fuel_source": "scope.industry.themes",
     "category": "oil_gas_expansion",
-    "result": "Crushed",
-    "result_key": "crushed",
+    "result": "Hollowed",
+    "result_key": "hollowed",
     "featured": null,
     "deals": 0,
     "deal_amount": null,
@@ -603,7 +603,7 @@ window.WATCHTOWER_TABLE = [
     "title": "SEB's Restriction on Financing Ultra-Deep Oil and Gas",
     "short_title": "Restriction on Financing Ultra-Deep Oil and Gas",
     "plain_rendering": "SEB Group avoids providing Dedicated Finance to any Projects or Capacity Expansion related to Ultra Deep Oil & Gas exploration and production.",
-    "clause_count": 1,
+    "clause_count": 2,
     "bank": "SEB Group",
     "number": 14,
     "fuel": "Oil & Gas",
@@ -941,7 +941,9 @@ window.WATCHTOWER_TABLE = [
     "category": "fossil_fuels",
     "result": "Hollowed",
     "result_key": "hollowed",
-    "featured": null,
+    "featured": {
+      "rank": 7
+    },
     "deals": 0,
     "deal_amount": null,
     "deal_amount_complete": null,
@@ -1021,7 +1023,7 @@ window.WATCHTOWER_TABLE = [
     "title": "SEB's 5% Threshold on Offshore Services",
     "short_title": "5% Threshold on Offshore Services",
     "plain_rendering": "SEB Group avoids providing new Financial Services to Offshore Services Companies where revenue from Offshore Services represents more than 5% of the Company’s revenue.",
-    "clause_count": 2,
+    "clause_count": 3,
     "bank": "SEB Group",
     "number": 9,
     "fuel": "Oil & Gas",
@@ -1269,8 +1271,8 @@ window.WATCHTOWER_TABLE = [
     "fuel": "Oil & Gas",
     "fuel_source": "scope.industry.themes",
     "category": "arctic",
-    "result": "Hollowed",
-    "result_key": "hollowed",
+    "result": "Crushed",
+    "result_key": "crushed",
     "featured": null,
     "deals": 1,
     "deal_amount": "$188.4M",
@@ -1425,7 +1427,9 @@ window.WATCHTOWER_TABLE = [
     "category": "oil_gas_expansion",
     "result": "Crushed",
     "result_key": "crushed",
-    "featured": null,
+    "featured": {
+      "rank": 1
+    },
     "deals": 2,
     "deal_amount": "$276.8M",
     "deal_amount_complete": false,
@@ -1467,8 +1471,8 @@ window.WATCHTOWER_TABLE = [
     "fuel": "Coal",
     "fuel_source": "scope.industry.themes",
     "category": "coal",
-    "result": "Hollowed",
-    "result_key": "hollowed",
+    "result": "Crushed",
+    "result_key": "crushed",
     "featured": null,
     "deals": 0,
     "deal_amount": null,
@@ -1623,7 +1627,9 @@ window.WATCHTOWER_TABLE = [
     "category": "coal",
     "result": "Crushed",
     "result_key": "crushed",
-    "featured": null,
+    "featured": {
+      "rank": 4
+    },
     "deals": 3,
     "deal_amount": "$97.5M",
     "deal_amount_complete": false,
@@ -1637,15 +1643,17 @@ window.WATCHTOWER_TABLE = [
     "title": "SEB's 5% Threshold on Coal-Fired Power",
     "short_title": "5% Threshold on Coal-Fired Power",
     "plain_rendering": "SEB Group avoids Business Relationships, including existing and new Business Relationships, as well as New Projects and capacity expansions, with coal fired power generation Companies where more than 5% of revenues are derived from coal.",
-    "clause_count": 3,
+    "clause_count": 4,
     "bank": "SEB Group",
     "number": 5,
     "fuel": "Coal",
     "fuel_source": "scope.industry.themes",
     "category": "fossil_fuels",
-    "result": "Hollowed",
-    "result_key": "hollowed",
-    "featured": null,
+    "result": "Holds",
+    "result_key": "holds",
+    "featured": {
+      "rank": 9
+    },
     "deals": 0,
     "deal_amount": null,
     "deal_amount_complete": null,
@@ -1668,7 +1676,7 @@ window.WATCHTOWER_TABLE = [
     "result": "Crushed",
     "result_key": "crushed",
     "featured": {
-      "rank": 4
+      "rank": 3
     },
     "deals": 9,
     "deal_amount": "$2.3B",
@@ -1955,9 +1963,7 @@ window.WATCHTOWER_TABLE = [
     "category": "oil_gas_expansion",
     "result": "Hollowed",
     "result_key": "hollowed",
-    "featured": {
-      "rank": 3
-    },
+    "featured": null,
     "deals": 10,
     "deal_amount": "$1.9B",
     "deal_amount_complete": false,
@@ -1999,11 +2005,9 @@ window.WATCHTOWER_TABLE = [
     "fuel": "Oil & Gas",
     "fuel_source": "scope.industry.themes",
     "category": "fracking",
-    "result": "Hollowed",
-    "result_key": "hollowed",
-    "featured": {
-      "rank": 5
-    },
+    "result": "Crushed",
+    "result_key": "crushed",
+    "featured": null,
     "deals": 5,
     "deal_amount": "$1.6B",
     "deal_amount_complete": false,
@@ -2025,7 +2029,9 @@ window.WATCHTOWER_TABLE = [
     "category": "coal",
     "result": "Hollowed",
     "result_key": "hollowed",
-    "featured": null,
+    "featured": {
+      "rank": 8
+    },
     "deals": 0,
     "deal_amount": null,
     "deal_amount_complete": null,
@@ -2135,7 +2141,9 @@ window.WATCHTOWER_TABLE = [
     "category": "mining",
     "result": "Holds",
     "result_key": "holds",
-    "featured": null,
+    "featured": {
+      "rank": 10
+    },
     "deals": 0,
     "deal_amount": null,
     "deal_amount_complete": null,
@@ -2157,9 +2165,7 @@ window.WATCHTOWER_TABLE = [
     "category": "oil_gas_expansion",
     "result": "Hollowed",
     "result_key": "hollowed",
-    "featured": {
-      "rank": 6
-    },
+    "featured": null,
     "deals": 13,
     "deal_amount": "$4.2B",
     "deal_amount_complete": false,
@@ -2181,7 +2187,9 @@ window.WATCHTOWER_TABLE = [
     "category": "oil_gas_expansion",
     "result": "Hollowed",
     "result_key": "hollowed",
-    "featured": null,
+    "featured": {
+      "rank": 6
+    },
     "deals": 3,
     "deal_amount": "$789.3M",
     "deal_amount_complete": false,
@@ -2487,8 +2495,8 @@ window.WATCHTOWER_TABLE = [
     "fuel": "Coal",
     "fuel_source": "scope.industry.themes",
     "category": "fossil_fuels",
-    "result": "Hollowed",
-    "result_key": "hollowed",
+    "result": "Holds",
+    "result_key": "holds",
     "featured": null,
     "deals": 0,
     "deal_amount": null,

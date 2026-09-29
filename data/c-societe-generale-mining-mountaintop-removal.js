@@ -69,7 +69,7 @@ window.WATCHTOWER_CASE = {
               34,
               68
             ],
-            "means": "This explains what this commitment reaches: business the bank has not written yet. Watchtower records the transaction status on this commitment as new only.",
+            "means": "This explains what this commitment reaches: business the bank has not written yet.",
             "lets_through": [
               "Adding the word “new” means everything already on the books stays. A company mining this way that is already a client stays a client, and existing facilities run to their terms.",
               "This policy says nothing about existing exposure at all: no run-off, no review date, no end."
@@ -237,48 +237,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The pairing is the story: the widest client test in the policy, applied only to business the bank has not written yet.",
-          "text": "Société Générale wrote a wide client test here, then applied it only to new business.\n\nThe test is “involved in”. There is no share of revenue or production, and no minimum. A company that blasts the tops off mountains in the Appalachians is caught, however small that part of its business. The bank deserves credit for this.\n\nBut the rule only covers “new financial products or services”. Existing loans and the client relationship are left alone.\n\nSo a company Société Générale already finances, mining this way today, is untouched. This policy says nothing about what the bank already holds."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "What is missing from this sentence makes it unusual.\n\nThere is no revenue threshold and no production threshold. There is no exception for companies where this kind of mining is a small part of the business. Being involved is enough.\n\nAlmost every other exclusion in Société Générale's policies has a number in it. Unconventional oil and gas has 30% of revenue. Coal for steel-making has 50%. Here the bank wrote no number. So no mining company can argue its way under a line, because there is no line.\n\nThat is the kind of drafting we ask for elsewhere on this site. It is worth saying so before we say what is wrong with the rest."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Two comparisons, both with Société Générale's own published policies.\n\nThe first is company structure. The bank's thermal coal policy also covers parent and holding companies. This one covers only the company doing the mining. So a subsidiary can be excluded while the group above it, which owns the mine and takes the profit, is not.\n\nThe second is place. The exclusion covers this kind of mining only in the Appalachians. A ban tied to a place stops working when the practice moves. A ban tied to the method goes with it. If the bank thinks the practice only happens in the Appalachians, the policy should say so. As written, the limit has no stated reason."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so unlike the oil and gas pages there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Say what happens to existing business",
-          "content": "The exclusion covers new financial products or services only. This policy says nothing about existing financing."
-        },
-        {
-          "title": "Cover the parent company too",
-          "content": "The rule names only the company doing the mining. Parent and holding companies should be covered too."
-        },
-        {
-          "title": "Name the method, not only the region",
-          "content": "The exclusion is limited to the Appalachians. Tying it to the method would keep it working if the practice moves."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a client test with no minimum only applies to business the bank has not done yet.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A client test with no minimum, and within dedicated financing it lets very little through. Existing clients and parents stay.",
+      "strength_reason": "Any company involved is caught, however small its part, but only for new business. Existing financing stays, and the parent group above the mining company is not covered.",
       "how_it_compares": {
         "text": "Société Générale's oil and gas policy says financing for excluded companies will be phased out completely. Its rule on thermal coal developers also covers parent and holding companies.",
         "links": [
@@ -291,7 +254,26 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's Exclusion of Thermal Coal Developers"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not provide new financial products or services to a company involved in mountaintop removal coal mining in the Appalachians, however small a part of its business that is",
+      "gaps": [
+        {
+          "title": "Existing clients and financing stay",
+          "phrase_refs": [
+            "new"
+          ],
+          "text": "Only new products and services are covered. A company already mining this way keeps its loans and facilities until their terms run out, and the policy gives no end date."
+        },
+        {
+          "title": "The parent group is not covered",
+          "phrase_refs": [
+            "involved"
+          ],
+          "text": "The commitment names the company involved in the mining. It does not extend to parent or holding companies, so the group that owns the mine can still borrow."
+        }
+      ],
+      "in_practice": "Mountaintop removal is a way of mining coal by blasting away the top of a mountain to reach the seams below. This commitment covers companies that do it in the Appalachians, in the eastern United States.\n\nTake a mining company that uses this method and is not yet a client. It asks Société Générale for a loan. The answer is no, whether this mining is all of its business or a small part.\n\nNow take a company that already mines this way and already banks with Société Générale. Its existing loans and facilities are not new, so they stay. They run to their terms. The policy says nothing about reducing them, reviewing them or ending them.\n\nThen take the group that owns such a company. The commitment names the company involved in the mining, not its parent. So the parent or holding company can still get new financing from Société Générale. It can then pass that financing down to the company that does the mining.\n\nSo what the commitment stops is new financing to the company that does the mining itself. The financing it already has, and new financing to the group above it, both get through.",
+      "gets_right": "There is no share of revenue or production to stay under. A company is caught if it is involved in this kind of mining at all."
     }
   },
   "evidence": {
@@ -305,7 +287,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 196, document 28052",
     "reading": "drafted"

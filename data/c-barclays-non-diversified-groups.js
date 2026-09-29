@@ -435,48 +435,44 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "Disclosure of exceptions granted is genuinely unusual, and conceding it first makes the discretion land.",
-          "text": "Credit first: Barclays commits to disclose the exceptions it grants under this rule. It will report how many, and their total value, for every year from 2025. An exception that is counted in public is different from one that is not.\n\nThe rule itself is written as a permission. New financing and renewals for these producers are available “by exception”.\n\nThe definitions narrow it further. State-owned producers can never count as non-diversified. And “almost all” and “long-lead time” have no numbers.\n\nThe disclosure is real. But what it will count is how often the rule is set aside."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The commitment does not stop financing. It makes it an exception.\n\nNew financing and renewals stay available “by exception” for producers with more than 10% of planned investment in long-lead expansion. The statement does not say who grants exceptions, or on what grounds.\n\nNational oil companies are outside the definition entirely. “Almost all” revenue from production has no number. So a producer with a modest pipeline business can be treated as diversified. And “long-lead time” is undefined, so fast, short-cycle expansion does not count.\n\nThe transition finance allowance applies too. What remains is a presumption against financing, with the exceptions disclosed only in total."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this rule bind?\n\nA privately owned producer that earns almost all its revenue from oil and gas production. It must put more than 10% of its investment plans into long-lead projects. And Barclays must choose not to grant it an exception. That producer is caught.\n\nA national oil company with the same profile is not caught. Nor is a producer with enough other revenue to count as diversified. Nor is one expanding through short-cycle drilling.\n\nSo the commitment binds independent producers that only do oil and gas. It releases the state-owned and integrated producers, whatever their expansion plans."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower's stated weakness is carried as a phrase; the verdict prose around it is ours.",
-      "what_needs_to_change": [
-        {
-          "title": "Include state-owned producers",
-          "content": "Remove “non-state-owned” from the definition. A national oil company's long-lead expansion adds the same supply."
-        },
-        {
-          "title": "Put numbers on the definitions",
-          "content": "Say what share of revenue is “almost all”, and what lead time makes a project long-lead."
-        },
-        {
-          "title": "Disclose each exception",
-          "content": "Report which groups received exceptions and why, not only the total number and value."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule presumes against financing independent producers, and counts the times it does not.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Almost all revenue from upstream, non-state-owned, and exceptions on top. Very few companies in the world qualify."
+      "strength_reason": "It does not stop the financing. It makes it an exception Barclays can grant, and it only reaches a small group of private producers that do almost nothing else.",
+      "actual_reading": "it has made new financing and renewals an exception, granted by Barclays, for private producers earning almost all revenue upstream and spending over 10% on long-lead projects",
+      "gaps": [
+        {
+          "title": "Financing “by exception”",
+          "phrase_refs": [
+            "by-exception",
+            "number-and-value"
+          ],
+          "text": "New financing and renewals stay possible, one exception at a time. The statement does not say who grants them or why. Only the total number and value are disclosed."
+        },
+        {
+          "title": "National oil companies",
+          "phrase_refs": [
+            "non-state-owned"
+          ],
+          "text": "“Non-diversified Groups” must be non-state-owned. A state oil company is outside this commitment however much it expands."
+        },
+        {
+          "title": "“Almost all” has no number",
+          "phrase_refs": [
+            "almost-all"
+          ],
+          "text": "A group counts only if almost all its revenue comes from finding and producing oil and gas. A producer with some pipeline or refining business can be judged diversified."
+        },
+        {
+          "title": "Short-cycle drilling",
+          "phrase_refs": [
+            "long-lead-time"
+          ],
+          "text": "Only “long-lead” projects count, and the statement does not say how long that is. Shale wells and quick tie-backs to existing fields do not count towards the 10%."
+        }
+      ],
+      "in_practice": "A long-lead project is one that takes years from approval to first oil, such as a large offshore field. This commitment reaches producers putting more than 10% of their planned investment into such projects.\n\nTake a private company that only finds and produces oil and gas. It plans to put 25% of its investment into a new deepwater field. It is a “Non-diversified Group”, and it is caught. But Barclays can still lend to it, or renew its loans, by exception. The statement says how exceptions are counted, not how they are decided.\n\nNow take a national oil company with the same field. It is state-owned, so it is not a Non-diversified Group at all. The same goes for a producer with a pipeline or refining arm big enough for Barclays to call it diversified.\n\nThen take a shale producer drilling hundreds of new wells. Each well is drilled and producing within months, not years. That is not long-lead, so none of it counts towards the 10%.\n\nSo this commitment reaches a small group of private producers that do almost nothing else. For them, financing becomes an exception rather than the rule. Each year Barclays reports how many exceptions it granted, and their total value, but not who got them."
     }
   },
   "evidence": {
@@ -490,7 +486,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

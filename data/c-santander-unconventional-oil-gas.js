@@ -421,57 +421,44 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "There is nothing to credit that survives the exception, and the flat statement of the gap is the strongest thing available.",
-          "text": "A threshold that can be set aside wherever the activity is legal is not a threshold. It just describes what already happens.\n\nThe 30% figure is the part of this policy that gets quoted. For fracking, it never has to bite. Where fracking is banned, the limit adds nothing, because there is nothing to finance. Where fracking is legal and common, an exception “may be considered”.\n\nThe reasons given for the exception are energy security, affordability and exceptional social and economic effects. They are reasons, not tests. None is defined, and the bank judges them all. The only hard condition is that fracking is legal locally.\n\nThe second test adds to it. “Significant part” sits next to the number with no definition. And for a group across several industries, the test runs one subsidiary at a time. So the parent can still be financed."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Where does this rule bind? For fracking, only where it is not needed.\n\nThe threshold holds in countries that ban or restrict fracking. There, a producer is unlikely to be above 30% from fracking anyway, because the law already limits it.\n\nWherever fracking is allowed, which is where the industry works, the exception is open. A producer far above the limit can still be financed. It only needs extra checks and an internal approval no one outside sees.\n\nTar sands, coalbed methane and Arctic oil and gas have no such exception. So the threshold does bind producers of those. For fracking, the policy restrains companies where the law already does, and releases them where it does not."
-        },
-        {
-          "angle": "how_it_changed",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The rule and its exception were written at different times, and the change log says so.\n\nThe 30% test for fracking, tar sands, coalbed methane and Arctic oil and gas is older than the current policy. The fracking exception is not. The version approved in December 2023, revision 2SA678-5, lists it as its first change. The rule for groups across several industries followed in February 2025, in revision 2SA678-6.\n\nSo a flat limit was given an opt-out for the one activity where it bit hardest. Then its reach was narrowed for large groups. Neither change touched the 30% figure, which is why the policy still reads as strict.\n\nThe number stayed the same. What it applies to got smaller."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Delete the fracking exception",
-          "content": "An exception available wherever fracking is legal is available wherever fracking happens. It removes the threshold rather than qualifying it."
-        },
-        {
-          "title": "Define “significant part”, or drop it",
-          "content": "An undefined test next to a published number makes the number optional."
-        },
-        {
-          "title": "Test large groups as a whole",
-          "content": "Financing to a parent can reach every subsidiary. Testing one subsidiary at a time lets the group borrow for the business the policy restricts."
-        },
-        {
-          "title": "Publish how often the exception is used",
-          "content": "An exception no one outside the bank can count looks the same as no restriction at all."
-        }
-      ],
-      "what_needs_to_change_closing": "Until the exception goes, the 30% limit only applies where fracking is already restricted.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "The bank chooses which of two tests to apply, activity is never defined, and a conglomerate's parent and sister companies stay served."
+      "strength_reason": "The 30% line sits beside a second test with no number, and nobody outside the bank can tell which was used. For fracking, an exception is available wherever fracking is legal.",
+      "actual_reading": "it will not finance oil and gas producers for whom fracking, tar sands, coalbed methane and Arctic work together are more than 30% of their activity or a “significant part” of their reserves, unless it makes a fracking exception",
+      "gaps": [
+        {
+          "title": "Two tests, and neither is fixed",
+          "phrase_refs": [
+            "significant",
+            "threshold"
+          ],
+          "text": "A producer is caught above 30% of its “activity”, or where these sources are a “significant part” of its reserves. “Significant” has no number. “Activity” could mean revenue, production or spending, and the policy does not say which."
+        },
+        {
+          "title": "A fracking exception wherever fracking is legal",
+          "phrase_refs": [
+            "permissible",
+            "may-be-considered",
+            "exceptional"
+          ],
+          "text": "For fracking, Santander “may” consider exceptions where it is legal locally. Fracking happens where it is legal, so the exception is there wherever it would be needed."
+        },
+        {
+          "title": "The parent and sister companies",
+          "phrase_refs": [
+            "subsidiary-level"
+          ],
+          "text": "For a group across several industries, the test is applied to one subsidiary. The parent and the other subsidiaries can still be financed."
+        }
+      ],
+      "in_practice": "Fracking, tar sands and coalbed methane get oil and gas out of rock, sand and coal seams that ordinary wells cannot reach. Arctic oil and gas comes from north of the Arctic Circle. This commitment adds the four together and asks how much of a producer's business they make up.\n\nTake a producer whose shale wells are 40% of its production but 20% of its revenue. Is it above 30% of its “activity”? The policy does not say which measure counts, so the answer depends on Santander's choice.\n\nThen there is the second test: a “significant part” of the producer's reserves. It has no number. Santander can apply whichever test suits the case, and nobody outside the bank can tell which one it used.\n\nNow take a producer clearly above the line, fracking in a country where fracking is legal. Santander “may” consider an exception, for energy security, affordability or local development. The sentence mentions developing countries and emerging economies, but does not limit the exception to them. The one firm condition is that fracking is legal there. That is true wherever fracking actually happens. Nothing is published about how often the exception is used.\n\nFinally, take a group with businesses in several industries. The test is applied to its oil and gas subsidiary. The parent and the other subsidiaries can still be financed, if the financing is “unrelated to the restricted entity”.\n\nWhat is left is a tar sands, coalbed methane or Arctic producer that is clearly caught by whichever test Santander applies."
     },
     "featured": {
-      "rank": 4,
-      "kind": "an exception that is always available",
-      "because": "The exception applies where fracking is permitted locally, which is everywhere fracking actually happens."
+      "rank": 3,
+      "kind": "exceptions that are always available",
+      "because": "Two exceptions carry most of the weight; $2.3B found."
     }
   },
   "evidence": {
@@ -616,7 +603,7 @@ window.WATCHTOWER_CASE = {
     ]
   },
   "provenance": {
-    "built": "2026-09-26",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

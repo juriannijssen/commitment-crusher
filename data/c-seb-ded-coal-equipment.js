@@ -217,44 +217,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "Naming equipment is genuinely unusual and the page should lead with that rather than manufacture a criticism.",
-          "text": "This rule names mining equipment, and it is a real route.\n\nDraglines, diggers, haul trucks and coal washing plants are financed as assets. That is often separate from the mine, and often through a bank rather than the mine's own accounts. A policy that stops at the mine and the company leaves that route open. This one does not.\n\nIt also covers both kinds of coal. So equipment for mining coal used in steel-making is caught.\n\nCredit where it is due: this is a gap someone had to notice before it could be closed."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The rule covers financing raised for the equipment by name. That is not how most equipment reaches a mine.\n\nMining equipment is very often leased. Or it is financed by the maker's own lending arm, or bought with a general loan. The policy never says whether a lease counts as dedicated financing. And SEB has a large equipment finance business.\n\nUntil that is answered, it is unclear how much this sentence actually reaches. That is a different criticism from the usual one about dedicated financing, and a more interesting one. The usual problem is that companies borrow as a whole. Here, the question is whether the bank's own leasing counts at all."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "SEB covers the coal companies, the mines, the equipment and the infrastructure.\n\nThe list is not complete. It does not mention selling mining assets.\n\nBut a bank that names equipment has thought about how a mine actually gets built and run. That shows in the drafting, and it is worth noticing."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Name leasing and asset finance",
-          "content": "Mining equipment is very often leased. The policy does not say whether a lease counts as dedicated financing."
-        },
-        {
-          "title": "Say it covers company loans too",
-          "content": "Equipment bought with general loans is outside this rule."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the machinery is covered when the bank is asked for it by name.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Dedicated equipment financing is blocked; the same shovel bought from a revolver, or leased from the maker, is not.",
+      "strength_reason": "It covers only financing that names the equipment. A mine owner can borrow for general purposes and buy the same machines.",
       "how_it_compares": {
         "text": "SEB's rule on dedicated financing for thermal coal mining covers thermal coal only. Companies mining coal for steel-making are only restricted as clients, by the 5% coal mining threshold.",
         "links": [
@@ -267,7 +234,19 @@ window.WATCHTOWER_CASE = {
             "title": "SEB's 5% Threshold on Coal Mining"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing set aside for equipment for coal mines, whether they dig coal for steel-making or for power stations",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the equipment",
+          "phrase_refs": [
+            "ded3"
+          ],
+          "text": "“Dedicated Finance” is financing for a named use. A mine owner that borrows for general purposes is not asking for dedicated finance, so this commitment does not apply."
+        }
+      ],
+      "in_practice": "Coal mines run on heavy machinery: draglines, excavators, haul trucks and plants that wash the coal. This commitment is about financing for that equipment.\n\nTake a coal mine owner that wants a new fleet of haul trucks. If it asks SEB for a loan labelled for those trucks, SEB says no. If it asks SEB for a general loan to the company, this commitment does not apply. The loan names no purpose, so it is not “Dedicated Finance”. The company can spend it on the trucks.\n\nMining companies can pay for equipment out of general borrowing or out of their own revenue. They do not need a loan with the machine's name on it. For them, this commitment changes little.\n\nNor does it matter how much coal the company mines. The sentence has no revenue test. It turns only on what the financing is labelled for.\n\nSo what the commitment stops is a loan with coal mining equipment named on it. What it leaves open is every other way SEB lends to the company that owns the mine.",
+      "gets_right": "It reaches past the mine to the machines the mine runs on. And it covers equipment for both kinds of coal: coal burned in power stations and coal used to make steel."
     }
   },
   "evidence": {
@@ -281,7 +260,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

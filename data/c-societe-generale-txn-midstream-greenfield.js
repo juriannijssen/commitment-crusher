@@ -308,44 +308,11 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": true
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "Three narrowing terms stack in one line, and each one on its own would be defensible — showing them working together is the only way to make the effect visible.",
-          "text": "Count the conditions in this line. The infrastructure must be new. It must depend “in majority” on the fields it serves. And those fields must be new, approved after 31 December 2021.\n\nAll three must be true at once. If any one fails, the exclusion does not apply.\n\nThat is the problem. Export terminals and main pipelines are not built for one field. They serve a whole region for decades, and are expanded as new fields arrive. An existing pipeline expanded for a 2027 field is not new. A terminal where new fields supply 40% is not majority-dependent. A pipeline serving fields approved in 2021 is outside for its whole life.\n\nMost new production reaches market by expanding what already exists. And “new” is the first word of this exclusion."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "A rule on new oil and gas can stop at the well. This one extends to the pipelines and terminals that carry the output.\n\nThe majority test deserves credit too. Here the drafters wrote “depend in majority on”, a threshold that can actually bite.\n\nWhere it stops is expansion. The word “new” at the front leaves out expanding existing assets, which is how most extra production reaches market. A majority test that also covered expansions would reach the assets that matter."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This rule tests pipelines and terminals by what feeds them, not by where they are.\n\nThe comparison with the same policy is telling. Its rule on infrastructure for unconventional oil excludes what is “exclusively dedicated” to it. This one excludes infrastructure that depends “in majority” on new fields. Same section, same kind of asset, two different tests. One catches almost nothing, and the other could catch a lot.\n\nReaders can fairly ask why. If the majority test works here, it works two lines up. If the all-or-nothing test is right there, it is hard to see why it is wrong here. That inconsistency is the clearest question to put to the bank."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Cover expansions as well as new build",
-          "content": "Most extra production reaches market through existing pipelines and terminals being expanded. The word “new” leaves that route open."
-        },
-        {
-          "title": "Say what the majority is measured by",
-          "content": "Volume, booked capacity, revenue and project finances can give different answers for the same asset. The policy names none of them."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a pipeline that is expanded, not built, can carry new production without meeting this rule.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating. The rating moved from hollowed to crushed.",
-      "strength_reason": "Viability must depend in majority on new fields, the asset must be new, and a mixed pipeline fails both tests.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "The pipeline or terminal must be new and exist mainly for fields approved after 2021. A shared asset, or an old one made bigger, fails one test or the other.",
       "how_it_compares": {
         "text": "Société Générale's rule on infrastructure for unconventional oil uses “exclusively dedicated”, a test almost no shared asset fails.",
         "links": [
@@ -354,7 +321,32 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's Restriction on Infrastructure for Unconventional Oil"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing labelled for a newly built pipeline, storage site or terminal that exists mainly because of oil and gas fields approved after 2021",
+      "gaps": [
+        {
+          "title": "Shared pipelines and terminals",
+          "text": "More than half of the reason the asset exists must be the new fields. The policy does not say how that is measured. A terminal where new fields are 49% of the business is not covered by this commitment.",
+          "phrase_refs": [
+            "depend-majority"
+          ]
+        },
+        {
+          "title": "Expanding what already exists",
+          "text": "Only new infrastructure is covered. An existing pipeline enlarged or extended to carry oil from a new field is not new, whatever it ends up carrying.",
+          "phrase_refs": [
+            "mid-object"
+          ]
+        },
+        {
+          "title": "Fields approved by the end of 2021",
+          "text": "A field is “Greenfield” only if its latest final investment decision came after 31 December 2021. A pipeline built mostly for older fields is outside the commitment.",
+          "phrase_refs": [
+            "latest-fid-3"
+          ]
+        }
+      ],
+      "in_practice": "Midstream means the pipelines, storage tanks and export terminals that carry oil and gas from the fields to buyers. This commitment covers new ones built for new fields.\n\nA new field has a date test. It is “Greenfield” when its latest final investment decision came after 31 December 2021. That decision is the moment a company formally approves building the field.\n\nTake a new export terminal fed by several fields. Some were approved in 2024, some in 2015. The policy asks whether the terminal's viability and existence depend “in majority” on the new ones. It does not say whether that means volume, booked capacity or revenue. The sponsor can pick the measure that keeps the new fields under half.\n\nNow take a pipeline built in 2019. A new field is approved in 2027, and the pipeline is extended to reach it. The pipeline is not new, so it is outside the commitment.\n\nThe commitment also covers financing raised for a named asset only. The company that owns the pipeline can take a general loan to the company as a whole, which does not say what it pays for.\n\nWhat is left is a newly built asset that serves mostly new fields, with no dispute about the measure. It must also be financed with a loan that names it."
     }
   },
   "evidence": {
@@ -368,7 +360,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

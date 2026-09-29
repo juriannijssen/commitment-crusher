@@ -366,48 +366,38 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The zero is true, and the footnote that defines it is where the commitment actually lives.",
-          "text": "Macquarie said it would end its coal lending and investments by the end of 2024. On 31 December 2024, it reported zero. The question is what that zero counts.\n\nThe footnote takes four things out before counting. Coal company shares and bonds held for trading with clients. Leasing and asset finance. Short-term trade financing, such as letters of credit. And guarantees not tied to a loan, including mine rehabilitation bonds. Each is real financing for a coal company. None is in the zero.\n\nThen there is the word “run-off”. It means no new business, while existing loans run to their end date. Most company loans last less than three years. Macquarie never published its coal figure for 2021. So no one outside can tell a real cut from loans that simply ended.\n\nThis is not bad faith. But the zero is about a definition, and should be read that way."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Macquarie set a date, reached it and published the result.\n\nThe commitment had a year on it, so it could be marked as met or missed. The year came, and the bank reported the outcome as a number.\n\nThe definition is public too. The footnote is on the same page as the commitment. It says plainly what is left out, and why. A bank trying to hide how it measures does not print the measure.\n\nThe criticism is about what the measure leaves out, and the missing starting figure. It is not about setting a dated target and reporting on it."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This commitment is different in kind from a client rule, not in strength. Macquarie set a near date, met it and published the result.\n\nThe trade-off is between being checkable and being broad. A client rule covers the whole client relationship. Macquarie's covers one accounting measure, with four things left out. The two kinds cannot be ranked on one scale.\n\nThe 2021 starting figure would settle it. Without it, even this dated commitment cannot be fully checked."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so nothing sourced sits underneath these options — they are entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Publish the 2021 starting figure",
-          "content": "Zero only means something next to the figure at the start. Without it, a real cut looks the same as loans that simply ended."
-        },
-        {
-          "title": "Publish what the footnote leaves out",
-          "content": "Trading holdings, leasing, trade financing and guarantees to coal companies are all left out. One line on each would show how much the zero covers."
-        },
-        {
-          "title": "Say whether zero still holds",
-          "content": "The 2024 deadline has passed, and the report does not say whether Macquarie will stay at zero. The same page lets financing for coal used in steel-making back in."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, Macquarie's best coal figure is a figure about a definition.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A run-off with no baseline, met by facilities maturing on their own, and a footnote that removes most of what a bank does with a coal company."
+      "strength_reason": "The zero counts only loans and shares on Macquarie's own books, after a footnote removes leasing, trade finance and guarantees. With no 2021 starting figure, loans simply ending on schedule give the same zero.",
+      "actual_reading": "it no longer held, on 31 December 2024, any coal company loans or shares of the narrow kinds its own footnote counts",
+      "gaps": [
+        {
+          "title": "A footnote decides what counts",
+          "phrase_refs": [
+            "leasing",
+            "facilitation",
+            "guarantees"
+          ],
+          "text": "Leasing, asset finance, short-term trade finance, guarantees and securities held for market-making are taken out before the count. These are how mining equipment and coal cargoes are often paid for."
+        },
+        {
+          "title": "Loans that simply ran out",
+          "phrase_refs": [
+            "runoff"
+          ],
+          "text": "A run-off means lending nothing new and letting old loans end. With no 2021 starting figure, nobody can tell this apart from loans maturing on schedule."
+        },
+        {
+          "title": "One day's count",
+          "phrase_refs": [
+            "zero"
+          ],
+          "text": "The zero is a count taken on 31 December 2024. The bank publishes no figure for any other date."
+        }
+      ],
+      "in_practice": "Macquarie's measure counts two things: loans held on its own balance sheet, and shares it owns. Its report defines both in a footnote, and the footnote takes a lot out.\n\nTake a coal miner that needs a new fleet of haul trucks. Macquarie can lease them. Leasing means Macquarie owns the trucks and the miner pays to use them. That is not lending under the footnote, so it does not count.\n\nNow take a coal trader shipping a cargo. Macquarie can issue a letter of credit, a promise to pay the seller if the buyer does not. It can also give short-term trade finance for the cargo. Neither counts.\n\nTake a mine that must post a rehabilitation bond, a guarantee that the land will be restored when the mine closes. Macquarie can stand behind it. Guarantees like this are outside the count.\n\nMacquarie can also hold a coal company's bonds or shares to make a market for clients. That means standing ready to buy and sell them so others can trade. Those are taken out too. Commodities trading is not in the measure at all.\n\nWhat is left is loans and shares held on Macquarie's own books. On 31 December 2024 that came to zero. But the report gives no figure for 2021. If those loans were short, they would have ended by 2024 anyway. So the zero may simply be the calendar at work."
     }
   },
   "evidence": {
@@ -421,7 +411,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 204, document 34887",
     "reading": "drafted"

@@ -75,7 +75,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains the threshold for existing clients today: thermal coal mining revenue above 30% of the revenue of the entity being financed.",
             "lets_through": [
-              "This wording lets through existing clients between 5% and 30% until the 2030 and 2035 phase-out dates, and any entity with little coal revenue of its own, whatever its group earns from coal."
+              "This wording lets through existing clients with 30% or less of their revenue from coal mining, and any entity with little coal revenue of its own, whatever its group earns from coal."
             ],
             "defined_in_clause": null,
             "bank_definition": null
@@ -218,44 +218,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "A 30% line for existing clients is where the gap sits, beside a 5% line for new ones.",
-          "text": "New coal mining clients are refused above 5% of revenue. Existing ones are kept up to 30%.\n\nThat gap is the shape of this commitment. An existing client earning 25% of its revenue from thermal coal mining keeps its financing.\n\nThe threshold is also measured on the company financed, not its group. So a coal-heavy group can borrow through a company with less coal.\n\nThe limit is the number itself."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who loses financing under this commitment today?\n\nAn existing client earning more than 30% of its revenue from thermal coal mining. That client is caught, for all financing.\n\nA client earning between 5% and 30% is not caught, until 2030 or 2035. A company with little coal, inside a coal-heavy group, is not caught either.\n\nSo the rule binds the clients that depend most on coal. For everyone between the two lines, nothing changes for years. That middle group can include large mining companies with sizeable coal businesses. Until then, they keep all their financing, and can keep mining at the same level."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: this rule reaches existing clients, not only new ones. And it covers all financing, not just project loans.\n\nThat matters. This rule acts now, for the clients most dependent on coal.\n\nWhere it stops is the height of the line. 30% is six times the 5% used for new clients. And it is measured on the company financed, not its group.\n\nSo the rule applies now, but only to the most coal-heavy existing clients."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Use the same threshold for all clients",
-          "content": "Apply the 5% threshold to existing clients as well as new ones. Or publish a path from 30% down to 5% before 2030."
-        },
-        {
-          "title": "Test the group",
-          "content": "Measure coal revenue for the whole group, not only for the company being financed."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, an existing coal miner can earn up to 30% of its revenue from coal and keep its financing.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Catches existing clients above 30%; everyone between 5% and 30% keeps its financing.",
+      "strength_reason": "It drops the existing clients most dependent on coal mining. A client earning 25% of its revenue from coal keeps all its financing.",
       "how_it_compares": {
         "text": "Barclays' coal mining phase-out ends this financing in 2030 in the EU and OECD, and 2035 elsewhere.",
         "links": [
@@ -264,7 +231,25 @@ window.WATCHTOWER_CASE = {
             "title": "Barclays' Phase-out of Coal Mining Clients"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not keep financing an existing client whose own revenue from thermal coal mining is more than 30% of its total",
+      "gaps": [
+        {
+          "title": "Clients at 30% or less",
+          "text": "An existing client earning up to 30% of its revenue from thermal coal mining keeps its financing. That can include large miners with big coal businesses.",
+          "phrase_refs": [
+            "more-than-30pc"
+          ]
+        },
+        {
+          "title": "A low-coal company in a coal-heavy group",
+          "text": "The test runs on the company Barclays finances, not its group. A group company with little coal revenue of its own can borrow, whatever the group earns from coal.",
+          "phrase_refs": [
+            "more-than-30pc"
+          ]
+        }
+      ],
+      "in_practice": "The test is a share of revenue. It is measured on the company Barclays finances. Above 30% from thermal coal mining, an existing client loses its financing. That means every kind of financing, not only loans for one project.\n\nTake a mining company that earns 60% of its revenue from thermal coal. It is far above the line, and Barclays has to stop financing it.\n\nNow take a mining group that digs thermal coal, copper and iron ore. It earns 25% of its revenue from coal. Its coal business may be one of the largest there is. But 25% is under 30%, so it keeps all its financing. The larger its other businesses, the further it sits from the line.\n\nThen take a group that earns most of its revenue from coal, but borrows through a company that trades or ships other goods. That company's own coal revenue is small. The test is run on it, not on the group, so the loan can go ahead.\n\nSo what this commitment stops is financing to existing clients that live mainly on coal. The size of a coal business does not decide it. The share does."
     }
   },
   "evidence": {
@@ -336,7 +321,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "the finance arms of coal mining groups"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

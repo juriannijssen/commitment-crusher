@@ -568,44 +568,42 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "Three narrowings — instrument, borrower and time — each leave a clear gap.",
-          "text": "The places are well chosen, but the reach is narrow in three ways.\n\nIt covers direct financing: financing whose use is known to be for the project. General-purpose financing for the same group is untouched.\n\nIt covers energy groups: those with over 20% of revenue from oil and gas production, or the majors. Any other developer can still get direct financing for the same Amazon, ultra-deep or extra heavy oil project.\n\nAnd it covers new financing. Existing loans stay in place until they are refinanced. That is this commitment's exception.\n\nWhat remains is new, labelled financing for an energy group, for one of these projects. That is a narrow slice of the financing these projects use."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nAn energy group that asks Barclays for new financing, and says it is for an Amazon, ultra-deep water or extra heavy oil project. That group is caught.\n\nThe same group borrowing for general purposes is not caught. A developer below the energy group threshold is not caught. Financing already in place is not caught.\n\nSo the commitment binds new, labelled financing to large producers, and releases everything else. A smaller developer can seek labelled financing for the same project, and still be served. The rule never looks at who is actually building the project."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the commitment names three of the most damaging kinds of oil and gas development, and defines each one.\n\nThe Amazon is defined by a published map boundary, from RAISG, a network of Amazon research groups. Ultra-deep water means 1,500 metres or more. Extra heavy oil is defined by a standard measure of density. Anyone can check a project against those definitions.\n\nWhere it stops is the kind of financing and the borrower: direct financing, to energy groups, from now on.\n\nThe map is precise. The rule reaches it through labelled financing only."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover every developer",
-          "content": "Apply the rule to any company developing these projects, not only energy groups."
-        },
-        {
-          "title": "Cover general-purpose financing",
-          "content": "Restrict financing to groups developing these projects, whatever its stated use."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the Amazon, ultra-deep water and extra heavy oil are protected from financing that says what it is for.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "It took five definitions to say what this stops, and each one pulls it back — by the end, what is left is financing earmarked for the project, given to the largest producers, inside a drawn boundary."
+      "strength_reason": "It took five definitions to say what this stops, and each one pulls it back. What is left is a narrow slice of the financing these projects use.",
+      "actual_reading": "it will not give new financing, labelled for the project, to the largest oil and gas groups for projects inside a mapped Amazon boundary, in water 1,500 metres deep or more, or for extra heavy oil",
+      "gaps": [
+        {
+          "title": "Loans that do not name their purpose",
+          "phrase_refs": [
+            "use-of-proceeds"
+          ],
+          "text": "Barclays only counts financing as “direct financing” when it knows the financing is for a particular project. A group can borrow for general purposes and spend the loan on an Amazon or ultra-deep project."
+        },
+        {
+          "title": "Only the groups Barclays counts as “Energy Groups”",
+          "phrase_refs": [
+            "over-20pc-revenue",
+            "supermajor-or-major-integrated"
+          ],
+          "text": "The rule applies to groups earning over 20% of their revenue from producing oil and gas, and to companies Barclays considers majors. Any other developer can get financing labelled for the same project."
+        },
+        {
+          "title": "Financing already in place",
+          "phrase_refs": [
+            "may-remain"
+          ],
+          "text": "Loans and facilities agreed before the rule took effect stay in place until they are refinanced."
+        }
+      ],
+      "in_practice": "Take a producer drilling in the Amazon that earns most of its revenue from oil and gas. If it asks Barclays for a loan for that project, the rule applies. If it asks for a general loan to the group, the rule does not. That loan does not say what it pays for, so it is not “direct financing”. The group can spend it on the Amazon project.\n\nNow take a company whose oil and gas production is less than 20% of its revenue. A large utility or a diversified group with a drilling arm are examples. It is not an “Energy Group”, so it can get financing labelled for the same Amazon project. Barclays also decides for itself which companies count as majors. The policy gives no list.\n\nThen there is timing. Financing agreed before the rule took effect runs on until it matures or is refinanced.\n\nSo what the rule stops is new financing, labelled for one of these projects, given to a company Barclays counts as an energy group. Everything else can still come from Barclays. That means general loans to the same groups, labelled loans to other developers, and the loans already on its books."
+    },
+    "featured": {
+      "rank": 1,
+      "kind": "five definitions and an exception",
+      "because": "The most layered page: seven passages, five definitions and an exception pull a promise about the Amazon, deep water and heavy oil back to a narrow slice — and $276.8M got through."
     }
   },
   "evidence": {
@@ -651,7 +649,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "companies drilling in ultra-deep water"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

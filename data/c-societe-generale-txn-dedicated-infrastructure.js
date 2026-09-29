@@ -221,44 +221,11 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "crushed",
         "changed": true
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "A single word makes this exclusion practically inapplicable, and saying that plainly is the whole of the case.",
-          "text": "Infrastructure is shared. That is why it gets built: one pipeline serves many fields, one terminal serves many producers. Assets that serve one source only are rare, because they rarely pay.\n\nThis exclusion applies to infrastructure “exclusively dedicated” to these kinds of oil. Not mainly. Not mostly. Only.\n\nThe bank chose an all-or-nothing test, and it lets almost everything through.\n\nWe cannot think of a realistic deal this sentence would stop that is not already excluded. A pipeline built only for oil sands is financing for oil sands production, which Société Générale already refuses."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "What asset does this sentence stop? One that carries these kinds of oil and nothing else, ever.\n\nAn oil sands pipeline with no other user. A terminal handling one grade from one source. Those exist, but they are rare. And a bank asked to finance one is usually being asked to finance the production behind it.\n\nEverything shared is not covered by this commitment. A pipeline carrying oil sands crude and ordinary crude is not “exclusively dedicated”. Nor is a terminal with a second customer, or a plant with a second supply.\n\nSo the exclusion binds a kind of asset that barely exists. It releases the infrastructure that actually carries these kinds of oil to market."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The comparison that matters is with the same policy, four lines down.\n\nThere, pipelines and terminals for new fields are caught when they depend “in majority” on those fields. That test has a threshold. It is written to catch shared assets whose business rests mostly on one source.\n\nHere, the same drafters wrote “exclusively dedicated”.\n\nSo within one section, Société Générale uses a majority test and an all-or-nothing test for the same kind of asset. One reaches real infrastructure; the other reaches almost none."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Replace “exclusively” with a majority test",
-          "content": "Four lines later, the policy uses “depend in majority on” for pipelines serving new fields. The same words here would reach shared assets."
-        },
-        {
-          "title": "Say what happens to expansions",
-          "content": "An existing shared pipeline expanded to carry oil sands is not dedicated to anything. Nothing in this sentence deals with it."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, one word turns this exclusion into a ban on almost nothing.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating. The rating moved from crushed to hollowed.",
-      "strength_reason": "Only infrastructure dedicated to those resources, on a binary test. Pipelines and terminals are built shared, and one other use is enough.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "Pipelines and terminals are nearly always shared. The asset has to serve these oils and nothing else, so one other customer takes it outside the commitment.",
       "how_it_compares": {
         "text": "Société Générale's rule on pipelines and terminals serving new fields catches assets that depend “in majority” on those fields, a test with a threshold. Its rule on unconventional oil already refuses dedicated financing for producing these oils.",
         "links": [
@@ -271,7 +238,25 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's Transaction Restriction on Unconventional Oil"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing labelled for a pipeline, terminal or plant that moves, stores or processes oil sands, Arctic or Ecuadorian Amazon oil and no other oil at all",
+      "gaps": [
+        {
+          "title": "Shared pipelines and terminals",
+          "text": "The asset has to be “exclusively dedicated” to these oils. A pipeline that also carries ordinary crude is outside the commitment, however much oil sands crude it moves.",
+          "phrase_refs": [
+            "exclusively"
+          ]
+        },
+        {
+          "title": "Loans to the company as a whole",
+          "text": "The commitment covers “dedicated transactions” only: financing raised for a named asset. A general loan or bond to the pipeline company is not, so it can still be given.",
+          "phrase_refs": [
+            "scope-dedicated"
+          ]
+        }
+      ],
+      "in_practice": "Oil sands crude, extra heavy oil, and Arctic or Ecuadorian Amazon oil need infrastructure to reach buyers. That means pipelines, storage tanks, terminals and processing plants. This commitment is about that infrastructure.\n\nInfrastructure is usually shared. One pipeline serves many fields, and one terminal serves many producers. That is what makes it pay for itself. The commitment only applies when an asset serves these oils and nothing else.\n\nTake a pipeline that carries oil sands crude and some ordinary crude. It is not “exclusively dedicated”, so Société Générale can finance it. The share does not matter. A small volume of ordinary crude is enough. The same goes for a terminal with a second customer, or a plant with a second supply.\n\nThen there is the kind of financing. The commitment covers “dedicated transactions”, meaning financing raised for a named asset. A company that owns pipelines can also take a general loan to the company as a whole, which does not say what it pays for. That loan is outside the commitment, even if the company spends it on an oil sands pipeline.\n\nWhat is left is narrow. It is an asset that carries these oils alone, financed with a loan that names it. Assets like that exist, but they are rare."
     }
   },
   "evidence": {
@@ -285,7 +270,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

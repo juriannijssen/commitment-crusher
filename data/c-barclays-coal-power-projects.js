@@ -355,44 +355,31 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "Counting life extension as expansion is genuinely unusual; conceding it first makes the instrument limit land.",
-          "text": "Credit first: the definition of material expansion counts extending a plant's life. An investment that keeps an existing coal plant running, without capturing its emissions, is caught. Not only one that adds capacity.\n\nThat matters, because extending old plants is how most coal fleets grow now.\n\nWhere it stops is the kind of financing. Project finance, as defined, leaves out company-level asset financing. So a utility can pay for the same work from its own balance sheet. And transition finance can be excepted case by case.\n\nSo the definition is broad. The loan it applies to is narrow."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The definition is broad. The kind of financing it covers is narrow.\n\nOnly project finance is restricted. A utility building, expanding or extending a coal plant can still raise company loans and bonds from Barclays. It is only limited by the separate client thresholds and phase-out dates.\n\nCapacity additions of 10% or less are not expansion. And each step is measured against the last three years' peak, so the baseline moves up with the plant.\n\nWhat remains is a project loan for a new plant, a large expansion or a life extension. Utilities with a balance sheet rarely need one."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer that needs project finance for a new coal plant, a large capacity addition or a life extension. That developer is caught, anywhere in the world.\n\nA utility paying for the same work at company level is not caught. Neither is one adding capacity in steps of 10% or less.\n\nSo the commitment binds developers that depend on project loans, such as independent power producers. It releases utilities that can borrow as a company. Those can build, expand and extend with Barclays' company loans, within the client thresholds. The plant still gets built."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover the utility",
-          "content": "Extend the rule to company loans for companies building, expanding or extending coal plants."
-        },
-        {
-          "title": "Count capacity from a fixed starting point",
-          "content": "Measure capacity additions against a fixed baseline, not the last three years' peak."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the plant cannot get a project loan, and the utility that owns it can still borrow.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Stops project finance for new and expanding plants; corporate financing to the same utility is free."
+      "strength_reason": "It stops project finance for building, expanding or extending coal plants. Loans to the utility that owns the plant, and small capacity additions, get through.",
+      "actual_reading": "it will not arrange project finance, repaid from the plant's own income, to build a coal plant, keep one running longer, or add more than 10% capacity",
+      "gaps": [
+        {
+          "title": "Loans to the utility, not the plant",
+          "text": "“Project finance” here is a loan repaid only from the plant's own income. A loan or a bond to the utility, repaid from its other earnings, is not covered.",
+          "phrase_refs": [
+            "excludes-corporate-level",
+            "repayment-depends-on-project"
+          ]
+        },
+        {
+          "title": "Capacity added in steps of 10% or less",
+          "text": "Added capacity counts as “material expansion” only above 10% of the plant's recent peak. Smaller steps, measured against a moving starting point, are not covered.",
+          "phrase_refs": [
+            "more-than-10pc"
+          ]
+        }
+      ],
+      "in_practice": "Project finance is a particular kind of loan. It pays for one project and is repaid only from what that project earns. Barclays covers this kind of loan alone, and writes company-level asset financing out by name.\n\nTake an independent developer building a single coal plant. It has no other business to repay a loan from. It depends on project finance, so this commitment binds it.\n\nNow take a large utility building the same plant. It can ask Barclays for a loan to the company as a whole, or issue a bond. Either is repaid from the utility's other earnings, so neither is project finance. The utility can spend it on the plant. A loan the parent company guarantees is outside too, because repayment no longer depends on the plant.\n\nKeeping an old plant running longer, without cutting its emissions, counts as “material expansion”. So a project loan for that is refused. But adding capacity counts only above 10% of the plant's highest capacity in the last three years. A plant can grow in smaller steps.\n\nSo what this commitment stops is a project loan for a new plant, a longer life, or a large expansion. Utilities that borrow as a company are not affected.",
+      "gets_right": "It counts keeping an old plant running longer, without cutting its emissions, as expansion, whatever the capacity. And it applies anywhere in the world."
     }
   },
   "evidence": {
@@ -406,7 +393,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

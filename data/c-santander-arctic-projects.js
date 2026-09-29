@@ -94,9 +94,9 @@ window.WATCHTOWER_CASE = {
               121,
               133
             ],
-            "means": "The words “Any projects” limit this commitment to projects: an oil or gas development, or the expansion of an existing facility, north of the Arctic Circle. Watchtower records it as project financing. Companies are not named.",
+            "means": "The words “Any projects” limit this commitment to projects: an oil or gas development, or the expansion of an existing facility, north of the Arctic Circle. Companies are not named.",
             "lets_through": [
-              "This wording lets through general corporate financing to the companies that develop Arctic fields. A producer with Arctic operations can borrow at company level; only financing tied to an Arctic project is restricted — unless the producer also fails the 30% test for unconventional oil and gas."
+              "This wording lets through general corporate financing to the companies that develop Arctic fields. A producer with Arctic operations can borrow at company level; only financing tied to an Arctic project is restricted."
             ],
             "defined_in_clause": null,
             "bank_definition": null
@@ -248,44 +248,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "The geography is the whole Arctic Circle and expansions count, which is genuinely broad; conceding it first makes the instrument limit land.",
-          "text": "Credit first: the Arctic here is the whole Arctic. The rule applies to projects north of the Arctic Circle. It is not narrowed to offshore areas, sea ice or named reserves. And it covers expanding existing sites as well as new projects.\n\nThat closes two common gaps at once. A narrow Arctic definition leaves fields on land outside. A rule that only reaches new projects lets every existing Arctic site grow. This one does neither.\n\nThe limit is the kind of financing. The item restricts projects, so it covers project financing. A producer with Arctic operations can still get loans and bonds for the whole company from Santander. The exception is if its combined unconventional business passes the policy's separate 30% test.\n\nThe map is right. The rule reaches it through project financing only."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The commitment covers every project and every expansion north of the Arctic Circle. But only projects.\n\nA producer developing an Arctic field can borrow from Santander as a whole company, through loans or bonds, and spend it on the field. The item names projects, not companies."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer that needs project financing from Santander for an Arctic oil or gas site is caught, anywhere north of the Arctic Circle. So is one that needs it to expand an existing site. That part is broad.\n\nA producer that pays for the same work at company level is not caught. Large producers can pay for Arctic projects from their own balance sheets. Developers with a single site depend on project financing.\n\nSo the commitment binds the small developer that needs a project loan. It releases the large producer that does not. The Arctic is covered in full, but only for one kind of borrower."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Reach the companies",
-          "content": "Restrict loans and bonds for the whole company, for producers developing Arctic projects, not only financing tied to the project."
-        },
-        {
-          "title": "Say what expansion means",
-          "content": "Say whether drilling more wells at existing Arctic fields, or extending their life, counts as expansion."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the whole Arctic is covered, but only for financing tied to a project.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Dedicated Arctic project financing is blocked; corporate financing to the same developer is not.",
+      "strength_reason": "It covers the whole Arctic, but only financing tied to a project. A producer can borrow for the company as a whole and spend it on an Arctic field.",
       "how_it_compares": {
         "text": "Arctic producers are reached as companies only through Santander's 30% combined unconventional threshold, which a large diversified producer stays under.",
         "links": [
@@ -294,7 +261,20 @@ window.WATCHTOWER_CASE = {
             "title": "Santander's Commitment on Unconventional Oil & Gas"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing tied to a project for new oil and gas projects, or expansions of existing sites, north of the Arctic Circle",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the project",
+          "phrase_refs": [
+            "any-projects",
+            "directly"
+          ],
+          "text": "This commitment names projects, not companies. A producer with Arctic fields can get general corporate financing from Santander and spend it on those fields."
+        }
+      ],
+      "in_practice": "The Arctic Circle runs through northern Alaska, Canada, Scandinavia and Russia. This commitment covers every oil and gas project north of that line, on land or at sea. It also covers expanding a site that already exists.\n\nTake a small developer with one Arctic field. It needs project financing: a loan for that one field, repaid from what the field earns. Santander will not give it. That developer is caught.\n\nNow take a large producer with Arctic fields among many others. It does not need a loan with the field's name on it. It can ask Santander for general corporate financing. That is a loan to the company as a whole, which does not say what it pays for. The loan is not tied to a project, so this commitment does not apply. The producer can spend it on drilling in the Arctic.\n\nThe same goes for a parent company. The policy covers what Santander finances “directly”. A general loan to the parent, which then pays for an Arctic project through a subsidiary, is not direct.\n\nSo this commitment stops Santander being the named lender on an Arctic project. It does not stop Santander financing the companies that run those projects.",
+      "gets_right": "The map is the whole Arctic: every project north of the Arctic Circle, with no narrower line drawn inside it. And expanding an existing site counts, not only opening a new one."
     }
   },
   "evidence": {
@@ -325,7 +305,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "a producer drilling inside the Arctic Circle"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

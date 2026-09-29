@@ -135,7 +135,10 @@ def card_entry(slug, doc):
     """
     c = doc["commitment"]
     evidence = doc.get("evidence") or doc.get("case") or {}
-    if not (evidence.get("deals") or []):
+    # A Bank.Green pick has a card whether or not financing was found against it:
+    # Jurian, 2026-09-29, wanted holds on the landing page too, and a holds page
+    # rarely has deals. Everything else still needs a deal to earn a card.
+    if not (evidence.get("deals") or []) and not c.get("featured"):
         return None
     clauses = c.get("clauses") or []
     clause = next((cl for cl in clauses if cl.get("verbatim")), None)

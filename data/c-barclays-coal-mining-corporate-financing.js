@@ -262,44 +262,29 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "General corporate financing limited by a stated use covers little; stated flatly that is the gap.",
-          "text": "The commitment reaches general company loans, but only when they are stated to be for new or expanding coal mines.\n\nGeneral company financing is, by its nature, financing without a stated use. A miner can borrow for general purposes and open a mine, and the commitment does not apply.\n\nExpansion also only counts above 20% of recent peak output. Smaller steps are not covered, even if they are labelled.\n\nThe narrowing is in the words “specified as being for”. So the rule looks complete, and catches only borrowers that choose to name their coal plans."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA miner that asks for a general company loan, and states that it is for a new mine or a large expansion. That miner is caught.\n\nThe same miner asking without stating a use is not caught. A miner expanding a mine by less than 20% is not caught either, even if it says so.\n\nSo the commitment binds the borrower that is open about its plans. It releases the one that says nothing. For a miner that knows the rule, avoiding it is simply a matter of what goes on the loan request."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the commitment tries to reach past project finance, into general company loans. That is where most mining is financed, and a rule that stopped at project loans would leave it open.\n\nIt also uses a defined measure of expansion, with a number and a baseline.\n\nBut it only does so where the use is stated, which is the smallest part of general company financing. Most company loans do not say what they will pay for.\n\nSo the aim is right. The reach is limited to borrowers who label their loans for coal, and few need to. The label decides, not the mine."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Drop “specified as being for”",
-          "content": "Restrict company loans to miners opening or expanding mines, whatever the stated use."
-        },
-        {
-          "title": "Count expansion from a fixed starting point",
-          "content": "Measure expansion against a fixed baseline, not the last three years' peak."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule applies to company loans that say they are for coal, which they rarely do.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Bites only where the financing is specified as being for coal mining. General corporate financing, by definition, never is."
+      "strength_reason": "It covers general loans only when they are stated to be for a coal mine. General loans almost never state a use, so almost nothing is caught.",
+      "actual_reading": "it will not give a general loan to a miner when the loan is stated to be for a new thermal coal mine or growth of more than 20%",
+      "gaps": [
+        {
+          "title": "Loans that do not state a use",
+          "text": "The rule applies only where the loan is “specified as being for” new or expanding coal mining. A general loan with no stated use is not covered, whatever the miner spends it on.",
+          "phrase_refs": [
+            "specified-as-being-for"
+          ]
+        },
+        {
+          "title": "Growth in steps of 20% or less",
+          "text": "Growth counts as “material expansion” only above 20% of the mine's recent peak. Smaller steps are not covered, even when a loan names them.",
+          "phrase_refs": [
+            "more-than-20pc"
+          ]
+        }
+      ],
+      "in_practice": "General corporate financing is a loan to a company as a whole. It usually does not say what it will pay for. The company can spend it on anything.\n\nThis commitment covers that kind of loan, but only when it is “specified as being for” a new or expanding thermal coal mine. Take a mining company planning a new mine. If it asks Barclays for a general loan and writes that it is for the mine, the rule applies. If it asks for the same loan and leaves the purpose blank, the rule does not. It can then spend the loan on the same mine.\n\nNothing about the mine, the loan or the amount has to change. Only the words on the request do. A miner that knows the rule has no reason to name its plans.\n\nThe definition of “material expansion” narrows it further. Growth counts only above 20% of the mine's highest output in the last three years. So even a loan labelled for a 15% expansion is not caught. And the starting point rises with each step, so a mine can keep growing below the line.\n\nSo what is left is a general loan that a miner has chosen to label for a new mine or a large expansion."
     }
   },
   "evidence": {
@@ -313,7 +298,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

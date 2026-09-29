@@ -284,44 +284,31 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "One instrument and one undefined word are the whole restriction.",
-          "text": "The rule reaches coal infrastructure through project finance only, and only when the infrastructure is “primarily” for coal mines.\n\n“Primarily” has no number. So rail lines and ports shared with other cargo are outside it. Most mining infrastructure is shared, because a line serving one mine rarely pays for itself.\n\nAnd the owners of the infrastructure can borrow at company level. Project finance is defined to leave out company-level asset financing.\n\nWhat remains is a project loan for infrastructure that serves mostly coal mines. That is a narrow target, reached through a narrow kind of loan. Shared lines carry on as before."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer seeking project finance from Barclays for infrastructure used mostly by coal mines. That developer is caught.\n\nOne building a rail line or port shared with other cargo is not caught. An owner paying for the infrastructure at company level is not caught either.\n\nSo the commitment binds dedicated coal infrastructure, financed as a project. It releases shared infrastructure, and any owner that can borrow as a company. That leaves out much of the infrastructure that actually moves coal to market. The rule catches the rare case, not the common one."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the rule reaches past the mine to the infrastructure that makes it work. A mine without a rail line or port cannot sell its coal. And the rule applies anywhere in the world.\n\nThat is the right link in the chain to target.\n\nWhere it stops is the kind of financing and the share. Only project finance is covered, and it is defined to leave out company-level asset financing. “Primarily” has no number, so shared assets can fall outside it.\n\nSo the target is right. The rule reaches it only through dedicated assets and project loans."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Put a number on “primarily”",
-          "content": "Say how much of an infrastructure project's use must serve coal mines before it is caught."
-        },
-        {
-          "title": "Cover the owner",
-          "content": "Extend the rule to company loans for companies building infrastructure for coal mines."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, infrastructure that serves coal alongside anything else is outside the rule.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Project finance for a dedicated coal terminal is stopped; the same terminal funded at company level is not."
+      "strength_reason": "It stops one kind of loan for rail lines and ports that serve mostly coal mines. Shared lines, and loans to the companies that own them, get through.",
+      "actual_reading": "it will not arrange project finance, repaid from the project's own income, for rail lines, ports or roads used mostly by coal mines",
+      "gaps": [
+        {
+          "title": "Lines and ports shared with other cargo",
+          "text": "Infrastructure is caught only if it is “primarily” for coal mines, and the statement gives no share. A line carrying coal alongside other cargo can fall outside, however much coal it carries.",
+          "phrase_refs": [
+            "primarily"
+          ]
+        },
+        {
+          "title": "Loans to the owner, not the project",
+          "text": "“Project finance” here is a loan repaid only from the project's own income. A loan to the company that owns the line, repaid from its other earnings, is not covered.",
+          "phrase_refs": [
+            "excludes-corporate-level",
+            "repayment-depends-on-project"
+          ]
+        }
+      ],
+      "in_practice": "Project finance is a particular kind of loan. It pays for one project and is repaid only from what that project earns. Barclays covers this kind of loan alone, and writes company-level asset financing out by name.\n\nTake a company building a rail line from a coal field to a port. If it asks Barclays for project finance, repaid from the line's own freight income, the rule applies. If it asks for a loan to the company as a whole, repaid from its other earnings, the rule does not. The same line gets built. A loan the parent company guarantees falls outside too, because repayment no longer depends on the line.\n\nThen there is the word “primarily”. The infrastructure is caught only if coal mines are its main users. The statement gives no share. A line that carries coal alongside grain or containers can be judged as not primarily for coal, however much coal it carries.\n\nSo what this commitment stops is a project loan for a line or port that serves mostly coal. What it leaves open is shared infrastructure, and every loan to the companies that own it.",
+      "gets_right": "It looks past the mine to the rail lines and ports a mine needs to sell its coal. And it applies anywhere in the world."
     }
   },
   "evidence": {
@@ -393,7 +380,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "the railways that haul coal"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

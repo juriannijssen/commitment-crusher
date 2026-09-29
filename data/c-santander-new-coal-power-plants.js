@@ -94,7 +94,7 @@ window.WATCHTOWER_CASE = {
               73,
               98
             ],
-            "means": "This explains what financing this commitment covers: financing tied to a coal power project. The policy does not define “project-related”, and Watchtower records it as project financing.",
+            "means": "This explains what financing this commitment covers: financing tied to a coal power project.",
             "lets_through": [
               "This wording lets through general corporate financing, bonds and other company-level financing to the companies that build, upgrade or expand coal-fired plants. That financing is not project-related."
             ],
@@ -246,44 +246,24 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "The scope of what is restricted is genuinely wide — new plants, upgrades and expansions, worldwide — and conceding it first makes the instrument limit land.",
-          "text": "Credit first: the rule covers more than new plants. It also names upgrading and expanding existing coal plants, anywhere in the world. There is no size threshold, and no exception for particular plants or countries.\n\nThat closes the ways a coal fleet grows without a new plant. An upgrade can extend a plant's life. A new unit can be added at an existing site.\n\nThe limit is the kind of financing. The rule applies to “project-related financing”, which the policy does not define. A company building, upgrading or expanding a coal plant can still get loans and bonds for the whole company. It is only caught if its coal power revenue passes 25% as a new client, or 10% from 2030.\n\nThe list of what is restricted is complete. The reach is one kind of loan."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The commitment reaches coal plants through one door: financing tied to the project.\n\nA company building a new coal plant, or upgrading or expanding one, can borrow from Santander as a whole company. It can then spend that on the plant. The rule names project-related financing and nothing else, and the policy does not define the term.\n\nThe policy's client rules on coal power only catch a company if its coal revenue passes 25% as a new client, or 10% from 2030. A large utility adding coal plants passes both.\n\nWhat remains is a project loan for a coal plant. Few large utilities need one, because they can borrow as a company."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who has to change anything because of this commitment?\n\nA developer that needs project financing from Santander for a coal plant is caught. So is one that needs it to upgrade or expand a plant. That applies anywhere in the world.\n\nA utility that pays for the same work from its own balance sheet is not caught. That holds as long as its coal power revenue stays under the policy's client thresholds.\n\nSo the commitment binds project developers and independent power producers, which rely on project loans. It releases the large utilities that can pay for coal plants as a company. The same plant can be built either way."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover the developer",
-          "content": "Extend the rule to loans and bonds for the whole company, for companies building, upgrading or expanding coal plants."
-        },
-        {
-          "title": "Define an upgrade",
-          "content": "Say whether work that extends a plant's life counts as an upgrade. Then extending an old plant is covered."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule stops the loan for the plant, not the loan to the company building it.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Dedicated financing of new and expanded plants is blocked; company-level borrowing by the same builder is not."
+      "strength_reason": "It stops loans tied to a new, upgraded or expanded coal plant. The company building the plant can still borrow from Santander as a whole and spend the loan on the plant.",
+      "actual_reading": "it will not give financing tied to a project for building a coal-fired power plant, or for upgrading or expanding an existing one",
+      "gaps": [
+        {
+          "title": "Loans to the builder, not the plant",
+          "phrase_refs": [
+            "project-related",
+            "directly"
+          ],
+          "text": "The commitment covers “project-related” financing only. A power company can get general corporate financing or bonds and spend them on a new or bigger coal plant."
+        }
+      ],
+      "in_practice": "Take a power company that wants to build a new coal-fired plant. It may ask Santander for project financing: a loan for that plant, repaid from what the plant earns. Santander says no. The same goes for a loan to upgrade or expand a plant the company already runs.\n\nNow take the same company asking for general corporate financing. That is a loan to the company as a whole, which does not say what it pays for. The loan is not tied to the plant, so this commitment does not apply. The company can spend it on the new plant. The same goes for bonds and other financing at company level.\n\nLarge power companies can pay for new plants out of their general borrowing. A developer building a single plant depends more on project financing, and is the one this commitment reaches.\n\nA general loan to the parent company, which then pays for the plant through a subsidiary, is not covered either. The policy covers only what Santander finances “directly”.\n\nSo the commitment stops Santander being the named lender on a coal-fired plant. It does not stop Santander lending to the companies that build, upgrade and expand them.",
+      "gets_right": "It covers upgrades and expansions of existing plants, not only new ones, and it applies worldwide. A power company cannot step outside it by enlarging a plant it already has."
     }
   },
   "evidence": {
@@ -297,7 +277,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-25",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

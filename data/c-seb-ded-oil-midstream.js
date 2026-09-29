@@ -117,8 +117,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains the test an asset has to fail: built for oil, not merely carrying it.",
             "lets_through": [
-              "This wording lets through shared and multi-product infrastructure. A terminal handling crude alongside biofuels or chemicals is arguable in a way a crude-only line is not.",
-              "It also lets through expansion of existing infrastructure, since this commitment covers New Projects. The same policy uses “Projects or Capacity Expansion” for ultra-deep and does not use it here."
+              "This wording lets through shared and multi-product infrastructure. A terminal handling crude alongside biofuels or chemicals is arguable in a way a crude-only line is not."
             ],
             "defined_in_clause": null,
             "bank_definition": null,
@@ -300,57 +299,39 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "how_it_compares",
-          "recommended": true,
-          "recommended_because": "The pair is the finding, and the two sentences sit close enough together that a reader can check it themselves.",
-          "text": "New oil pipelines and storage: no dedicated financing. Full stop.\n\nInfrastructure built now will run for decades, and this rule attaches no condition. It covers new projects only, so expanding what already exists is not caught."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "On its own terms, this rule turns on “dedicated to”, and covers new projects only.\n\nA terminal that handles crude oil alongside biofuels or chemicals is arguable. An existing pipeline upgraded to carry more oil is not a new project. The same policy uses “Projects or Capacity Expansion” for ultra-deep, and not here. That is the second time this comparison comes up in this document.\n\nAnd as everywhere, dedicated financing is only one route. Pipeline companies also borrow as a whole company. No client rule in this policy covers oil transport companies.\n\nSo the rule is flat, but it is also narrow."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "It is a flat rule.\n\nThere is no threshold, no condition, no transition plan route and no exception. It covers new oil pipelines and storage in general.\n\nWhat it lacks is a client rule beside it. And what it shows up is the gas sentence underneath it, which is much softer.\n\nOn oil, the bank wrote a clear line. That deserves real credit here."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Cover expansions",
-          "content": "It says new projects only. Expanding existing pipelines and storage is not covered."
-        },
-        {
-          "title": "Cover shared terminals",
-          "content": "A terminal that handles oil alongside other products is not dedicated to oil, so it is not caught."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, new oil infrastructure is closed, and expansions are open.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "New dedicated oil infrastructure is blocked; shared and multi-product terminals, and expansion of what exists, are not.",
+      "strength_reason": "It covers only financing labelled for infrastructure built for oil. A pipeline company can borrow for general purposes, and a terminal that also handles other products is arguable.",
       "how_it_compares": {
-        "text": "One line later, SEB's rule on new gas pipelines and storage allows dedicated financing if the company, project or owner has a transition plan. The asset, the financing and the lifespan are the same; only the fuel differs, and the document does not explain why. SEB's ultra-deep rule also covers expansion.",
+        "text": "One line later, SEB's rule on new gas pipelines and storage allows dedicated financing if the company, project or owner has a transition plan. The asset, the financing and the lifespan are the same; only the fuel differs, and the document does not explain why.",
         "links": [
           {
             "slug": "seb-ded-gas-midstream",
             "title": "SEB's Transition Plan Condition on New Gas Infrastructure"
-          },
-          {
-            "slug": "seb-ded-ultra-deep",
-            "title": "SEB's Restriction on Financing Ultra-Deep Oil and Gas"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not give financing set aside for new or expanding pipelines, terminals and storage sites built for oil",
+      "gaps": [
+        {
+          "title": "Loans to the company, not the pipeline",
+          "phrase_refs": [
+            "see-dedicated-finance"
+          ],
+          "text": "“Dedicated Finance” is financing for a named use. A pipeline company can take a general loan and spend it on a new oil pipeline or storage tank."
+        },
+        {
+          "title": "Terminals that handle more than oil",
+          "phrase_refs": [
+            "dedicated15"
+          ],
+          "text": "The asset has to be “dedicated to” oil. A terminal handling crude alongside biofuels or chemicals is arguably not, and the policy does not say how SEB decides."
+        }
+      ],
+      "in_practice": "Take a company that wants to build a new oil pipeline. If it asks SEB for a loan labelled for that pipeline, SEB says no.\n\nBut if the company asks for a general loan, this commitment does not apply. That loan names no purpose, so it is not “Dedicated Finance”. The company can spend it on the pipeline. Pipeline and storage companies can fund new assets out of general borrowing, like any other business.\n\nThen there is the word “dedicated”. The asset has to be built for oil. Take a port terminal that handles crude oil alongside biofuels or chemicals. Whether it is dedicated to oil is arguable, and the policy does not say how SEB decides. A mixed terminal can be treated as outside this commitment.\n\nExisting assets are covered in part. SEB's definition of “New Project” counts capacity expansions and material changes. A smaller change to an existing pipeline or tank farm is not caught, and the policy gives no measure.\n\nSo what the commitment stops is a loan labelled for a new or growing asset that carries only oil. Shared assets, and general loans to the companies that build them, stay open.",
+      "gets_right": "No condition is attached. A new oil pipeline or storage site cannot earn financing labelled for it with a plan or a promise."
     }
   },
   "evidence": {
@@ -364,7 +345,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

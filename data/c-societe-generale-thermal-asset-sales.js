@@ -302,44 +302,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "The record carries fewer qualifications here than on any other commitment in the bank's set, and the page should say so plainly.",
-          "text": "This commitment is wide in the ways most are narrow. It is not limited to new business, to dedicated deals or to new clients. It covers any financing or service for buying or selling coal assets, coal developers, or companies above 25% coal revenue. Advice fees, loans to buy and bond deals are all inside it.\n\nWhere it narrows is in who counts. A developer is a company building new coal power above 300 MW, and only as majority owner. A company adding smaller plants, or holding a minority stake in a large one, is not a developer.\n\nAnd a diversified utility stays under 25% however much coal it owns. The deals it covers are the right ones. Fewer companies qualify than the words suggest."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This exclusion stops a coal asset changing hands. It does not stop a coal asset.\n\nNothing here stops a company running coal mines or power plants. This rule applies at one moment in an asset's life: when it is put up for sale. An owner who never sells never meets it.\n\nIts effect also cuts both ways, and that is worth saying plainly. Blocking a sale keeps the asset with its current owner. A buyer who plans to close and restore it is refused like one who plans to run it to the end. The policy looks at the deal, not at the buyer's plans.\n\nWe are not saying the bank got this wrong. But a policy built around leaving coal by 2030 and 2040 has reason to care who buys what it leaves."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Société Générale wrote the same rule twice in one month.\n\nThe mining policy blocks financing for buying or selling mines for steel-making coal and asbestos. This one does the same for thermal coal assets, coal developers and companies above 25% coal revenue. Both have a section of their own. The bank's oil and gas policy has no such section at all.\n\nThe thermal coal version is the wider one. It names companies as well as assets. Its revenue threshold means a company with many businesses is caught, not only one that does coal alone.\n\nIt is fair to ask why this rule is in two policies and not the third. Oil and gas deals are the largest of the three markets, and the bank has not covered them this way."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green from its own reading of the wording. Watchtower states no weakness on this document, so there is nothing sourced underneath these options — they sit entirely below the opinion boundary and a human must read them before publication.",
-      "what_needs_to_change": [
-        {
-          "title": "Deal with responsible closure",
-          "content": "A buyer who plans to close and restore a coal asset is refused like any other. If that is intended, say so; if not, make an exception."
-        },
-        {
-          "title": "Count every company building new coal",
-          "content": "Remove the 300 MW line and count minority owners, so every company adding coal capacity is caught."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule reaches the right deals but not every company building coal.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "It covers every kind of deal, but a developer must build above 300 MW as majority owner, and diversified utilities stay under 25%.",
+      "strength_reason": "Buying a coal mine or plant on its own is refused. Buying a company that owns coal often gets through, unless coal is over 25% of its revenue or it is a large developer.",
       "how_it_compares": {
         "text": "Société Générale's client rules and coal phase-out dates deal with companies that run coal mines and power plants.",
         "links": [
@@ -356,7 +323,27 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's 2040 Thermal Coal Phase-Out"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not finance or advise on buying or selling coal mines, coal plants, companies building new coal as majority owners, or companies earning more than 25% of revenue from coal",
+      "gaps": [
+        {
+          "title": "Buying the whole company instead",
+          "phrase_refs": [
+            "twenty-five-per-cent"
+          ],
+          "text": "A company is covered only if more than 25% of its revenue is linked to coal. A large utility with a coal fleet and many other businesses sits under that line."
+        },
+        {
+          "title": "Small new plants and minority stakes",
+          "phrase_refs": [
+            "300mw",
+            "majority"
+          ],
+          "text": "A company building new coal power counts as a developer only above 300 MW, and only as majority owner. A company with a 40% share in a new coal plant is not one."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. This commitment is about deals that change who owns coal. It covers three things: coal assets themselves, companies developing new coal, and companies earning more than 25% of their revenue from coal.\n\nTake a company that wants to buy a coal power plant. Société Générale will not finance the purchase or advise on it. The same goes for the owner that wants to sell.\n\nNow take a large utility that owns a coal fleet alongside gas, wind and networks. Coal is 15% of its revenue. A buyer that wants the whole utility, coal plants included, can get Société Générale's help. The company is under 25%, so the deal is not covered.\n\nThen take a company building a new 250 MW coal plant. It is not a “Thermal Coal Developing Company”, because its new power capacity is not above 300 MW. Nor is a company with a minority stake in a large new plant. Buying either company is not covered, unless coal is over 25% of its revenue.\n\nThe commitment also does nothing to the coal while it stays with its owner. A plant that is never sold keeps running. And a buyer planning to close a plant early is refused on the same terms as one planning to run it for decades.",
+      "gets_right": "It covers every financial product and service aimed at these deals, from loans to advice. It is not limited to new clients, or to financing set aside for a named project."
     }
   },
   "evidence": {
@@ -370,7 +357,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 306, document 28051",
     "reading": "drafted"

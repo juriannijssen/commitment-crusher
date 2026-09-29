@@ -298,48 +298,11 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": false
       },
-      "verdict_options": [
-        {
-          "angle": "who_it_catches",
-          "recommended": true,
-          "recommended_because": "Three separate tests — ownership, concentration and consolidation — all narrow the same way, and together they shape the exclusion around a set of companies small enough that excluding them changes very little.",
-          "text": "Who can this exclusion reach? The wording answers three times before it gets to the oil.\n\nIt reaches private companies. A producer mostly owned by a state is outside it, whatever it drills. National oil companies are among the largest producers in the world, and none of them can be caught.\n\nOf the private companies left, it reaches only those earning almost all their revenue from producing oil and gas. A refinery, a trading desk or a renewables arm is enough to fall outside.\n\nAnd the test is measured on group accounts. A producer owned by a diversified parent stops being “almost all” oil and gas once it is counted as part of the group.\n\nSo the exclusion binds private, focused, independent producers. It releases the state-owned, the diversified and the subsidiaries. The group it can reach is the smallest."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Two conditions must both be true before this exclusion applies. Each removes a large part of the industry.\n\nThe first is ownership. A company mostly owned by a state is not private, so it is not covered by this commitment, however much oil it produces.\n\nThe second is how focused the company is, and it has no number. “Almost all” of its revenue must come from producing oil and gas. The exclusion right above uses 30%, a published figure. The bank knows how to write a threshold. Here it did not.\n\nThen there is existing business. It will be “phased out until extinction, in compliance with existing contracts”. No date is given, so it ends when the longest contract does.\n\nA producer escapes by being state-owned, having a second business, being part of a larger group, or already being a client. None of these means drilling less."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Compared with the rest of this policy, the drafting here is noticeably loose.\n\nThe exclusion right above covers companies earning more than 30% of revenue from Arctic, Amazon, oil sands and shale. That is a published number for named activities, and anyone can check it. The policy then goes further. For companies that are almost entirely producers, the 30% is measured on production instead.\n\nSo within two paragraphs, the bank sets a number, refines how it is measured, and then writes “almost all” with no number at all.\n\nThat removes the usual defence. A bank that never publishes thresholds can say the industry resists them. A bank that publishes one, refines it, and then leaves the next one blank has made a choice."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Remove the ownership test",
-          "content": "Whether a state owns a producer changes nothing about its drilling. A rule that cannot reach national oil companies misses most of the world's production."
-        },
-        {
-          "title": "Put a number on “almost all”",
-          "content": "The policy gives no figure for “almost all”. Publishing one would make the test checkable from outside the bank."
-        },
-        {
-          "title": "Put a date on the phase-out",
-          "content": "“Until extinction, in compliance with existing contracts” has no end date. A published date would turn a direction into a commitment."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, this exclusion reaches so few companies that it changes very little about how much oil and gas gets financed.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating.",
-      "strength_reason": "Private pure-play producers are reached, subject to the bank's own judgement of diversification and every facility already signed.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "It reaches only private producers that do almost nothing else. State-owned producers are outside it by design, and existing loans run to their end.",
       "how_it_compares": {
         "text": "Société Générale's 30% threshold on unconventional oil and gas publishes a figure and explains how to measure it.",
         "links": [
@@ -348,7 +311,34 @@ window.WATCHTOWER_CASE = {
             "title": "Société Générale's 30% Threshold on Unconventional Oil & Gas"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not finance private oil and gas producers that it judges earn almost all of their revenue from production, and it lets existing contracts run out",
+      "gaps": [
+        {
+          "title": "State-owned producers are outside it",
+          "phrase_refs": [
+            "private-company"
+          ],
+          "text": "A company majority-owned by a state is not private, so it is not covered. National oil companies are among the largest producers in the world."
+        },
+        {
+          "title": "No number for “almost all”",
+          "phrase_refs": [
+            "almost-all",
+            "consolidated"
+          ],
+          "text": "The policy gives no figure, so the bank decides where the line falls. And it measures the whole group, so a producer owned by a parent with other businesses is not caught."
+        },
+        {
+          "title": "Existing contracts run to the end",
+          "phrase_refs": [
+            "existing-contracts"
+          ],
+          "text": "Existing financing is phased out in line with existing contracts. No end date is given, so the phase-out ends when the longest contract does."
+        }
+      ],
+      "in_practice": "Upstream means finding, developing and producing oil and gas, rather than refining or selling it. This commitment covers private companies that earn almost all of their revenue from that work.\n\nTake a private company that does nothing but drill for oil and gas. Société Générale will not provide it any financial product or service. Its existing financing is to be phased out, but only as its contracts allow. A ten-year loan signed before the policy can run its full ten years.\n\nNow take a national oil company, majority-owned by its government. It drills just as much, but it is not private. The commitment does not apply to it at all. A private producer can also leave the commitment by selling a majority stake to a state, without changing anything about its drilling.\n\nThen take a private producer with a refinery or a trading arm of real size. Is almost all of its revenue from production? The policy gives no figure, so Société Générale decides. The same goes for a producer owned by a larger group. It is measured with its parent's other businesses, and it is no longer almost all upstream.\n\nSo what is left is a private, independent company that does little else but produce oil and gas.",
+      "gets_right": "Above the line, Société Générale withholds every financial product and service, not only loans for a named project. And existing financing is not simply left alone: the policy says it will be phased out."
     }
   },
   "evidence": {
@@ -362,7 +352,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

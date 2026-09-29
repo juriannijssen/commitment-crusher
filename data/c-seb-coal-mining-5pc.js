@@ -72,7 +72,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "The word “avoids” is the verb the whole policy is built on. Not “will not provide”, not “excludes” — avoids.",
             "lets_through": [
-              "This wording lets through whatever avoiding turns out to mean in practice. The policy never defines it, and on its face it is weaker than a prohibition.",
+              "This wording lets through whatever avoiding turns out to mean in practice. On its face it is weaker than a prohibition.",
               "The appendix confirms the softness: deviations from restrictions “shall be handled according to established SEB Group internal processes”, and no process, committee or threshold is named."
             ],
             "defined_in_clause": null,
@@ -320,7 +320,7 @@ window.WATCHTOWER_CASE = {
       }
     ],
     "assessment": {
-      "strength": "hollowed",
+      "strength": "holds",
       "strength_derivation": {
         "rule": "spec v3.29 §4.1 — the gap between the naive reading and what it catches",
         "inputs_source": "Watchtower record",
@@ -331,48 +331,36 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The gap between how strong the threshold is and how soft the framing is, is the whole of this document in one sentence.",
-          "text": "SEB wrote a 5% client threshold, and paired it with a soft verb.\n\nThe threshold is 5% of revenue from coal mining. It covers existing clients, not just new ones.\n\nThen the sentence says the bank “avoids” such clients. It does not say it will not serve them, or will end the relationship. Every restriction in this policy uses that verb, and the policy never defines it. Appendix B adds that exceptions “shall be handled according to established SEB Group internal processes”. No committee is named, and nothing is reported.\n\nA number that strong deserves a verb that binds."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This is a serious rule.\n\n5% is low enough to catch mining groups with many businesses, not just companies that only mine coal. It applies to the client as a whole, not to single deals. It covers existing clients. And arranging bonds counts too.\n\nThe exceptions are narrow and specific. There is supply chain finance for coal used in steel-making, small retail loans under EUR 1 million, and two named asset management firms. None of them is an open door.\n\nThis is what a client restriction looks like when a bank means it."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "SEB excludes coal mining clients above 5% of revenue.\n\nThe reach is wide too. The rule covers existing clients in the sentence itself.\n\nWhere it is weaker is the wording. “Will not provide” would be a harder promise than “avoids”. That is the trade-off, and readers should see both sides of it."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Say what “avoids” means",
-          "content": "Every restriction in this policy uses the word “avoids”. A policy that says what it will not do can be checked; one that says what it avoids cannot."
-        },
-        {
-          "title": "Close the supply chain exception",
-          "content": "Supply chain finance for coal going to steel makers is exempt, with no cap and no end date."
-        },
-        {
-          "title": "Name the internal process",
-          "content": "Appendix B sends exceptions to “established SEB Group internal processes”. Naming the body, and publishing how often it says yes, would cost nothing."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a 5% client threshold is paired with a verb that does not bind.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A 5% line is low and reaches the coal-heavy; avoiding is never defined and deviations go to internal procedure."
+      "strength_reason": "It mostly does what it sounds like: companies with a real coal mining business are kept out, new clients and existing ones. What gets through is large groups where coal is a small share, and groups that borrow through a company with little coal.",
+      "actual_reading": "it does not do business with companies earning more than 5% of their revenue from coal mining, measured on the one legal entity it deals with rather than the group",
+      "gaps": [
+        {
+          "title": "Avoiding, not refusing",
+          "phrase_refs": [
+            "avoids"
+          ],
+          "text": "SEB says it “avoids” these companies. It does not say it will refuse them, or by when it will end a relationship it already has."
+        },
+        {
+          "title": "A company in the group below the line",
+          "phrase_refs": [
+            "company-legal-entity"
+          ],
+          "text": "SEB applies the 5% test to the one legal entity it deals with, not to its group. A subsidiary with little coal revenue can borrow, and the financing can move within the group."
+        },
+        {
+          "title": "Large groups where coal is a small share",
+          "phrase_refs": [
+            "5pc"
+          ],
+          "text": "The test is a share of revenue, not an amount of coal. A large mining group can dig a great deal of coal and still stay under 5%."
+        }
+      ],
+      "in_practice": "Take a company that mines coal and earns 20% of its revenue from it. SEB avoids doing business with it. The sentence is not limited to new clients or to financing for a named project. It covers the whole relationship, and the line is low: more than 5% of revenue is enough.\n\nNow take a large mining group that digs copper, iron ore and coal. If coal is 4% of its revenue, the group is below the line. It may still mine millions of tonnes of coal a year. Only the share counts, not the size.\n\nThe test is also applied to one legal entity. The policy defines a “Company” as a single legal entity, not a group. So a coal-heavy group can borrow through a subsidiary that does little mining. The subsidiary passes the test, and the financing can move inside the group.\n\nAnd the verb is “avoids”. SEB does not say it will turn these companies away, or end the relationships it already has by a set date. A coal miner that is already a client is given no timetable.\n\nSo what is left is a company that mines coal as a real part of its business, and deals with SEB in its own name. That company is kept out. Everything else depends on how SEB reads “avoids”."
     }
   },
   "evidence": {
@@ -386,7 +374,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

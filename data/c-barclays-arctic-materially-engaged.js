@@ -341,54 +341,36 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "A published definition with a number is genuinely rare, and conceding it first makes the denominator and the cutoff land.",
-          "text": "Barclays defines its own key term, in the same document, with a number.\n\nBarclays publishes the test. A company is caught with over 20% of revenue from Arctic oil and gas. Or if it has approved new Arctic drilling or pipelines. Anyone can check a producer's accounts against that.\n\nWhat it does not do is measure the Arctic itself. 20% of revenue is a share of everything a company does. A company can run one of the largest Arctic operations in the world and still be far below the line."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Barclays got something right here. It publishes a number: a company is “materially engaged” if over 20% of its revenue comes from Arctic oil and gas.\n\nThe problem is what that number is measured against. 20% is a share of everything a company does. So a company can run one of the largest Arctic operations in the world and stay far below the line. It also refines, trades and drills elsewhere.\n\nThe second test counts new Arctic investment, but only if approved after February 2024. A project approved before then stays outside for its whole life.\n\nAnd both tests only count the Arctic as the statement defines it. That leaves out Arctic land beyond the named areas."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this commitment stop? A company that is small, focused and late.\n\nSmall, because the 20% test is measured against the company's own total revenue. The more it does elsewhere, the further it is from the line. Focused, because a large oil company never earns 20% of its revenue from one region. Late, because the investment test only counts approvals after February 2024.\n\nEverything larger, older and more varied passes. A company with a major Arctic project already being built fails no test here. Its Arctic revenue is a small share, and its decision came before the cut-off.\n\nSo the commitment binds Arctic newcomers. It releases the established companies that are already building."
-        },
-        {
-          "angle": "how_it_changed",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This commitment was rewritten, and reading only the current version misses what happened.\n\nThe March 2022 statement refused financing to companies “primarily engaged” in Arctic oil and gas. “Primarily” was undefined, so no one outside the bank could check it.\n\nThe February 2024 statement replaced it. Companies are now caught if they are “materially engaged”, and that is defined. It means over 20% of revenue from Arctic oil and gas, or approved investment in new Arctic activity. That is a real improvement, and Barclays deserves credit for it.\n\nBut the same change put a date on the second test. Investment only counts if approved after February 2024, the month the wording changed. Every Arctic project approved before then stays outside.\n\nSo the change closed one gap and opened another."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Measure the Arctic, not the share",
-          "content": "A 20% share of revenue shrinks as a company grows. Arctic production, area or investment would measure what the rule is named after."
-        },
-        {
-          "title": "Drop the February 2024 cut-off",
-          "content": "A project approved before that date is outside the test for its whole life. The test should follow the oil, not the date of a board decision."
-        },
-        {
-          "title": "Use the whole Arctic",
-          "content": "Cover everything north of the Arctic Circle, on land and at sea, not only the parts with sea ice and two named areas."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the published test measures the wrong thing, and dates itself out of the projects already under way.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A group can run one of the largest Arctic operations in the world and sit far below 20% of group revenue."
+      "strength_reason": "The test is a share of group revenue. A group can run one of the largest Arctic operations and sit far below 20%, and projects approved before 2024 never count.",
+      "actual_reading": "it will not finance a group that earns over 20% of its revenue from Arctic oil and gas, or that approved a new Arctic project after February 2024",
+      "gaps": [
+        {
+          "title": "A share of revenue, not a size",
+          "text": "The 20% is measured against everything the group does. The more it does elsewhere, the further it sits from the line, however large its Arctic business.",
+          "phrase_refs": [
+            "threshold"
+          ]
+        },
+        {
+          "title": "Projects approved before February 2024",
+          "text": "Only investment approved after February 2024 counts. A project approved earlier stays outside the test for its whole life.",
+          "phrase_refs": [
+            "cutoff"
+          ]
+        },
+        {
+          "title": "Only part of the Arctic counts",
+          "text": "Read as a limit, the Arctic here is the area within the Arctic Circle that has sea ice, plus two named areas in Alaska. Revenue and investment elsewhere in the Arctic do not count.",
+          "phrase_refs": [
+            "subject-to-sea-ice"
+          ]
+        }
+      ],
+      "in_practice": "A group is caught in one of two ways. More than 20% of its revenue comes from Arctic oil and gas. Or, after February 2024, it approved investment in new Arctic drilling or pipelines.\n\nTake a large oil group that also refines, trades and drills on other continents. Its Arctic fields may be among the largest there are. But they earn a small share of its total revenue, far below 20%. The first test does not catch it.\n\nNow suppose its main Arctic project was approved in 2023. Building and production may run for many years. But the approval came before February 2024, so the second test does not catch it either. Barclays can keep financing the group in every form.\n\nThe second test does catch a group that approves a new Arctic project from now on. It does nothing about the projects already under way.\n\nBoth tests also count only the Arctic as the statement defines it. Read as a limit, that is the area with sea ice plus two named areas in Alaska. Arctic land outside them does not count.\n\nSo what is left is a group that works mostly in the Arctic, or one approving a new project there now. Established groups with projects already approved are not affected."
     }
   },
   "evidence": {
@@ -418,7 +400,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "the largest oil producer in the Arctic"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

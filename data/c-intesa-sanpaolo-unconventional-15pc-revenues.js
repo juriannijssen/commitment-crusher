@@ -98,7 +98,7 @@ window.WATCHTOWER_CASE = {
             ],
             "means": "This explains what financing this commitment covers: both financing raised for a named purpose and general corporate financing, a loan to the company as a whole.",
             "lets_through": [
-              "This wording lets through the capital markets side. Arranging or underwriting a bond is not financing the bank provides, and Watchtower's record marks capital markets as outside this commitment."
+              "This wording lets through the capital markets side. The words name targeted and generic financing only. Arranging or underwriting a bond for a company is not named."
             ],
             "defined_in_clause": null,
             "bank_definition": null
@@ -239,44 +239,29 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "This is the rule that reaches whole companies, so the threshold is what decides whether it means anything, and it is set where the largest producers sit below it.",
-          "text": "This rule reaches the company, not just the project.\n\nThe threshold is what decides who it catches. A company must earn more than 15% of its production revenues from unconventional oil and gas. The largest producers are diversified. A company can produce a great deal of shale oil and stay well under 15%.\n\nThe share is also hard to check. Production revenues are not a figure most companies publish. The document does not say who works the number out, or how often.\n\nOne financing route is untouched. Arranging and underwriting bonds is not lending, so capital markets work falls outside this commitment."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this commitment stop, and when?\n\nIt stops lending to a company earning more than 15% of its production revenues from shale, tar sands or coalbed methane. That covers loans for a named purpose and loans to the company as a whole.\n\nIt catches specialists. A company built around fracking sits above the threshold, and stays there.\n\nIt misses the diversified majors. A company with conventional fields and a shale business is usually below 15%, so nothing here applies to it.\n\nIt does not stop the bank arranging that company's bonds.\n\nAnd it does not stop financing the bank has classified as environmentally sustainable."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This rule reaches the borrower rather than the project. That matters, because most oil and gas financing is lending to a company, not to a named site.\n\nIntesa Sanpaolo says so in its own words: targeted financing and generic financing. A company above the threshold cannot come back for a general loan instead.\n\nIt applies to existing clients as well as new ones, and it applies everywhere the group operates.\n\nThe weakness is where the line sits. At more than 15% of production revenues, the rule catches specialists and leaves diversified producers alone. The share is also one the reader cannot verify."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "This rule reaches the company rather than the project. It covers financing raised for a named purpose and loans to the company as a whole.\n\nThe threshold decides who it catches. A company must earn more than 15% of its production revenues from unconventional oil and gas. Diversified producers sit below that line, however much shale oil they pump. It catches the specialists.\n\nThe share is also hard to check. Production revenues are not a figure most companies publish, and the rules do not say who calculates it.\n\nOne route stays open. Arranging and underwriting bonds is not lending, and the record puts capital markets outside this commitment.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Lower the threshold and publish the working",
-          "content": "At more than 15% of production revenues, a large producer with a shale business stays outside. The bank does not say how it calculates the share."
-        },
-        {
-          "title": "Cover bond arranging and underwriting",
-          "content": "The restriction reaches lending. A company above the threshold can still raise financing through bonds the bank helps arrange."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule catches the companies built on unconventional oil and gas, and few others.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A 15% line on a figure companies do not publish, with capital markets outside it and an environmental-classification exception on top."
+      "strength_reason": "It catches only companies earning more than 15% of production revenues from unconventional oil and gas, on a figure nobody outside can check. Large mixed producers stay under the threshold.",
+      "actual_reading": "it will not lend to companies earning more than 15% of their production revenues from unconventional oil and gas, but it can still sell their bonds to investors",
+      "gaps": [
+        {
+          "title": "Large producers stay under 15%",
+          "phrase_refs": [
+            "fifteen-percent"
+          ],
+          "text": "A large producer with a small shale business is below 15%, however much it produces. The share is one few companies publish, and the document does not say who works it out."
+        },
+        {
+          "title": "Selling bonds is not lending",
+          "phrase_refs": [
+            "targeted-and-generic"
+          ],
+          "text": "The commitment covers loans the bank makes. Arranging or underwriting a company's bonds, and selling them on to investors, is not covered."
+        }
+      ],
+      "in_practice": "Unconventional oil and gas means sources such as shale oil, shale gas, tar sands and coalbed methane. They need special methods, such as fracking, to get out of the ground. Production revenues are what a company earns from selling the oil and gas it produces.\n\nTake a small company that does nothing but frack shale wells. Almost all its production revenues are unconventional. It is caught. Intesa Sanpaolo will not lend to it, either for a named purpose or as a general loan to the company.\n\nNow take a large oil company with shale oil as one part of a big business. Its shale share might be 8% of production revenues. It is under the threshold. The bank can lend to it, even if it produces more shale oil than the small company does.\n\nThe 15% is also hard to check. Few companies publish their production revenues split this way. The document does not say who calculates the share, or how often.\n\nLending is not all a bank does for an oil company. It can also underwrite bonds: buy a company's new bonds and sell them on to investors. That is not lending, and this commitment does not cover it. Financing the bank classifies as environmentally sustainable is also always permitted.\n\nSo the commitment keeps specialist producers out of the bank's loans. The large producers stay in."
     }
   },
   "evidence": {
@@ -290,7 +275,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 261, document 8195",
     "reading": "drafted"

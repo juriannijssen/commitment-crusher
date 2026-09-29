@@ -213,7 +213,7 @@ window.WATCHTOWER_CASE = {
     "general_clauses_page": null,
     "disagreements": [],
     "assessment": {
-      "strength": "hollowed",
+      "strength": "crushed",
       "strength_derivation": {
         "rule": "spec v3.29 §4.1 — the gap between the naive reading and what it catches",
         "inputs_source": "Watchtower record",
@@ -224,44 +224,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "text": "Intesa Sanpaolo will not increase general purpose lending to a company expanding coal capacity or building new coal plants. This test asks what the company is actually doing.\n\nWhat it costs the company is still a cap. The lending already in place stays, and can be refinanced at the same size.\n\nThe test also reaches building rather than owning. A company that buys a finished coal plant has added the same capacity without constructing anything.\n\nAnd it depends on plans being visible. The rules do not say how the bank establishes what a company intends, or how often it looks again.",
-          "recommended": true,
-          "recommended_because": "It is the strongest of the three tests, so the reader needs to see that its consequence is still a ceiling and that buying a plant is not building one."
-        },
-        {
-          "angle": "who_it_catches",
-          "text": "Who does this commitment stop, and when?\n\nIt stops a company that plans to expand coal capacity, or is building a new coal plant, from increasing its general purpose lending. That has applied since July 2021.\n\nIt catches developers by what they are doing, with no threshold and no revenue test.\n\nIt does not stop the lending that company already has, which is capped rather than withdrawn.\n\nIt does not catch a company that buys a coal plant instead of building one.\n\nAnd it does not reach lending with a stated purpose, which the document treats as a separate category with its own rules.",
-          "recommended": false,
-          "recommended_because": null
-        },
-        {
-          "angle": "what_it_gets_right",
-          "text": "This test looks at conduct rather than paperwork, and that sets it apart from the two beside it. A company expanding coal capacity is caught whatever it has written down, and whatever it earns from coal.\n\nIt names both halves of expansion: plans to add capacity, and construction that is already under way.\n\nIt applies to the company as a whole, to existing clients as well as new ones, and it took effect immediately.\n\nWhat it does not do is end the relationship. The consequence is a cap on general purpose lending, with progressive disengagement promised for the rest and no date attached to it.",
-          "recommended": false,
-          "recommended_because": null
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": "Intesa Sanpaolo will not increase general purpose lending to a company that plans to expand coal capacity or is building new coal plants. The test asks what the company is doing, not what it has written down.\n\nWhat it costs the company is still a cap. The lending already in place stays, and can be refinanced at the same size.\n\nThe test also reaches building rather than owning. A company that buys a finished coal plant has added the same capacity without constructing anything.\n\nAnd it depends on plans being visible. The rules do not say how the bank establishes what a company intends.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "what_needs_to_change": [
-        {
-          "title": "Withdraw lending, do not just cap it",
-          "content": "A company building coal plants keeps the lending it has. The consequence should be an exit, with a date."
-        },
-        {
-          "title": "Catch buying a plant, not just building one",
-          "content": "The test names construction and expansion plans. Buying a finished coal plant adds the same capacity."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a company can keep building coal and keep the lending it already has.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "It reaches the companies announcing new plants; a shelved plan, a subsidiary's plan, or buying a plant someone else built are outside.",
+      "strength_reason": "It caps lending to coal plant builders rather than stopping it. And a company that buys a finished plant, or keeps its plans quiet, may not be caught.",
       "how_it_compares": {
         "text": "The same sentence sets two other tests for coal power companies. They ask whether a company has documented a coal limit for 2030, or a plan to leave coal. This test looks at what the company is building.",
         "links": [
@@ -274,7 +241,32 @@ window.WATCHTOWER_CASE = {
             "title": "Intesa Sanpaolo's Coal Power Companies Without a Plan"
           }
         ]
-      }
+      },
+      "actual_reading": "it will not raise its general purpose lending to companies building coal plants or planning to add coal capacity, and will step back from their loans over time",
+      "gaps": [
+        {
+          "title": "Existing loans stay, with no date",
+          "phrase_refs": [
+            "progressive-disengagement"
+          ],
+          "text": "A company caught by the test keeps the lending it already has. The bank promises to step back from it over time, but sets no date and no step."
+        },
+        {
+          "title": "Buying a plant instead of building one",
+          "phrase_refs": [
+            "engaged-construction"
+          ],
+          "text": "The test reaches a company that builds a coal plant. A company that buys one someone else built adds the same capacity without building anything."
+        },
+        {
+          "title": "Plans the bank cannot see",
+          "phrase_refs": [
+            "plans-to-expand"
+          ],
+          "text": "The test turns on what a company plans. A plan that is shelved, not announced, or held by a subsidiary is hard to see from outside."
+        }
+      ],
+      "in_practice": "General purpose lending means loans to the company as a whole, which do not say what they pay for. This commitment is about that kind of lending, to companies adding coal power.\n\nTake a power company that is building a new coal plant. It is caught. Intesa Sanpaolo will not raise its general purpose lending. But the lending it already has stays in place. The bank says it will manage that lending “with a view to progressive disengagement”. That means stepping back over time, with no date. So the company keeps what it borrowed before.\n\nNow take a company that buys a coal plant another firm has just finished. It adds the same coal capacity to its fleet. But it is not building anything, so the construction half of the test does not reach it. Whether the plans half does depends on how the bank reads a purchase.\n\nThe test also depends on what the bank can see. Take a company that has not announced its plans, or holds them in a subsidiary. It is hard to catch from outside.\n\nSo the commitment stops one thing: a coal builder borrowing more for general purposes. It does not end the lending such a company already has."
     }
   },
   "evidence": {
@@ -288,7 +280,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 262, document 8201",
     "reading": "drafted"

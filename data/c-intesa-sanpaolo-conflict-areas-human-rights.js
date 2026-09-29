@@ -249,41 +249,34 @@ window.WATCHTOWER_CASE = {
         "new_business_only": true,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "Every part of this rule turns on a judgement the bank makes and does not publish, and that is what a reader needs to see first.",
-          "text": "This rule is about people rather than emissions. It is also vague.\n\nThe bank will not finance companies or projects in active armed conflict areas. It does not say what counts as one. There is no list and no outside source.\n\nThe second half needs evidence of sanctions, judicial proceedings or sentences. Credible reporting is not a proceeding. A company can be widely accused and stay financeable.\n\nAnd the test runs once, when the transaction is assessed. If a conflict starts afterwards, nothing in these rules reopens the financing."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this commitment stop, and when?\n\nIt stops financing a company or project sited in an area the bank judges to be in active armed conflict. That judgement is made once, when the transaction is assessed.\n\nIt stops financing a company where there is evidence of sanctions, court proceedings or convictions over human rights, forced labour or child labour.\n\nIt does not stop financing already in place. The test is applied when the transaction is assessed, and not again afterwards.\n\nIt does not reach a company accused in reporting but never charged.\n\nAnd it does not stop financing the bank has classified as environmentally sustainable."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This commitment covers conflict and human rights. It puts both in the same list as the bank's environmental exclusions.\n\nIt covers companies as well as projects, so it is not limited to project financing. It applies globally, and to existing clients as well as new ones.\n\nIt also names forced labour and child labour directly, rather than pointing at a framework.\n\nWhat it lacks is any definition. Active armed conflict is not defined, evidence is not defined, and the bank tests both only when a transaction is assessed."
-        }
-      ],
-      "what_needs_to_change": [
-        {
-          "title": "Name the source for conflict areas",
-          "content": "The rules do not say what an active armed conflict area is. Pointing at a published list would settle it."
-        },
-        {
-          "title": "Re-test clients, not just transactions",
-          "content": "The test runs once, when a transaction is assessed. A conflict that starts later changes nothing."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the bank decides privately which conflicts and which accusations count.",
-      "verdict_final": "This rule is about people rather than emissions, and it sits beside the environmental exclusions rather than in a separate policy. It covers companies as well as projects.\n\nIt is also vague. The bank will not finance in active armed conflict areas, and never says what one is. There is no list and no outside source.\n\nThe second half needs evidence of sanctions, proceedings or convictions. Credible reporting is not a proceeding, so a company can be widely accused and stay financeable.\n\nThe test runs once, when the transaction is assessed. If a conflict starts later, nothing reopens the financing.",
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green, the final verdict included, at Jurian's instruction on 2026-09-17. It still needs a human to read it and sign off: reviewed_by and reviewed_at are unset.",
-      "strength_reason": "No re-test when a conflict starts, no published boundary for where one is, and the bank sets the standard of evidence for an abuse."
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "It checks once, when a deal is assessed. The bank decides what counts as a war zone and as evidence, and accusations alone never trigger it.",
+      "actual_reading": "it will not finance oil and gas companies or projects that, when it assesses the deal, sit in an area it judges to be at war, or face sanctions or court cases over abuses",
+      "gaps": [
+        {
+          "title": "Checked once, at the start",
+          "phrase_refs": [
+            "at-evaluation"
+          ],
+          "text": "The test runs when a transaction is assessed. If a war starts or a case is brought later, the financing already in place stays."
+        },
+        {
+          "title": "The bank decides what counts as war",
+          "phrase_refs": [
+            "armed-conflict"
+          ],
+          "text": "The document names no list or outside source for “active armed conflict”. A site in a country at war, away from the fighting, may not count."
+        },
+        {
+          "title": "Accused is not enough",
+          "phrase_refs": [
+            "evidence-of"
+          ],
+          "text": "The trigger is sanctions, court proceedings or convictions. A company accused in reports, but never charged, is not caught. The bank sets the standard of evidence."
+        }
+      ],
+      "in_practice": "Take an oil company drilling in a country where fighting breaks out a year after the bank's loan. The bank tested the deal when it assessed it, and there was no conflict then. The rules set no second test. The loan runs on.\n\nNow take a pipeline in the same country, far from the front line. Whether that area is in “active armed conflict” is the bank's call. The document gives no list and no outside source for that judgement.\n\nThe human rights half works the same way. It needs evidence of sanctions, court proceedings or convictions over human rights, forced labour or child labour. Take a company that journalists have accused of using forced labour. If no government has sanctioned it and no court has taken the case, the commitment does not apply. The document also leaves the standard of evidence to the bank.\n\nOne more route stays open. Financing that the bank classifies as environmentally sustainable is always permitted, even to a company in one of these situations.\n\nSo what the commitment stops is a new deal, at the moment it is assessed. The company has to be sanctioned or in court already, or sit in an area the bank itself calls a war zone."
     }
   },
   "evidence": {
@@ -297,7 +290,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Policy text, document 8195 section 3.1 — NOT in synthesis run 261",
     "reading": "drafted"

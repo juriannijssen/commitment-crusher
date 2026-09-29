@@ -48,7 +48,7 @@ window.WATCHTOWER_CASE = {
         "role": "rule",
         "source_id": "ogp2026",
         "title": "The promise",
-        "intro": "This line sits directly beneath the 30% threshold. It changes what the threshold is measured against for one kind of company.",
+        "intro": "This line changes what the 30% threshold is measured against, for one kind of company.",
         "location": {
           "distance": "same_passage",
           "signposting": "explicit",
@@ -296,44 +296,36 @@ window.WATCHTOWER_CASE = {
         "previous_editorial_rating": "hollowed",
         "changed": false
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "This passage exists only to close a gap the bank could have left open, and a page that opens by conceding that is much harder to dismiss than one that does not.",
-          "text": "Most of what we write is about what banks leave out. Here, a bank put something in.\n\nA revenue threshold has a known weakness for companies that only produce oil and gas. Revenue moves with prices and accounting, not with how much oil comes out of the ground. A company can drop below the line in a bad year without producing a barrel less.\n\nSociété Générale saw that and added a second measure. For companies that are almost entirely producers, the 30% is applied to production. That is harder to game, and a more honest measure of what the policy is about. The bank did not have to add it.\n\nWhat it did not do is say who qualifies. “Almost all of their revenues” has no number. The fix is real; the door to it is not."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This rule decides which companies are measured on production instead of revenue. It decides that with a phrase it never defines.\n\n“Almost all of their revenues” has no figure. The sentence right above it gives 30%, and a footnote explains how to add up the resources. So the drafting around it is precise. Here it is not, and a company's measure is decided in private.\n\nThe measure itself has a second gap. Production is what a company took out of the ground. It says nothing about what it owns or has approved. A producer whose reserves and approved projects are mostly unconventional can stay under 30% of current production for years, while it builds them.\n\nA threshold based only on output always looks backwards."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This is careful drafting in one way and loose in another.\n\nA revenue threshold alone judges producers on a figure that moves with the oil price. Société Générale adds a second measure, based on production.\n\nBut the same paragraph publishes 30%, and a footnote explains how to add up the resources. The bank was precise twice within four lines. Then it wrote “almost all”.\n\nThe fair comparison is with the same bank, two sentences earlier."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
-      "what_needs_to_change": [
-        {
-          "title": "Put a number on “almost all”",
-          "content": "The threshold this rule changes is published as 30%. Publishing the figure that decides who is measured on production would make it just as checkable."
-        },
-        {
-          "title": "Add reserves and approved projects",
-          "content": "Production measures what a company took out of the ground this year. A producer building new unconventional projects stays under the line until they start producing."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the bank's fix for its own threshold sits behind a door it never defined.",
       "reviewed_by": null,
       "reviewed_at": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Verdict options were drafted before the analysis was re-based on Watchtower's record. They are Bank.Green interpretation and sit below the opinion boundary, but they have not been re-read against the derived rating.",
-      "strength_reason": "Almost all production from upstream, judged by the bank, with reserves and approved development not counted. Few companies qualify."
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "strength_reason": "It changes how one threshold is measured, not who is refused. The bank decides which producers it applies to, and reserves and new projects never count.",
+      "actual_reading": "it will not finance a producer whose current output is more than 30% unconventional oil and gas, but only where it judges almost all the producer's revenue comes from oil and gas production",
+      "gaps": [
+        {
+          "title": "No number for “almost all”",
+          "phrase_refs": [
+            "almost-all"
+          ],
+          "text": "Only producers earning almost all of their revenue from oil and gas are measured on production. The policy gives no figure, so the bank decides who that is."
+        },
+        {
+          "title": "Only this year's output counts",
+          "phrase_refs": [
+            "production"
+          ],
+          "text": "Production is what came out of the ground this year. Reserves, drilling rights and approved projects do not count, however unconventional they are."
+        },
+        {
+          "title": "Producers owned by larger groups",
+          "phrase_refs": [
+            "consolidated-2"
+          ],
+          "text": "The share is worked out across the whole group. A producer owned by a parent with other businesses is not almost all upstream, so it is measured on revenue instead."
+        }
+      ],
+      "in_practice": "This sentence does not add a new restriction. It changes how an existing threshold is measured. Société Générale refuses companies where more than 30% of the business is unconventional oil and gas, such as oil sands or shale. For most companies that 30% is a share of revenue. For companies that earn almost all of their revenue from producing oil and gas, it is a share of production instead.\n\nTake a producer that does nothing but drill. Most of its current output is conventional oil, but most of its reserves are oil sands. It is building new oil sands projects. Measured on this year's production, it is under 30%. Société Générale can finance it until those projects start producing.\n\nNow take a producer with a small refinery. Is almost all of its revenue from production? The policy gives no figure. So the bank decides which measure applies, and does not have to explain the choice.\n\nThen take a producer owned by a larger group that also refines and trades. It is measured across the whole group. So it is not almost all upstream, and the production test never applies to it. It falls back to the revenue test, where the group's other businesses dilute it again.\n\nSo the sentence applies to a small set of producers the bank picks itself, and it looks only at what they produce today."
     }
   },
   "evidence": {
@@ -347,7 +339,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 197, document 23944",
     "reading": "drafted"

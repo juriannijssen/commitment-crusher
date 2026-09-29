@@ -14,6 +14,15 @@
   if (!DATA) { console.error("No case data on window.WATCHTOWER_CASE"); return; }
 
   var C = DATA.commitment;
+
+  /* Pages on the landing page — Bank.Green's picks and the general-clauses articles —
+     are shared with potential users. The coral notes meant for Watchtower's reviewer
+     (not in the synthesis, the missing financing type) are hidden on them by
+     commitment.css under .is-shared: Jurian, 2026-09-29, "Just with css, because I
+     want to make it visible later." */
+  if (C.featured || C.page_kind === "general_clauses") {
+    document.documentElement.classList.add("is-shared");
+  }
   /* `case` became `evidence` at page spec v2.0. Both shapes carry the same five
      fields this renderer reads, so accept either rather than fork the template. */
   var K = DATA.evidence || DATA.case || {};
@@ -28,6 +37,13 @@
     notInSynthesisPage: "THIS COMMITMENT IS NOT IN THE WATCHTOWER SYNTHESIS",
     labelBankDefinition: "{possessive} definition",
     labelHowItCompares: "How it compares",
+    /* The assessment in fixed parts (§3.61). */
+    labelSoundsLike: "IT SOUNDS LIKE",
+    labelActuallyDoes: "WHAT IT ACTUALLY DOES",
+    labelGaps: "How the rest gets through",
+    gapsSub: "The highlights above, added up.",
+    labelInPractice: "What this means in practice",
+    labelGetsRight: "What it gets right",
     /* The tab over each version of the assessment, named for the angle it takes. */
     verdictTabs: {
       final: "OUR VERDICT",
@@ -1111,14 +1127,17 @@
      reading of the clause, and the strength is the verdict already reached — so
      nothing here is authored per page. Every naive_reading in the set opens
      with "it", which is the pronoun the bank's name replaces. */
+  /* "its funds" names the bank too — "Intesa Sanpaolo's funds", not "its funds". */
+  function namedReading(reading) {
+    return String(reading || "")
+      .replace(/^its\b/, C.bank ? possessive(C.bank) : "the bank's")
+      .replace(/^it\b/, C.bank || "the bank");
+  }
+
   function pledgeIntro() {
     var reading = C.naive_reading;
     if (!reading) return null;
-    /* "its funds" names the bank too — "Intesa Sanpaolo's funds", not "its funds". */
-    var named = String(reading)
-      .replace(/^its\b/, C.bank ? possessive(C.bank) : "the bank's")
-      .replace(/^it\b/, C.bank || "the bank");
-    return fill(STR.pledgeIntro, { bank: C.bank || "the bank", reading: named });
+    return fill(STR.pledgeIntro, { bank: C.bank || "the bank", reading: namedReading(reading) });
   }
 
   function partSection(clause, i) {
@@ -1228,6 +1247,84 @@
     return sec;
   }
 
+  /* The assessment in fixed parts — spec §3.61. Jurian, 2026-09-29, choosing it over
+     three versions behind tabs: "I think we proposal is so much more clearer." In
+     order: the answer beside the stamp ("Put the verdict stamp of the right, text on
+     the left. Reads more natural"); what it sounds like against what it actually does,
+     both in the same form so the second reads on its own; the bigger gaps, each
+     heading a link back to its highlight; what it means in practice; how it compares;
+     and, on a hollowed page only, what it gets right, last. No change list: that needs
+     an analyst who has spoken to the bank. */
+  function paras(box, text) {
+    String(text || "").split("\n\n").forEach(function (para) {
+      if (para) box.appendChild(el('<p class="ts-body-md">' + esc(para) + "</p>"));
+    });
+  }
+
+  function partsAssessment(a, col, stampEl) {
+    var top = el('<div class="cm-answer-row"></div>');
+    top.appendChild(el('<p class="cm-answer ts-body-xl-bold">' + esc(a.strength_reason || "") + "</p>"));
+    if (stampEl) top.appendChild(stampEl);
+    col.appendChild(top);
+
+    var pair = el('<div class="cm-reading-pair"></div>');
+    [[STR.labelSoundsLike, a.naive_reading || C.naive_reading], [STR.labelActuallyDoes, a.actual_reading]]
+      .forEach(function (row) {
+        var box = el('<div class="cm-reading"></div>');
+        box.appendChild(el('<div class="cm-reading-label ts-label-sm">' + esc(row[0]) + "</div>"));
+        var s = namedReading(row[1]);
+        box.appendChild(el('<p class="ts-body-lg">' + esc(s.replace(/[.\s]*$/, ".")) + "</p>"));
+        pair.appendChild(box);
+      });
+    col.appendChild(pair);
+
+    var gaps = a.gaps || [];
+    if (gaps.length) {
+      col.appendChild(el('<h3 class="cm-assess-h ts-title-md">' + esc(STR.labelGaps) + "</h3>"));
+      col.appendChild(el('<p class="cm-assess-sub ts-body-md">' + esc(STR.gapsSub) + "</p>"));
+      var ol = el('<ol class="cm-gaps"></ol>');
+      gaps.forEach(function (g, i) {
+        var li = el('<li></li>');
+        li.appendChild(el('<span class="cm-gap-num">' + (i + 1) + "</span>"));
+        var body = el("<div></div>");
+        var ref = (g.phrase_refs || [])[0];
+        body.appendChild(el('<div class="t ts-title-xs">'
+          + (ref ? '<a href="#phrase-' + esc(ref) + '">' + esc(g.title) + "</a>" : esc(g.title))
+          + "</div>"));
+        body.appendChild(el('<p class="ts-body-md">' + esc(g.text) + "</p>"));
+        li.appendChild(body);
+        ol.appendChild(li);
+      });
+      col.appendChild(ol);
+    }
+
+    col.appendChild(el('<h3 class="cm-assess-h ts-title-md">' + esc(STR.labelInPractice) + "</h3>"));
+    var prose = el('<div class="cm-assess-prose"></div>');
+    paras(prose, a.in_practice);
+    col.appendChild(prose);
+
+    var cmp = a.how_it_compares;
+    if (cmp && cmp.text) {
+      col.appendChild(el('<h3 class="cm-assess-h ts-title-md">' + esc(STR.labelHowItCompares) + "</h3>"));
+      var box = el('<div class="cm-assess-prose"></div>');
+      paras(box, cmp.text);
+      (cmp.links || []).forEach(function (l) {
+        var line = el('<p class="cm-compare-link ts-body-md"></p>');
+        line.appendChild(el('<a class="cm-jump-inline" href="commitment-' + esc(l.slug) + '.html">'
+          + esc(fill(STR.compareLink, { title: l.title })) + "</a>"));
+        box.appendChild(line);
+      });
+      col.appendChild(box);
+    }
+
+    if (a.gets_right) {
+      col.appendChild(el('<h3 class="cm-assess-h ts-title-md">' + esc(STR.labelGetsRight) + "</h3>"));
+      var right = el('<div class="cm-assess-prose"></div>');
+      paras(right, a.gets_right);
+      col.appendChild(right);
+    }
+  }
+
   function assessmentSection() {
     var a = C.assessment || {};
     var strength = STRENGTH[a.strength];
@@ -1241,10 +1338,17 @@
     titles.appendChild(el('<h2 class="cm-assess-title ts-title-xl">'
       + esc(STR.sectionAssessment) + "</h2>"));
     head.appendChild(titles);
-    if (strength && stamp) {
-      head.appendChild(el('<img class="cm-stamp" src="' + stamp.src + '" width="' + stamp.w
-        + '" height="' + stamp.h + '" alt="' + esc(strength.display) + '">'));
+    var stampEl = strength && stamp
+      ? el('<img class="cm-stamp" src="' + stamp.src + '" width="' + stamp.w
+        + '" height="' + stamp.h + '" alt="' + esc(strength.display) + '">')
+      : null;
+    if (a.in_practice) {
+      col.appendChild(head);
+      partsAssessment(a, col, stampEl);
+      sec.appendChild(col);
+      return sec;
     }
+    if (stampEl) head.appendChild(stampEl);
     col.appendChild(head);
 
     /* Every version of the assessment that was written, one at a time, behind the

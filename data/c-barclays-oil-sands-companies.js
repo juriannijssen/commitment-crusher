@@ -271,44 +271,30 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "An entity-level restriction on all financing is genuinely strong; conceding it first makes the definition's carve-outs land.",
-          "text": "Credit first: this is a client rule on all financing to oil sands producers. It covers loans, bonds and underwriting, not only projects.\n\nThe definition decides who that is. A group must own most of, or run, oil sands assets. And it must earn at least 10% of its revenue from them. A minority partner is outside it. So is a large oil company whose oil sands work is less than 10% of its revenue.\n\nThe narrowing is in the definition.\n\nThe rule is short and strong. Its reach depends on who counts as an oil sands company."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The rule is short and absolute. The definition is where it narrows.\n\nMinority partners in oil sands projects are not oil sands companies under the definition. A partner with a 40% share in a large project is outside it.\n\nNeither are owners that earn less than 10% of their revenue from oil sands. That includes large oil companies with sizeable oil sands operations, alongside much bigger businesses elsewhere.\n\nWhat remains is financing to groups that own or run oil sands assets, and rely on them for 10% or more of revenue. Those are mostly the specialists. The largest companies with oil sands in their portfolio pass."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this rule reach?\n\nThe specialist oil sands producers. They own and run their assets, and earn most of their revenue from them. Those are caught, for all financing.\n\nA large oil company with oil sands work below 10% of its revenue is not caught. A minority partner is not caught either, however large its share of the output.\n\nSo the commitment binds the specialists. It releases the largest companies, with the largest balance sheets. Those are the companies best able to keep investing in oil sands, and they can still borrow from Barclays. Their oil sands work goes on."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Drop the revenue floor",
-          "content": "Cover every group that owns or runs oil sands assets, whatever share of revenue they bring."
-        },
-        {
-          "title": "Include minority partners",
-          "content": "Count large minority stakes in oil sands projects, not only majority ownership or running the site."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the rule covers the oil sands specialists, and not the large companies with oil sands in their portfolio.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "Majority owners and operators above 10% of revenue are caught; minority partners and large integrateds are not."
+      "strength_reason": "It covers all financing to the specialist producers. But minority partners, and large oil companies whose oil sands work is under 10% of revenue, keep borrowing.",
+      "actual_reading": "it will not finance groups that own most of, or run, oil sands assets and earn at least 10% of their revenue from them",
+      "gaps": [
+        {
+          "title": "Minority partners",
+          "phrase_refs": [
+            "majority-own"
+          ],
+          "text": "A group counts only if it owns more than half of an oil sands asset, or runs it. A partner with a large minority stake that does not run the site is outside it."
+        },
+        {
+          "title": "Large companies under 10%",
+          "phrase_refs": [
+            "less-than-10pc"
+          ],
+          "text": "Groups earning less than 10% of their revenue from oil sands are left out. A large integrated oil company can own and run big oil sands sites and stay under that line."
+        }
+      ],
+      "in_practice": "Oil sands are sand and clay soaked in bitumen, a thick, tar-like oil. Getting it out takes a lot of energy, by mining or by pumping steam underground. Most oil sands production is in Canada.\n\nTake a Canadian producer that owns and runs its oil sands sites. Most of its revenue comes from them. It is an oil sands company as Barclays defines it. Barclays will not finance it, whatever the financing is for.\n\nNow take a large integrated oil company. It owns and runs oil sands sites too, some of them large. But it also refines, trades and drills around the world. Its oil sands work brings in 8% of its revenue. It falls under the 10% line, so Barclays can lend to it.\n\nThen take a partner with a 40% stake in a large oil sands project, which another company runs. It neither owns most of the project nor runs it. It is outside this commitment, however much oil its share produces.\n\nSo this commitment binds the specialists. The companies with the largest balance sheets, and the partners beside them, can keep borrowing from Barclays.",
+      "gets_right": "It covers all financing to the companies it reaches, not only financing for named projects. And running an oil sands site is enough to count, whatever share of it the group owns."
     }
   },
   "evidence": {
@@ -322,7 +308,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"

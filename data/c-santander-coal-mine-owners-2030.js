@@ -346,44 +346,39 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "Ownership with no revenue threshold is a genuinely strict test; conceding it first makes the parent-level route land.",
-          "text": "Credit first: there is no threshold. From 2030, owning a thermal coal mine is enough to lose access to Santander's financial products and services. It does not matter what share of revenue the mine brings in. Most coal phase-outs use a share of revenue, which lets the largest miners through. This one uses ownership.\n\nThe limit is where ownership is tested. It is the company that owns the mine, not the group. The next sentence says so: the parent can still be financed if the funds are not used for coal mines or a coal subsidiary. For large groups, each subsidiary is tested separately.\n\nAnd sustainable finance and transition products stay open to any mine owner. Neither term is defined.\n\nThe test for the mine owner is strict. The door for its parent is open."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "The commitment ends financing, from 2030, for the company that owns a coal mine. It does not reach anything above it.\n\nThat company's parent can still be financed, if the funds are not used for coal mines or a coal subsidiary. Funds move freely within a group, and the policy does not say how their use is checked. For a large group, only the mine-owning subsidiary is tested.\n\nBefore 2030, this commitment does not restrict existing clients that own mines at all. After 2030, sustainable finance and transition products remain open to mine owners. Neither is defined.\n\nWhat remains is financing, after 2030, for the mine-owning company itself, for purposes no one calls transition."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who loses Santander's financing in 2030?\n\nThe company that owns a thermal coal mine, if it asks for financing the bank does not call sustainable or transition finance. That company is caught.\n\nIts parent is not caught, if the parent says the funds will not reach coal. Its sister companies in a large group are not caught. A mine owner seeking a transition product is not caught either.\n\nSo in practice, the commitment binds only the subsidiary that owns the mine. Such subsidiaries rarely borrow on their own. It releases the group that owns them, which is where the borrowing usually happens."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Close the route through the parent",
-          "content": "Apply the phase-out to the whole group. Or require checks on how the funds are used, not just a promise."
-        },
-        {
-          "title": "Define transition finance",
-          "content": "Publish what counts as transition finance for a coal mine owner, and how much is given under it."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, the mine owner leaves in 2030, and its parent stays.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A real 2030 end for mine owners, with sustainable and transition finance excepted and the rest of the group outside."
+      "strength_reason": "From 2030 it closes the door to the one company that holds a coal mine. Its parent can still be financed, and transition finance stays open to the mine owner itself.",
+      "actual_reading": "it is ending, from 2030, most financing to the company that holds a thermal coal mine, while the parent and sister companies in its group can still borrow",
+      "gaps": [
+        {
+          "title": "The parent company can still borrow",
+          "phrase_refs": [
+            "parent-level",
+            "legal-entities",
+            "subsidiary-level"
+          ],
+          "text": "The phase-out applies to the company that holds the mine, not its group. The parent can be financed if the financing is said not to go to coal. The policy does not say how that is checked."
+        },
+        {
+          "title": "Sustainable and transition finance stay open",
+          "phrase_refs": [
+            "transition-finance"
+          ],
+          "text": "Financing that Santander calls sustainable finance or transition finance stays open to mine owners. The policy does not define either term, or say who decides."
+        },
+        {
+          "title": "Nothing changes until 2030",
+          "phrase_refs": [
+            "by-2030"
+          ],
+          "text": "Existing clients that own thermal coal mines keep their financing until 2030. The commitment sets no steps before then."
+        }
+      ],
+      "in_practice": "Thermal coal is the coal burned in power stations. Take a mining group whose subsidiary holds a thermal coal mine, and which Santander already banks. Until 2030, this commitment changes nothing for it.\n\nFrom 2030, the subsidiary that holds the mine is caught. It does not matter how much of its revenue the mine brings in. Owning one is enough. Santander stops giving that company financial products and services.\n\nBut the parent is not caught. The policy says the parent can still be financed, if the financing is not used for thermal coal assets or a coal subsidiary. Inside a group, financing can move from one company to another. The policy does not say how Santander checks where it goes.\n\nFor a group with businesses in several industries, each subsidiary is tested on its own. The sister companies can keep borrowing, if the financing is “unrelated to the restricted entity”.\n\nThen there is the exception. The company that holds the mine can still get financing Santander calls sustainable or transition finance. Neither term is defined.\n\nSo from 2030, the commitment stops ordinary financing to one company in the group: the one whose name is on the mine. In a large group, the borrowing is often done by the parent, and the parent stays open.",
+      "gets_right": "There is no revenue threshold. From 2030, owning a thermal coal mine is enough to be caught, however small a part of the business the mine is."
     }
   },
   "evidence": {
@@ -441,7 +436,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "the finance arms of coal mining groups"
   },
   "provenance": {
-    "built": "2026-09-23",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 149, document 25536",
     "reading": "drafted"

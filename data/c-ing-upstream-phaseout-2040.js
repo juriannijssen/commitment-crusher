@@ -217,44 +217,11 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 0
       },
-      "verdict_options": [
-        {
-          "angle": "what_it_gets_right",
-          "recommended": true,
-          "recommended_because": "A dated phase-out to zero that reaches corporate financing is genuinely strong, and conceding that first is what makes the two limits land.",
-          "text": "ING set a date for reaching zero.\n\nBy 2040, ING will stop all financing for finding and producing oil and gas. It covers general corporate financing (loans to the company as a whole) and bonds, not only project financing (a loan for one named project). That matters, because most financing goes to whole companies.\n\nThe limits are around that date. ING does not say how fast its financing will fall before 2040. For the next sixteen years, the pace is up to ING.\n\nThe commitment also covers only finding and producing oil and gas. For pipelines, storage, refining and sales, ING only aims to cut emissions per unit of activity. Financing for those parts can still grow.\n\nA date for zero is right. But it covers only one part of the business."
-        },
-        {
-          "angle": "fails_to_block",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This commitment ends ING's financing for finding and producing oil and gas in 2040. Until then, it stops nothing.\n\nThe words “phasing out” mean a slow reduction, and ING gives no pace for it. Nothing here stops ING from financing a company that opens a new field next year, or in 2035.\n\nThe second limit is what it covers. The 2040 date applies only to finding and producing oil and gas. For pipelines, storage, transport and sales, ING sets emissions intensity targets instead. These measure emissions per unit of activity. ING can meet them while its financing for pipelines and refineries grows, as long as each unit gets cleaner.\n\nSo the commitment covers one part of the business, from a date sixteen years away."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this commitment affect, and when?\n\nFrom 2040, it affects every oil and gas producer that banks with ING. ING will stop all financing for finding and producing oil and gas. That covers general corporate financing (loans to the company as a whole) and bonds, not only project financing (a loan for one named project).\n\nBefore 2040, it affects no one. A producer can still get financing from ING until then. The exception is ING's separate commitment on companies that only produce oil and gas and keep opening new fields.\n\nIt also never affects the rest of the business. Companies that process, store, move or sell oil and gas face only an emissions intensity target. A pipeline company can keep borrowing from ING after 2040, as long as its emissions per unit keep falling.\n\nThe commitment reaches producers late, and the companies around them not at all."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this commitment, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Set yearly steps, not just an end date",
-          "content": "Publish yearly cuts in financing for oil and gas production on the way to 2040. Then progress can be checked."
-        },
-        {
-          "title": "Give pipelines and terminals an end date too",
-          "content": "Pipelines, storage and export terminals move what producers pump. An end date would stop that financing from growing."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, ING can keep financing oil and gas production until 2040, and the rest of the business with no end date.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A real 2040 end point for upstream, with no interim step, and midstream and downstream free to grow in the meantime.",
+      "strength_reason": "It sets a real end point for financing oil and gas production, in 2040. Until then there is no path, and pipelines, storage and refining never face a phase-out.",
       "how_it_compares": {
         "text": "ING's only earlier stop is its 2024 rule on pure-play producers that keep opening new fields.",
         "links": [
@@ -263,7 +230,27 @@ window.WATCHTOWER_CASE = {
             "title": "ING's 2024 Commitment on Upstream Oil & Gas"
           }
         ]
-      }
+      },
+      "actual_reading": "it is phasing out its financing of finding and producing oil and gas, reaching zero in 2040, while pipelines, storage and refining face only an emissions target",
+      "gaps": [
+        {
+          "title": "Nothing has to change before 2040",
+          "phrase_refs": [
+            "phasing-out",
+            "by-2040"
+          ],
+          "text": "The sentence sets an end point, not a path. ING can keep financing producers at today's level, or more, until close to 2040."
+        },
+        {
+          "title": "Pipelines, storage and refining",
+          "phrase_refs": [
+            "intensity-targets"
+          ],
+          "text": "The phase-out covers exploration and production only. For the rest of the chain, ING has a target for emissions per unit of activity. Financing and total emissions can still grow."
+        }
+      ],
+      "in_practice": "Upstream is the industry's word for finding and producing oil and gas. Midstream and downstream are what follows: pipelines, storage, refining and selling fuel.\n\nTake an oil producer that banks with ING today. It can keep borrowing through the 2020s and 2030s. The sentence does not say how fast ING's financing will fall. It could stay at today's level, or rise, until close to 2040. Only the end point is fixed. Many producers that are still opening new fields can keep being financed until then.\n\nNow take a pipeline company. It is midstream, so the 2040 end point does not apply. ING has an emissions intensity target instead. That measures emissions per unit of activity, not in total. If the pipeline's emissions per barrel fall, ING can lend it more, and total emissions can still rise.\n\nThe same goes for a refinery, a storage site or a chain of petrol stations.\n\nSo the commitment ends ING's financing of oil and gas production in 2040. Until then, the pace is up to ING. And the rest of the oil and gas chain stays open, in 2040 and after.",
+      "gets_right": "ING fixes an end point: zero financing for finding and producing oil and gas by 2040. The sentence does not limit that to loans for named projects."
     }
   },
   "evidence": {
@@ -545,7 +532,7 @@ window.WATCHTOWER_CASE = {
     "what_it_funded": "midstream and downstream oil and gas, and producers still drilling"
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 105, document 4517",
     "reading": "drafted"

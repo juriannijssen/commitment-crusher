@@ -188,10 +188,40 @@ window.WATCHTOWER_CASE = {
     "disagreements": [],
     "assessment": {
       "strength": null,
-      "verdict_final": "All three of these sit in footnote type, under the lists of restricted activities they qualify.\n\nThe first decides who is restricted. For a conglomerate the policy applies at subsidiary level, so prohibiting one subsidiary leaves the parent and every other subsidiary available. Funds are not clients at all.\n\nThe second decides whether anyone looks. Parts of the group run on set lists of investments or automatic methods, and those parts are not expected to review the case in front of them.\n\nThe third turns a restriction into a review. Where a law requires it, a restricted customer goes through enhanced due diligence before a decision, rather than being refused. The change log names Florida's HB3 Act as the reason.\n\nA footnote is not a lesser rule. These three decide which company is measured, whether the measurement happens, and what the answer obliges the bank to do.",
-      "verdict_options": [],
-      "verdict_selected": null,
-      "what_needs_to_change": []
+      "strength_reason": "Three footnotes decide which company is measured, whether anyone looks at the case, and whether a restriction means a refusal at all.",
+      "naive_reading": "its restrictions apply to every company and deal they name",
+      "actual_reading": "its restrictions apply to the one subsidiary doing the restricted activity, not to funds, where someone reviews the case, and where the law allows a refusal rather than only a closer look",
+      "gaps": [
+        {
+          "title": "The parent and its other subsidiaries",
+          "phrase_refs": [
+            "apply-at-subsidiary-level"
+          ],
+          "text": "For a group with businesses in several industries, the policy applies to the subsidiary that does the restricted activity. The parent and every other subsidiary can still be financed."
+        },
+        {
+          "title": "Funds are not clients",
+          "phrase_refs": [
+            "not-including-funds"
+          ],
+          "text": "Clients are companies, so funds are not covered. Exposure to a restricted activity held through a fund is outside every restriction."
+        },
+        {
+          "title": "Parts of the group that do not look",
+          "phrase_refs": [
+            "operational-limitations"
+          ],
+          "text": "Some parts of Santander run on set lists or automatic methods. They are not expected to review each case, so a restricted company can be included without anyone checking."
+        },
+        {
+          "title": "A review where the law requires one",
+          "phrase_refs": [
+            "enhanced-due-diligence-process"
+          ],
+          "text": "Where a law requires it, a restricted customer gets a closer review before a decision, instead of a refusal."
+        }
+      ],
+      "in_practice": "Santander lists the activities it restricts in the body of its policy. These three footnotes sit underneath the list, and they reach every commitment on it.\n\nTake a conglomerate with a coal subsidiary and a separate retail business. Santander refuses the coal subsidiary. But the policy applies at subsidiary level, so the parent can still borrow. As long as the financing is not for the coal subsidiary, it can go ahead.\n\nNow take a fund that holds shares in a restricted oil company. A fund is not a client under this policy. Santander's exposure through that fund is outside the restrictions.\n\nThen take a part of the bank that builds portfolios automatically, from a set list or a method. The footnote says such businesses may not be able to review each case. A restricted company can sit in that portfolio with no one looking at it.\n\nFinally, some places have laws that bar banks from refusing customers on these grounds. There, a restricted customer goes through a closer review before a decision. The review is not a refusal.\n\nA footnote is not a lesser rule. These three decide which company is measured, whether the measurement happens, and what the answer obliges the bank to do."
     }
   },
   "evidence": {
@@ -205,7 +235,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "3.13",
     "source": "editorial/general-clauses-25536.json"
   }

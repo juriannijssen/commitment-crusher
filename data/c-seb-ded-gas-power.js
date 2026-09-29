@@ -341,48 +341,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 2
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "The section pairs a genuine external standard with a condition that has nothing behind it, and the weak half is the one that decides whether the plant gets built.",
-          "text": "The emissions standard is real. The transition plan condition is not.\n\nNew gas power can be financed if the project has “a plan to transition to low carbon or renewable gases”. There is no date, no cost, no secured supply and no consequence for failing. Low-carbon gas at power-station scale is scarce and costly. That is exactly why a plan is cheap to write and hard to carry out.\n\nThe second condition is better. It asks for the emission levels in the EU's latest best available techniques, a published document with numbers in it. But it covers air pollution and efficiency, not carbon limits. A plant can fully meet it and still not fit a 1.5°C path.\n\nAn exception also allows plants “intended to operate only during peak demand”. That intention is stated once, and nothing checks it afterwards."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "This section cites an outside standard, and puts a number in grams.\n\nThe EU's best available techniques are published, updated and set independently. They are not a bank's own judgement. The exception for plants that make both heat and power is limited to lifetime emissions below 100 grams of CO2 per kilowatt-hour. Until 2030, it is 270 grams, with extra checks. Those are real limits a project either meets or does not.\n\nWhatever the criticism of the transition plan condition, the drafting here is strong."
-        },
-        {
-          "angle": "how_it_compares",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Read it against the peat power rule, and the same bank bans one fuel outright and allows another on conditions.\n\nNew peat-fired power: no dedicated financing, full stop. New gas power: can be financed with a plan, a pollution standard and, for plants that run at peak times, an intention.\n\nPeat puts out more carbon per unit of energy than coal, so ranking it worse is defensible. But new gas plants financed now lock in far more emissions overall. And gas is the one that got the gentler treatment.\n\nThe order is right fuel by fuel. It is wrong on the scale of what gets built."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower states no weakness on this document, so nothing sourced sits underneath these options.",
-      "what_needs_to_change": [
-        {
-          "title": "Give the transition plan a deadline",
-          "content": "A plan with no date is a document. A plan with a date is a commitment."
-        },
-        {
-          "title": "Add a carbon test alongside the EU standard",
-          "content": "The EU standard covers pollution and efficiency. The heat and power exception already uses grams of CO2 per kilowatt-hour; the main rule could too."
-        },
-        {
-          "title": "Limit the peak-demand exception",
-          "content": "“Intended to operate only during peak demand” is an intention stated once, with nothing checking it afterwards."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, a new gas plant can be financed with a plan, a pollution standard and a stated intention.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "BAT is a genuine external standard and bites. The switching condition is satisfied by holding a plan, and nothing requires the switch."
+      "strength_reason": "A new gas plant can get financing labelled for it by holding a plan to switch fuels one day and meeting EU pollution levels. Neither condition caps the carbon it will emit.",
+      "actual_reading": "it will not give financing set aside for a new gas-fired power plant unless the plant has a plan to switch to low-carbon gases and meets EU pollution levels",
+      "gaps": [
+        {
+          "title": "A plan to switch, not a switch",
+          "phrase_refs": [
+            "plan20"
+          ],
+          "text": "The plant needs a plan to move to low-carbon gases. The policy sets no date, no cost and no supply for the switch, and nothing happens if it never comes."
+        },
+        {
+          "title": "Pollution limits, not carbon limits",
+          "phrase_refs": [
+            "bat20"
+          ],
+          "text": "The EU standard covers air pollution and efficiency. A plant can meet it in full and still burn fossil gas for decades."
+        },
+        {
+          "title": "Loans to the company, not the plant",
+          "phrase_refs": [
+            "see-dedicated-finance"
+          ],
+          "text": "“Dedicated Finance” is financing for a named use. A power company can take a general loan and build the plant with it, and neither condition applies."
+        }
+      ],
+      "in_practice": "Take a power company building a new gas-fired plant. It can ask SEB for a loan labelled for the plant. SEB asks for two things.\n\nThe first is a plan to move the plant to low-carbon or renewable gases, such as hydrogen or biomethane. The policy asks only that the plan exists. It sets no date for the switch, no cost and no supply of the new gas. Low-carbon gas at power-station scale is scarce and expensive. So the plan is easy to write, and the plant can run on natural gas for its whole life.\n\nThe second is that the plant meets the emission levels in the EU's latest best available techniques conclusion. That is a published EU reference with numbers in it. But it covers air pollution and efficiency. It does not cap the carbon dioxide the plant puts out.\n\nThen there is the route around the label. “Dedicated Finance” is financing for a named use. A power company can take a general loan from SEB and build the plant with it. That loan names no purpose, so neither condition applies.\n\nSo what is left is a new gas plant, financed by name, that has no plan to switch or misses the EU levels. A plant that clears both can be financed, and a plant paid for with a general loan never has to try.",
+      "gets_right": "The second condition points to a published EU standard with numbers in it, not to SEB's own judgement. A project either meets those levels or it does not."
     }
   },
   "evidence": {
@@ -396,7 +385,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 181, document 25537",
     "reading": "drafted"

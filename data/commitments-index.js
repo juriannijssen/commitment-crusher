@@ -8,7 +8,7 @@ window.WATCHTOWER_CASES = [
     "bank": "Barclays",
     "category": "coal",
     "featured": {
-      "rank": 2
+      "rank": 5
     },
     "quote": "We will not provide financing to clients that generate more than 30% of their revenue from thermal coal-fired power generation.",
     "plain": "Barclays will not provide financing to clients that generate more than 30% of their revenue from thermal coal-fired power generation."
@@ -37,7 +37,7 @@ window.WATCHTOWER_CASES = [
     "bank": "Barclays",
     "category": "oil_gas_expansion",
     "featured": {
-      "rank": 1
+      "rank": 2
     },
     "quote": "We will not provide financing to Energy Groups whose aggregate share of production in Oil Sands, Extra Heavy Oil, Hydraulic Fracturing in the UK/EU, and Arctic Circle oil & gas exceeds 20% of their total oil & gas production.",
     "plain": "Barclays will not provide financing to Energy Groups whose combined production from Oil Sands, Extra Heavy Oil, Hydraulic Fracturing in the UK/EU and Arctic Circle oil & gas exceeds 20% of their total oil & gas production."
@@ -77,6 +77,17 @@ window.WATCHTOWER_CASES = [
     "featured": null,
     "quote": "We will not provide financing to Clients materially engaged in oil & gas exploration and production or pipeline transportation operations in the Arctic Circle.",
     "plain": "Barclays will not provide financing to Clients materially engaged in oil & gas exploration and production or pipeline transportation operations in the Arctic Circle."
+  },
+  {
+    "page": "commitment-seb-arctic-oil-gas.html",
+    "number": 10,
+    "bank": "SEB Group",
+    "category": "fossil_fuels",
+    "featured": {
+      "rank": 7
+    },
+    "quote": "Outside of the Norwegian Economic Zone, SEB Group avoids Business Relationships with Companies with more than 5% of revenue derived from extraction of Oil and Gas in the Arctic Area.",
+    "plain": "Outside of the Norwegian Economic Zone, SEB Group avoids Business Relationships with Companies with more than 5% of revenue derived from extraction of Oil and Gas in the Arctic Area."
   },
   {
     "page": "commitment-barclays-oil-sands-projects.html",
@@ -137,7 +148,9 @@ window.WATCHTOWER_CASES = [
     "number": 6,
     "bank": "Barclays",
     "category": "oil_gas_expansion",
-    "featured": null,
+    "featured": {
+      "rank": 1
+    },
     "quote": "We will not provide direct financing to Energy Groups for any oil & gas projects in the Amazon Biome, or any oil & gas projects involving Ultra-Deep Water and/or Extra Heavy Oil, or infrastructure projects primarily to be used for such oil & gas projects.",
     "plain": "Barclays will not provide direct financing to Energy Groups for oil & gas projects in the Amazon Biome, or involving Ultra-Deep Water or Extra Heavy Oil, or for infrastructure projects primarily to be used for them."
   },
@@ -155,7 +168,9 @@ window.WATCHTOWER_CASES = [
     "number": 5,
     "bank": "Intesa Sanpaolo",
     "category": "coal",
-    "featured": null,
+    "featured": {
+      "rank": 4
+    },
     "quote": "From the date of issue of these Rules, the Group will not increase its exposure relating to general purpose financial products and services towards companies having at least one of the following characteristics: … that do not document a maximum limit of 35% of the installed capacity deriving from coal by 2030",
     "plain": "From the date these Rules were issued, Intesa Sanpaolo will not increase its exposure from general purpose financial products and services towards companies having at least one of the following characteristics: … that do not document a maximum limit of 35% of the installed capacity deriving from coal by 2030."
   },
@@ -165,10 +180,21 @@ window.WATCHTOWER_CASES = [
     "bank": "Santander",
     "category": "fracking",
     "featured": {
-      "rank": 4
+      "rank": 3
     },
     "quote": "Santander Group will not directly invest in and/or provide financial products and/or services to… Clients involved in exploration and production for whom the activities derived from the combination of fracking, tar sands, coalbed methane and Arctic oil & gas represent a significant part of their reserves, or account for more than 30% of their activity.",
     "plain": "Santander will not directly invest in, or provide financial products or services to, clients in exploration and production where fracking, tar sands, coalbed methane and Arctic oil & gas combined are a significant part of their reserves, or account for more than 30% of their activity."
+  },
+  {
+    "page": "commitment-seb-coal-power-5pc.html",
+    "number": 5,
+    "bank": "SEB Group",
+    "category": "fossil_fuels",
+    "featured": {
+      "rank": 9
+    },
+    "quote": "SEB Group avoids Business Relationships, including existing and new Business Relationships, as well as New Projects and capacity expansions, with coal fired power generation Companies where more than 5% of revenues are derived from coal.",
+    "plain": "SEB Group avoids Business Relationships, including existing and new Business Relationships, as well as New Projects and capacity expansions, with coal fired power generation Companies where more than 5% of revenues are derived from coal."
   },
   {
     "page": "commitment-intesa-sanpaolo-coal-power-no-plan.html",
@@ -184,9 +210,7 @@ window.WATCHTOWER_CASES = [
     "number": 3,
     "bank": "ING",
     "category": "oil_gas_expansion",
-    "featured": {
-      "rank": 3
-    },
+    "featured": null,
     "quote": "… we've decided to stop providing new financing for new LNG export terminals after 2025, in line with observations from the IEA's 2023 World Energy Outlook.",
     "plain": "ING has decided to stop providing new financing for new LNG export terminals after 2025, in line with the IEA's 2023 World Energy Outlook."
   },
@@ -195,20 +219,38 @@ window.WATCHTOWER_CASES = [
     "number": 3,
     "bank": "Intesa Sanpaolo",
     "category": "fracking",
-    "featured": {
-      "rank": 5
-    },
+    "featured": null,
     "quote": "With reference to this activity, the Group commits to: not finance projects involving unconventional resource extraction sites",
     "plain": "Intesa Sanpaolo commits to: not finance projects involving unconventional resource extraction sites."
+  },
+  {
+    "page": "commitment-macquarie-thermal-12-months.html",
+    "number": 3,
+    "bank": "Macquarie Group",
+    "category": "coal",
+    "featured": {
+      "rank": 8
+    },
+    "quote": "Macquarie continues to have no appetite for financing >12 months using its balance sheet or to advise on transactions where the underlying purpose relates to the purchase, operation, development or expansion of thermal coal activities",
+    "plain": "Macquarie continues to have no appetite for financing >12 months using its balance sheet, or to advise on transactions where the underlying purpose relates to the purchase, operation, development or expansion of thermal coal activities."
+  },
+  {
+    "page": "commitment-societe-generale-mining-asset-sales.html",
+    "number": 3,
+    "bank": "Société Générale",
+    "category": "mining",
+    "featured": {
+      "rank": 10
+    },
+    "quote": "The Group will not provide financial transactions, products and services aiming at the sale or acquisition of metallurgical coal mining or asbestos mining assets.",
+    "plain": "Société Générale will not provide financial transactions, products and services aiming at the sale or acquisition of metallurgical coal mining or asbestos mining assets."
   },
   {
     "page": "commitment-barclays-expansion-project-finance.html",
     "number": 2,
     "bank": "Barclays",
     "category": "oil_gas_expansion",
-    "featured": {
-      "rank": 6
-    },
+    "featured": null,
     "quote": "We will not provide project finance for expansion projects or infrastructure projects primarily to be used for such expansion projects.",
     "plain": "Barclays will not provide project finance for expansion projects, or for infrastructure projects primarily to be used for them."
   },
@@ -217,7 +259,9 @@ window.WATCHTOWER_CASES = [
     "number": 2,
     "bank": "ING",
     "category": "oil_gas_expansion",
-    "featured": null,
+    "featured": {
+      "rank": 6
+    },
     "quote": "We're now expanding our policy – as of today we'll also stop all new financing to pure-play upstream oil & gas companies that continue to develop new fields.",
     "plain": "ING is expanding its policy – as of today it will also stop all new financing to pure-play upstream oil & gas companies that continue to develop new fields."
   },

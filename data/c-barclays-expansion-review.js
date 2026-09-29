@@ -236,7 +236,7 @@ window.WATCHTOWER_CASE = {
               80,
               102
             ],
-            "means": "This definition of “expansion” is narrower than what it usually means. By expansion we normally mean a company producing more oil and gas than before. Barclays makes it a date test instead: only projects signed off after 31 December 2021 are expansion, and the date does not move. A field approved in 2021 and drilled out through the 2030s is never expansion here, however much it adds — so the restriction blocks less with every year that passes.",
+            "means": "This definition of “expansion” is narrower than what it usually means. By expansion we normally mean a company producing more oil and gas than before. Barclays makes it a date test instead: only projects signed off after 31 December 2021 are expansion, and the date does not move. A field approved in 2021 and drilled out through the 2030s is never expansion here, however much it adds — so the restriction blocks less than the word suggests, for as long as those fields produce.",
             "lets_through": [
               "The date lets through every project sanctioned in or before 2021, for its whole life. Spending on those projects does not count towards the 10%."
             ],
@@ -422,44 +422,37 @@ window.WATCHTOWER_CASE = {
         "new_business_only": false,
         "total": 1
       },
-      "verdict_options": [
-        {
-          "angle": "fails_to_block",
-          "recommended": true,
-          "recommended_because": "A review read as a restriction is the first mistake a reader makes here, and the gap is best stated flatly.",
-          "text": "This is a review, not a restriction, and the statement says so twice.\n\nEnergy groups that plan to spend more than 10% of their oil and gas investment on expansion are reviewed every year. An internal committee, the CTRF, decides whether continued financing is appropriate. The statement sets no outcome the review must reach, and publishes no results. Two paragraphs later, it adds that financing decisions are made deal by deal, whatever the review concludes.\n\nIt is an internal screening process with no required exclusion.\n\nExpansion only counts for projects approved after 2021. So spending on older projects does not push a group towards the 10%. What remains is a yearly conversation, with the decisions made elsewhere."
-        },
-        {
-          "angle": "who_it_catches",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Who does this process stop? Nobody, necessarily.\n\nA group above 10% is reviewed. What happens next depends on the review, and then on the committee for each deal. A group the review finds is making enough progress keeps its financing. A group the review questions can still be financed, one deal at a time.\n\nThe groups most affected are those Barclays already had doubts about. The groups least affected are large producers, whose expansion is a small share of a large budget. So are groups whose expansion was approved before 2022, because it does not count.\n\nSo the review can change the tone of a relationship. It cannot, on its own, end one."
-        },
-        {
-          "angle": "what_it_gets_right",
-          "recommended": false,
-          "recommended_because": null,
-          "text": "Credit first: the review is required, and yearly. And it is triggered by a published number: 10% of planned oil and gas investment going into expansion. Readers can check which groups should be reviewed.\n\nWhere it stops is the outcome. The statement publishes no test for the review's decision, and no results. And it says financing decisions stay deal by deal, whatever the review finds.\n\nA published trigger for scrutiny is worth having. But the scrutiny itself happens out of sight, and so does its result."
-        }
-      ],
-      "verdict_selected": 0,
-      "verdict_final": null,
       "verdict_needs_review": true,
-      "verdict_review_reason": "Drafted by Bank.Green. Watchtower's stated weakness is carried as a phrase; the verdict prose around it is ours.",
-      "what_needs_to_change": [
-        {
-          "title": "Say what the review decides",
-          "content": "Publish the test the review applies, and what happens to a group that fails it."
-        },
-        {
-          "title": "Report the outcomes",
-          "content": "Disclose how many groups are reviewed each year, and how many lose financing as a result."
-        }
-      ],
-      "what_needs_to_change_closing": "Until then, expanding groups are looked at every year, and decided on one deal at a time.",
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
       "reviewed_by": null,
       "reviewed_at": null,
-      "strength_reason": "A mandatory review with no required outcome. It lets through every expanding group the review finds appropriate to keep financing."
+      "strength_reason": "This is a review, not a restriction. The review must happen, but nothing says what it must decide, and each deal is then decided on its own.",
+      "actual_reading": "it will review each year the energy groups spending over 10% of planned upstream investment on expansion, then decide each deal on its own",
+      "gaps": [
+        {
+          "title": "A review with no required outcome",
+          "phrase_refs": [
+            "annual-review"
+          ],
+          "text": "The review decides whether continued financing is appropriate. The statement sets no result it has to reach. Nothing is published about how many groups are reviewed or what the reviews decide."
+        },
+        {
+          "title": "Each deal is decided separately",
+          "phrase_refs": [
+            "transaction-specific"
+          ],
+          "text": "Whatever the review concludes, each financing goes to a committee that weighs credit, reputation and capital. A group the review questions can still be financed, one deal at a time."
+        },
+        {
+          "title": "A share, not an amount",
+          "phrase_refs": [
+            "more-than-10pc",
+            "fid-2021"
+          ],
+          "text": "Only groups spending more than 10% of planned upstream investment on expansion are reviewed. A large budget can hide a large expansion under 10%. Projects approved before 2022 do not count towards the share."
+        }
+      ],
+      "in_practice": "Take an oil and gas group that plans to spend 15% of its upstream budget on new fields. Upstream means finding and producing oil and gas. The group crosses the line, so Barclays' internal forum reviews it once a year.\n\nThe review asks whether continued financing is appropriate, given the group's investment and transition plans. The statement does not say what answer ends financing. If the review finds the plans acceptable, nothing changes.\n\nEven if the review raises doubts, the group can still ask for a loan. Each deal goes to the committees that decide financing. They weigh credit, reputation and capital, and the statement says their decision stands whatever the review concluded.\n\nNow take a very large producer with the same new fields. Its budget is big enough that expansion is only 8% of it. It is never reviewed at all. Nor does a field approved in 2021 count towards anyone's share, however much drilling it still needs.\n\nSo what this commitment delivers is a yearly conversation about some expanding groups. It does not say any of them must lose financing. And nothing published shows whether any has."
     }
   },
   "evidence": {
@@ -473,7 +466,7 @@ window.WATCHTOWER_CASE = {
     "deals": []
   },
   "provenance": {
-    "built": "2026-09-28",
+    "built": "2026-09-29",
     "spec": "Commitment Analysis Spec v3.13",
     "source": "Watchtower synthesis run 219, document 4122",
     "reading": "drafted"
