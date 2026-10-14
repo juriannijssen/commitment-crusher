@@ -1,0 +1,325 @@
+/* Commitment data — generated from commitments/commitment-seb-unconventional-2030-phaseout.md
+   by prototype/build/render_commitments.py. Do not edit by hand.
+   Assigned to a global rather than fetched, so the page still opens
+   from file:// without a server. */
+window.WATCHTOWER_CASE = {
+  "schema_version": "3.13",
+  "commitment": {
+    "commitment_id": "seb-unconventional-2030-phaseout",
+    "bank": "SEB Group",
+    "commitment_number": 13,
+    "category": "fossil_fuels",
+    "effective_date": "2026-04-23",
+    "title": "SEB's 2030 Unconventional Oil and Gas Phase-Out",
+    "short_title": "2030 Unconventional Oil and Gas Phase-Out",
+    "subject": "Unconventional Oil and Gas Phase-out",
+    "article_published": "2026-09-09",
+    "intro": "SEB sets out this commitment in its Sector Policy on Fossil Fuels, published in April 2026. By 2030, the Baltic exception ends, and SEB will phase out every business relationship with a company above 5% unconventional oil and gas revenue.",
+    "naive_reading": "it will drop all oil sands and fracking companies as clients by 2030",
+    "plain_language_note": "A dated exit, at the lowest threshold in the document, with nothing carved out of it.",
+    "sources_intro": "This restriction comes from a single policy document, and we quote one passage from it below.",
+    "sources_intro_closer": "lets_find_out",
+    "sources": [
+      {
+        "id": "seb2026",
+        "document_title": "SEB Group Sector Policy on Fossil Fuels",
+        "document_url": "https://webapp.sebgroup.com/mb/mblib.nsf/dld/80AF6A2E5F88CDC2C12586B1002E33C2?opendocument",
+        "synthesis_url": "https://watchtower.bank.green/institution/seb_group/document/25537/synthesis?run=181&commitment=13",
+        "watchtower_document_id": 25537,
+        "watchtower_institution": "seb_group",
+        "synthesis_run": 181,
+        "version_label": "April 2026",
+        "published": "2026-04-23",
+        "language": "en",
+        "verbatim_confirmed": true,
+        "text_status": "verbatim_on_file",
+        "published_source": null,
+        "published_confidence": null,
+        "verbatim_check": {
+          "document": "25537-seb-fossil-fuels.md",
+          "passages": 2,
+          "found": 2,
+          "missing": []
+        }
+      }
+    ],
+    "clauses": [
+      {
+        "index": 1,
+        "role": "rule",
+        "source_id": "seb2026",
+        "title": "The promise",
+        "intro": "This is where SEB Group sets out this commitment.",
+        "location": {
+          "distance": "same_passage",
+          "signposting": "explicit",
+          "signposting_note": null
+        },
+        "verbatim": "This exception will cease by 2030, when SEB Group will phase out all Business Relationships with Companies where more than 5% of revenues is derived from Unconventional Oil and Gas.",
+        "plain_rendering": "This exception will cease by 2030, when SEB Group will phase out all Business Relationships with Companies where more than 5% of revenues is derived from Unconventional Oil and Gas.",
+        "phrases": [
+          {
+            "id": "by2030",
+            "label": "will cease by 2030",
+            "type": "undefined_term",
+            "verbatim_range": [
+              15,
+              33
+            ],
+            "plain_range": [
+              15,
+              33
+            ],
+            "means": "This explains the deadline. The policy does not describe what happens between now and then: it sets no baseline, no interim milestone, and no reporting commitment.",
+            "lets_through": [
+              "This wording lets through any path SEB chooses to 2030, because it sets a date and an end state and nothing in between.",
+              "It does not leave the scope open, though. The sentence covers all business relationships at 5% for unconventional oil and gas together. That is wider than the restriction it replaces, which covers unconventional oil only."
+            ],
+            "defined_in_clause": null,
+            "bank_definition": null,
+            "source": "bank_green",
+            "watchtower_ref": null,
+            "not_in_synthesis": true
+          },
+          {
+            "id": "see-company",
+            "label": "Companies",
+            "type": "narrowing_qualifier",
+            "source": "bank_green",
+            "watchtower_ref": null,
+            "not_in_synthesis": true,
+            "verbatim_range": [
+              97,
+              106
+            ],
+            "plain_range": [
+              97,
+              106
+            ],
+            "means": "SEB defines a company as one legal entity, which is the usual meaning. International accounting standards call the parent and its subsidiaries together a group. So the revenue test is applied to the entity SEB deals with and not to its group. A subsidiary can pass while its group earns heavily from unconventional oil and gas, so the rule blocks less.",
+            "lets_through": [
+              "This wording lets through financing to a subsidiary below the line, however much the rest of its group earns from unconventional oil and gas. The financing can then move inside the group."
+            ],
+            "defined_in_clause": null,
+            "bank_definition": {
+              "quote": "Company — Legal corporate entity conducting business.",
+              "source_id": "seb2026"
+            },
+            "ordinary_source": [
+              {
+                "body": "IFRS Foundation",
+                "title": "IFRS 10, Appendix A",
+                "term": "Group",
+                "url": "https://www.ifrs.org/content/dam/ifrs/publications/html-standards/english/2025/issued/ifrs10.html#IFRS10_APPA"
+              }
+            ]
+          },
+          {
+            "id": "five-per-cent",
+            "label": "more than 5% of revenues",
+            "type": "narrowing_qualifier",
+            "source": "bank_green",
+            "watchtower_ref": null,
+            "not_in_synthesis": true,
+            "verbatim_range": [
+              113,
+              137
+            ],
+            "plain_range": [
+              113,
+              137
+            ],
+            "means": "This explains the threshold: unconventional oil and gas as a share of the company's revenue. At 5%, it is a low bar.",
+            "lets_through": [
+              "This wording lets through a company whose unconventional oil and gas is under 5% of its revenue, however large that business is."
+            ],
+            "defined_in_clause": null,
+            "bank_definition": null
+          }
+        ],
+        "watchtower_origin": null
+      }
+    ],
+    "glossary_refs": [
+      "unconventional",
+      "phase-out",
+      "revenue-threshold",
+      "client-level"
+    ],
+    "glossary_inline": [],
+    "watchtower": {
+      "synthesis_backed": true,
+      "run": 181,
+      "document_id": 25537,
+      "institution": "seb_group",
+      "commitment_index": 13,
+      "commitment_id": null,
+      "url": "https://watchtower.bank.green/institution/seb_group/document/25537/synthesis?run=181&commitment=13",
+      "agent_name": "gemini-flash-latest",
+      "schema": "Policy synthesis (id 10)",
+      "synthesis_created": "2026-06-09",
+      "synthesis_updated": "2026-07-08",
+      "quotation_matched": true,
+      "quotation_matched_note": null,
+      "quotation_char_range": [
+        14209,
+        14390
+      ],
+      "summary_text": "By 2030, SEB Group will phase out all business relationships with companies deriving more than 5% of revenue from unconventional oil and gas.",
+      "scope": {
+        "industry": {
+          "themes": "oil_gas",
+          "coal_types": null,
+          "oil_gas_types": [
+            "oil_sands",
+            "shale",
+            "coalbed methane"
+          ],
+          "value_chain": "upstream",
+          "activity_scope": "new_and_existing"
+        },
+        "geographic": {
+          "global_scope": true
+        },
+        "counterparty": {
+          "level": "counterparty",
+          "relationship_status": "new_and_existing",
+          "certainty": "5"
+        },
+        "product": {
+          "financing_type": "corporate",
+          "capital_markets": true,
+          "transaction_status": "new_and_existing"
+        }
+      },
+      "triggers": [
+        {
+          "metric": "revenue_share",
+          "inequality": ">",
+          "value": 5,
+          "definition": null
+        }
+      ],
+      "commitment_type": "phase_out",
+      "effective_date": "2030",
+      "exceptions": [],
+      "weaknesses": null,
+      "reviewer_notes": "STATS: [0 added, 0 removed, 0 split, 20 fields corrected]\nCHANGES:\n- Corrected certainty ratings across all commitments from null to certainty objects with rating '5' to ensure schema compliance and reflect high confidence in extraction.",
+      "not_in_synthesis_note": null
+    },
+    "general_carve_outs": [
+      {
+        "condition": "DEVIATIONS GO TO AN INTERNAL PROCESS · APPENDIX B — Deviations from restrictions and requirements in this policy shall be handled according to established SEB Group internal processes. No committee is named, no threshold is set, and nothing is said about how often this happens.",
+        "carve_out_kind": "discretionary_carve_out",
+        "carve_out_kind_source": "bank_green",
+        "governance_process": true,
+        "standing": true,
+        "recorded_by_watchtower": false,
+        "where": "APPENDIX B"
+      },
+      {
+        "condition": "A 5% FLOOR ON THE WHOLE POLICY · SECTION 4.2 — The policy covers companies with more than 5% of company revenues from activities in the fossil fuel sector, calculated at SEB Group global limit holder level. Below that line the document does not engage at all.",
+        "carve_out_kind": "bounded_carve_out",
+        "carve_out_kind_source": "bank_green",
+        "governance_process": false,
+        "standing": true,
+        "recorded_by_watchtower": false,
+        "where": "SECTION 4.2"
+      },
+      {
+        "condition": "SOME ACTIVITIES SIT OUTSIDE THE POLICY · SECTION 4.1 — Seized assets held in the ordinary course of business, client order facilitation, market making, anything SEB is obliged to provide by law or regulation, and products where another financial institution is the provider are all exempt. SEB Asset Management Holding AB and Gamla Livförsäkrings AB SEB Trygg Liv are outside the policy entirely.",
+        "carve_out_kind": "bounded_carve_out",
+        "carve_out_kind_source": "bank_green",
+        "governance_process": false,
+        "standing": true,
+        "recorded_by_watchtower": "commitment 1 only",
+        "where": "SECTION 4.1"
+      },
+      {
+        "condition": "IT BINDS LARGE COMPANIES HARDEST · SECTION 4.2 — Restrictions, requirements and expectations all apply to large companies. SMEs get restrictions and requirements only. Retail counterparties are outside the policy — it acts as a guide.",
+        "carve_out_kind": "bounded_carve_out",
+        "carve_out_kind_source": "bank_green",
+        "governance_process": false,
+        "standing": true,
+        "recorded_by_watchtower": "commitment 1 only",
+        "where": "SECTION 4.2"
+      }
+    ],
+    "general_clauses_page": null,
+    "disagreements": [
+      {
+        "field": "weaknesses",
+        "severity": "omission",
+        "watchtower": "No weakness recorded on any of the twenty commitments in this run.",
+        "bank_green": "Watchtower states no weakness anywhere in this synthesis. Every phrase highlighted on this page is Bank.Green's reading and is labelled as such.",
+        "action": "Populate the weaknesses field. Our highlighted phrases are the proposal — the strongest candidate on this document is the three-party transition-plan condition on commitment 16."
+      },
+      {
+        "field": "loopholes.exceptions",
+        "severity": "omission",
+        "watchtower": "No exception is recorded on more than one commitment. Twelve of the twenty carry none at all, and the record contains no policy-wide carve-out.",
+        "bank_green": "The policy does have provisions that sit above every commitment. Appendix B routes deviations from any restriction to unnamed SEB Group internal processes. Section 4.2 applies the whole document only above 5% of company revenue from the fossil fuel sector, and excludes Retail entirely. Section 4.1 exempts seized assets, client order facilitation, market making, legally required activity, and two named asset-management entities. Watchtower attaches the section 4 items to commitment 1 only, and the Appendix B deviation clause to nothing.",
+        "action": "Attach the Appendix B deviation clause and the section 4 scope provisions to every commitment, as standing exceptions."
+      },
+      {
+        "field": "commitments",
+        "severity": "omission",
+        "watchtower": "Run 181 extracted twenty commitments, every one of them coal or oil and gas.",
+        "bank_green": "Run 181 extracted 20 commitments, all of them coal or oil and gas. Section 9 of the policy sets out four further restrictions on thermal peat, including a 2030 phase-out. None appears in the record. The reviewer notes for this run read '0 added, 0 removed, 0 split, 20 fields corrected', so the omission was not caught in review either.",
+        "action": "Re-run document 25537. Section 9 contains four restrictions on thermal peat, including a 2030 commitment."
+      }
+    ],
+    "assessment": {
+      "strength": "holds",
+      "strength_derivation": {
+        "rule": "spec v3.29 §4.1 — the gap between the naive reading and what it catches",
+        "inputs_source": "Watchtower record",
+        "record_score": "holds",
+        "weakness": false,
+        "commitment_specific_carve_outs": 0,
+        "project_finance_only": false,
+        "new_business_only": false,
+        "total": 0
+      },
+      "verdict_needs_review": true,
+      "verdict_review_reason": "Drafted by Bank.Green in the form in parts (spec §3.61). A person has to read it before it publishes: reviewed_by and reviewed_at are unset.",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "strength_reason": "It mostly does what it sounds like. What gets through is the time until 2030, with no steps set along the way, and groups that borrow through a company below the line.",
+      "actual_reading": "it will phase out all business with companies earning more than 5% of their revenue from unconventional oil and gas by 2030, with no steps set before then",
+      "gaps": [
+        {
+          "title": "Nothing required before 2030",
+          "phrase_refs": [
+            "by2030"
+          ],
+          "text": "The policy sets a date and nothing before it: no starting figure, no yearly step, and no promise to report progress."
+        },
+        {
+          "title": "A company in the group below the line",
+          "phrase_refs": [
+            "see-company"
+          ],
+          "text": "SEB applies the 5% test to the one legal entity it deals with, not to its group. A subsidiary with little unconventional revenue can borrow, and the financing can move within the group."
+        }
+      ],
+      "in_practice": "By 2030, SEB will phase out every business relationship with a company earning more than 5% of its revenue from unconventional oil and gas. That means oil sands, oil shale, fracking, and coalbed methane. It covers all business, not only new business, and all of those fuels together. It also ends the exception for the Baltic states, so this commitment is close to what a reader would expect.\n\nThe line is low. A company only has to earn more than 5% of its revenue from unconventional oil and gas to be caught.\n\nWhat gets through is time. The policy sets 2030 and nothing before it: no starting figure, no yearly step, and no promise to report progress. Cutting a client's financing steadily and keeping it unchanged until late 2029 both fit the wording. No one outside SEB can tell before 2030 which one is happening.\n\nA group can also borrow through a company with little unconventional revenue, because the policy defines a “Company” as one legal entity, not a group. The financing can then move inside the group.\n\nNone of this is hidden, since the date is written into the sentence."
+    }
+  },
+  "evidence": {
+    "status": "none_found",
+    "teaser": "SEB has committed to phase out all business relationships with companies above 5% unconventional oil and gas revenue by 2030. We have not reviewed its financing against this commitment yet.",
+    "headline_figure": {
+      "display": "Not yet checked",
+      "combines": null,
+      "complete": false
+    },
+    "deals": []
+  },
+  "provenance": {
+    "built": "2026-10-02",
+    "spec": "Commitment Analysis Spec v3.13",
+    "source": "Watchtower synthesis run 181, document 25537",
+    "reading": "drafted"
+  }
+};

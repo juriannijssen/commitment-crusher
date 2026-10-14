@@ -1,0 +1,245 @@
+/* Document search (search/index.html, bank.html, date.html). Title and text
+   search on the repository list: the rows of commitments.css, grown
+   downwards to carry the original title, one quoted passage and how often
+   the term was found. Handoff notes: search/HANDOFF.md. */
+
+/* The search term: the chip's yellow behind it, bold, no rounding. */
+.srch-listing mark {
+  padding: 0 2px;
+  color: inherit;
+  font-weight: var(--fw-semibold);
+  background: var(--bg-button-quote);
+  border-radius: 0;
+}
+
+/* Relevance view: icon | bank | category | title block | versions | type | date.
+   Bank and Date views set their own tracks on the element (fewer columns). */
+.srch-listing { --repo-cols: 16px 180px 180px minmax(0, 1fr) 112px 44px 92px; }
+
+/* The repository's green document mark, as on the live list. */
+.srch-ico { width: 16px; height: 16px; margin-top: 2px; color: var(--sushi-500); fill: var(--sushi-500); }
+
+/* Rows as the live repository draws them: inset 16px from the card edge,
+   8px inside, rounded, 8px apart with no rules between them. They grow
+   downwards, so every column sits at the top. */
+.srch-listing .repo-rows { gap: 8px; padding: 16px 16px; }
+.repo-row.srch-row {
+  height: auto;
+  align-items: start;
+  padding: 8px;
+}
+/* Each row is its own hover box — a document, and each of its versions. */
+.repo-row.srch-row { border-radius: 6px; transition: background-color .15s ease; }
+.repo-row.srch-row:hover { background: var(--sky-50); }
+
+/* The two section titles: the room of the live page's headings, no ground,
+   a rule under each, and one above the second to mark the break. */
+.repo-list:has(.srch-listing) { padding-top: 0; }
+.srch-listing .repo-group { margin-top: 0; }
+.srch-listing .repo-group-head { padding: 16px 24px; border-bottom: 1px solid var(--stroke-border); }
+.srch-listing .repo-group + .repo-group .repo-group-head { border-top: 1px solid var(--stroke-border); }
+
+/* --- Bank and Date views: the live repository's structures -------------- */
+
+/* "Found documents per bank" / "Found documents by publication date". */
+.srch-viewhead { padding: 16px 24px; border-bottom: 1px solid var(--stroke-border); }
+
+/* The collapsible group bar. */
+.srch-bargroup { border-bottom: 1px solid var(--stroke-border); }
+.srch-bargroup:last-of-type { border-bottom: 0; }
+.srch-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  color: var(--sky-600);
+  background: var(--sky-50);
+}
+.srch-chev { font-size: 12px; line-height: 1; transform: translateY(-3px); }
+
+.srch-barbody { padding: 8px 0; }
+.srch-listing .srch-barbody .repo-rows { padding: 8px 16px; }
+
+/* Bank view, as the live repository draws it: per category a section with
+   the name, its link and its count on the left (240px) and the rows on the
+   right, a rule between sections. */
+.srch-cat {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  border-bottom: 1px solid var(--stroke-border);
+}
+.srch-bargroup .srch-cat:last-child { border-bottom: 0; }
+.srch-cat-label { padding: 20px 24px; }
+.srch-cat-name { display: flex; align-items: center; gap: 6px; }
+.srch-cat-name h3 { margin: 0; color: var(--sky-900); }
+.srch-cat-n { margin: 4px 0 0; color: var(--sky-400); }
+.srch-cat-rows { padding: 12px 16px; min-width: 0; }
+.srch-listing .srch-cat-rows .repo-rows { padding: 0; }
+.srch-cat-rows .srch-more { padding: 0 8px; }
+.srch-cat-more .srch-cat-rows { padding-top: 0; }
+.srch-cat:has(+ .srch-cat-more) { border-bottom: 0; }
+
+.srch-anchor {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px; padding: 0;
+  color: var(--sky-300); background: none; border: 0; border-radius: 50%;
+  cursor: copy; transition: color .15s ease;
+}
+.srch-anchor:hover { color: var(--ocean-600); }
+.srch-anchor svg { width: 20px; height: 20px; fill: currentColor; }
+
+/* The group-by segments are links between the views. */
+a.repo-seg-btn { text-decoration: none; }
+
+.srch-main { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+/* styles.css spaces consecutive paragraphs of one text style; here the
+   flex gap does that, so the snippets sit as close as the other lines. */
+.srch-listing .srch-main > p.ts-body-sm,
+.srch-listing .srch-main > p.ts-body-xs,
+.srch-listing .srch-main > p.ts-body-sm-bold,
+.srch-listing .srch-main > p.ts-body-xs-bold { margin-top: 0; }
+.srch-title { white-space: normal; overflow: visible; }
+.srch-orig { margin-top: -4px; color: var(--fg-secondary); }
+.srch-snip { color: var(--fg-primary); }
+.srch-freq { color: var(--fg-secondary); }
+
+.srch-type { color: var(--fg-label-secondary); padding-top: 2px; }
+
+/* "Show N more" on the list's own grid, in the title column, lined up with
+   the titles above it (the rows' 8px inset included). */
+.srch-more {
+  display: grid;
+  grid-template-columns: var(--repo-cols);
+  column-gap: 12px;
+  padding: 8px 24px 0;
+}
+.srch-more .srch-more-btn { justify-self: start; }
+.srch-more-btn {
+  background: var(--bg-button-secondary);
+  font-family: inherit;
+  cursor: pointer;
+}
+.srch-more-btn:hover { color: var(--fg-button-secondary-hover); }
+
+/* Documents | Updates | Syntheses | My Uploads, left of the group-by control,
+   as on the live repository: plain text tabs, the active one underlined. */
+.repo-tools.srch-tools { padding-top: 0; padding-bottom: 0; }
+.srch-tabs { display: flex; gap: 32px; align-self: stretch; }
+.srch-tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  color: var(--sky-500);
+  text-decoration: none;
+}
+.srch-tab:hover { color: var(--sky-800); }
+.srch-tab.is-active { color: var(--sky-800); }
+.srch-tab.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 3px;
+  background: var(--sky-500);
+}
+
+@media (max-width: 700px) {
+  .srch-tabs { gap: 20px; }
+  .srch-listing .repo-group-head { padding: 16px; }
+  .srch-listing .repo-rows { padding: 12px 8px; }
+  .srch-more { padding: 16px 16px 0; }
+}
+
+/* Upload Policies, top right of the card header as on the live page. */
+.srch-header { flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.srch-header-main { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.srch-upload {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 24px;
+  color: var(--fg-button-primary);
+  background: var(--bg-button-primary);
+  border: 0;
+  border-radius: 8px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.srch-upload:hover { background: var(--bg-button-primary-hover); }
+.srch-upload svg { width: 16px; height: 16px; fill: currentColor; }
+
+@media (max-width: 700px) {
+  .srch-header { flex-direction: column; }
+}
+
+/* The versions button, as on the live list: outlined, small capitals, the
+   expand icon; "Hide versions" when open. */
+.srch-ver { justify-self: end; }
+.srch-versions {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  height: 20px;
+  padding: 0 6px;
+  color: var(--sky-500);
+  background: var(--white, #fff);
+  border: 1px solid var(--sky-200, #b2c1e5);
+  border-radius: 6px;
+  font-family: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.srch-versions:hover { background: var(--sky-50); border-color: var(--sky-300); }
+.srch-versions svg { width: 14px; height: 14px; fill: currentColor; flex: none; }
+
+/* Another version of a document, as on the live list: indented first cell,
+   grey title, a tree line.
+   Figma 14037:63501 (Repository/V2 Row Document): a document and its versions
+   sit flush, 0px apart, and each version draws its own piece of line inside
+   its own box: older versions below the row from the top edge to the middle
+   ("Version Bottom") or edge to edge when more follow ("Version Middle");
+   newer versions above the row from the middle to the bottom edge ("Version
+   Top"). The document's own row ("Version Selected") has no line. */
+.srch-vrow { align-items: stretch; }
+.srch-vrow > * { align-self: start; }
+.srch-vrow > .srch-vfirst { align-self: stretch; }
+.srch-vfirst { display: flex; align-items: flex-start; min-width: 0; }
+/* The bank and category cells clip their text to an ellipsis; in a version
+   row that clipping would cut the tree line short of the row's edges, so the
+   cell lets it out and only the name itself is clipped. */
+.repo-col-bank.srch-vfirst, .repo-col-fuel.srch-vfirst { overflow: visible; }
+.srch-vname { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.srch-main.srch-vmain { flex-direction: row; gap: 0; }
+.srch-vbody { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.srch-listing .srch-vbody > p { margin: 0; }
+.srch-vtitle { color: var(--sky-500); }
+
+.srch-tree { position: relative; flex: none; width: 28px; align-self: stretch; }
+/* Up to the row above (through this row's 8px padding), down to the text. */
+.srch-tree::before {
+  content: ""; position: absolute; left: 8px; top: -8px; height: 18px;
+  border-left: 1px solid var(--sky-200);
+}
+.srch-tree::after {
+  content: ""; position: absolute; left: 8px; top: 10px; width: 10px;
+  border-top: 1px solid var(--sky-200);
+}
+/* An older version with more below it carries the line on (Middle). */
+.srch-vrow.is-below:not(:last-child) .srch-tree::before { height: auto; bottom: -8px; }
+/* A newer version, above the row: from its middle down to its bottom edge,
+   or edge to edge when another newer version sits above it. */
+.srch-vrow.is-top .srch-tree::before { top: 10px; height: auto; bottom: -8px; }
+.srch-vrow.is-top + .srch-vrow.is-top .srch-tree::before { top: -8px; }
+
+/* What search found in that version, or that it found nothing: the same
+   line as the count, in coral. */
+.srch-freq.srch-notfound { color: var(--coral-600); }
+
+.srch-vrow[hidden] { display: none; }
+.srch-main > p:not([class]) { margin: 0; }
+
+/* Results waiting behind "Show N more" (sections are grids, so [hidden]
+   needs the help). */
+.srch-extra[hidden], .srch-cat.srch-extra[hidden] { display: none; }

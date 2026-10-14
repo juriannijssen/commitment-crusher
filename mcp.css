@@ -1,0 +1,328 @@
+/* Watchtower MCP (mcp.html). Figma 16373:110416.
+
+   Built the way the live home page (watchtower.bank.green) is: full-width
+   <section>s, each holding one centred container of 1170px (the home page's
+   max-w-292.5), sections parted by a rule, and the gradient span in the
+   headline. Styling stays in prototype tokens rather than Tailwind utilities.
+
+   A long page in the app shell, so it lets the body scroll the way the
+   overview does (styles.css locks it for the tool pages). Every colour is a
+   token, so the dark theme from theme.js works without rules of its own. */
+
+body.mcp { overflow: auto; background: var(--bg-primary); --cm-gutter: 24px; }
+body.mcp .app { display: block; height: auto; min-height: 0; }
+
+/* --- Sections and the container ------------------------------------------- */
+
+.mcp-section { padding: 0 var(--cm-gutter); }
+.mcp-container { max-width: 1170px; margin: 0 auto; }
+
+/* The text inside a container sits 40 in from its edges on a desktop. */
+.mcp-inset { padding: 0 40px; }
+
+.mcp-icon { width: 20px; height: 20px; flex: none; fill: currentColor; }
+
+/* --- Hero ------------------------------------------------------------------ */
+
+.mcp-hero { background: var(--bg-tertiary); padding-top: 200px; padding-bottom: 120px; }
+.mcp-hero .mcp-container { display: flex; flex-direction: column; gap: 80px; }
+
+.mcp-intro {
+  max-width: 922px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+.mcp-intro h1, .mcp-intro p { margin: 0; text-wrap: balance; }
+.mcp-intro h1 { max-width: 916px; }
+
+/* The home page's headline gradient, sushi-500 to leaf-500. */
+.mcp-gradient {
+  background: linear-gradient(90deg, var(--sushi-500) 0%, var(--leaf-500) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mcp-question-preview {
+  width: 100%;
+  max-width: 922px;
+  min-height: 300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  padding: 40px;
+  border: 1px solid var(--sky-700);
+  border-radius: 24px;
+  background: var(--sky-850);
+  color: var(--sky-100);
+  text-align: left;
+}
+.mcp-question-composer {
+  width: 100%;
+  max-width: 760px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 22px 24px 16px;
+  border: 1px solid var(--sky-600);
+  border-radius: 22px;
+  background: var(--sky-800);
+}
+.mcp-intro .mcp-question-display {
+  min-width: 0;
+  min-height: 64px;
+  display: block;
+  text-wrap: wrap;
+}
+#mcp-example-question { -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.mcp-question-preview.is-selected #mcp-example-question { background: var(--sky-500); color: var(--white); }
+.mcp-question-preview.is-selected .mcp-question-caret { visibility: hidden; }
+.mcp-question-caret {
+  display: none;
+  width: 1px;
+  height: 1em;
+  margin-left: 3px;
+  background: var(--sky-150);
+  vertical-align: -2px;
+}
+.mcp-question-preview.is-animated .mcp-question-caret { display: inline-block; animation: mcp-caret 1s step-end infinite; }
+.mcp-question-preview.is-paused .mcp-question-caret { animation: none; opacity: 0; }
+.mcp-question-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 36px; }
+.mcp-question-tools { display: flex; align-items: center; gap: 12px; }
+.mcp-question-tool-icon { display: block; width: 24px; height: 24px; flex: none; color: var(--sky-150); pointer-events: none; }
+.mcp-question-chevron { width: 16px; height: 16px; color: var(--sky-300); }
+.mcp-setup-button {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 50%;
+  background: var(--coral-500);
+  color: var(--sky-900);
+  text-decoration: none;
+  cursor: pointer;
+}
+.mcp-setup-button:hover { background: var(--coral-400); }
+.mcp-setup-button:active { background: var(--coral-600); }
+.mcp-setup-button:focus-visible { outline: 2px solid var(--coral-200); outline-offset: 4px; }
+.mcp-setup-arrow {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  background: currentColor;
+  -webkit-mask: url("assets/arrow-up.svg") center / 20px 20px no-repeat;
+  mask: url("assets/arrow-up.svg") center / 20px 20px no-repeat;
+  transform: rotate(180deg);
+}
+#mcp-setup { scroll-margin-top: 24px; }
+.mcp-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@keyframes mcp-caret { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .mcp-question-preview .mcp-question-caret { display: none; animation: none; }
+}
+
+/* Copyable questions in setup step 3. */
+.mcp-question {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 8px 8px 16px;
+  border: 1px solid var(--stroke-border);
+  border-radius: 10px;
+  background: var(--bg-card);
+}
+.mcp-question span { flex: 1 1 auto; min-width: 0; }
+
+/* Two lists of 513 with 64 between them, inside the 40 inset. */
+.mcp-features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px 64px;
+}
+.mcp-features h2 { margin: 0 0 8px; }
+
+.mcp-list { list-style: none; margin: 0; padding: 0; }
+.mcp-list li { display: flex; gap: 12px; padding: 16px; }
+.mcp-list li + li { border-top: 1px solid var(--stroke-border-darker); }
+.mcp-list .mcp-icon { color: var(--fg-label-primary); }
+.mcp-list .mcp-text { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.mcp-list p { margin: 0; }
+.mcp-list .mcp-desc { color: var(--fg-secondary); }
+
+/* --- Connect --------------------------------------------------------------- */
+
+.mcp-connect { padding-top: 80px; padding-bottom: 80px; }
+
+/* Guide, rule, account: 96 apart. */
+.mcp-connect .mcp-container { display: flex; flex-direction: column; gap: 96px; }
+.mcp-rule { border: 0; border-top: 1px solid var(--stroke-border); margin: 0; }
+
+.mcp-guide { display: flex; flex-direction: column; gap: 64px; }
+.mcp-guide > h2, .mcp-account h2 { margin: 0; }
+
+.mcp-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 64px; }
+.mcp-step { display: grid; grid-template-columns: 32px minmax(0, 1fr); column-gap: 16px; }
+
+.mcp-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-button-primary);
+  color: var(--fg-button-primary);
+}
+
+.mcp-step-body { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.mcp-step-body h3, .mcp-step-body p { margin: 0; }
+.mcp-step-body h3 { padding-top: 2px; }
+.mcp-muted { color: var(--fg-secondary); }
+
+.mcp-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.mcp-questions { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+
+/* Form/Button, Medium: 40 high, 12 across, 8 round. */
+.mcp-btn {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 4px;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid var(--stroke-button-secondary);
+  background: var(--bg-button-secondary);
+  color: var(--fg-button-secondary);
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.mcp-btn:hover { color: var(--fg-button-secondary-hover); background: var(--bg-button-secondary-active); }
+
+/* Primary, inverted: the green button on the dark prompt card. */
+.mcp-btn.is-primary {
+  border-color: transparent;
+  background: var(--bg-button-primary-inverted);
+  color: var(--fg-button-primary-inverted);
+}
+.mcp-btn.is-primary:hover { background: var(--bg-button-primary-inverted-hover); }
+
+/* Form/Button, Tertiary Small: 20 high, label/small in capitals. */
+.mcp-btn-sm {
+  flex: none;
+  height: 20px;
+  padding: 0 4px;
+  border-radius: 4px;
+  border: 1px solid var(--stroke-button-secondary);
+  background: var(--bg-button-secondary);
+  color: var(--fg-button-secondary);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.mcp-btn-sm:hover { color: var(--fg-button-secondary-hover); }
+
+.mcp-btn:focus-visible, .mcp-btn-sm:focus-visible, .mcp-more:focus-visible, .mcp-account a:focus-visible {
+  outline: 2px solid var(--stroke-input-ring);
+  outline-offset: 2px;
+}
+
+/* The prompt: dark card, copy button on top, the text folded until
+   "Show full prompt". */
+.mcp-prompt { background: var(--bg-contrast); border-radius: 4px; }
+.mcp-prompt-head { padding: 12px; }
+.mcp-prompt pre {
+  margin: 0;
+  padding: 0 12px;
+  font-family: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--sky-100);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.mcp-prompt:not(.is-open) pre {
+  max-height: 173px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent);
+  mask-image: linear-gradient(to bottom, #000 70%, transparent);
+}
+.mcp-prompt-foot { padding: 12px; }
+.mcp-more {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: var(--fg-accent);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* --- Account ------------------------------------------------------------------ */
+
+.mcp-account { display: flex; flex-direction: column; gap: 16px; }
+.mcp-account-head { display: flex; flex-direction: column; }
+.mcp-account p { margin: 0; }
+.mcp-account a:not(.mcp-btn) { color: inherit; }
+
+.mcp-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px 16px 16px;
+  border-radius: 10px;
+  background: var(--bg-popover-quote);
+  color: var(--fg-popover-quote);
+}
+.mcp-warning .mcp-icon { margin-top: 2px; }
+.mcp-warning p { margin: 0; }
+
+.mcp-toast { margin: -8px 0 0; color: var(--fg-secondary); }
+.mcp-toast:empty { display: none; }
+
+/* --- Narrow --------------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .mcp-hero { padding-top: 120px; padding-bottom: 96px; }
+  .mcp-features { grid-template-columns: minmax(0, 1fr); max-width: 640px; margin: 0 auto; width: 100%; }
+}
+
+@media (max-width: 700px) {
+  body.mcp { --cm-gutter: 16px; }
+  .mcp-inset { padding: 0; }
+  .mcp-hero { padding-top: 56px; padding-bottom: 56px; }
+  .mcp-hero .mcp-container { gap: 48px; }
+  .mcp-intro { gap: 16px; }
+  .mcp-question-preview { min-height: 240px; padding: 24px 20px; border-radius: 20px; }
+  .mcp-question-composer { padding: 18px 18px 14px; gap: 16px; border-radius: 20px; }
+  .mcp-intro .mcp-question-display { min-height: 84px; font-size: var(--scale-500); line-height: var(--scale-700); }
+
+  /* title/display steps to 60 on a phone, which still breaks "Watchtower"
+     against a 358 column; the home page drops to 48 here too. */
+  .mcp-intro h1 { font-size: var(--scale-1100); line-height: var(--scale-1200); }
+
+  .mcp-list li { padding: 16px 0; }
+  .mcp-connect { padding-top: 56px; padding-bottom: 56px; }
+  .mcp-connect .mcp-container { gap: 64px; }
+  .mcp-guide { gap: 40px; }
+  .mcp-steps { gap: 48px; }
+  .mcp-step { grid-template-columns: 28px minmax(0, 1fr); column-gap: 12px; }
+  .mcp-num { width: 28px; height: 28px; }
+}
+
+@media (max-width: 420px) {
+  .mcp-intro .mcp-question-display { min-height: 112px; }
+  .mcp-question-tools { gap: 10px; }
+}

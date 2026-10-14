@@ -1,0 +1,170 @@
+/* The social campaign drafts on the all-commitments page. See social-view.js. */
+
+/* --- the Social column in the Article view ------------------------------- */
+
+.soc-col { display: flex; }
+.soc-tag { display: inline-block; padding: 3px 8px; border-radius: 10px; white-space: nowrap; cursor: default; }
+.soc-tag.is-draft   { color: var(--leaf-500);     background: var(--sushi-100); }
+.soc-tag.is-long    { color: var(--coral-600);    background: var(--coral-100); }
+.soc-tag.is-variant { color: var(--coral-600);    background: var(--coral-100); }
+.soc-tag.is-broken  { color: var(--coral-600);    background: var(--coral-100); }
+
+.soc-switches { display: flex; gap: 16px; margin-left: auto; }
+
+/* --- the Social view: one line per commitment ------------------------------ */
+
+.repo-card.is-social .repo-listing { display: none; }
+
+/* The width LinkedIn gives a post: 557px in the desktop feed, about 390pt
+   on a phone. */
+.soc-list { --post: 557px; padding-bottom: 16px; }
+.soc-list.is-phone { --post: 390px; }
+
+.soc-row {
+  display: grid;
+  gap: 12px 12px;
+  align-items: start;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--stroke-border);
+}
+.soc-group .repo-group-head { margin-top: 8px; }
+
+/* The cloned table cells keep their table styles; in a tall row the title
+   may wrap rather than be cut. */
+.soc-row .repo-col-bank,
+.soc-row .repo-col-fuel { line-height: 20px; }
+.soc-main { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.soc-main .repo-link { white-space: normal; }
+
+.soc-nopost {
+  display: grid; place-items: center; height: 72px;
+  color: var(--fg-secondary); background: var(--bg-secondary); border-radius: 8px;
+}
+
+.soc-ok { color: var(--leaf-500); font-weight: 600; cursor: default; }
+.soc-review { margin: 0; color: var(--fg-secondary); }
+.soc-bad { margin: 0; padding-left: 16px; color: var(--coral-600); }
+.soc-bad li + li { margin-top: 2px; }
+
+.soc-dl-link {
+  display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px;
+}
+.soc-dl-link:hover { background: var(--bg-secondary); }
+.soc-dl-link svg { width: 20px; height: 20px; }
+
+.soc-empty { margin: 0; padding: 48px 24px; color: var(--fg-secondary); }
+
+/* --- the post, drawn as LinkedIn draws it: white whatever the theme ----- */
+
+.soc-li {
+  width: var(--post);
+  background: #fff;
+  color: #191919;
+  border: 1px solid #e0dfdc;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+}
+.soc-li-head { display: flex; align-items: center; gap: 8px; padding: 12px 16px 0; }
+.soc-li-avatar {
+  display: grid; place-items: center; width: 48px; height: 48px; flex: none;
+  border-radius: 4px; background: #1f4b33; color: #fff;
+  font: 600 11px/1 "Poppins", sans-serif; text-align: center;
+}
+.soc-li-who { display: flex; flex-direction: column; font-size: 14px; line-height: 18px; }
+.soc-li-who span { color: #666; font-size: 12px; }
+.soc-li-more { margin-left: auto; color: #666; letter-spacing: 1px; }
+.soc-li-caption { position: relative; margin: 8px 16px 12px; font-size: 14px; line-height: 20px; }
+.soc-li-text { max-height: 40px; overflow: hidden; padding-right: 48px; }
+.soc-li-text p { margin: 0; }
+.soc-li-text p + p { margin-top: 20px; }
+.soc-li-text a { color: #0a66c2; font-weight: 600; text-decoration: none; }
+.soc-li-text a:hover { text-decoration: underline; }
+.soc-li-caption.is-open .soc-li-text { max-height: none; padding-right: 0; }
+.soc-li-seemore {
+  all: unset; position: absolute; right: 0; bottom: 0; padding-left: 8px;
+  background: #fff; color: #666; cursor: pointer;
+}
+.soc-li-seemore:hover { color: #0a66c2; text-decoration: underline; }
+
+.soc-li-img { all: unset; display: block; min-height: 0; overflow: hidden; cursor: zoom-in; }
+.soc-li-img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* Desktop: a strip of 3:4 tiles that scrolls sideways. */
+.soc-li-stripwrap { position: relative; padding-bottom: 12px; }
+.soc-li-strip {
+  display: flex; gap: 4px; padding: 0 12px;
+  overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 12px; scrollbar-width: none;
+}
+.soc-li-strip::-webkit-scrollbar { display: none; }
+.soc-li-tile { flex: none; width: 236px; height: 313px; border-radius: 8px; scroll-snap-align: start; }
+.soc-li-count {
+  position: absolute; top: 8px; right: 20px; padding: 2px 6px; border-radius: 4px;
+  background: rgba(0, 0, 0, .75); color: #fff; font-size: 12px; font-weight: 600;
+}
+.soc-li-stripwrap .soc-li-next,
+.soc-li-stripwrap .soc-li-prev {
+  all: unset; position: absolute; top: 140px; box-sizing: border-box; width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center; background: rgba(0, 0, 0, .75); color: #fff;
+  cursor: pointer;
+}
+.soc-li-stripwrap .soc-li-next[hidden],
+.soc-li-stripwrap .soc-li-prev[hidden] { display: none; }
+.soc-li-stripwrap .soc-li-next { right: 20px; }
+.soc-li-stripwrap .soc-li-prev { left: 20px; }
+
+/* Phone app: the portrait first image on the left, the other three stacked
+   on the right and cropped to fit its height. */
+.soc-li-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  aspect-ratio: 6 / 5;   /* a 4:5 image across two thirds of the width */
+}
+.soc-li-grid .soc-li-img img { object-position: top; }
+.soc-li-img-1 { grid-row: 1 / -1; }
+/* Three images: the first on the left, two stacked on the right. Two: side
+   by side, as LinkedIn shows a pair. */
+.soc-li-grid.is-3 { grid-template-rows: repeat(2, 1fr); }
+.soc-li-grid.is-2 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; aspect-ratio: 8 / 5; }
+.soc-li-grid .soc-li-img-1 img { object-position: center; }
+
+/* --- the image viewer ------------------------------------------------------ */
+
+.soc-viewer {
+  position: fixed; inset: 0; z-index: 100;
+  display: grid; place-items: center; background: rgba(0, 0, 0, .92);
+}
+.soc-viewer-stage { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.soc-viewer-frame { position: relative; width: min(480px, 70vw, calc((100vh - 120px) * .8)); }
+.soc-viewer-frame img { display: block; width: 100%; height: auto; }
+.soc-viewer-count { margin: 0; color: #fff; font: 14px/20px system-ui, sans-serif; }
+
+/* Every button is a 48px circle with a 24px drawn icon in its exact centre.
+   The placement rules follow at the same weight, so `all: unset` cannot wipe
+   the positions out. */
+.soc-viewer .soc-viewer-btn {
+  all: unset; position: absolute; box-sizing: border-box;
+  display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%;
+  color: #fff; background: rgba(255, 255, 255, .14); cursor: pointer;
+}
+.soc-viewer .soc-viewer-btn:hover { background: rgba(255, 255, 255, .28); }
+.soc-viewer .soc-viewer-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.soc-viewer .soc-viewer-btn svg,
+.soc-li-stripwrap .soc-li-next svg,
+.soc-li-stripwrap .soc-li-prev svg {
+  display: block; width: 24px; height: 24px;
+  fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round;
+}
+.soc-li-stripwrap .soc-li-next svg,
+.soc-li-stripwrap .soc-li-prev svg { width: 18px; height: 18px; }
+.soc-viewer .soc-viewer-x { top: 16px; right: 16px; }
+.soc-viewer .soc-viewer-prev { top: 50%; left: -72px; transform: translateY(-50%); }
+.soc-viewer .soc-viewer-next { top: 50%; right: -72px; transform: translateY(-50%); }
+
+/* The social rows are wider than the table's; the list scrolls sideways
+   rather than squeezing the post. */
+.repo-card.is-social .repo-list { overflow-x: auto; }
+/* Category, a 220px title, the post and the download, with the gaps. */
+.soc-list { min-width: calc(var(--post) + 520px); }
